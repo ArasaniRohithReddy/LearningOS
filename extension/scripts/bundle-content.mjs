@@ -154,6 +154,9 @@ async function main() {
       }
     }
   }
+  if (dataCount < 2) {
+    throw new Error(`expected news-feeds.json + roadmaps.json in data/, bundled ${dataCount}`);
+  }
 
   // --- summary ---
   console.log("LearningOS content bundled into extension/content/:");

@@ -493,13 +493,19 @@ async function exportFeedsOpml(context: vscode.ExtensionContext): Promise<void> 
   if (!target) {
     return;
   }
-  await vscode.workspace.fs.writeFile(target, Buffer.from(opml, "utf8"));
-  const open = await vscode.window.showInformationMessage(
-    `Exported ${catalog.feeds.length} curated feeds to OPML — import it into any RSS reader.`,
-    "Reveal"
-  );
-  if (open === "Reveal") {
-    await vscode.commands.executeCommand("revealFileInOS", target);
+  try {
+    await vscode.workspace.fs.writeFile(target, Buffer.from(opml, "utf8"));
+    const open = await vscode.window.showInformationMessage(
+      `Exported ${catalog.feeds.length} curated feeds to OPML — import it into any RSS reader.`,
+      "Reveal"
+    );
+    if (open === "Reveal") {
+      await vscode.commands.executeCommand("revealFileInOS", target);
+    }
+  } catch (e) {
+    void vscode.window.showErrorMessage(
+      `LearningOS: could not write the OPML file — ${e instanceof Error ? e.message : String(e)}`
+    );
   }
 }
 
@@ -509,7 +515,7 @@ async function setupWorkspace(): Promise<void> {
 
   // Also offer to deploy the full catalog so VS Code discovers every agent + skill.
   const pick = await vscode.window.showInformationMessage(
-    "Make all 128 LearningOS specialist agents + 510 skills available in Chat (agent picker + /skills)?",
+    "Make all 128 LearningOS specialist agents + 511 skills available in Chat (agent picker + /skills)?",
     "Deploy agents & skills",
     "Not now"
   );
@@ -610,7 +616,7 @@ async function offerFirstRunSetup(context: vscode.ExtensionContext): Promise<voi
   await context.globalState.update(FIRST_RUN_KEY, true);
 
   const choice = await vscode.window.showInformationMessage(
-    "Set up LearningOS — deploy 128 specialist agents + 510 skills to ~/.copilot " +
+    "Set up LearningOS — deploy 128 specialist agents + 511 skills to ~/.copilot " +
       "(works in VS Code Chat AND the Copilot CLI) and enable progress charts?",
     "Set up everything",
     "Later"
@@ -629,7 +635,7 @@ async function offerFirstRunSetup(context: vscode.ExtensionContext): Promise<voi
 async function setupEverything(context: vscode.ExtensionContext, opts: { consented?: boolean } = {}): Promise<void> {
   if (!opts.consented) {
     const go = await vscode.window.showInformationMessage(
-      "Set up LearningOS: deploy the full catalog (128 specialist agents + 510 skills) to your user " +
+      "Set up LearningOS: deploy the full catalog (128 specialist agents + 511 skills) to your user " +
         "profile (~/.copilot) so it works in VS Code Chat AND the Copilot CLI, and enable Flint-Chart progress charts?",
       {
         modal: true,

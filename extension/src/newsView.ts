@@ -37,7 +37,7 @@ function openExternalSafe(url: unknown): void {
   try {
     const u = new URL(url);
     if (u.protocol === "https:" || u.protocol === "http:") {
-      void vscode.env.openExternal(vscode.Uri.parse(url));
+      void vscode.env.openExternal(vscode.Uri.parse(u.toString()));
     }
   } catch {
     /* ignore malformed */
@@ -200,7 +200,7 @@ export class NewsViewProvider implements vscode.WebviewViewProvider {
     const list = $("list"), status = $("status"), cat = $("cat");
     let current = "__top";
 
-    function esc(s){const d=document.createElement("div");d.textContent=s==null?"":String(s);return d.innerHTML;}
+    function esc(s){const d=document.createElement("div");d.textContent=s==null?"":String(s);return d.innerHTML.replace(/"/g,"&quot;");}
     function rel(iso){ if(!iso) return ""; const t=Date.parse(iso); if(isNaN(t)) return "";
       const s=Math.floor((Date.now()-t)/1000); if(s<3600) return Math.max(1,Math.floor(s/60))+"m ago";
       if(s<86400) return Math.floor(s/3600)+"h ago"; const d=Math.floor(s/86400);
@@ -342,7 +342,7 @@ export class RoadmapsViewProvider implements vscode.WebviewViewProvider {
     const wrap=document.getElementById("wrap"), q=document.getElementById("q"), attr=document.getElementById("attr");
     let all=[];
     const LABEL={"role-based":"Role-based paths","skill-based":"Skill-based paths","best-practices":"Best practices","project-ideas":"Project ideas"};
-    function esc(s){const d=document.createElement("div");d.textContent=s==null?"":String(s);return d.innerHTML;}
+    function esc(s){const d=document.createElement("div");d.textContent=s==null?"":String(s);return d.innerHTML.replace(/"/g,"&quot;");}
     function render(){
       const term=(q.value||"").toLowerCase().trim();
       const items=all.filter(r=>!term|| (r.title+" "+(r.description||"")+" "+r.slug).toLowerCase().includes(term));

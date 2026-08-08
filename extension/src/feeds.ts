@@ -14,6 +14,7 @@
 import * as vscode from "vscode";
 import { isBlockedHost } from "./fetchTool";
 import { contentUri } from "./catalog";
+import { parseFeedItems } from "./feedParse";
 
 export interface FeedSource {
   id: string;
@@ -148,98 +149,18 @@ async function fetchFeedBody(url: string, signal: AbortSignal): Promise<string> 
   }
 }
 
-// --- tiny tolerant XML helpers (no parser dependency) ------------------------
+// --- parse (hardened + testable, see feedParse.ts) → attach source metadata ---
 
-function decodeEntities(s: string): string {
-  return s
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
-    .replace(/&lt;/gi, "<")
-    .replace(/&gt;/gi, ">")
-    .replace(/&quot;/gi, '"')
-    .replace(/&#39;/gi, "'")
-    .replace(/&#x27;/gi, "'")
-    .replace(/&apos;/gi, "'")
-    .replace(/&#(\d+);/g, (_, d) => {
-      try {
-        return String.fromCodePoint(Number(d));
-      } catch {
-        return "";
-      }
-    })
-    .replace(/&amp;/gi, "&")
-    .replace(/<[^>]+>/g, "") // strip any residual inline tags (feeds sometimes wrap titles)
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function firstTag(block: string, tag: string): string | undefined {
-  const m = block.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)</${tag}>`, "i"));
-  return m ? m[1] : undefined;
-}
-
-/** Atom links: prefer rel="alternate"; fall back to the first href. */
-function atomLink(block: string): string | undefined {
-  const links = [...block.matchAll(/<link\b([^>]*)\/?>(?:<\/link>)?/gi)].map((m) => m[1]);
-  const hrefOf = (attrs: string) => (attrs.match(/href\s*=\s*["']([^"']+)["']/i) || [])[1];
-  const relOf = (attrs: string) => (attrs.match(/rel\s*=\s*["']([^"']+)["']/i) || [])[1];
-  const alt = links.find((a) => (relOf(a) || "alternate") === "alternate" && hrefOf(a));
-  return hrefOf(alt ?? links.find((a) => hrefOf(a)) ?? "");
-}
-
+/** Parse a feed body and attach the source's display name / category / topics. */
 function parseFeed(xml: string, source: FeedSource): NewsItem[] {
-  const items: NewsItem[] = [];
-  const isAtom = /<entry[\s>]/i.test(xml) && !/<item[\s>]/i.test(xml);
-  const blocks = isAtom
-    ? [...xml.matchAll(/<entry\b[\s\S]*?<\/entry>/gi)].map((m) => m[0])
-    : [...xml.matchAll(/<item\b[\s\S]*?<\/item>/gi)].map((m) => m[0]);
-
-  for (const b of blocks) {
-    const rawTitle = firstTag(b, "title");
-    if (!rawTitle) {
-      continue;
-    }
-    const title = decodeEntities(rawTitle);
-    let link: string | undefined;
-    if (isAtom) {
-      link = atomLink(b);
-    } else {
-      link = firstTag(b, "link");
-      if (link) {
-        link = decodeEntities(link);
-      }
-      if (!link) {
-        // Some RSS feeds only give a GUID that is a permalink.
-        const g = firstTag(b, "guid");
-        if (g && /^https?:\/\//i.test(g.trim())) {
-          link = decodeEntities(g);
-        }
-      }
-    }
-    const dateRaw =
-      firstTag(b, "pubDate") ||
-      firstTag(b, "published") ||
-      firstTag(b, "updated") ||
-      firstTag(b, "dc:date") ||
-      "";
-    let isoDate = "";
-    if (dateRaw) {
-      const t = Date.parse(dateRaw.trim());
-      if (!Number.isNaN(t)) {
-        isoDate = new Date(t).toISOString();
-      }
-    }
-    if (title && link) {
-      items.push({
-        title,
-        link: link.trim(),
-        isoDate,
-        source: source.name,
-        category: source.category,
-        topics: source.topics ?? [],
-      });
-    }
-  }
-  return items;
+  return parseFeedItems(xml).map((it) => ({
+    title: it.title,
+    link: it.link,
+    isoDate: it.isoDate,
+    source: source.name,
+    category: source.category,
+    topics: source.topics ?? [],
+  }));
 }
 
 /** Fetch + parse a single feed; never throws (returns [] on any failure). */
@@ -259,18 +180,24 @@ export async function fetchFeed(source: FeedSource, maxItems = 8): Promise<NewsI
 /**
  * Fetch many feeds with a small concurrency limit, merge, sort newest-first, and
  * cap the result. Undated items sink to the bottom (stable by source).
- */export async function fetchMany(
+ */
+export async function fetchMany(
   sources: FeedSource[],
-  opts: { perFeed?: number; total?: number; concurrency?: number } = {}
+  opts: { perFeed?: number; total?: number; concurrency?: number; budgetMs?: number; token?: vscode.CancellationToken } = {}
 ): Promise<NewsItem[]> {
   const perFeed = opts.perFeed ?? 6;
   const total = opts.total ?? 60;
   const concurrency = Math.max(1, Math.min(opts.concurrency ?? 6, 10));
+  const deadline = Date.now() + (opts.budgetMs ?? 25_000);
+  const token = opts.token;
 
   const queue = [...sources];
   const all: NewsItem[] = [];
   async function worker(): Promise<void> {
     for (;;) {
+      if (Date.now() > deadline || token?.isCancellationRequested) {
+        return; // overall wall-clock budget / cancellation → return partial results
+      }
       const src = queue.shift();
       if (!src) {
         return;

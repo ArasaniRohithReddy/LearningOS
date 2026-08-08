@@ -51,5 +51,6 @@ AWS_SECRET_ACCESS_KEY=test
 ## Tips
 
 - Floci's fidelity is *approximate* and not production — validate anything you'll ship against the official AWS docs (floci.io/floci).
-- Reuse the endpoint across [aws-lambda-lab](../aws-lambda-lab/SKILL.md), [aws-iam-lab](../aws-iam-lab/SKILL.md), aws-vpc-lab, aws-dynamodb-lab, and aws-ecs-lab; an optional CLI ships at floci-io/floci-cli.
+- Reuse the endpoint across [aws-lambda-lab](../aws-lambda-lab/SKILL.md), [aws-iam-lab](../aws-iam-lab/SKILL.md), aws-vpc-lab, aws-dynamodb-lab, and aws-ecs-lab; an optional unified CLI ships at floci-io/floci-cli (`floci start && eval $(floci env)`).
+- **Let Drona drive it:** with `AWS_ENDPOINT_URL` exported, Drona can run the AWS CLI against local floci — floci is "AI-ready" via **env vars, not an MCP server** (none exists). See [`docs/Floci.md`](../../../docs/Floci.md) for all four clouds, incl. [floci-oracle-local-lab](../floci-oracle-local-lab/SKILL.md).
 - End with the **Learning Footer** (`AGENTS.md`) — one AWS service to emulate next + one behavior to verify against real AWS yourself.

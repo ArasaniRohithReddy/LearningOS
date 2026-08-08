@@ -54,7 +54,7 @@ function pickSources(feeds: FeedSource[], input: NewsInput): { sources: FeedSour
 
 export function registerNewsTool(context: vscode.ExtensionContext): void {
   const tool: vscode.LanguageModelTool<NewsInput> = {
-    async invoke(options, _token) {
+    async invoke(options, token) {
       const input = options.input || {};
       try {
         const catalog = await loadFeedCatalog(context);
@@ -65,7 +65,7 @@ export function registerNewsTool(context: vscode.ExtensionContext): void {
         }
         const { sources, label } = pickSources(catalog.feeds, input);
         const limit = Math.max(5, Math.min(Number(input.limit) || 25, 50));
-        const items = await fetchMany(sources, { perFeed: 5, total: limit, concurrency: 6 });
+        const items = await fetchMany(sources, { perFeed: 5, total: limit, concurrency: 6, budgetMs: 25_000, token });
 
         try {
           recordCommand(context, "news");

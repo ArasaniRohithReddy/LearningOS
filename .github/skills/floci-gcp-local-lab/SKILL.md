@@ -52,4 +52,5 @@ GOOGLE_CLOUD_PROJECT=floci-local
 
 - Fidelity is *approximate* and not production — confirm anything real against the official Google Cloud docs (floci.io/floci-gcp).
 - Reuse the endpoint across [gcp-cloud-functions-lab](../gcp-cloud-functions-lab/SKILL.md), [gcp-bigquery-lab](../gcp-bigquery-lab/SKILL.md), gcp-iam-lab, and gcp-gke-lab.
+- **Let Drona drive it:** with the emulator-host env vars exported, Drona can run `gcloud`/SDK calls against local floci — floci is "AI-ready" via **env vars, not an MCP server** (none exists). See [`docs/Floci.md`](../../../docs/Floci.md) for the unified CLI (`floci gcp start && eval $(floci gcp env)`) and the sibling [floci-oracle-local-lab](../floci-oracle-local-lab/SKILL.md).
 - End with the **Learning Footer** (`AGENTS.md`) — one GCP service to emulate next + one behavior to verify against real GCP yourself.

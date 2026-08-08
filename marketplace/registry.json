@@ -4,7 +4,7 @@
   "generator": "scripts/build-registry.mjs",
   "counts": {
     "agents": 129,
-    "skills": 510,
+    "skills": 511,
     "roles": 122
   },
   "packs": [
@@ -519,6 +519,7 @@
         "floci-aws-local-lab",
         "floci-azure-local-lab",
         "floci-gcp-local-lab",
+        "floci-oracle-local-lab",
         "gcp-bigquery-lab",
         "gcp-bigtable-emulator-lab",
         "gcp-cloud-functions-lab",
@@ -3644,6 +3645,12 @@
       "description": "Hands-on GCP lab: practice Google Cloud locally and fully offline with the free, open-source floci-gcp emulator — no cloud account, no billing, no real credentials. Start floci/floci-gcp with docker compose, point GCP SDKs/gcloud/Terraform at localhost:4588, then exercise Pub/Sub, Firestore, Cloud Storage, and Secret Manager. Use for 'learn GCP without an account', 'local GCP emulator', 'offline GCP lab', 'Pub/Sub emulator', 'Floci GCP', or practicing GCP by doing.",
       "argumentHint": "The GCP service to practice (Pub/Sub/Firestore/Storage/…)",
       "path": ".github/skills/floci-gcp-local-lab/SKILL.md"
+    },
+    {
+      "name": "floci-oracle-local-lab",
+      "description": "Hands-on Oracle Cloud (OCI) lab: practice OCI locally and fully offline with the free, open-source Floci OCI emulator — no cloud account, no subscription, no auth token. Run floci/floci-oci on http://localhost:4599, generate a throwaway OCI profile with 'floci oci setup', then point the OCI CLI/SDK/Terraform at it and exercise Object Storage and more. Use for 'learn Oracle Cloud without an account', 'local OCI emulator', 'offline OCI lab', 'Floci Oracle', 'OCI localhost:4599', or practicing Oracle Cloud by doing.",
+      "argumentHint": "The OCI service to practice (Object Storage/Streaming/Functions/…)",
+      "path": ".github/skills/floci-oracle-local-lab/SKILL.md"
     },
     {
       "name": "form-design-coach",

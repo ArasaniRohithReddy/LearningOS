@@ -7,7 +7,7 @@ argument-hint: "The Azure service to practice (Functions/Cosmos DB/Event Hubs/�
 # Floci Azure Local Lab
 
 Learn Azure by *running it on your laptop* — boot the emulator, aim your SDK at it, build and verify —
-no subscription or token, per [`AGENTS.md`](../../../AGENTS.md). Pairs with the sibling [floci-aws-local-lab](../floci-aws-local-lab/SKILL.md) and [floci-gcp-local-lab](../floci-gcp-local-lab/SKILL.md).
+no subscription or token, per [`AGENTS.md`](../../../AGENTS.md). Pairs with the sibling [floci-aws-local-lab](../floci-aws-local-lab/SKILL.md), [floci-gcp-local-lab](../floci-gcp-local-lab/SKILL.md), and [floci-oracle-local-lab](../floci-oracle-local-lab/SKILL.md).
 
 ## When to use
 
@@ -51,4 +51,5 @@ FLOCI_AZ_HOSTNAME=localhost
 
 - Fidelity is *approximate* and not production — verify anything real against the official Azure docs (floci.io/floci-az).
 - The same emulator backs Azure Functions, Event Hubs, and Cosmos DB engine APIs; pair with [azure-landing-zone-coach](../azure-landing-zone-coach/SKILL.md) for cloud-design practice.
+- **Let Drona drive it:** with the endpoint exported, Drona can run `az`/SDK calls against local floci — floci is "AI-ready" via **env vars, not an MCP server** (none exists); see [`docs/Floci.md`](../../../docs/Floci.md). Unified CLI: `floci az start && eval $(floci az env)`. (Azure Functions fidelity is uncertain — floci-az lists it but the console can return 501; verify before relying on it.)
 - End with the **Learning Footer** (`AGENTS.md`) — one Azure service to emulate next + one behavior to verify against real Azure yourself.

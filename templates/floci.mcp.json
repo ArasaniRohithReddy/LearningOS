@@ -1,0 +1,17 @@
+{
+  "_README": "OPTIONAL, COMMUNITY, UNOFFICIAL — an MCP server pointed at a locally-running floci (https://floci.io) AWS emulator. floci itself ships NO MCP server (verified); its recommended AI path is the env-var contract in docs/Floci.md, NOT this. Use this only if you specifically want an MCP tool surface.",
+  "_WARNING": "The '@yawlabs/aws-mcp' package below is THIRD-PARTY and NOT a floci product (floci ships no MCP server). Pin a specific version and review it before use. It must be installed first (npm i -g @yawlabs/aws-mcp) and launched via `node` with an ABSOLUTE path to dist/index.js — `npx` reportedly breaks its stdio. Replace <ABSOLUTE_PATH> accordingly.",
+  "_usage": "Start floci first: `floci start` (AWS on http://localhost:4566). Then merge the `servers` block below into your workspace .vscode/mcp.json (VS Code) and reload.",
+  "servers": {
+    "floci-aws-local": {
+      "command": "node",
+      "args": ["<ABSOLUTE_PATH>/node_modules/@yawlabs/aws-mcp/dist/index.js"],
+      "env": {
+        "AWS_ENDPOINT_URL": "http://localhost:4566",
+        "AWS_REGION": "us-east-1",
+        "AWS_ACCESS_KEY_ID": "test",
+        "AWS_SECRET_ACCESS_KEY": "test"
+      }
+    }
+  }
+}

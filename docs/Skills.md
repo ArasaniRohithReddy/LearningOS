@@ -6,7 +6,7 @@ They appear as `/` slash commands and can be invoked by any agent. Each follows 
 
 ## Catalog
 
-**510 skills**, grouped by what they help the learner do. Folder name always equals the `name` field.
+**511 skills**, grouped by what they help the learner do. Folder name always equals the `name` field.
 (Browse them as installable packs in [`marketplace/CATALOG.md`](../marketplace/CATALOG.md).)
 
 ### Learn & understand
@@ -413,7 +413,7 @@ They appear as `/` slash commands and can be invoked by any agent. Each follows 
 
 ### Hands-on labs
 Guided, hands-on practice labs (concept → step-by-step exercise → reference solution → pitfalls),
-grouped by track (255 labs):
+grouped by track (256 labs):
 
 - **Python** — [`python-decorators-lab`](../.github/skills/python-decorators-lab/SKILL.md) · [`python-generators-lab`](../.github/skills/python-generators-lab/SKILL.md) · [`python-asyncio-lab`](../.github/skills/python-asyncio-lab/SKILL.md) · [`python-typing-lab`](../.github/skills/python-typing-lab/SKILL.md) · [`python-dataclasses-lab`](../.github/skills/python-dataclasses-lab/SKILL.md) · [`python-context-managers-lab`](../.github/skills/python-context-managers-lab/SKILL.md)
 - **JavaScript** — [`js-closures-lab`](../.github/skills/js-closures-lab/SKILL.md) · [`js-promises-lab`](../.github/skills/js-promises-lab/SKILL.md) · [`js-event-loop-lab`](../.github/skills/js-event-loop-lab/SKILL.md) · [`js-prototypes-lab`](../.github/skills/js-prototypes-lab/SKILL.md) · [`js-modules-lab`](../.github/skills/js-modules-lab/SKILL.md) · [`js-generators-lab`](../.github/skills/js-generators-lab/SKILL.md)

@@ -34,6 +34,7 @@ Install a language locally only when a real project truly needs it (native deps,
 | **AWS** | [Floci](https://github.com/floci-io/floci) · [LocalStack](https://github.com/localstack/localstack) (community) · [DynamoDB Local](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html) · [MinIO](https://github.com/minio/minio) (S3) | `docker compose up`; point AWS SDK/CLI/Terraform at localhost | `floci-aws-local-lab` · `localstack-lab` · `dynamodb-local-lab` · `minio-s3-lab` |
 | **Azure** | [Floci AZ](https://github.com/floci-io/floci-az) · [Azurite](https://learn.microsoft.com/azure/storage/common/storage-use-azurite) (official Storage emulator) | localhost `:4577` / `:10000-2` | `floci-azure-local-lab` · `azurite-lab` |
 | **GCP** | [floci-gcp](https://github.com/floci-io/floci-gcp) · [Firebase Emulator Suite](https://firebase.google.com/docs/emulator-suite) · official [Pub/Sub emulator](https://cloud.google.com/pubsub/docs/emulator) | localhost `:4588`; `gcloud … emulators` | `floci-gcp-local-lab` · `firebase-emulator-lab` · `gcp-pubsub-emulator-lab` |
+| **Oracle (OCI)** | [floci-oci](https://github.com/floci-io/floci-oci) — the only local OCI emulator (since 2026-07) | localhost `:4599`; `floci oci start && floci oci setup` | `floci-oracle-local-lab` |
 
 ## Databases & storage, locally
 PostgreSQL · MySQL · MongoDB · Redis · Cassandra (all official Docker images) · SQLite (embedded,

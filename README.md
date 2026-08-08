@@ -5,7 +5,7 @@
 [![Pages](https://img.shields.io/badge/live%20site-arasanirohithreddy.github.io%2FLearningOS-7c9cff)](https://arasanirohithreddy.github.io/LearningOS/)
 [![Validate](https://github.com/ArasaniRohithReddy/LearningOS/actions/workflows/validate.yml/badge.svg)](https://github.com/ArasaniRohithReddy/LearningOS/actions/workflows/validate.yml)
 [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ArasaniRohithReddy.LearningOS&left_text=visitors)](https://github.com/ArasaniRohithReddy/LearningOS)
-&nbsp;·&nbsp; **129 agents · 510 skills · 122 roles**
+&nbsp;·&nbsp; **129 agents · 511 skills · 122 roles**
 
 > A modular, config-driven **GitHub Copilot Agent framework for learning, teaching, research, and
 > technical career growth.** One master orchestrator (**Drona**, the guru), a set of specialist
@@ -49,7 +49,7 @@ flowchart TD
     D -->|delegates| MP[Meeting & Presentation Coach]
     D -->|delegates| RO["122 Role-Agents<br/>Software · Languages · Web · Data · AI/ML · Cloud · DevOps · Security · Design · Product · Emerging · Enterprise"]
 
-    subgraph Skills["510 Reusable Skills — invoke with /"]
+    subgraph Skills["511 Reusable Skills — invoke with /"]
       S1["Learn · Plan · Practice<br/>concept-explainer · socratic-tutor · worked-example · analogy-generator<br/>learning-roadmap · career-ladder · quiz-generator · mock-exam · exam-blueprint"]
       S2["Code & engineering<br/>code-review-coach · debugging-coach · refactoring-coach · test-writer<br/>sql-coach · git-coach · dockerfile-coach · regex-explainer · code-optimizer"]
       S3["Architecture & AI/data<br/>architecture-diagram · api-design-review · data-modeling-drill · threat-model<br/>prompt-optimizer · rag-designer · eval-designer · dataset-explorer"]
@@ -90,7 +90,7 @@ Learning Agents/
 │   │   ├── coding-mentor · research-analyst · interview-coach
 │   │   ├── exam-coach · career-mentor · meeting-prep       # 6 core mentors
 │   │   └── + 122 role-agents (python/rust/scala-developer, data-engineer, quantum-computing-engineer, …)
-│   ├── skills/                    # 510 reusable workflows (slash commands), across 27 groups
+│   ├── skills/                    # 511 reusable workflows (slash commands), across 27 groups
 │   │   ├── Learn: concept-explainer socratic-tutor misconception-buster analogy-generator worked-example glossary-builder mind-map note-generator teach-back knowledge-graph cheat-sheet
 │   │   ├── Plan/Assess: learning-roadmap onboarding-plan career-ladder progress-tracker spaced-repetition-scheduler project-mentor practice-generator quiz-generator flashcards mock-exam skill-assessment gap-analysis rubric-grader exam-blueprint
 │   │   ├── Code: code-review-coach debugging-coach refactoring-coach test-writer pair-programmer regex-explainer sql-coach git-coach dockerfile-coach code-optimizer algorithm-visualizer complexity-analyzer code-walkthrough system-design-drill
@@ -128,6 +128,7 @@ The [`docs/`](docs/) folder is the framework's brain — how and why it works:
 | [Customize](docs/Customize.md) | Add / edit / disable your own skills & agents; scaffolders + `validate.mjs` |
 | [Marketplace](docs/Marketplace.md) | Enterprise plugin marketplace: pack model + generated registry |
 | [LocalPractice](docs/LocalPractice.md) | Practice every domain locally & free (no subscriptions) — the tool catalog |
+| [Floci — local cloud](docs/Floci.md) | Practice **AWS, Azure, GCP & Oracle (OCI)** locally & free with floci emulators — install, per-cloud endpoints, and the honest "AI-ready"/MCP story |
 | [MCP](docs/MCP.md) | Live docs/data via MCP (+ [sample config](docs/mcp.sample.json)) |
 | [Memory](docs/Memory.md) | Learner profile, spaced repetition, RAG |
 | [News](docs/News.md) | News / RSS / research framework |
@@ -174,7 +175,7 @@ optionally `docs/`) into any repository. That repo instantly gains the full Lear
 
 ## Practice cloud & tech locally (no subscription needed)
 
-LearningOS includes **255 hands-on labs** (`*-lab` skills) so you learn by doing — per language
+LearningOS includes **256 hands-on labs** (`*-lab` skills) so you learn by doing — per language
 (Python, JS, TS, Go, Rust, Java, C#), framework (React), data (pandas, SQL, Spark, Kafka, PyTorch),
 and tooling (Git, Docker/Kubernetes).
 
@@ -215,14 +216,14 @@ Platforms) — see the full catalog in
 ## Roadmap / where to take it next
 
 The core is intentionally small and high-quality, and designed to grow. **Phases 1–3 are done** —
-orchestrator, shared constitution, **510 skills**, **129 agents** (Drona + 6 mentors + 122 role-agents),
+orchestrator, shared constitution, **511 skills**, **129 agents** (Drona + 6 mentors + 122 role-agents),
 config-driven roles + composer, and learner templates. **Phase 4 is in progress** — the roster is
 **well past the 100+ agent** milestone and a first-cut **Enterprise Plugin Marketplace** now ships
 (generated [registry](marketplace/registry.json) + [catalog](marketplace/CATALOG.md))
 (see [docs/Roadmap.md](docs/Roadmap.md)):
 
 - **Breadth toward 100+ agents / 500+ skills** — added in reviewed, high-quality batches across every
-  domain (each is one role config or one skill folder; no stubs). *129 agents / 510 skills and counting.*
+  domain (each is one role config or one skill folder; no stubs). *129 agents / 511 skills and counting.*
 - **Live MCP integrations** (when available in your client): GitHub, Fetch/Web, Playwright, Microsoft
   Learn, RSS/arXiv, Memory, SQLite — to pull live docs, feeds, and papers into lessons.
 - **Learning analytics & evaluation**: progress / gaps / streaks over the learner profile, and a
