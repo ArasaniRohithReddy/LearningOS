@@ -26,13 +26,13 @@
     "interview",
     "certification"
   ],
-  "homepage": "https://github.com/Rohithreddy7123/LearningOS",
+  "homepage": "https://github.com/ArasaniRohithReddy/LearningOS",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Rohithreddy7123/LearningOS.git"
+    "url": "https://github.com/ArasaniRohithReddy/LearningOS.git"
   },
   "bugs": {
-    "url": "https://github.com/Rohithreddy7123/LearningOS/issues"
+    "url": "https://github.com/ArasaniRohithReddy/LearningOS/issues"
   },
   "main": "./out/extension.js",
   "activationEvents": [

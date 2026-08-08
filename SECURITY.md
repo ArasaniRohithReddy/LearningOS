@@ -7,7 +7,7 @@ is designed to keep your data on your machine. We still take security seriously.
 
 **Please do not open a public issue for security vulnerabilities.**
 
-Instead, report privately via GitHub's **[Report a vulnerability](https://github.com/Rohithreddy7123/LearningOS/security/advisories/new)**
+Instead, report privately via GitHub's **[Report a vulnerability](https://github.com/ArasaniRohithReddy/LearningOS/security/advisories/new)**
 (Security → Advisories → *Report a vulnerability*). Include:
 
 - A description of the issue and its impact.

@@ -3,7 +3,7 @@
 **Drona** is your AI learning mentor. Type **`@drona`** in the Chat view and it teaches from first
 principles, cites sources, **runs and tests code for you (no local install needed)**, and helps you
 **learn, plan, practice, and prep**. It also **bundles the full
-[LearningOS](https://github.com/Rohithreddy7123/LearningOS) catalog** — run **“Drona: Deploy
+[LearningOS](https://github.com/ArasaniRohithReddy/LearningOS) catalog** — run **“Drona: Deploy
 all LearningOS agents & skills”** and VS Code Copilot discovers **128 specialist agents** (agent
 picker) and **510 skills** (`/` in Chat) natively.
 

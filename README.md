@@ -1,10 +1,10 @@
 # LearningOS — powered by **Drona**
 
-[![Release](https://img.shields.io/github/v/release/Rohithreddy7123/LearningOS?display_name=tag&sort=semver)](https://github.com/Rohithreddy7123/LearningOS/releases/latest)
+[![Release](https://img.shields.io/github/v/release/ArasaniRohithReddy/LearningOS?display_name=tag&sort=semver)](https://github.com/ArasaniRohithReddy/LearningOS/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Pages](https://img.shields.io/badge/live%20site-rohithreddy7123.github.io%2FLearningOS-7c9cff)](https://rohithreddy7123.github.io/LearningOS/)
-[![Validate](https://github.com/Rohithreddy7123/LearningOS/actions/workflows/validate.yml/badge.svg)](https://github.com/Rohithreddy7123/LearningOS/actions/workflows/validate.yml)
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Rohithreddy7123.LearningOS&left_text=visitors)](https://github.com/Rohithreddy7123/LearningOS)
+[![Pages](https://img.shields.io/badge/live%20site-arasanirohithreddy.github.io%2FLearningOS-7c9cff)](https://arasanirohithreddy.github.io/LearningOS/)
+[![Validate](https://github.com/ArasaniRohithReddy/LearningOS/actions/workflows/validate.yml/badge.svg)](https://github.com/ArasaniRohithReddy/LearningOS/actions/workflows/validate.yml)
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ArasaniRohithReddy.LearningOS&left_text=visitors)](https://github.com/ArasaniRohithReddy/LearningOS)
 &nbsp;·&nbsp; **129 agents · 510 skills · 122 roles**
 
 > A modular, config-driven **GitHub Copilot Agent framework for learning, teaching, research, and
@@ -12,9 +12,9 @@
 > sub-agents, and reusable skills — all in the official GitHub Copilot format so they work in
 > **VS Code**, **VS Code Insiders**, and the **GitHub Copilot CLI**.
 
-**🌐 Live site:** <https://rohithreddy7123.github.io/LearningOS/> &nbsp;·&nbsp;
-**⬇ Download:** [latest release](https://github.com/Rohithreddy7123/LearningOS/releases/latest) &nbsp;·&nbsp;
-**🤝 Contribute:** [open an issue](https://github.com/Rohithreddy7123/LearningOS/issues/new/choose) · [start a discussion](https://github.com/Rohithreddy7123/LearningOS/discussions) · [CONTRIBUTING.md](CONTRIBUTING.md)
+**🌐 Live site:** <https://arasanirohithreddy.github.io/LearningOS/> &nbsp;·&nbsp;
+**⬇ Download:** [latest release](https://github.com/ArasaniRohithReddy/LearningOS/releases/latest) &nbsp;·&nbsp;
+**🤝 Contribute:** [open an issue](https://github.com/ArasaniRohithReddy/LearningOS/issues/new/choose) · [start a discussion](https://github.com/ArasaniRohithReddy/LearningOS/discussions) · [CONTRIBUTING.md](CONTRIBUTING.md)
 
 LearningOS is **not** a single chatbot prompt. It is a small platform: agents compose reusable
 skills, behavior is shared through a single constitution ([`AGENTS.md`](AGENTS.md)), and new
