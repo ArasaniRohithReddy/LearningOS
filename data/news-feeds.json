@@ -1,0 +1,2247 @@
+{
+  "$schema": "https://learningos.dev/data/news-feeds.schema.json",
+  "version": 1,
+  "updated": "2026-08-08",
+  "description": "Curated RSS/Atom feed catalog powering the LearningOS Tech-News digest and the Research & News Analyst. Feed catalog is data, not code — add or remove sources here.",
+  "categories": {
+    "ai-ml": {
+      "label": "AI & Machine Learning",
+      "domain": "AI, ML & Research"
+    },
+    "research": {
+      "label": "Research & Papers",
+      "domain": "AI, ML & Research"
+    },
+    "cloud-vendor": {
+      "label": "Cloud & Platforms",
+      "domain": "Cloud & Platforms"
+    },
+    "release-notes": {
+      "label": "Official Release Notes",
+      "domain": "Cloud & Platforms"
+    },
+    "devops": {
+      "label": "DevOps & Infrastructure",
+      "domain": "Cloud & Platforms"
+    },
+    "data": {
+      "label": "Data & Analytics",
+      "domain": "Data & Analytics"
+    },
+    "security": {
+      "label": "Security (Defensive)",
+      "domain": "Security"
+    },
+    "language": {
+      "label": "Languages & Runtimes",
+      "domain": "Software & Web"
+    },
+    "web": {
+      "label": "Web Platform",
+      "domain": "Software & Web"
+    },
+    "eng-blog": {
+      "label": "Engineering Blogs",
+      "domain": "Engineering"
+    },
+    "dev-tools": {
+      "label": "Developer Tools & Languages",
+      "domain": "Software & Web"
+    },
+    "dev-community": {
+      "label": "Developer Community",
+      "domain": "Software & Web"
+    },
+    "thought-leader": {
+      "label": "Thought Leaders",
+      "domain": "Voices & Deep Dives"
+    },
+    "news": {
+      "label": "Tech News",
+      "domain": "News"
+    },
+    "community": {
+      "label": "Communities",
+      "domain": "Communities"
+    },
+    "video": {
+      "label": "Video",
+      "domain": "Media"
+    },
+    "podcast": {
+      "label": "Podcasts",
+      "domain": "Media"
+    }
+  },
+  "feeds": [
+    {
+      "id": "analytics-vidhya",
+      "name": "Analytics Vidhya",
+      "url": "https://analyticsvidhya.com/feed",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai",
+        "data"
+      ],
+      "homepage": "https://analyticsvidhya.com"
+    },
+    {
+      "id": "anthropic-news",
+      "name": "Anthropic News",
+      "url": "https://www.anthropic.com/news/rss.xml",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://www.anthropic.com"
+    },
+    {
+      "id": "aws-machine-learning-blog",
+      "name": "AWS Machine Learning Blog",
+      "url": "https://aws.amazon.com/blogs/machine-learning/feed/",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai",
+        "cloud"
+      ],
+      "homepage": "https://aws.amazon.com"
+    },
+    {
+      "id": "azure-ai-ml-blog",
+      "name": "Azure AI + ML Blog",
+      "url": "https://azure.microsoft.com/en-us/blog/topics/ai-machine-learning/feed/",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai",
+        "cloud"
+      ],
+      "homepage": "https://azure.microsoft.com"
+    },
+    {
+      "id": "berkeley-ai-research-bair",
+      "name": "Berkeley AI Research (BAIR)",
+      "url": "https://bair.berkeley.edu/blog/feed.xml",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai",
+        "research"
+      ],
+      "homepage": "https://bair.berkeley.edu"
+    },
+    {
+      "id": "cohere-blog",
+      "name": "Cohere Blog",
+      "url": "https://cohere.com/blog/rss.xml",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://cohere.com"
+    },
+    {
+      "id": "google-ai",
+      "name": "Google — AI",
+      "url": "https://blog.google/technology/ai/rss/",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://blog.google"
+    },
+    {
+      "id": "google-deepmind-blog",
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai",
+        "research"
+      ],
+      "homepage": "https://deepmind.google"
+    },
+    {
+      "id": "google-research-blog",
+      "name": "Google Research Blog",
+      "url": "https://research.google/blog/rss/",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai",
+        "research"
+      ],
+      "homepage": "https://research.google"
+    },
+    {
+      "id": "hugging-face-blog",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://huggingface.co"
+    },
+    {
+      "id": "ibm-research-blog",
+      "name": "IBM Research Blog",
+      "url": "https://research.ibm.com/blog/rss.xml",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai",
+        "research"
+      ],
+      "homepage": "https://research.ibm.com"
+    },
+    {
+      "id": "langchain-blog",
+      "name": "LangChain Blog",
+      "url": "https://blog.langchain.dev/rss/",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://blog.langchain.dev"
+    },
+    {
+      "id": "llamaindex-blog",
+      "name": "LlamaIndex Blog",
+      "url": "https://www.llamaindex.ai/blog/feed",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://www.llamaindex.ai"
+    },
+    {
+      "id": "machine-learning-mastery",
+      "name": "Machine Learning Mastery",
+      "url": "https://machinelearningmastery.com/blog/feed",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://machinelearningmastery.com"
+    },
+    {
+      "id": "marktechpost",
+      "name": "MarkTechPost",
+      "url": "https://marktechpost.com/feed",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://marktechpost.com"
+    },
+    {
+      "id": "meta-ai-blog",
+      "name": "Meta AI Blog",
+      "url": "https://ai.meta.com/blog/rss/",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai",
+        "research"
+      ],
+      "homepage": "https://ai.meta.com"
+    },
+    {
+      "id": "microsoft-research-blog",
+      "name": "Microsoft Research Blog",
+      "url": "https://www.microsoft.com/en-us/research/feed/",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://www.microsoft.com"
+    },
+    {
+      "id": "mistral-ai-news",
+      "name": "Mistral AI News",
+      "url": "https://mistral.ai/news/rss.xml",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://mistral.ai"
+    },
+    {
+      "id": "mit-news-ai",
+      "name": "MIT News — AI",
+      "url": "https://news.mit.edu/rss/topic/artificial-intelligence",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai",
+        "research"
+      ],
+      "homepage": "https://news.mit.edu"
+    },
+    {
+      "id": "nvidia-technical-blog",
+      "name": "NVIDIA Technical Blog",
+      "url": "https://developer.nvidia.com/blog/feed/",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://developer.nvidia.com"
+    },
+    {
+      "id": "openai-blog",
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://openai.com"
+    },
+    {
+      "id": "pytorch-blog",
+      "name": "PyTorch Blog",
+      "url": "https://pytorch.org/blog/feed/",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://pytorch.org"
+    },
+    {
+      "id": "tensorflow-blog",
+      "name": "TensorFlow Blog",
+      "url": "https://blog.tensorflow.org/feeds/posts/default",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://blog.tensorflow.org"
+    },
+    {
+      "id": "towards-data-science",
+      "name": "Towards Data Science",
+      "url": "https://towardsdatascience.com/feed",
+      "type": "rss",
+      "category": "ai-ml",
+      "topics": [
+        "ai",
+        "data"
+      ],
+      "homepage": "https://towardsdatascience.com"
+    },
+    {
+      "id": "apple-developer-news",
+      "name": "Apple Developer News",
+      "url": "https://developer.apple.com/news/rss/news.rss",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "mobile"
+      ],
+      "homepage": "https://developer.apple.com"
+    },
+    {
+      "id": "aws-news-blog",
+      "name": "AWS News Blog",
+      "url": "https://aws.amazon.com/blogs/aws/feed/",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "cloud"
+      ],
+      "homepage": "https://aws.amazon.com"
+    },
+    {
+      "id": "azure-devops-blog",
+      "name": "Azure DevOps Blog",
+      "url": "https://devblogs.microsoft.com/devops/feed/",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "devops",
+        "cloud"
+      ],
+      "homepage": "https://devblogs.microsoft.com"
+    },
+    {
+      "id": "azure-sdk-blog",
+      "name": "Azure SDK Blog",
+      "url": "https://devblogs.microsoft.com/azure-sdk/feed/",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "cloud"
+      ],
+      "homepage": "https://devblogs.microsoft.com"
+    },
+    {
+      "id": "google-cloud-blog",
+      "name": "Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/rss/",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "cloud"
+      ],
+      "homepage": "https://cloud.google.com"
+    },
+    {
+      "id": "google-developers-blog",
+      "name": "Google Developers Blog",
+      "url": "https://developers.googleblog.com/feeds/posts/default",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "web",
+        "cloud"
+      ],
+      "homepage": "https://developers.googleblog.com"
+    },
+    {
+      "id": "intel-community",
+      "name": "Intel Community",
+      "url": "https://community.intel.com/rss/board",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "cloud"
+      ],
+      "homepage": "https://community.intel.com"
+    },
+    {
+      "id": "kubernetes-blog",
+      "name": "Kubernetes Blog",
+      "url": "https://kubernetes.io/feed.xml",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "devops",
+        "cloud"
+      ],
+      "homepage": "https://kubernetes.io"
+    },
+    {
+      "id": "microsoft-azure-blog",
+      "name": "Microsoft Azure Blog",
+      "url": "https://azure.microsoft.com/en-us/blog/feed/",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "cloud"
+      ],
+      "homepage": "https://azure.microsoft.com"
+    },
+    {
+      "id": "microsoft-blog",
+      "name": "Microsoft Blog",
+      "url": "https://blogs.microsoft.com/feed/",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "cloud"
+      ],
+      "homepage": "https://blogs.microsoft.com"
+    },
+    {
+      "id": "microsoft-developer-blogs",
+      "name": "Microsoft Developer Blogs",
+      "url": "https://devblogs.microsoft.com/feed",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "web",
+        "cloud"
+      ],
+      "homepage": "https://devblogs.microsoft.com"
+    },
+    {
+      "id": "microsoft-fabric-blog",
+      "name": "Microsoft Fabric Blog",
+      "url": "https://blog.fabric.microsoft.com/en-us/blog/feed",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "data",
+        "cloud"
+      ],
+      "homepage": "https://blog.fabric.microsoft.com"
+    },
+    {
+      "id": "nvidia-blog",
+      "name": "NVIDIA Blog",
+      "url": "https://blogs.nvidia.com/feed/",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "ai",
+        "cloud"
+      ],
+      "homepage": "https://blogs.nvidia.com"
+    },
+    {
+      "id": "oracle-blogs",
+      "name": "Oracle Blogs",
+      "url": "https://blogs.oracle.com/feed",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "cloud",
+        "data"
+      ],
+      "homepage": "https://blogs.oracle.com"
+    },
+    {
+      "id": "samsung-newsroom",
+      "name": "Samsung Newsroom",
+      "url": "https://news.samsung.com/global/feed",
+      "type": "rss",
+      "category": "cloud-vendor",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://news.samsung.com"
+    },
+    {
+      "id": "hacker-news-front-page",
+      "name": "Hacker News — Front Page",
+      "url": "https://hnrss.org/frontpage",
+      "type": "rss",
+      "category": "community",
+      "topics": [
+        "community"
+      ],
+      "homepage": "https://hnrss.org"
+    },
+    {
+      "id": "hacker-news-newest",
+      "name": "Hacker News — Newest",
+      "url": "https://hnrss.org/newest",
+      "type": "rss",
+      "category": "community",
+      "topics": [
+        "community"
+      ],
+      "homepage": "https://hnrss.org"
+    },
+    {
+      "id": "lobsters",
+      "name": "Lobsters",
+      "url": "https://lobste.rs/rss",
+      "type": "rss",
+      "category": "community",
+      "topics": [
+        "community"
+      ],
+      "homepage": "https://lobste.rs"
+    },
+    {
+      "id": "r-localllama",
+      "name": "r/LocalLLaMA",
+      "url": "https://www.reddit.com/r/LocalLLaMA/.rss",
+      "type": "rss",
+      "category": "community",
+      "topics": [
+        "ai",
+        "community"
+      ],
+      "homepage": "https://www.reddit.com"
+    },
+    {
+      "id": "r-machinelearning",
+      "name": "r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/.rss",
+      "type": "rss",
+      "category": "community",
+      "topics": [
+        "ai",
+        "community"
+      ],
+      "homepage": "https://www.reddit.com"
+    },
+    {
+      "id": "apache-airflow-blog",
+      "name": "Apache Airflow Blog",
+      "url": "https://airflow.apache.org/blog/index.xml",
+      "type": "rss",
+      "category": "data",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://airflow.apache.org"
+    },
+    {
+      "id": "apache-kafka-releases",
+      "name": "Apache Kafka Releases",
+      "url": "https://github.com/apache/kafka/releases.atom",
+      "type": "rss",
+      "category": "data",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://github.com"
+    },
+    {
+      "id": "apache-spark-releases",
+      "name": "Apache Spark Releases",
+      "url": "https://github.com/apache/spark/releases.atom",
+      "type": "rss",
+      "category": "data",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://github.com"
+    },
+    {
+      "id": "clickhouse-releases",
+      "name": "ClickHouse Releases",
+      "url": "https://github.com/ClickHouse/ClickHouse/releases.atom",
+      "type": "rss",
+      "category": "data",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://github.com"
+    },
+    {
+      "id": "dbt-developer-blog",
+      "name": "dbt Developer Blog",
+      "url": "https://docs.getdbt.com/blog/rss.xml",
+      "type": "rss",
+      "category": "data",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://docs.getdbt.com"
+    },
+    {
+      "id": "duckdb-news",
+      "name": "DuckDB News",
+      "url": "https://duckdb.org/feed.xml",
+      "type": "rss",
+      "category": "data",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://duckdb.org"
+    },
+    {
+      "id": "elastic-blog",
+      "name": "Elastic Blog",
+      "url": "https://www.elastic.co/blog/feed",
+      "type": "rss",
+      "category": "data",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://www.elastic.co"
+    },
+    {
+      "id": "postgresql-news",
+      "name": "PostgreSQL News",
+      "url": "https://www.postgresql.org/news.rss",
+      "type": "rss",
+      "category": "data",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://www.postgresql.org"
+    },
+    {
+      "id": "airbnb-engineering-medium",
+      "name": "Airbnb Engineering (Medium)",
+      "url": "https://medium.com/feed/airbnb-engineering",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "andrej-karpathy-medium",
+      "name": "Andrej Karpathy (Medium)",
+      "url": "https://medium.com/feed/@karpathy",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "better-programming",
+      "name": "Better Programming",
+      "url": "https://betterprogramming.pub/feed",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://betterprogramming.pub"
+    },
+    {
+      "id": "freecodecamp",
+      "name": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/news/rss/",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://www.freecodecamp.org"
+    },
+    {
+      "id": "hackernoon",
+      "name": "HackerNoon",
+      "url": "https://hackernoon.com/feed",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://hackernoon.com"
+    },
+    {
+      "id": "level-up-coding",
+      "name": "Level Up Coding",
+      "url": "https://levelup.gitconnected.com/feed",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://levelup.gitconnected.com"
+    },
+    {
+      "id": "medium-artificial-intelligence",
+      "name": "Medium — Artificial Intelligence",
+      "url": "https://medium.com/feed/tag/artificial-intelligence",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "medium-chatgpt",
+      "name": "Medium — ChatGPT",
+      "url": "https://medium.com/feed/tag/chatgpt",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "medium-data-science",
+      "name": "Medium — Data Science",
+      "url": "https://medium.com/feed/tag/data-science",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "medium-devops",
+      "name": "Medium — DevOps",
+      "url": "https://medium.com/feed/tag/devops",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "devops"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "medium-generative-ai",
+      "name": "Medium — Generative AI",
+      "url": "https://medium.com/feed/tag/generative-ai",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "medium-langchain",
+      "name": "Medium — LangChain",
+      "url": "https://medium.com/feed/tag/langchain",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "medium-llm",
+      "name": "Medium — LLM",
+      "url": "https://medium.com/feed/tag/llm",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "medium-machine-learning",
+      "name": "Medium — Machine Learning",
+      "url": "https://medium.com/feed/tag/machine-learning",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "medium-programming",
+      "name": "Medium — Programming",
+      "url": "https://medium.com/feed/tag/programming",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "medium-technology",
+      "name": "Medium — Technology",
+      "url": "https://medium.com/feed/tag/technology",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "medium-web-development",
+      "name": "Medium — Web Development",
+      "url": "https://medium.com/feed/tag/web-development",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "paypal-technology-medium",
+      "name": "PayPal Technology (Medium)",
+      "url": "https://medium.com/feed/paypal-tech",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://medium.com"
+    },
+    {
+      "id": "ux-collective",
+      "name": "UX Collective",
+      "url": "https://uxdesign.cc/feed",
+      "type": "rss",
+      "category": "dev-community",
+      "topics": [
+        "design"
+      ],
+      "homepage": "https://uxdesign.cc"
+    },
+    {
+      "id": "autogen-releases",
+      "name": "AutoGen — Releases",
+      "url": "https://github.com/microsoft/autogen/releases.atom",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://github.com"
+    },
+    {
+      "id": "bun-blog",
+      "name": "Bun Blog",
+      "url": "https://bun.sh/rss.xml",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "web",
+        "language"
+      ],
+      "homepage": "https://bun.sh"
+    },
+    {
+      "id": "css-tricks",
+      "name": "CSS-Tricks",
+      "url": "https://css-tricks.com/feed/",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://css-tricks.com"
+    },
+    {
+      "id": "deno-blog",
+      "name": "Deno Blog",
+      "url": "https://deno.com/feed",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "web",
+        "language"
+      ],
+      "homepage": "https://deno.com"
+    },
+    {
+      "id": "infoq",
+      "name": "InfoQ",
+      "url": "https://feed.infoq.com/",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "architecture"
+      ],
+      "homepage": "https://feed.infoq.com"
+    },
+    {
+      "id": "logrocket-blog",
+      "name": "LogRocket Blog",
+      "url": "https://blog.logrocket.com/feed/",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://blog.logrocket.com"
+    },
+    {
+      "id": "product-hunt",
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://www.producthunt.com"
+    },
+    {
+      "id": "python-insider",
+      "name": "Python Insider",
+      "url": "https://blog.python.org/feeds/posts/default",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://blog.python.org"
+    },
+    {
+      "id": "rust-blog",
+      "name": "Rust Blog",
+      "url": "https://blog.rust-lang.org/feed.xml",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://blog.rust-lang.org"
+    },
+    {
+      "id": "semantic-kernel-releases",
+      "name": "Semantic Kernel — Releases",
+      "url": "https://github.com/microsoft/semantic-kernel/releases.atom",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://github.com"
+    },
+    {
+      "id": "smashing-magazine",
+      "name": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/feed/",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://www.smashingmagazine.com"
+    },
+    {
+      "id": "stack-overflow-blog",
+      "name": "Stack Overflow Blog",
+      "url": "https://stackoverflow.blog/feed/",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://stackoverflow.blog"
+    },
+    {
+      "id": "supabase-blog",
+      "name": "Supabase Blog",
+      "url": "https://supabase.com/rss.xml",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "data",
+        "web"
+      ],
+      "homepage": "https://supabase.com"
+    },
+    {
+      "id": "techbuzz-articles",
+      "name": "TechBuzz — Articles",
+      "url": "https://www.techbuzz.ai/api/rss/articles",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://www.techbuzz.ai"
+    },
+    {
+      "id": "techbuzz-newsletters",
+      "name": "TechBuzz — Newsletters",
+      "url": "https://www.techbuzz.ai/api/rss/newsletters",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://www.techbuzz.ai"
+    },
+    {
+      "id": "the-changelog",
+      "name": "The Changelog",
+      "url": "https://changelog.com/feed",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "devops"
+      ],
+      "homepage": "https://changelog.com"
+    },
+    {
+      "id": "the-github-blog",
+      "name": "The GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "devops"
+      ],
+      "homepage": "https://github.blog"
+    },
+    {
+      "id": "the-go-blog",
+      "name": "The Go Blog",
+      "url": "https://go.dev/blog/feed.atom",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://go.dev"
+    },
+    {
+      "id": "the-new-stack",
+      "name": "The New Stack",
+      "url": "https://thenewstack.io/feed/",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "devops",
+        "cloud"
+      ],
+      "homepage": "https://thenewstack.io"
+    },
+    {
+      "id": "vercel-blog",
+      "name": "Vercel Blog",
+      "url": "https://vercel.com/atom",
+      "type": "rss",
+      "category": "dev-tools",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://vercel.com"
+    },
+    {
+      "id": "gitlab-blog",
+      "name": "GitLab Blog",
+      "url": "https://about.gitlab.com/atom.xml",
+      "type": "rss",
+      "category": "devops",
+      "topics": [
+        "devops"
+      ],
+      "homepage": "https://about.gitlab.com"
+    },
+    {
+      "id": "grafana-labs-blog",
+      "name": "Grafana Labs Blog",
+      "url": "https://grafana.com/blog/index.xml",
+      "type": "rss",
+      "category": "devops",
+      "topics": [
+        "devops"
+      ],
+      "homepage": "https://grafana.com"
+    },
+    {
+      "id": "opentelemetry-blog",
+      "name": "OpenTelemetry Blog",
+      "url": "https://opentelemetry.io/blog/index.xml",
+      "type": "rss",
+      "category": "devops",
+      "topics": [
+        "devops"
+      ],
+      "homepage": "https://opentelemetry.io"
+    },
+    {
+      "id": "prometheus-blog",
+      "name": "Prometheus Blog",
+      "url": "https://prometheus.io/blog/feed.xml",
+      "type": "rss",
+      "category": "devops",
+      "topics": [
+        "devops"
+      ],
+      "homepage": "https://prometheus.io"
+    },
+    {
+      "id": "coinbase-blog",
+      "name": "Coinbase Blog",
+      "url": "https://www.coinbase.com/blog/rss/",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://www.coinbase.com"
+    },
+    {
+      "id": "databricks-blog",
+      "name": "Databricks Blog",
+      "url": "https://www.databricks.com/feed",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://www.databricks.com"
+    },
+    {
+      "id": "doordash-engineering",
+      "name": "DoorDash Engineering",
+      "url": "https://doordash.engineering/feed/",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://doordash.engineering"
+    },
+    {
+      "id": "engineering-at-meta",
+      "name": "Engineering at Meta",
+      "url": "https://engineering.fb.com/feed/",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://engineering.fb.com"
+    },
+    {
+      "id": "hashicorp-blog",
+      "name": "HashiCorp Blog",
+      "url": "https://www.hashicorp.com/blog/feed.xml",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "devops"
+      ],
+      "homepage": "https://www.hashicorp.com"
+    },
+    {
+      "id": "linkedin-engineering",
+      "name": "LinkedIn Engineering",
+      "url": "https://engineering.linkedin.com/blog.rss.html",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://engineering.linkedin.com"
+    },
+    {
+      "id": "mongodb-blog",
+      "name": "MongoDB Blog",
+      "url": "https://www.mongodb.com/blog/rss",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "data"
+      ],
+      "homepage": "https://www.mongodb.com"
+    },
+    {
+      "id": "netflix-techblog",
+      "name": "Netflix TechBlog",
+      "url": "https://netflixtechblog.com/feed",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://netflixtechblog.com"
+    },
+    {
+      "id": "salesforce-engineering",
+      "name": "Salesforce Engineering",
+      "url": "https://engineering.salesforce.com/feed/",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://engineering.salesforce.com"
+    },
+    {
+      "id": "shopify-engineering",
+      "name": "Shopify Engineering",
+      "url": "https://shopify.engineering/blog.atom",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://shopify.engineering"
+    },
+    {
+      "id": "spotify-engineering",
+      "name": "Spotify Engineering",
+      "url": "https://engineering.atspotify.com/feed/",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://engineering.atspotify.com"
+    },
+    {
+      "id": "stripe-blog",
+      "name": "Stripe Blog",
+      "url": "https://stripe.com/blog/feed.rss",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://stripe.com"
+    },
+    {
+      "id": "the-cloudflare-blog",
+      "name": "The Cloudflare Blog",
+      "url": "https://blog.cloudflare.com/rss/",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng",
+        "web"
+      ],
+      "homepage": "https://blog.cloudflare.com"
+    },
+    {
+      "id": "uber-engineering",
+      "name": "Uber Engineering",
+      "url": "https://www.uber.com/blog/engineering/rss/",
+      "type": "rss",
+      "category": "eng-blog",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://www.uber.com"
+    },
+    {
+      "id": "net-blog",
+      "name": ".NET Blog",
+      "url": "https://devblogs.microsoft.com/dotnet/feed/",
+      "type": "rss",
+      "category": "language",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://devblogs.microsoft.com"
+    },
+    {
+      "id": "inside-java-oracle-java-team",
+      "name": "Inside Java (Oracle Java Team)",
+      "url": "https://inside.java/feed.xml",
+      "type": "rss",
+      "category": "language",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://inside.java"
+    },
+    {
+      "id": "inside-rust-blog",
+      "name": "Inside Rust Blog",
+      "url": "https://blog.rust-lang.org/inside-rust/feed.xml",
+      "type": "rss",
+      "category": "language",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://blog.rust-lang.org"
+    },
+    {
+      "id": "kotlin-blog-jetbrains",
+      "name": "Kotlin Blog (JetBrains)",
+      "url": "https://blog.jetbrains.com/kotlin/feed/",
+      "type": "rss",
+      "category": "language",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://blog.jetbrains.com"
+    },
+    {
+      "id": "python-enhancement-proposals-peps",
+      "name": "Python Enhancement Proposals (PEPs)",
+      "url": "https://peps.python.org/peps.rss",
+      "type": "rss",
+      "category": "language",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://peps.python.org"
+    },
+    {
+      "id": "real-python",
+      "name": "Real Python",
+      "url": "https://realpython.com/atom.xml",
+      "type": "rss",
+      "category": "language",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://realpython.com"
+    },
+    {
+      "id": "swift-org-blog",
+      "name": "Swift.org Blog",
+      "url": "https://www.swift.org/atom.xml",
+      "type": "rss",
+      "category": "language",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://www.swift.org"
+    },
+    {
+      "id": "typescript-blog",
+      "name": "TypeScript Blog",
+      "url": "https://devblogs.microsoft.com/typescript/feed/",
+      "type": "rss",
+      "category": "language",
+      "topics": [
+        "language"
+      ],
+      "homepage": "https://devblogs.microsoft.com"
+    },
+    {
+      "id": "about-amazon",
+      "name": "About Amazon",
+      "url": "https://www.aboutamazon.com/news/feed",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://www.aboutamazon.com"
+    },
+    {
+      "id": "adobe-blog",
+      "name": "Adobe Blog",
+      "url": "https://blog.adobe.com/en/publish/feed.xml",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "design"
+      ],
+      "homepage": "https://blog.adobe.com"
+    },
+    {
+      "id": "ars-technica",
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://feeds.arstechnica.com"
+    },
+    {
+      "id": "cnet-news",
+      "name": "CNET News",
+      "url": "https://www.cnet.com/rss/news/",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://www.cnet.com"
+    },
+    {
+      "id": "engadget",
+      "name": "Engadget",
+      "url": "https://www.engadget.com/rss.xml",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://www.engadget.com"
+    },
+    {
+      "id": "google-the-keyword",
+      "name": "Google — The Keyword",
+      "url": "https://blog.google/rss/",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://blog.google"
+    },
+    {
+      "id": "mckinsey-insights",
+      "name": "McKinsey Insights",
+      "url": "https://www.mckinsey.com/insights/rss",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "business"
+      ],
+      "homepage": "https://www.mckinsey.com"
+    },
+    {
+      "id": "meta-newsroom",
+      "name": "Meta Newsroom",
+      "url": "https://about.fb.com/news/feed/",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://about.fb.com"
+    },
+    {
+      "id": "mit-technology-review",
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/feed/",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news",
+        "research"
+      ],
+      "homepage": "https://www.technologyreview.com"
+    },
+    {
+      "id": "netflix-newsroom",
+      "name": "Netflix Newsroom",
+      "url": "https://about.netflix.com/en/newsroom/rss",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://about.netflix.com"
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://techcrunch.com"
+    },
+    {
+      "id": "tesla-blog",
+      "name": "Tesla Blog",
+      "url": "https://www.tesla.com/blog/feed",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://www.tesla.com"
+    },
+    {
+      "id": "the-next-web",
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/feed",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://thenextweb.com"
+    },
+    {
+      "id": "the-verge",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://www.theverge.com"
+    },
+    {
+      "id": "venturebeat",
+      "name": "VentureBeat",
+      "url": "https://venturebeat.com/feed",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://venturebeat.com"
+    },
+    {
+      "id": "wired",
+      "name": "WIRED",
+      "url": "https://wired.com/feed/rss",
+      "type": "rss",
+      "category": "news",
+      "topics": [
+        "news"
+      ],
+      "homepage": "https://wired.com"
+    },
+    {
+      "id": "latent-space-podcast",
+      "name": "Latent Space (Podcast)",
+      "url": "https://api.substack.com/feed/podcast/1084089.rss",
+      "type": "podcast",
+      "category": "podcast",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://api.substack.com"
+    },
+    {
+      "id": "practical-ai-podcast",
+      "name": "Practical AI (Podcast)",
+      "url": "https://changelog.com/practicalai/feed",
+      "type": "podcast",
+      "category": "podcast",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://changelog.com"
+    },
+    {
+      "id": "aws-what-s-new-recent-announcements",
+      "name": "AWS What's New (Recent Announcements)",
+      "url": "https://aws.amazon.com/about-aws/whats-new/recent/feed/",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release",
+        "cloud"
+      ],
+      "homepage": "https://aws.amazon.com"
+    },
+    {
+      "id": "azure-service-updates",
+      "name": "Azure Service Updates",
+      "url": "https://www.microsoft.com/releasecommunications/api/v2/azure/rss",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release",
+        "cloud"
+      ],
+      "homepage": "https://www.microsoft.com"
+    },
+    {
+      "id": "chrome-releases",
+      "name": "Chrome Releases",
+      "url": "https://chromereleases.googleblog.com/feeds/posts/default",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release",
+        "web"
+      ],
+      "homepage": "https://chromereleases.googleblog.com"
+    },
+    {
+      "id": "docker-engine-moby-releases",
+      "name": "Docker Engine (Moby) Releases",
+      "url": "https://github.com/moby/moby/releases.atom",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release",
+        "devops"
+      ],
+      "homepage": "https://github.com"
+    },
+    {
+      "id": "github-changelog",
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/feed/",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release"
+      ],
+      "homepage": "https://github.blog"
+    },
+    {
+      "id": "go-releases",
+      "name": "Go Releases",
+      "url": "https://github.com/golang/go/releases.atom",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release",
+        "language"
+      ],
+      "homepage": "https://github.com"
+    },
+    {
+      "id": "google-cloud-release-notes",
+      "name": "Google Cloud Release Notes",
+      "url": "https://docs.cloud.google.com/feeds/gcp-release-notes.xml",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release",
+        "cloud"
+      ],
+      "homepage": "https://docs.cloud.google.com"
+    },
+    {
+      "id": "kubernetes-releases",
+      "name": "Kubernetes Releases",
+      "url": "https://github.com/kubernetes/kubernetes/releases.atom",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release",
+        "devops"
+      ],
+      "homepage": "https://github.com"
+    },
+    {
+      "id": "node-js-blog-releases-security",
+      "name": "Node.js Blog (Releases & Security)",
+      "url": "https://nodejs.org/en/feed/blog.xml",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release",
+        "security",
+        "language"
+      ],
+      "homepage": "https://nodejs.org"
+    },
+    {
+      "id": "terraform-releases",
+      "name": "Terraform Releases",
+      "url": "https://github.com/hashicorp/terraform/releases.atom",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release",
+        "devops"
+      ],
+      "homepage": "https://github.com"
+    },
+    {
+      "id": "visual-studio-code-release-notes",
+      "name": "Visual Studio Code Release Notes",
+      "url": "https://code.visualstudio.com/feed.xml",
+      "type": "rss",
+      "category": "release-notes",
+      "topics": [
+        "release"
+      ],
+      "homepage": "https://code.visualstudio.com"
+    },
+    {
+      "id": "acm-queue",
+      "name": "ACM Queue",
+      "url": "https://queue.acm.org/rss/feeds/queuecontent.xml",
+      "type": "rss",
+      "category": "research",
+      "topics": [
+        "research"
+      ],
+      "homepage": "https://queue.acm.org"
+    },
+    {
+      "id": "arxiv-cs-ai-artificial-intelligence",
+      "name": "arXiv — cs.AI (Artificial Intelligence)",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "type": "rss",
+      "category": "research",
+      "topics": [
+        "research",
+        "ai"
+      ],
+      "homepage": "https://rss.arxiv.org"
+    },
+    {
+      "id": "arxiv-cs-cl-computation-language",
+      "name": "arXiv — cs.CL (Computation & Language)",
+      "url": "https://rss.arxiv.org/rss/cs.CL",
+      "type": "rss",
+      "category": "research",
+      "topics": [
+        "research",
+        "ai"
+      ],
+      "homepage": "https://rss.arxiv.org"
+    },
+    {
+      "id": "arxiv-cs-lg-machine-learning",
+      "name": "arXiv — cs.LG (Machine Learning)",
+      "url": "https://rss.arxiv.org/rss/cs.LG",
+      "type": "rss",
+      "category": "research",
+      "topics": [
+        "research",
+        "ai"
+      ],
+      "homepage": "https://rss.arxiv.org"
+    },
+    {
+      "id": "hugging-face-papers",
+      "name": "Hugging Face Papers",
+      "url": "https://huggingface.co/papers/feed",
+      "type": "rss",
+      "category": "research",
+      "topics": [
+        "research",
+        "ai"
+      ],
+      "homepage": "https://huggingface.co"
+    },
+    {
+      "id": "rfc-editor-recent-rfcs",
+      "name": "RFC Editor — Recent RFCs",
+      "url": "https://www.rfc-editor.org/rfcrss.xml",
+      "type": "rss",
+      "category": "research",
+      "topics": [
+        "research"
+      ],
+      "homepage": "https://www.rfc-editor.org"
+    },
+    {
+      "id": "the-gradient",
+      "name": "The Gradient",
+      "url": "https://thegradient.pub/rss/",
+      "type": "rss",
+      "category": "research",
+      "topics": [
+        "research",
+        "ai"
+      ],
+      "homepage": "https://thegradient.pub"
+    },
+    {
+      "id": "cisa-cybersecurity-advisories-all",
+      "name": "CISA Cybersecurity Advisories (All)",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "type": "rss",
+      "category": "security",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://www.cisa.gov"
+    },
+    {
+      "id": "github-security-lab",
+      "name": "GitHub Security Lab",
+      "url": "https://github.blog/tag/github-security-lab/feed/",
+      "type": "rss",
+      "category": "security",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://github.blog"
+    },
+    {
+      "id": "google-online-security-blog",
+      "name": "Google Online Security Blog",
+      "url": "https://security.googleblog.com/feeds/posts/default",
+      "type": "rss",
+      "category": "security",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://security.googleblog.com"
+    },
+    {
+      "id": "google-project-zero",
+      "name": "Google Project Zero",
+      "url": "https://projectzero.google/feed.xml",
+      "type": "rss",
+      "category": "security",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://projectzero.google"
+    },
+    {
+      "id": "have-i-been-pwned-latest-breaches",
+      "name": "Have I Been Pwned — Latest Breaches",
+      "url": "https://haveibeenpwned.com/feed/breaches/",
+      "type": "rss",
+      "category": "security",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://haveibeenpwned.com"
+    },
+    {
+      "id": "microsoft-security-blog",
+      "name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "type": "rss",
+      "category": "security",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://www.microsoft.com"
+    },
+    {
+      "id": "ncsc-uk-reports",
+      "name": "NCSC UK Reports",
+      "url": "https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml",
+      "type": "rss",
+      "category": "security",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://www.ncsc.gov.uk"
+    },
+    {
+      "id": "openssf-open-source-security-foundation",
+      "name": "OpenSSF (Open Source Security Foundation)",
+      "url": "https://openssf.org/feed/",
+      "type": "rss",
+      "category": "security",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://openssf.org"
+    },
+    {
+      "id": "owasp-foundation",
+      "name": "OWASP Foundation",
+      "url": "https://owasp.org/feed.xml",
+      "type": "rss",
+      "category": "security",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://owasp.org"
+    },
+    {
+      "id": "rustsec-advisories",
+      "name": "RustSec Advisories",
+      "url": "https://rustsec.org/feed.xml",
+      "type": "rss",
+      "category": "security",
+      "topics": [
+        "security",
+        "language"
+      ],
+      "homepage": "https://rustsec.org"
+    },
+    {
+      "id": "ahead-of-ai-sebastian-raschka",
+      "name": "Ahead of AI — Sebastian Raschka",
+      "url": "https://magazine.sebastianraschka.com/feed",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "ai",
+        "research"
+      ],
+      "homepage": "https://magazine.sebastianraschka.com"
+    },
+    {
+      "id": "andrej-karpathy",
+      "name": "Andrej Karpathy",
+      "url": "https://karpathy.github.io/feed.xml",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://karpathy.github.io"
+    },
+    {
+      "id": "high-scalability",
+      "name": "High Scalability",
+      "url": "https://highscalability.com/rss/",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "architecture"
+      ],
+      "homepage": "https://highscalability.com"
+    },
+    {
+      "id": "import-ai",
+      "name": "Import AI",
+      "url": "https://importai.substack.com/feed",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://importai.substack.com"
+    },
+    {
+      "id": "krebs-on-security",
+      "name": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/feed/",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://krebsonsecurity.com"
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "url": "https://www.latent.space/feed",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "ai"
+      ],
+      "homepage": "https://www.latent.space"
+    },
+    {
+      "id": "lil-log-lilian-weng",
+      "name": "Lil'Log — Lilian Weng",
+      "url": "https://lilianweng.github.io/index.xml",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "ai",
+        "research"
+      ],
+      "homepage": "https://lilianweng.github.io"
+    },
+    {
+      "id": "martin-fowler",
+      "name": "Martin Fowler",
+      "url": "https://martinfowler.com/feed.atom",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "architecture"
+      ],
+      "homepage": "https://martinfowler.com"
+    },
+    {
+      "id": "overreacted-dan-abramov",
+      "name": "Overreacted — Dan Abramov",
+      "url": "https://overreacted.io/rss.xml",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://overreacted.io"
+    },
+    {
+      "id": "paul-graham-essays",
+      "name": "Paul Graham — Essays",
+      "url": "https://paulgraham.com/rss.html",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "business"
+      ],
+      "homepage": "https://paulgraham.com"
+    },
+    {
+      "id": "schneier-on-security",
+      "name": "Schneier on Security",
+      "url": "https://www.schneier.com/feed/atom/",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "security"
+      ],
+      "homepage": "https://www.schneier.com"
+    },
+    {
+      "id": "simon-willison-s-weblog",
+      "name": "Simon Willison's Weblog",
+      "url": "https://simonwillison.net/atom/everything/",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "ai",
+        "web"
+      ],
+      "homepage": "https://simonwillison.net"
+    },
+    {
+      "id": "system-design-one",
+      "name": "System Design One",
+      "url": "https://newsletter.systemdesign.one/feed",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "architecture"
+      ],
+      "homepage": "https://newsletter.systemdesign.one"
+    },
+    {
+      "id": "the-pragmatic-engineer",
+      "name": "The Pragmatic Engineer",
+      "url": "https://blog.pragmaticengineer.com/rss/",
+      "type": "rss",
+      "category": "thought-leader",
+      "topics": [
+        "eng"
+      ],
+      "homepage": "https://blog.pragmaticengineer.com"
+    },
+    {
+      "id": "3blue1brown-youtube",
+      "name": "3Blue1Brown (YouTube)",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw",
+      "type": "youtube",
+      "category": "video",
+      "topics": [
+        "math",
+        "learning"
+      ],
+      "homepage": "https://www.youtube.com"
+    },
+    {
+      "id": "fireship-youtube",
+      "name": "Fireship (YouTube)",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA",
+      "type": "youtube",
+      "category": "video",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://www.youtube.com"
+    },
+    {
+      "id": "two-minute-papers-youtube",
+      "name": "Two Minute Papers (YouTube)",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg",
+      "type": "youtube",
+      "category": "video",
+      "topics": [
+        "ai",
+        "research"
+      ],
+      "homepage": "https://www.youtube.com"
+    },
+    {
+      "id": "angular-blog",
+      "name": "Angular Blog",
+      "url": "https://blog.angular.dev/feed",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://blog.angular.dev"
+    },
+    {
+      "id": "chrome-for-developers-blog",
+      "name": "Chrome for Developers Blog",
+      "url": "https://developer.chrome.com/static/blog/feed.xml",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://developer.chrome.com"
+    },
+    {
+      "id": "chromium-blog",
+      "name": "Chromium Blog",
+      "url": "https://blog.chromium.org/feeds/posts/default",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://blog.chromium.org"
+    },
+    {
+      "id": "mdn-blog",
+      "name": "MDN Blog",
+      "url": "https://developer.mozilla.org/en-US/blog/rss.xml",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://developer.mozilla.org"
+    },
+    {
+      "id": "mozilla-hacks",
+      "name": "Mozilla Hacks",
+      "url": "https://hacks.mozilla.org/feed/",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://hacks.mozilla.org"
+    },
+    {
+      "id": "next-js-blog",
+      "name": "Next.js Blog",
+      "url": "https://nextjs.org/feed.xml",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://nextjs.org"
+    },
+    {
+      "id": "react-blog",
+      "name": "React Blog",
+      "url": "https://react.dev/rss.xml",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://react.dev"
+    },
+    {
+      "id": "svelte-blog",
+      "name": "Svelte Blog",
+      "url": "https://svelte.dev/blog/rss.xml",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://svelte.dev"
+    },
+    {
+      "id": "v8-javascript-engine-blog",
+      "name": "V8 JavaScript Engine Blog",
+      "url": "https://v8.dev/blog.atom",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://v8.dev"
+    },
+    {
+      "id": "vue-js-blog-the-vue-point",
+      "name": "Vue.js Blog (The Vue Point)",
+      "url": "https://blog.vuejs.org/feed.rss",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://blog.vuejs.org"
+    },
+    {
+      "id": "w3c-blog",
+      "name": "W3C Blog",
+      "url": "https://www.w3.org/blog/feed/",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://www.w3.org"
+    },
+    {
+      "id": "web-dev-blog",
+      "name": "web.dev Blog",
+      "url": "https://web.dev/static/blog/feed.xml",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://web.dev"
+    },
+    {
+      "id": "webkit-blog",
+      "name": "WebKit Blog",
+      "url": "https://webkit.org/feed/",
+      "type": "rss",
+      "category": "web",
+      "topics": [
+        "web"
+      ],
+      "homepage": "https://webkit.org"
+    }
+  ]
+}

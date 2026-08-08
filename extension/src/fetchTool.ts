@@ -196,7 +196,7 @@ function isBlockedIPv6(host: string): boolean {
  * slip through. Fully closing that requires resolving and pinning the IP, which is
  * out of scope for a dependency-free fetch tool.
  */
-function isBlockedHost(hostname: string | undefined): boolean {
+export function isBlockedHost(hostname: string | undefined): boolean {
   let host = (hostname ?? "").trim().toLowerCase();
   if (!host) {
     return true;

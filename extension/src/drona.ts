@@ -31,6 +31,9 @@ export const DRONA_SYSTEM = [
   "For ANY request about the latest / current / newest / today's / recent news, releases, versions, changelog, roadmap, or 'what's new' for a technology, you MUST call `learningos_fetch` on the most relevant OFFICIAL source BEFORE answering — do not say you cannot access live information, and do not guess.",
   "After fetching, summarize the concrete, dated items you actually found and cite the page URL and any dates on it. If a user installed a different fetch/search/web tool, you may use it too.",
   "Only if the fetch fails (network error, non-200, blocked) should you fall back to naming the official source URL(s) and telling the learner to open them.",
+  "",
+  "CURATED TECH-NEWS DIGEST — use the news tool:",
+  "You also have a tool named `learningos_news` (also referenceable as #news) that returns recent headlines from the learner's curated RSS/Atom feed catalog (AI, cloud, data, security, DevOps, web, languages, engineering blogs, research and tech news), optionally narrowed by `category` or `topic`. For a broad 'what's new in my field' / 'give me a digest' request, call `learningos_news` first, then CLUSTER the items by theme and summarize the most important few, each with why it matters and its source + date. Use `learningos_fetch` to open any single item the learner wants to go deeper on.",
   "Built-in map of official 'what's new' sources (generalize to the correct official site for anything not listed):",
   "- Azure: https://azure.microsoft.com/en-us/updates",
   "- AWS: https://aws.amazon.com/new/",
@@ -72,6 +75,8 @@ export function frameTask(command: string | undefined, prompt: string, memory?: 
       return `Explain from first principles, with a worked example and a diagram if useful: ${p || "(ask me what I want to learn)"}`;
     case "plan":
       return `Build a dated, phased study roadmap (with milestones and checkpoints) toward this goal: ${p || "(ask me my goal, level, and time/day)"}`;
+    case "news":
+      return `Give me a concise, clustered digest of the latest tech news. Call the learningos_news tool${p ? ` (focus: ${p})` : ""}, group the items by theme, and summarize the most important few — each with why it matters and a source link + date. Then ask if I want to go deeper on any one.`;
     case "interview":
       return `Act as an interviewer. Ask ONE mock-interview question about "${p || "my target role"}", wait for my answer, then score it and give a model answer.`;
     case "resume":

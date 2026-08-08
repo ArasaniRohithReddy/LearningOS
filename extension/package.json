@@ -1,8 +1,8 @@
 {
   "name": "learningos-drona",
   "displayName": "LearningOS — Drona",
-  "description": "Drona, your AI learning mentor. @drona in chat teaches from first principles, cites sources, runs and tests your code with no local install (via your choice of Piston or onlinecompiler.io), and helps you learn, plan, practice, and prep — plus a rich learning-metrics dashboard (streak, topics, commands, languages, reviews) that also renders offline via a bundled Flint-Chart engine. First run offers one-click setup; \"Drona: Deploy all LearningOS agents & skills\" installs 128 specialist agents + 510 skills so VS Code Copilot discovers them natively.",
-  "version": "1.1.10",
+  "description": "Drona, your AI learning mentor. @drona in chat teaches from first principles, cites sources, runs and tests your code with no local install (via your choice of Piston or onlinecompiler.io), pulls a dated, cited digest from 130+ curated tech feeds, and links you to 130+ roadmap.sh learning paths — plus a rich learning-metrics dashboard (streak, topics, commands, languages, reviews) that also renders offline via a bundled Flint-Chart engine. First run offers one-click setup; \"Drona: Deploy all LearningOS agents & skills\" installs 128 specialist agents + 510 skills so VS Code Copilot discovers them natively.",
+  "version": "1.2.0",
   "publisher": "learningos",
   "license": "MIT",
   "icon": "media/icon.png",
@@ -38,6 +38,8 @@
   "activationEvents": [
     "onStartupFinished",
     "onView:learningos.dashboard",
+    "onView:learningos.news",
+    "onView:learningos.roadmaps",
     "onCommand:learningos.openDashboard"
   ],
   "contributes": {
@@ -133,6 +135,35 @@
             "code"
           ]
         }
+      },
+      {
+        "name": "learningos_news",
+        "displayName": "Curated tech news (LearningOS)",
+        "modelDescription": "Pull recent headlines from the learner's curated RSS/Atom feed catalog (AI, cloud, data, security, DevOps, web, languages, engineering blogs, research papers and tech news) so you can produce a grounded, dated, cited news digest instead of guessing. Optionally narrow by 'category' (e.g. ai-ml, cloud-vendor, eng-blog, research, news, dev-tools, thought-leader, community) or by 'topic' tag (e.g. ai, cloud, data, security, devops, web, language, research). Returns a newest-first list of items, each with title, source and date and a link. Use this whenever the learner asks for the latest news/what's new/a digest across technologies; then cluster by theme and summarize the most important few with why they matter and a source + date.",
+        "userDescription": "Lets Drona pull the latest headlines from your curated tech-feed catalog to build a dated, cited digest.",
+        "canBeReferencedInPrompt": true,
+        "toolReferenceName": "news",
+        "icon": "$(rss)",
+        "tags": [
+          "learningos"
+        ],
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "description": "Optional feed category id to narrow to (e.g. 'ai-ml', 'cloud-vendor', 'eng-blog', 'research', 'news', 'dev-tools', 'dev-community', 'thought-leader', 'community'). Use 'all' for every feed, or omit for a broad 'top picks' sample."
+            },
+            "topic": {
+              "type": "string",
+              "description": "Optional topic tag to filter across all feeds (e.g. 'ai', 'cloud', 'data', 'security', 'devops', 'web', 'language', 'research')."
+            },
+            "limit": {
+              "type": "number",
+              "description": "Optional maximum number of items to return (5-50; default 25)."
+            }
+          }
+        }
       }
     ],
     "viewsContainers": {
@@ -152,6 +183,20 @@
           "name": "Dashboard",
           "icon": "media/dashboard.svg",
           "contextualTitle": "LearningOS"
+        },
+        {
+          "type": "webview",
+          "id": "learningos.news",
+          "name": "Tech News",
+          "icon": "media/dashboard.svg",
+          "contextualTitle": "LearningOS"
+        },
+        {
+          "type": "webview",
+          "id": "learningos.roadmaps",
+          "name": "Roadmaps",
+          "icon": "media/dashboard.svg",
+          "contextualTitle": "LearningOS"
         }
       ]
     },
@@ -165,6 +210,7 @@
         "commands": [
           { "name": "learn", "description": "Explain a topic from first principles, with an example" },
           { "name": "plan", "description": "Build a dated study roadmap toward a goal" },
+          { "name": "news", "description": "Get a clustered, dated digest from your curated tech feeds" },
           { "name": "interview", "description": "Run one mock-interview question and coach the answer" },
           { "name": "resume", "description": "Resume where you left off + the single best next step" },
           { "name": "charts", "description": "Describe a progress chart to render via the flint-chart MCP" }
@@ -200,6 +246,21 @@
       {
         "command": "learningos.openDashboard",
         "title": "Drona: Open Dashboard",
+        "category": "Drona"
+      },
+      {
+        "command": "learningos.openNews",
+        "title": "Drona: Open Tech News",
+        "category": "Drona"
+      },
+      {
+        "command": "learningos.openRoadmaps",
+        "title": "Drona: Open Roadmaps",
+        "category": "Drona"
+      },
+      {
+        "command": "learningos.exportFeedsOpml",
+        "title": "Drona: Export curated feeds (OPML)",
         "category": "Drona"
       }
     ],

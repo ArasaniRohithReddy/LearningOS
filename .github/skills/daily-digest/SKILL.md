@@ -17,8 +17,11 @@ Keep the learner current without the noise — following the source discipline i
 ## Procedure
 1. Confirm **scope**: technologies/roles, time window (today / last 7 days), and depth.
 2. **Gather from primary sources** — prefer the newest official material. Use `web`/`search`, or, when
-   configured, MCP servers (RSS, GitHub releases, Fetch, arXiv). Draw the source list from
-   [`docs/Sources.md`](../../../docs/Sources.md) and the learner's [`templates/feeds.opml`](../../../templates/feeds.opml).
+   configured, MCP servers (RSS, GitHub releases, Fetch, arXiv). Draw the source list from the curated
+   catalog [`data/news-feeds.json`](../../../data/news-feeds.json) (~190 vetted feeds grouped by
+   category — the same set the extension's **Tech News** view and `learningos_news` tool use), plus
+   [`docs/Sources.md`](../../../docs/Sources.md) and the learner's
+   [`templates/feeds.opml`](../../../templates/feeds.opml).
 3. **Dedupe and rank by impact** (breaking changes, security, GA vs. preview) for the learner's stack.
 4. Summarize with a **citation + date + source type** (official / blog / paper / community) per item.
 5. Add **"what to do about it"** — concrete actions for their projects/learning.

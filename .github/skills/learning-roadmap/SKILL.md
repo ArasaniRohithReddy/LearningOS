@@ -22,7 +22,11 @@ Turn a big goal into a **realistic, sequenced, dated plan** — following [`AGEN
 3. **Sequence by dependency and leverage** — teach prerequisites first; front-load high-impact skills.
 4. **Schedule** into weeks and daily tasks that fit the hours/week. Each week has a clear **outcome**
    and a **checkpoint** (a quiz, a mini-project, or a teach-back).
-5. **Attach resources** — prefer official docs/courses; mark each as read/watch/build.
+5. **Attach resources** — prefer official docs/courses; mark each as read/watch/build. When the goal
+   maps to a known path, point to the matching **roadmap.sh** roadmap from
+   [`data/roadmaps.json`](../../../data/roadmaps.json) and adapt its structure to the learner's level
+   (link-out only — never copy roadmap node content; credit: roadmaps courtesy of roadmap.sh by Kamran
+   Ahmed).
 6. **Add milestones & a progress tracker** (checklist or table the learner can tick off).
 7. Offer to **save** the plan to a file. End with the **Learning Footer** (`AGENTS.md`).
 

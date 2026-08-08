@@ -140,11 +140,27 @@ async function main() {
   await copyFileInto(agentsMdSrc, path.join(CONTENT_DIR, "AGENTS.md"));
   await copyFileInto(registrySrc, path.join(CONTENT_DIR, "registry.json"));
 
+  // --- data catalogs (curated feeds + roadmaps) so the News/Roadmaps views work offline ---
+  const dataSrc = path.join(REPO_ROOT, "data");
+  let dataCount = 0;
+  if (await exists(dataSrc)) {
+    const dataDest = path.join(CONTENT_DIR, "data");
+    await fs.mkdir(dataDest, { recursive: true });
+    for (const entry of await fs.readdir(dataSrc, { withFileTypes: true })) {
+      // Ship only the JSON catalogs the extension reads at runtime (skip OPML/README).
+      if (entry.isFile() && entry.name.endsWith(".json")) {
+        await copyFileInto(path.join(dataSrc, entry.name), path.join(dataDest, entry.name));
+        dataCount += 1;
+      }
+    }
+  }
+
   // --- summary ---
   console.log("LearningOS content bundled into extension/content/:");
   console.log(`  agents  : ${agentCount} .agent.md  (excluded ${excluded}: ${EXCLUDED_AGENT})`);
   console.log(`  skills  : ${skillFolders} folders -> ${skillFoldersOut} in content/skills`);
   console.log(`  roles   : ${roleCount} .role.yml`);
+  console.log(`  data    : ${dataCount} JSON catalog(s)`);
   console.log(`  files   : AGENTS.md, registry.json`);
 
   if (skillFolders !== skillFoldersOut) {

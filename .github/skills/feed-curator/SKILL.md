@@ -7,8 +7,9 @@ argument-hint: "Stack/roles/interests to curate sources for"
 # Feed Curator
 
 Build the learner a trustworthy, personalized information pipeline — following the source discipline in
-[`AGENTS.md`](../../../AGENTS.md). Pairs with [`docs/Sources.md`](../../../docs/Sources.md) and
-[`templates/feeds.opml`](../../../templates/feeds.opml).
+[`AGENTS.md`](../../../AGENTS.md). Starts from the curated catalog
+[`data/news-feeds.json`](../../../data/news-feeds.json) (~190 vetted feeds) and pairs with
+[`docs/Sources.md`](../../../docs/Sources.md) and [`templates/feeds.opml`](../../../templates/feeds.opml).
 
 ## When to use
 - The learner wants to set up RSS / follow the right people and communities for their stack.
@@ -16,7 +17,8 @@ Build the learner a trustworthy, personalized information pipeline — following
 
 ## Procedure
 1. Confirm the learner's **stack, roles, and interests**, and their reader (RSS app, email, LinkedIn).
-2. Select sources by **category** (prefer official; see the catalog in `docs/Sources.md`):
+2. Select sources by **category** (prefer official; start from the curated catalog in
+   [`data/news-feeds.json`](../../../data/news-feeds.json), then `docs/Sources.md`):
    - **Official docs & release notes/changelogs** (highest priority).
    - **Vendor & company engineering blogs** (Microsoft, GitHub, AWS, Google, Netflix, Stripe, Uber…).
    - **Communities**: Reddit subs, Stack Overflow tags, Discord/Slack, forums.

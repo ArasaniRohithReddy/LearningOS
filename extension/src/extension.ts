@@ -4,6 +4,9 @@ import { DRONA_SYSTEM, frameTask } from "./drona";
 import { FETCH_TOOL_NAME, registerFetchTool } from "./fetchTool";
 import { RUN_TOOL_NAME, registerRunTool, CODE_RUNNER_API_KEY_SECRET } from "./runTool";
 import { DashboardViewProvider } from "./dashboard";
+import { NewsViewProvider, RoadmapsViewProvider } from "./newsView";
+import { NEWS_TOOL_NAME, registerNewsTool } from "./newsTool";
+import { loadFeedCatalog, buildOpml } from "./feeds";
 import { buildCatalogIndex, loadRegistry } from "./catalog";
 import { registerDeployCommand, deployCatalog } from "./deploy";
 import { getData, recordTurn, registerRememberTool, renderMemorySummary, REMEMBER_TOOL_NAME, writeProfile } from "./store";
@@ -26,6 +29,9 @@ export function activate(context: vscode.ExtensionContext): void {
   // --- Cross-session memory: let the model persist learner facts --------------------
   registerRememberTool(context);
 
+  // --- Curated tech-news tool: pull recent items from the bundled feed catalog -------
+  registerNewsTool(context);
+
   // --- Deploy the full LearningOS catalog into a Copilot-discoverable location ------
   registerDeployCommand(context);
 
@@ -37,6 +43,18 @@ export function activate(context: vscode.ExtensionContext): void {
   const dashboard = new DashboardViewProvider(context, dataChanged.event);
   context.subscriptions.push(
     vscode.window.registerWebviewViewProvider(DashboardViewProvider.viewType, dashboard, {
+      webviewOptions: { retainContextWhenHidden: true },
+    })
+  );
+
+  // --- Tech News + Roadmaps webview views -------------------------------------------
+  const newsView = new NewsViewProvider(context);
+  const roadmapsView = new RoadmapsViewProvider(context);
+  context.subscriptions.push(
+    vscode.window.registerWebviewViewProvider(NewsViewProvider.viewType, newsView, {
+      webviewOptions: { retainContextWhenHidden: true },
+    }),
+    vscode.window.registerWebviewViewProvider(RoadmapsViewProvider.viewType, roadmapsView, {
       webviewOptions: { retainContextWhenHidden: true },
     })
   );
@@ -130,7 +148,14 @@ export function activate(context: vscode.ExtensionContext): void {
     vscode.commands.registerCommand("learningos.openDashboard", async () => {
       // `<viewId>.focus` is auto-registered by VS Code and reveals the view.
       await vscode.commands.executeCommand("learningos.dashboard.focus");
-    })
+    }),
+    vscode.commands.registerCommand("learningos.openNews", async () => {
+      await vscode.commands.executeCommand("learningos.news.focus");
+    }),
+    vscode.commands.registerCommand("learningos.openRoadmaps", async () => {
+      await vscode.commands.executeCommand("learningos.roadmaps.focus");
+    }),
+    vscode.commands.registerCommand("learningos.exportFeedsOpml", () => exportFeedsOpml(context))
   );
 
   // --- First-run auto-setup (one-time, consent-based) -------------------------------
@@ -300,7 +325,7 @@ function collectTools(): vscode.LanguageModelChatTool[] {
   const picked = new Map<string, vscode.LanguageModelToolInformation>();
 
   for (const t of all) {
-    if (t.name === FETCH_TOOL_NAME || t.name === REMEMBER_TOOL_NAME || t.name === RUN_TOOL_NAME) {
+    if (t.name === FETCH_TOOL_NAME || t.name === REMEMBER_TOOL_NAME || t.name === RUN_TOOL_NAME || t.name === NEWS_TOOL_NAME) {
       picked.set(t.name, t);
     }
   }
@@ -449,6 +474,33 @@ async function readLearnerProfileExcerpt(context: vscode.ExtensionContext): Prom
     used += excerpt.length;
   }
   return out.join("\n\n");
+}
+
+/** Build the curated feeds OPML from the bundled catalog and save it via a dialog. */
+async function exportFeedsOpml(context: vscode.ExtensionContext): Promise<void> {
+  const catalog = await loadFeedCatalog(context);
+  if (!catalog) {
+    void vscode.window.showErrorMessage("LearningOS: the feed catalog is unavailable in this build.");
+    return;
+  }
+  const opml = buildOpml(catalog);
+  const target = await vscode.window.showSaveDialog({
+    title: "Export LearningOS curated feeds (OPML)",
+    saveLabel: "Export OPML",
+    defaultUri: vscode.Uri.file("LearningOS-feeds.opml"),
+    filters: { OPML: ["opml"], XML: ["xml"] },
+  });
+  if (!target) {
+    return;
+  }
+  await vscode.workspace.fs.writeFile(target, Buffer.from(opml, "utf8"));
+  const open = await vscode.window.showInformationMessage(
+    `Exported ${catalog.feeds.length} curated feeds to OPML — import it into any RSS reader.`,
+    "Reveal"
+  );
+  if (open === "Reveal") {
+    await vscode.commands.executeCommand("revealFileInOS", target);
+  }
 }
 
 /** Register the local Flint-Chart MCP into this workspace's .vscode/mcp.json (idempotent). */

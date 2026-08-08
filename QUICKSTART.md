@@ -9,8 +9,8 @@ roles**, cross-session memory, local labs (no subscriptions), and progress chart
 > product) and fails. Instead double-click **`Install-in-VSCode.cmd`**, or run:
 
 ```bash
-code --install-extension extension/learningos-drona-1.1.10.vsix       # VS Code
-code-insiders --install-extension extension/learningos-drona-1.1.10.vsix   # Insiders
+code --install-extension extension/learningos-drona-1.2.0.vsix       # VS Code
+code-insiders --install-extension extension/learningos-drona-1.2.0.vsix   # Insiders
 ```
 Then open **Chat** and type **`@drona teach me how HTTPS works`**. Slash commands: `/learn`, `/plan`,
 `/interview`, `/resume`, `/charts`.

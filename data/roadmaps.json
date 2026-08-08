@@ -1,0 +1,954 @@
+{
+  "$schema": "https://learningos.dev/data/roadmaps.schema.json",
+  "version": 1,
+  "updated": "2026-08-08",
+  "source": "https://roadmap.sh",
+  "attribution": "Roadmaps courtesy of roadmap.sh by Kamran Ahmed — © roadmap.sh, all rights reserved. LearningOS links to these roadmaps and is not affiliated with or endorsed by roadmap.sh.",
+  "licenseNote": "developer-roadmap content is all-rights-reserved; sharing links to roadmap.sh is expressly permitted, copying roadmap node content is not. This is a LINK-OUT catalog: it stores only titles, slugs, canonical roadmap.sh URLs, and LearningOS-authored descriptions — never any roadmap step/node content.",
+  "counts": {
+    "role-based": 34,
+    "skill-based": 56,
+    "best-practices": 5,
+    "project-ideas": 39
+  },
+  "roadmaps": [
+    {
+      "title": "Frontend",
+      "slug": "frontend",
+      "url": "https://roadmap.sh/frontend",
+      "type": "role-based",
+      "description": "Browser-side engineering path covering markup, styling, JavaScript and modern UI frameworks."
+    },
+    {
+      "title": "Backend",
+      "slug": "backend",
+      "url": "https://roadmap.sh/backend",
+      "type": "role-based",
+      "description": "Server-side path spanning APIs, databases, caching, auth and deployment concerns."
+    },
+    {
+      "title": "Full Stack",
+      "slug": "full-stack",
+      "url": "https://roadmap.sh/full-stack",
+      "type": "role-based",
+      "description": "Combined client and server track for engineers who own a feature end to end."
+    },
+    {
+      "title": "Android",
+      "slug": "android",
+      "url": "https://roadmap.sh/android",
+      "type": "role-based",
+      "description": "Native Android app development using Kotlin, Jetpack and the Android SDK."
+    },
+    {
+      "title": "DevOps",
+      "slug": "devops",
+      "url": "https://roadmap.sh/devops",
+      "type": "role-based",
+      "description": "Operations path across Linux, networking, CI/CD, containers and infrastructure automation."
+    },
+    {
+      "title": "DevSecOps",
+      "slug": "devsecops",
+      "url": "https://roadmap.sh/devsecops",
+      "type": "role-based",
+      "description": "Security-first operations, embedding threat modelling and scanning into delivery pipelines."
+    },
+    {
+      "title": "Data Analyst",
+      "slug": "data-analyst",
+      "url": "https://roadmap.sh/data-analyst",
+      "type": "role-based",
+      "description": "Turning raw datasets into decisions through SQL, spreadsheets, statistics and visual reporting."
+    },
+    {
+      "title": "AI Engineer",
+      "slug": "ai-engineer",
+      "url": "https://roadmap.sh/ai-engineer",
+      "type": "role-based",
+      "description": "Shipping products on top of pretrained models, embeddings, RAG and agent tooling."
+    },
+    {
+      "title": "AI and Data Scientist",
+      "slug": "ai-data-scientist",
+      "url": "https://roadmap.sh/ai-data-scientist",
+      "type": "role-based",
+      "description": "Maths, statistics and modelling foundations for research-oriented data and AI work."
+    },
+    {
+      "title": "Data Engineer",
+      "slug": "data-engineer",
+      "url": "https://roadmap.sh/data-engineer",
+      "type": "role-based",
+      "description": "Building ingestion pipelines, warehouses and batch or streaming data platforms."
+    },
+    {
+      "title": "Machine Learning",
+      "slug": "machine-learning",
+      "url": "https://roadmap.sh/machine-learning",
+      "type": "role-based",
+      "description": "Classical and deep learning techniques, from model training through evaluation."
+    },
+    {
+      "title": "PostgreSQL",
+      "slug": "postgresql-dba",
+      "url": "https://roadmap.sh/postgresql-dba",
+      "type": "role-based",
+      "description": "Administering PostgreSQL: configuration, indexing, replication, backups and tuning."
+    },
+    {
+      "title": "iOS",
+      "slug": "ios",
+      "url": "https://roadmap.sh/ios",
+      "type": "role-based",
+      "description": "Apple platform app development with Swift, UIKit and the iOS toolchain."
+    },
+    {
+      "title": "Blockchain",
+      "slug": "blockchain",
+      "url": "https://roadmap.sh/blockchain",
+      "type": "role-based",
+      "description": "Decentralised application development covering consensus, smart contracts and wallets."
+    },
+    {
+      "title": "QA",
+      "slug": "qa",
+      "url": "https://roadmap.sh/qa",
+      "type": "role-based",
+      "description": "Quality engineering across manual testing, automation frameworks and release strategy."
+    },
+    {
+      "title": "Software Architect",
+      "slug": "software-architect",
+      "url": "https://roadmap.sh/software-architect",
+      "type": "role-based",
+      "description": "Technical leadership path focused on system trade-offs, patterns and long-lived design."
+    },
+    {
+      "title": "API Design",
+      "slug": "api-design",
+      "url": "https://roadmap.sh/api-design",
+      "type": "role-based",
+      "description": "Designing clear, versioned, well-documented interfaces between services and clients."
+    },
+    {
+      "title": "Cyber Security",
+      "slug": "cyber-security",
+      "url": "https://roadmap.sh/cyber-security",
+      "type": "role-based",
+      "description": "Defensive and offensive security fundamentals, tooling and operational practice."
+    },
+    {
+      "title": "UX Design",
+      "slug": "ux-design",
+      "url": "https://roadmap.sh/ux-design",
+      "type": "role-based",
+      "description": "User experience practice spanning research, information architecture and usability testing."
+    },
+    {
+      "title": "Technical Writer",
+      "slug": "technical-writer",
+      "url": "https://roadmap.sh/technical-writer",
+      "type": "role-based",
+      "description": "Producing developer documentation, tutorials and reference material that people actually finish."
+    },
+    {
+      "title": "Game Developer",
+      "slug": "game-developer",
+      "url": "https://roadmap.sh/game-developer",
+      "type": "role-based",
+      "description": "Client-side game programming covering engines, graphics, physics and gameplay systems."
+    },
+    {
+      "title": "Server Side Game Developer",
+      "slug": "server-side-game-developer",
+      "url": "https://roadmap.sh/server-side-game-developer",
+      "type": "role-based",
+      "description": "Backend systems for multiplayer games: netcode, state sync, matchmaking and scaling."
+    },
+    {
+      "title": "MLOps",
+      "slug": "mlops",
+      "url": "https://roadmap.sh/mlops",
+      "type": "role-based",
+      "description": "Operationalising models with reproducible training, deployment, monitoring and drift detection."
+    },
+    {
+      "title": "Product Manager",
+      "slug": "product-manager",
+      "url": "https://roadmap.sh/product-manager",
+      "type": "role-based",
+      "description": "Discovery, prioritisation, roadmapping and cross-functional delivery of software products."
+    },
+    {
+      "title": "Engineering Manager",
+      "slug": "engineering-manager",
+      "url": "https://roadmap.sh/engineering-manager",
+      "type": "role-based",
+      "description": "Leading engineers: hiring, coaching, process design and technical delivery accountability."
+    },
+    {
+      "title": "Developer Relations",
+      "slug": "devrel",
+      "url": "https://roadmap.sh/devrel",
+      "type": "role-based",
+      "description": "Bridging product and community through advocacy, content, demos and developer feedback loops."
+    },
+    {
+      "title": "BI Analyst",
+      "slug": "bi-analyst",
+      "url": "https://roadmap.sh/bi-analyst",
+      "type": "role-based",
+      "description": "Business intelligence work built on modelling, dashboards and stakeholder reporting."
+    },
+    {
+      "title": "AI Red Teaming",
+      "slug": "ai-red-teaming",
+      "url": "https://roadmap.sh/ai-red-teaming",
+      "type": "role-based",
+      "description": "Adversarial testing of AI systems for jailbreaks, prompt injection and unsafe behaviour."
+    },
+    {
+      "title": "Network Engineer",
+      "slug": "network-engineer",
+      "url": "https://roadmap.sh/network-engineer",
+      "type": "role-based",
+      "description": "Designing and operating networks: routing, switching, protocols and troubleshooting."
+    },
+    {
+      "title": "Forward Deployed Engineer",
+      "slug": "forward-deployed-engineer",
+      "url": "https://roadmap.sh/forward-deployed-engineer",
+      "type": "role-based",
+      "description": "Customer-embedded engineering that blends integration work with solution design."
+    },
+    {
+      "title": "Product Design",
+      "slug": "product-design",
+      "url": "https://roadmap.sh/product-design",
+      "type": "role-based",
+      "description": "End-to-end product design practice from problem framing to interface and handoff."
+    },
+    {
+      "title": "Frontend Beginner",
+      "slug": "frontend-beginner",
+      "url": "https://roadmap.sh/frontend-beginner",
+      "type": "role-based",
+      "description": "Reduced-scope frontend path for absolute beginners, covering only the essentials first."
+    },
+    {
+      "title": "Backend Beginner",
+      "slug": "backend-beginner",
+      "url": "https://roadmap.sh/backend-beginner",
+      "type": "role-based",
+      "description": "Entry-level backend path that trims the full roadmap down to core server-side skills."
+    },
+    {
+      "title": "DevOps Beginner",
+      "slug": "devops-beginner",
+      "url": "https://roadmap.sh/devops-beginner",
+      "type": "role-based",
+      "description": "Starter operations path introducing Linux, scripting and deployment basics."
+    },
+    {
+      "title": "Claude Code",
+      "slug": "claude-code",
+      "url": "https://roadmap.sh/claude-code",
+      "type": "skill-based",
+      "description": "Working effectively with Anthropic's agentic command-line coding tool."
+    },
+    {
+      "title": "Python for Data Analysis",
+      "slug": "python-data-analysis",
+      "url": "https://roadmap.sh/python-data-analysis",
+      "type": "skill-based",
+      "description": "Applying Python's data stack to cleaning, analysing and visualising datasets."
+    },
+    {
+      "title": "Vibe Coding",
+      "slug": "vibe-coding",
+      "url": "https://roadmap.sh/vibe-coding",
+      "type": "skill-based",
+      "description": "Building software primarily through AI prompting, with review and correction loops."
+    },
+    {
+      "title": "Power BI",
+      "slug": "power-bi",
+      "url": "https://roadmap.sh/power-bi",
+      "type": "skill-based",
+      "description": "Microsoft's BI suite for data modelling, DAX and interactive dashboards."
+    },
+    {
+      "title": "LeetCode",
+      "slug": "leetcode",
+      "url": "https://roadmap.sh/leetcode",
+      "type": "skill-based",
+      "description": "Structured approach to coding-interview practice and problem pattern recognition."
+    },
+    {
+      "title": "Python",
+      "slug": "python",
+      "url": "https://roadmap.sh/python",
+      "type": "skill-based",
+      "description": "General-purpose Python from syntax and idioms through tooling and ecosystem."
+    },
+    {
+      "title": "Computer Science",
+      "slug": "computer-science",
+      "url": "https://roadmap.sh/computer-science",
+      "type": "skill-based",
+      "description": "Self-taught CS fundamentals: algorithms, architecture, operating systems and theory."
+    },
+    {
+      "title": "SQL",
+      "slug": "sql",
+      "url": "https://roadmap.sh/sql",
+      "type": "skill-based",
+      "description": "Querying relational data, from joins and aggregation to window functions and tuning."
+    },
+    {
+      "title": "OpenClaw",
+      "slug": "openclaw",
+      "url": "https://roadmap.sh/openclaw",
+      "type": "skill-based",
+      "description": "Learning path for the OpenClaw open-source agent tooling."
+    },
+    {
+      "title": "React",
+      "slug": "react",
+      "url": "https://roadmap.sh/react",
+      "type": "skill-based",
+      "description": "Component-driven UI development with hooks, state management and rendering patterns."
+    },
+    {
+      "title": "Vue",
+      "slug": "vue",
+      "url": "https://roadmap.sh/vue",
+      "type": "skill-based",
+      "description": "Progressive JavaScript framework covering reactivity, composition API and ecosystem."
+    },
+    {
+      "title": "Angular",
+      "slug": "angular",
+      "url": "https://roadmap.sh/angular",
+      "type": "skill-based",
+      "description": "Opinionated TypeScript framework with DI, RxJS and structured application architecture."
+    },
+    {
+      "title": "JavaScript",
+      "slug": "javascript",
+      "url": "https://roadmap.sh/javascript",
+      "type": "skill-based",
+      "description": "The language of the web: types, async, closures, modules and runtime behaviour."
+    },
+    {
+      "title": "TypeScript",
+      "slug": "typescript",
+      "url": "https://roadmap.sh/typescript",
+      "type": "skill-based",
+      "description": "Static typing over JavaScript, including generics, narrowing and config strategy."
+    },
+    {
+      "title": "Node.js",
+      "slug": "nodejs",
+      "url": "https://roadmap.sh/nodejs",
+      "type": "skill-based",
+      "description": "Server-side JavaScript runtime covering the event loop, streams, modules and tooling."
+    },
+    {
+      "title": "System Design",
+      "slug": "system-design",
+      "url": "https://roadmap.sh/system-design",
+      "type": "skill-based",
+      "description": "Designing scalable distributed systems and reasoning about capacity and failure."
+    },
+    {
+      "title": "Java",
+      "slug": "java",
+      "url": "https://roadmap.sh/java",
+      "type": "skill-based",
+      "description": "JVM language fundamentals, collections, concurrency and the build ecosystem."
+    },
+    {
+      "title": "ASP.NET Core",
+      "slug": "aspnet-core",
+      "url": "https://roadmap.sh/aspnet-core",
+      "type": "skill-based",
+      "description": "Microsoft's cross-platform web framework for APIs and server-rendered applications."
+    },
+    {
+      "title": "Spring Boot",
+      "slug": "spring-boot",
+      "url": "https://roadmap.sh/spring-boot",
+      "type": "skill-based",
+      "description": "Convention-driven Java framework for building production-ready services fast."
+    },
+    {
+      "title": "Flutter",
+      "slug": "flutter",
+      "url": "https://roadmap.sh/flutter",
+      "type": "skill-based",
+      "description": "Dart-based toolkit for cross-platform apps from a single widget-driven codebase."
+    },
+    {
+      "title": "C Programming",
+      "slug": "c",
+      "url": "https://roadmap.sh/c",
+      "type": "skill-based",
+      "description": "Low-level systems programming with manual memory management and pointers."
+    },
+    {
+      "title": "C++",
+      "slug": "cpp",
+      "url": "https://roadmap.sh/cpp",
+      "type": "skill-based",
+      "description": "Systems language covering RAII, templates, the STL and modern C++ standards."
+    },
+    {
+      "title": "Rust",
+      "slug": "rust",
+      "url": "https://roadmap.sh/rust",
+      "type": "skill-based",
+      "description": "Memory-safe systems programming built around ownership, borrowing and lifetimes."
+    },
+    {
+      "title": "Go",
+      "slug": "golang",
+      "url": "https://roadmap.sh/golang",
+      "type": "skill-based",
+      "description": "Compiled language emphasising simplicity, goroutines and fast service development."
+    },
+    {
+      "title": "AI Product Builders",
+      "slug": "ai-product-builder",
+      "url": "https://roadmap.sh/ai-product-builder",
+      "type": "skill-based",
+      "description": "Taking AI-powered product ideas from prototype to something users can rely on."
+    },
+    {
+      "title": "Design Architecture",
+      "slug": "software-design-architecture",
+      "url": "https://roadmap.sh/software-design-architecture",
+      "type": "skill-based",
+      "description": "Clean code, design patterns and architectural styles for maintainable codebases."
+    },
+    {
+      "title": "React Native",
+      "slug": "react-native",
+      "url": "https://roadmap.sh/react-native",
+      "type": "skill-based",
+      "description": "Cross-platform mobile apps using React with native modules and navigation."
+    },
+    {
+      "title": "Design System",
+      "slug": "design-system",
+      "url": "https://roadmap.sh/design-system",
+      "type": "skill-based",
+      "description": "Building and maintaining shared tokens, components and documentation at scale."
+    },
+    {
+      "title": "Prompt Engineering",
+      "slug": "prompt-engineering",
+      "url": "https://roadmap.sh/prompt-engineering",
+      "type": "skill-based",
+      "description": "Techniques for steering language models reliably toward useful, repeatable output."
+    },
+    {
+      "title": "MongoDB",
+      "slug": "mongodb",
+      "url": "https://roadmap.sh/mongodb",
+      "type": "skill-based",
+      "description": "Document database covering schema design, aggregation pipelines and indexing."
+    },
+    {
+      "title": "Linux",
+      "slug": "linux",
+      "url": "https://roadmap.sh/linux",
+      "type": "skill-based",
+      "description": "Command line, filesystem, permissions, processes and day-to-day system administration."
+    },
+    {
+      "title": "Kubernetes",
+      "slug": "kubernetes",
+      "url": "https://roadmap.sh/kubernetes",
+      "type": "skill-based",
+      "description": "Container orchestration: workloads, networking, storage and cluster operations."
+    },
+    {
+      "title": "Docker",
+      "slug": "docker",
+      "url": "https://roadmap.sh/docker",
+      "type": "skill-based",
+      "description": "Containerising applications with images, layers, volumes and multi-service compose."
+    },
+    {
+      "title": "AWS",
+      "slug": "aws",
+      "url": "https://roadmap.sh/aws",
+      "type": "skill-based",
+      "description": "Core Amazon Web Services building blocks for compute, storage, networking and identity."
+    },
+    {
+      "title": "Terraform",
+      "slug": "terraform",
+      "url": "https://roadmap.sh/terraform",
+      "type": "skill-based",
+      "description": "Declarative infrastructure as code with state management, modules and providers."
+    },
+    {
+      "title": "Data Structures & Algorithms",
+      "slug": "datastructures-and-algorithms",
+      "url": "https://roadmap.sh/datastructures-and-algorithms",
+      "type": "skill-based",
+      "description": "Core structures and algorithmic techniques with complexity analysis."
+    },
+    {
+      "title": "Redis",
+      "slug": "redis",
+      "url": "https://roadmap.sh/redis",
+      "type": "skill-based",
+      "description": "In-memory data store used for caching, queues, rate limiting and pub/sub."
+    },
+    {
+      "title": "Git and GitHub",
+      "slug": "git-github",
+      "url": "https://roadmap.sh/git-github",
+      "type": "skill-based",
+      "description": "Version control workflows, branching strategy and collaboration through pull requests."
+    },
+    {
+      "title": "PHP",
+      "slug": "php",
+      "url": "https://roadmap.sh/php",
+      "type": "skill-based",
+      "description": "Server-side scripting with modern PHP, Composer and framework conventions."
+    },
+    {
+      "title": "Cloudflare",
+      "slug": "cloudflare",
+      "url": "https://roadmap.sh/cloudflare",
+      "type": "skill-based",
+      "description": "Edge platform covering CDN, DNS, security products and Workers."
+    },
+    {
+      "title": "AI Agents",
+      "slug": "ai-agents",
+      "url": "https://roadmap.sh/ai-agents",
+      "type": "skill-based",
+      "description": "Designing autonomous LLM systems with tool use, memory and control loops."
+    },
+    {
+      "title": "Next.js",
+      "slug": "nextjs",
+      "url": "https://roadmap.sh/nextjs",
+      "type": "skill-based",
+      "description": "React meta-framework with routing, server components and rendering strategies."
+    },
+    {
+      "title": "Kotlin",
+      "slug": "kotlin",
+      "url": "https://roadmap.sh/kotlin",
+      "type": "skill-based",
+      "description": "Modern JVM language with null safety, coroutines and concise syntax."
+    },
+    {
+      "title": "HTML",
+      "slug": "html",
+      "url": "https://roadmap.sh/html",
+      "type": "skill-based",
+      "description": "Document structure, semantic elements, forms and accessibility foundations."
+    },
+    {
+      "title": "CSS",
+      "slug": "css",
+      "url": "https://roadmap.sh/css",
+      "type": "skill-based",
+      "description": "Styling and layout with the cascade, flexbox, grid and responsive techniques."
+    },
+    {
+      "title": "Swift & Swift UI",
+      "slug": "swift-ui",
+      "url": "https://roadmap.sh/swift-ui",
+      "type": "skill-based",
+      "description": "Swift language plus declarative interface building across Apple platforms."
+    },
+    {
+      "title": "Shell / Bash",
+      "slug": "shell-bash",
+      "url": "https://roadmap.sh/shell-bash",
+      "type": "skill-based",
+      "description": "Shell scripting for automation: pipelines, text processing and job control."
+    },
+    {
+      "title": "Laravel",
+      "slug": "laravel",
+      "url": "https://roadmap.sh/laravel",
+      "type": "skill-based",
+      "description": "Batteries-included PHP framework with Eloquent, queues and ecosystem tooling."
+    },
+    {
+      "title": "Elasticsearch",
+      "slug": "elasticsearch",
+      "url": "https://roadmap.sh/elasticsearch",
+      "type": "skill-based",
+      "description": "Distributed search and analytics covering mappings, queries and relevance tuning."
+    },
+    {
+      "title": "WordPress",
+      "slug": "wordpress",
+      "url": "https://roadmap.sh/wordpress",
+      "type": "skill-based",
+      "description": "Building on the WordPress platform with themes, plugins and content modelling."
+    },
+    {
+      "title": "Django",
+      "slug": "django",
+      "url": "https://roadmap.sh/django",
+      "type": "skill-based",
+      "description": "Python web framework with ORM, admin, auth and rapid application scaffolding."
+    },
+    {
+      "title": "Ruby",
+      "slug": "ruby",
+      "url": "https://roadmap.sh/ruby",
+      "type": "skill-based",
+      "description": "Expressive dynamic language covering blocks, metaprogramming and gem tooling."
+    },
+    {
+      "title": "Ruby on Rails",
+      "slug": "ruby-on-rails",
+      "url": "https://roadmap.sh/ruby-on-rails",
+      "type": "skill-based",
+      "description": "Convention-over-configuration web framework built on Ruby and Active Record."
+    },
+    {
+      "title": "Scala",
+      "slug": "scala",
+      "url": "https://roadmap.sh/scala",
+      "type": "skill-based",
+      "description": "JVM language blending functional and object-oriented styles with a strong type system."
+    },
+    {
+      "title": "GraphQL",
+      "slug": "graphql",
+      "url": "https://roadmap.sh/graphql",
+      "type": "skill-based",
+      "description": "Typed query language for APIs covering schemas, resolvers and client caching."
+    },
+    {
+      "title": "Git and GitHub Beginner",
+      "slug": "git-github-beginner",
+      "url": "https://roadmap.sh/git-github-beginner",
+      "type": "skill-based",
+      "description": "Entry-level version control path covering only the commands used day to day."
+    },
+    {
+      "title": "AWS Best Practices",
+      "slug": "aws-best-practices",
+      "url": "https://roadmap.sh/aws-best-practices",
+      "type": "best-practices",
+      "description": "Recommended patterns for cost, reliability and security when operating on AWS."
+    },
+    {
+      "title": "API Security Best Practices",
+      "slug": "api-security-best-practices",
+      "url": "https://roadmap.sh/api-security-best-practices",
+      "type": "best-practices",
+      "description": "Hardening checklist for authentication, authorisation, transport and input handling."
+    },
+    {
+      "title": "Backend Performance Best Practices",
+      "slug": "backend-performance-best-practices",
+      "url": "https://roadmap.sh/backend-performance-best-practices",
+      "type": "best-practices",
+      "description": "Server-side tactics for latency, throughput, caching and database efficiency."
+    },
+    {
+      "title": "Frontend Performance Best Practices",
+      "slug": "frontend-performance-best-practices",
+      "url": "https://roadmap.sh/frontend-performance-best-practices",
+      "type": "best-practices",
+      "description": "Techniques for faster page loads, smaller bundles and smoother rendering."
+    },
+    {
+      "title": "Code Review Best Practices",
+      "slug": "code-review-best-practices",
+      "url": "https://roadmap.sh/code-review-best-practices",
+      "type": "best-practices",
+      "description": "Habits for reviews that catch real defects without stalling the team."
+    },
+    {
+      "title": "Frontend Projects",
+      "slug": "frontend/projects",
+      "url": "https://roadmap.sh/frontend/projects",
+      "type": "project-ideas",
+      "description": "Graded build ideas to turn frontend theory into a portfolio."
+    },
+    {
+      "title": "Backend Projects",
+      "slug": "backend/projects",
+      "url": "https://roadmap.sh/backend/projects",
+      "type": "project-ideas",
+      "description": "Server-side build challenges scaling from simple APIs to full systems."
+    },
+    {
+      "title": "DevOps Projects",
+      "slug": "devops/projects",
+      "url": "https://roadmap.sh/devops/projects",
+      "type": "project-ideas",
+      "description": "Hands-on automation, pipeline and infrastructure exercises."
+    },
+    {
+      "title": "HTML Projects",
+      "slug": "html/projects",
+      "url": "https://roadmap.sh/html/projects",
+      "type": "project-ideas",
+      "description": "Markup-focused builds for practising structure and semantics."
+    },
+    {
+      "title": "CSS Projects",
+      "slug": "css/projects",
+      "url": "https://roadmap.sh/css/projects",
+      "type": "project-ideas",
+      "description": "Layout and styling challenges to sharpen visual implementation skills."
+    },
+    {
+      "title": "JavaScript Projects",
+      "slug": "javascript/projects",
+      "url": "https://roadmap.sh/javascript/projects",
+      "type": "project-ideas",
+      "description": "Vanilla JavaScript builds covering DOM work, async and state."
+    },
+    {
+      "title": "Node.js Projects",
+      "slug": "nodejs/projects",
+      "url": "https://roadmap.sh/nodejs/projects",
+      "type": "project-ideas",
+      "description": "Backend JavaScript exercises from CLI tools to networked services."
+    },
+    {
+      "title": "Go Projects",
+      "slug": "golang/projects",
+      "url": "https://roadmap.sh/golang/projects",
+      "type": "project-ideas",
+      "description": "Go build ideas emphasising concurrency and small, sharp tools."
+    },
+    {
+      "title": "Python Projects",
+      "slug": "python/projects",
+      "url": "https://roadmap.sh/python/projects",
+      "type": "project-ideas",
+      "description": "Python builds spanning scripting, automation and application work."
+    },
+    {
+      "title": "Java Projects",
+      "slug": "java/projects",
+      "url": "https://roadmap.sh/java/projects",
+      "type": "project-ideas",
+      "description": "Java exercises covering OOP design, collections and services."
+    },
+    {
+      "title": "AI and Data Scientist Projects",
+      "slug": "ai-data-scientist/projects",
+      "url": "https://roadmap.sh/ai-data-scientist/projects",
+      "type": "project-ideas",
+      "description": "Applied modelling and analysis projects using real datasets."
+    },
+    {
+      "title": "AI Engineer Projects",
+      "slug": "ai-engineer/projects",
+      "url": "https://roadmap.sh/ai-engineer/projects",
+      "type": "project-ideas",
+      "description": "Builds that wire pretrained models into working applications."
+    },
+    {
+      "title": "Angular Projects",
+      "slug": "angular/projects",
+      "url": "https://roadmap.sh/angular/projects",
+      "type": "project-ideas",
+      "description": "Angular application builds exercising components, DI and routing."
+    },
+    {
+      "title": "API Design Projects",
+      "slug": "api-design/projects",
+      "url": "https://roadmap.sh/api-design/projects",
+      "type": "project-ideas",
+      "description": "Interface design exercises focused on clarity, versioning and contracts."
+    },
+    {
+      "title": "AWS Projects",
+      "slug": "aws/projects",
+      "url": "https://roadmap.sh/aws/projects",
+      "type": "project-ideas",
+      "description": "Cloud builds using core AWS compute, storage and networking services."
+    },
+    {
+      "title": "BI Analyst Projects",
+      "slug": "bi-analyst/projects",
+      "url": "https://roadmap.sh/bi-analyst/projects",
+      "type": "project-ideas",
+      "description": "Reporting and dashboard exercises against business-style datasets."
+    },
+    {
+      "title": "C++ Projects",
+      "slug": "cpp/projects",
+      "url": "https://roadmap.sh/cpp/projects",
+      "type": "project-ideas",
+      "description": "Systems-oriented C++ builds exercising memory and performance thinking."
+    },
+    {
+      "title": "Cloudflare Projects",
+      "slug": "cloudflare/projects",
+      "url": "https://roadmap.sh/cloudflare/projects",
+      "type": "project-ideas",
+      "description": "Edge and Workers builds on the Cloudflare platform."
+    },
+    {
+      "title": "Cyber Security Projects",
+      "slug": "cyber-security/projects",
+      "url": "https://roadmap.sh/cyber-security/projects",
+      "type": "project-ideas",
+      "description": "Practical security labs covering tooling, analysis and defence."
+    },
+    {
+      "title": "Data Analyst Projects",
+      "slug": "data-analyst/projects",
+      "url": "https://roadmap.sh/data-analyst/projects",
+      "type": "project-ideas",
+      "description": "Analysis exercises from data cleaning through to communicating findings."
+    },
+    {
+      "title": "DevSecOps Projects",
+      "slug": "devsecops/projects",
+      "url": "https://roadmap.sh/devsecops/projects",
+      "type": "project-ideas",
+      "description": "Builds that embed security scanning and policy into delivery pipelines."
+    },
+    {
+      "title": "Django Projects",
+      "slug": "django/projects",
+      "url": "https://roadmap.sh/django/projects",
+      "type": "project-ideas",
+      "description": "Full-stack Python web builds using Django conventions."
+    },
+    {
+      "title": "Docker Projects",
+      "slug": "docker/projects",
+      "url": "https://roadmap.sh/docker/projects",
+      "type": "project-ideas",
+      "description": "Containerisation exercises covering images, compose and runtime config."
+    },
+    {
+      "title": "Laravel Projects",
+      "slug": "laravel/projects",
+      "url": "https://roadmap.sh/laravel/projects",
+      "type": "project-ideas",
+      "description": "PHP application builds using the Laravel framework."
+    },
+    {
+      "title": "Linux Projects",
+      "slug": "linux/projects",
+      "url": "https://roadmap.sh/linux/projects",
+      "type": "project-ideas",
+      "description": "Command line and system administration exercises on Linux."
+    },
+    {
+      "title": "MongoDB Projects",
+      "slug": "mongodb/projects",
+      "url": "https://roadmap.sh/mongodb/projects",
+      "type": "project-ideas",
+      "description": "Document-database builds covering schema design and aggregation."
+    },
+    {
+      "title": "Next.js Projects",
+      "slug": "nextjs/projects",
+      "url": "https://roadmap.sh/nextjs/projects",
+      "type": "project-ideas",
+      "description": "Full-stack React builds using Next.js rendering and routing features."
+    },
+    {
+      "title": "PHP Projects",
+      "slug": "php/projects",
+      "url": "https://roadmap.sh/php/projects",
+      "type": "project-ideas",
+      "description": "Server-side PHP builds from scripts to small applications."
+    },
+    {
+      "title": "Prompt Engineering Projects",
+      "slug": "prompt-engineering/projects",
+      "url": "https://roadmap.sh/prompt-engineering/projects",
+      "type": "project-ideas",
+      "description": "Exercises in designing, testing and refining model prompts."
+    },
+    {
+      "title": "QA Projects",
+      "slug": "qa/projects",
+      "url": "https://roadmap.sh/qa/projects",
+      "type": "project-ideas",
+      "description": "Testing exercises covering test design and automation frameworks."
+    },
+    {
+      "title": "React Projects",
+      "slug": "react/projects",
+      "url": "https://roadmap.sh/react/projects",
+      "type": "project-ideas",
+      "description": "Component-driven builds practising state, effects and composition."
+    },
+    {
+      "title": "Redis Projects",
+      "slug": "redis/projects",
+      "url": "https://roadmap.sh/redis/projects",
+      "type": "project-ideas",
+      "description": "Builds using Redis for caching, queues and ephemeral state."
+    },
+    {
+      "title": "Ruby Projects",
+      "slug": "ruby/projects",
+      "url": "https://roadmap.sh/ruby/projects",
+      "type": "project-ideas",
+      "description": "Ruby builds exercising language idioms and standard library."
+    },
+    {
+      "title": "Rust Projects",
+      "slug": "rust/projects",
+      "url": "https://roadmap.sh/rust/projects",
+      "type": "project-ideas",
+      "description": "Rust builds that put ownership and error handling into practice."
+    },
+    {
+      "title": "Shell / Bash Projects",
+      "slug": "shell-bash/projects",
+      "url": "https://roadmap.sh/shell-bash/projects",
+      "type": "project-ideas",
+      "description": "Automation scripts and command line tooling exercises."
+    },
+    {
+      "title": "Spring Boot Projects",
+      "slug": "spring-boot/projects",
+      "url": "https://roadmap.sh/spring-boot/projects",
+      "type": "project-ideas",
+      "description": "Java service builds using Spring Boot conventions and starters."
+    },
+    {
+      "title": "SQL Projects",
+      "slug": "sql/projects",
+      "url": "https://roadmap.sh/sql/projects",
+      "type": "project-ideas",
+      "description": "Query and schema exercises against realistic relational datasets."
+    },
+    {
+      "title": "TypeScript Projects",
+      "slug": "typescript/projects",
+      "url": "https://roadmap.sh/typescript/projects",
+      "type": "project-ideas",
+      "description": "Typed JavaScript builds practising generics and type-safe design."
+    },
+    {
+      "title": "Vue Projects",
+      "slug": "vue/projects",
+      "url": "https://roadmap.sh/vue/projects",
+      "type": "project-ideas",
+      "description": "Vue application builds exercising reactivity and component design."
+    }
+  ]
+}

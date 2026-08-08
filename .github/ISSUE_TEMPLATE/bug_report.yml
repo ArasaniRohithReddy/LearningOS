@@ -49,7 +49,7 @@ body:
     attributes:
       label: Version
       description: Extension version (from the Extensions view) or repo commit/release tag.
-      placeholder: "e.g. extension v1.1.10 / release v1.1.10"
+      placeholder: "e.g. extension v1.2.0 / release v1.2.0"
     validations:
       required: true
   - type: input

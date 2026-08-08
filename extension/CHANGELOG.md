@@ -1,5 +1,24 @@
 # Change Log
 
+## 1.2.0
+
+Tech News + Roadmaps: stay current and find your path — without leaving VS Code.
+
+- **Tech News view** — a new Activity Bar view that pulls recent headlines from a curated catalog of
+  ~190 vetted RSS/Atom sources (AI, cloud, release-notes, DevOps, data, security, languages, web,
+  engineering blogs, research, tech news), grouped by category with a **Top picks** default. Each item
+  opens externally or hands off to **🎓 Learn with Drona**. Feeds are fetched only in the extension host
+  through the same SSRF guard as the fetch tool; the webview makes no network requests.
+- **Roadmaps view** — a searchable, filterable list of 130+ [roadmap.sh](https://roadmap.sh) learning
+  paths (role-based, skill-based, best-practices, project-ideas). **📅 Start with Drona** turns any
+  roadmap into a personalized, dated plan. Link-out only (credit: roadmaps courtesy of roadmap.sh by
+  Kamran Ahmed — © roadmap.sh, all rights reserved).
+- **`learningos_news` tool** (also `#news`) + **`@drona /news`** — pull the latest items from your
+  curated feeds so Drona can build a clustered, dated, cited digest.
+- **Export curated feeds (OPML)** command — take the whole catalog into any RSS reader.
+- The curated feed + roadmap catalogs ship as data (`data/news-feeds.json`, `data/roadmaps.json`) and
+  are bundled into the packaged extension so both views work offline-first.
+
 ## 1.1.10
 
 Security & hardening pass from a rubber-duck review — the code-runner key stays out of third-party hosts and lives in SecretStorage.

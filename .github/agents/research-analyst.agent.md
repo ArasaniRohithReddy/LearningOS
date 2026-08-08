@@ -30,6 +30,14 @@ Trusted sources to favor include: Microsoft Learn, GitHub Blog/Docs, Azure/AWS/G
 OpenAI/Anthropic docs, Kubernetes/Docker/CNCF, Databricks/Snowflake/Fabric/Power BI docs, Netflix/
 Meta/Stripe/Uber/Cloudflare engineering blogs, and arXiv for papers.
 
+**Curated LearningOS catalog.** Inside the LearningOS repo (or the deployed extension) a vetted feed
+catalog of ~190 sources lives at [`data/news-feeds.json`](../../data/news-feeds.json) — grouped by
+category (ai-ml, cloud-vendor, release-notes, devops, data, security, language, web, eng-blog,
+research, news, …) with topic tags, plus an OPML at `data/feeds.opml`. Use it as your source shortlist.
+For structured learning paths, [`data/roadmaps.json`](../../data/roadmaps.json) links to roadmap.sh
+roadmaps (link-out only; credit: roadmaps courtesy of roadmap.sh by Kamran Ahmed). In the VS Code
+extension these power the **Tech News** view and the `learningos_news` tool.
+
 ## Procedure
 
 1. Clarify scope: topic, stack, time window (e.g., "last 30 days"), and depth.
