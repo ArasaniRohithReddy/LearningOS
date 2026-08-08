@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  LearningOS — starter RSS/Atom feeds (OPML).
+  Import into any feed reader, or let the /feed-curator skill tailor it to your stack.
+
+  ⚠️ VERIFY BEFORE RELYING ON THESE: feed URLs change over time. /feed-curator resolves and
+  confirms current URLs at query time and never fabricates them. This is a small, well-known
+  starter set — add your own via /feed-curator. Communities and LinkedIn often have no RSS;
+  see docs/Sources.md for how to follow those.
+-->
+<opml version="2.0">
+  <head>
+    <title>LearningOS starter feeds</title>
+  </head>
+  <body>
+    <outline text="Official / Vendor">
+      <outline type="rss" text="GitHub Blog" xmlUrl="https://github.blog/feed/" htmlUrl="https://github.blog/"/>
+      <outline type="rss" text="Microsoft DevBlogs" xmlUrl="https://devblogs.microsoft.com/feed/" htmlUrl="https://devblogs.microsoft.com/"/>
+      <outline type="rss" text="AWS News Blog" xmlUrl="https://aws.amazon.com/blogs/aws/feed/" htmlUrl="https://aws.amazon.com/blogs/aws/"/>
+      <outline type="rss" text="Kubernetes Blog" xmlUrl="https://kubernetes.io/feed.xml" htmlUrl="https://kubernetes.io/blog/"/>
+      <outline type="rss" text="Docker Blog" xmlUrl="https://www.docker.com/blog/feed/" htmlUrl="https://www.docker.com/blog/"/>
+      <outline type="rss" text="CNCF" xmlUrl="https://www.cncf.io/feed/" htmlUrl="https://www.cncf.io/blog/"/>
+    </outline>
+    <outline text="Engineering blogs">
+      <outline type="rss" text="Netflix Tech Blog" xmlUrl="https://netflixtechblog.com/feed" htmlUrl="https://netflixtechblog.com/"/>
+      <outline type="rss" text="Stack Overflow Blog" xmlUrl="https://stackoverflow.blog/feed/" htmlUrl="https://stackoverflow.blog/"/>
+    </outline>
+    <outline text="Communities">
+      <outline type="rss" text="Hacker News (front page)" xmlUrl="https://news.ycombinator.com/rss" htmlUrl="https://news.ycombinator.com/"/>
+    </outline>
+    <outline text="Research">
+      <outline type="rss" text="arXiv cs.AI" xmlUrl="http://export.arxiv.org/rss/cs.AI" htmlUrl="https://arxiv.org/list/cs.AI/recent"/>
+      <outline type="rss" text="arXiv cs.SE (Software Engineering)" xmlUrl="http://export.arxiv.org/rss/cs.SE" htmlUrl="https://arxiv.org/list/cs.SE/recent"/>
+    </outline>
+  </body>
+</opml>

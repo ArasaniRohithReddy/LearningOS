@@ -1,0 +1,68 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# LearningOS role config — TEMPLATE
+#
+# Copy this file to  .github/roles/<your-role>.role.yml , fill it in, then run:
+#     /role-composer .github/roles/<your-role>.role.yml
+# …and LearningOS generates a correctly-formatted .github/agents/<slug>.agent.md
+# and wires it into Drona. No prompt-writing required — just configuration.
+#
+# Only `name` and `skills` are strictly required; everything else has sensible
+# defaults. Lists can be written inline ([a, b]) or as YAML bullets.
+# ─────────────────────────────────────────────────────────────────────────────
+
+agent:
+  # Display name of the specialist (Title Case). Also becomes the file slug.
+  name: Example Role
+
+  # One-line summary of who this agent is and who it helps. Feeds the description.
+  summary: A mentor who teaches <domain> from first principles and builds real skills.
+
+  # Teaching persona/tone: mentor | coach | professor | interviewer | pragmatic-senior
+  personality: mentor
+
+  # Default learner level this role usually addresses.
+  level_default: beginner-to-advanced
+
+  # 3–6 focus areas — the concrete things this agent is great at teaching.
+  focus:
+    - core concepts and mental models
+    - hands-on projects and labs
+    - real-world best practices and trade-offs
+
+  # REQUIRED. The skills/technologies this role covers. These become the
+  # agent's "What you do" section and keyword-rich discovery description.
+  skills:
+    - skill-one
+    - skill-two
+    - skill-three
+
+  # Official documentation to prefer when teaching or citing (names or URLs).
+  docs:
+    - microsoft learn
+    - vendor official docs
+
+  # Extra trusted sources (engineering blogs, standards, papers, repos).
+  sources:
+    - reputable engineering blog
+    - relevant RFC / spec
+
+  # Topics to watch for "what's new" (routed to the Research & News Analyst).
+  news:
+    - topic-one
+    - topic-two
+
+  # Relevant certifications/exams (routed to the Exam & Certification Coach).
+  certifications:
+    - CERT-CODE
+
+  # GitHub Copilot tool aliases the agent may use.
+  # Defaults to [read, search, web, edit]; add `execute` for roles that
+  # write/run code (e.g. software/data/devops engineering).
+  tools: [read, search, web, edit]
+
+  # Recommended MCP servers to enable for this role (if your client supports them).
+  # Purely advisory — the agent still works without them.
+  mcp:
+    - github
+    - fetch/web
+    - microsoft-learn

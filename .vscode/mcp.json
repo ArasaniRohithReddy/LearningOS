@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "flint-chart": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "flint-chart-mcp"]
+    }
+  }
+}

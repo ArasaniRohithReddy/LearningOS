@@ -1,0 +1,45 @@
+name: "✨ Feature request / new agent or skill"
+description: "Suggest a new agent, skill, role, lab, or an improvement."
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! LearningOS is config-driven — many requests are a new `.github/skills/<name>/SKILL.md`,
+        a new `.github/roles/*.role.yml` (compose with the `role-composer` skill), or a docs improvement.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of contribution
+      options:
+        - "New skill (workflow / lab / coach)"
+        - "New agent (specialist mentor)"
+        - "New role config"
+        - "Extension feature (dashboard / tool / command)"
+        - "Docs / examples"
+        - "Other improvement"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What learning problem does this solve?
+      description: Who is the learner and what do they want to understand or practice?
+      placeholder: "As a <role> preparing for <goal>, I want ... so that ..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should the agent/skill do? Any name, scope, or teaching approach in mind?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Authoritative sources (optional)
+      description: Official docs / standards / papers this should be grounded in (with dates). Helps us avoid hallucination.
+    validations:
+      required: false

@@ -1,0 +1,69 @@
+name: "🐛 Bug report"
+description: "Report a problem with a skill, agent, the VS Code extension, or a script."
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve **LearningOS**! Please search existing issues first to avoid duplicates.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of LearningOS is affected?
+      options:
+        - "Skill (.github/skills)"
+        - "Agent (.github/agents)"
+        - "Role config (.github/roles)"
+        - "VS Code extension (@drona / dashboard / tools)"
+        - "Charts (Flint-Chart / MCP)"
+        - "Code execution (Piston / onlinecompiler)"
+        - "Plugin packaging / install"
+        - "Docs"
+        - "Scripts (validate / build-registry / scaffolders)"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, including what you expected instead.
+      placeholder: "When I ran ... I expected ... but got ..."
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Exact steps, commands, or the prompt you used.
+      placeholder: |
+        1. Installed the .vsix via `code --install-extension ...`
+        2. Opened Copilot Chat and typed `@drona ...`
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Extension version (from the Extensions view) or repo commit/release tag.
+      placeholder: "e.g. extension v1.1.10 / release v1.1.10"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS + host (VS Code / VS Code Insiders / Copilot CLI / Claude / Cursor / Gemini).
+      placeholder: "Windows 11 · VS Code 1.95"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Any relevant output, errors, or screenshots. Do NOT paste secrets or API keys.
+    validations:
+      required: false

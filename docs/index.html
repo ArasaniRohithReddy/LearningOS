@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearningOS — Drona · AI Learning & Knowledge Operating System</title>
+  <meta name="description" content="LearningOS (Drona) is a config-driven GitHub Copilot framework — 129 specialist agents, 510 reusable skills, 122 role configs, plus a VS Code extension — that teaches instead of just answering." />
+  <meta property="og:title" content="LearningOS — Drona" />
+  <meta property="og:description" content="An AI Learning Operating System: 129 agents · 510 skills · 122 roles · a VS Code extension. Teach, learn, practice, research, and grow." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root{
+      --bg:#0b1020; --bg2:#0f1730; --card:#151d38; --line:#26304f;
+      --ink:#e8ecf8; --muted:#a7b0cf; --brand:#7c9cff; --brand2:#9b7cff; --acc:#43e0b0;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink);background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(124,156,255,.18), transparent 60%),
+        radial-gradient(1000px 500px at -10% 10%, rgba(155,124,255,.16), transparent 55%),
+        var(--bg);
+      line-height:1.6;
+    }
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+    header{padding:56px 0 28px;text-align:center}
+    .logo{font-size:15px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+    h1{font-size:clamp(34px,6vw,60px);margin:.15em 0 .1em;line-height:1.05;
+       background:linear-gradient(90deg,var(--brand),var(--acc),var(--brand2));
+       -webkit-background-clip:text;background-clip:text;color:transparent}
+    .tag{font-size:clamp(16px,2.4vw,22px);color:var(--muted);max-width:760px;margin:.4em auto 0}
+    .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:26px 0 8px}
+    .btn{display:inline-block;padding:12px 20px;border-radius:12px;font-weight:600;border:1px solid var(--line)}
+    .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand2));color:#0b1020;border:none}
+    .btn.ghost{background:var(--card);color:var(--ink)}
+    .counter{margin:22px auto 0;display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap}
+    .counter img{height:34px;vertical-align:middle;border-radius:6px}
+    .counter .lbl{color:var(--muted);font-size:13px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:40px 0}
+    .stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 16px;text-align:center;box-shadow:var(--shadow)}
+    .stat b{display:block;font-size:34px;background:linear-gradient(90deg,var(--brand),var(--acc));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .stat span{color:var(--muted);font-size:14px}
+    section{padding:26px 0}
+    h2{font-size:26px;margin:0 0 6px}
+    .sub{color:var(--muted);margin:0 0 20px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+    .card h3{margin:.1em 0 .3em;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:14.5px}
+    .card .ico{font-size:22px}
+    .steps{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:22px}
+    code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    pre{background:#0a0f22;border:1px solid var(--line);border-radius:12px;padding:14px 16px;overflow:auto;color:#d7e0ff;font-size:13.5px}
+    .pill{display:inline-block;background:#0a0f22;border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:12.5px;color:var(--muted);margin:2px}
+    .doclinks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .doclinks a{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--ink);font-size:14px}
+    .doclinks a:hover{border-color:var(--brand)}
+    footer{border-top:1px solid var(--line);margin-top:30px;padding:26px 0 50px;color:var(--muted);text-align:center;font-size:14px}
+    @media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.grid,.doclinks{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">LearningOS · Drona</div>
+      <h1>Learn anything. Deeply.</h1>
+      <p class="tag">An AI <b>Learning Operating System</b> for GitHub Copilot that <b>teaches</b> instead of just answering — a master mentor (Drona) plus an army of specialists, grounded in official sources and built to make you more capable over time.</p>
+
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/Rohithreddy7123/LearningOS/releases/latest">⬇ Download latest release</a>
+        <a class="btn ghost" href="https://github.com/Rohithreddy7123/LearningOS">★ View on GitHub</a>
+        <a class="btn ghost" href="#install">Install guide</a>
+      </div>
+
+      <div class="counter">
+        <span class="lbl">Visitors:</span>
+        <img src="https://count.getloli.com/get/@drona-learningos?theme=moebooru" alt="Visitor count" loading="lazy" />
+        <img src="https://visitor-badge.laobi.icu/badge?page_id=Rohithreddy7123.LearningOS&left_text=views&color=7c9cff" alt="Visitor badge" loading="lazy" />
+      </div>
+    </header>
+
+    <div class="stats">
+      <div class="stat"><b>129</b><span>specialist agents</span></div>
+      <div class="stat"><b>510</b><span>reusable skills</span></div>
+      <div class="stat"><b>122</b><span>role configs</span></div>
+      <div class="stat"><b>255+</b><span>hands-on local labs</span></div>
+    </div>
+
+    <section id="what">
+      <h2>Why LearningOS?</h2>
+      <p class="sub">Most AI tools hand you an answer. LearningOS builds understanding you can reproduce yourself.</p>
+      <div class="grid">
+        <div class="card"><div class="ico">🎓</div><h3>Teaches, not just answers</h3><p>First-principles explanations, trade-offs, common pitfalls, and the “why” — every substantive reply ends with a Learning Footer and a next step.</p></div>
+        <div class="card"><div class="ico">🧭</div><h3>Drona routes to specialists</h3><p>One master orchestrator delegates to 129 mentors (coding, cloud, data, AI, security, DevOps, career, interviews, exams…) and 510 skills.</p></div>
+        <div class="card"><div class="ico">📊</div><h3>Learn visually</h3><p>Mermaid diagrams, tables, KaTeX and step-traces by default — plus a metrics dashboard with charts that render <b>offline</b>.</p></div>
+        <div class="card"><div class="ico">🧪</div><h3>Practice on your laptop</h3><p>255+ local “no-subscription” labs, and run code in 80+ languages <b>without installing them</b> via Piston or onlinecompiler.io.</p></div>
+        <div class="card"><div class="ico">🧠</div><h3>Remembers your journey</h3><p>Cross-session memory + onboarding profile track your goals, gaps, streaks and next reviews so guidance stays personal.</p></div>
+        <div class="card"><div class="ico">🔌</div><h3>Config-driven & extensible</h3><p>Add a skill or agent with a Markdown file or a YAML role. Plugin manifests for Copilot CLI, Claude, Cursor and Gemini; MCP-native.</p></div>
+      </div>
+    </section>
+
+    <section id="install" class="wrap" style="padding-top:8px">
+      <h2>Install</h2>
+      <p class="sub">Two ways to use it — as a VS Code extension, or as a config plugin across hosts.</p>
+      <div class="steps">
+        <h3 style="margin-top:0">① VS Code extension (@drona + dashboard + charts)</h3>
+        <p class="sub" style="margin-bottom:10px">Download <code>learningos-drona-*.vsix</code> from the <a href="https://github.com/Rohithreddy7123/LearningOS/releases/latest">latest release</a>, then:</p>
+        <pre>code --install-extension learningos-drona-1.1.10.vsix
+# or double-click Install-in-VSCode.cmd  ·  do NOT double-click the .vsix</pre>
+        <p class="sub" style="margin:12px 0 10px">Then open Copilot Chat and talk to <code>@drona</code>. Run <b>“Drona: Set up LearningOS”</b> to deploy all 129 agents + 510 skills to <code>~/.copilot</code> (works in VS Code <i>and</i> the Copilot CLI).</p>
+
+        <h3>② Config plugin (Copilot CLI / Claude / Cursor / Gemini)</h3>
+        <pre>git clone https://github.com/Rohithreddy7123/LearningOS.git</pre>
+        <p class="sub" style="margin:10px 0 0">See <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/Install.md">docs/Install.md</a> for per-host steps. The framework is just Markdown/YAML — Copilot discovers <code>.github/agents</code> and <code>.github/skills</code> natively.</p>
+        <div style="margin-top:14px">
+          <span class="pill">VS Code</span><span class="pill">VS Code Insiders</span><span class="pill">Copilot CLI</span><span class="pill">Claude Code</span><span class="pill">Cursor</span><span class="pill">Gemini</span><span class="pill">MCP-native</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="docs">
+      <h2>Documentation</h2>
+      <p class="sub">The full guide lives in the repo. A few good entry points:</p>
+      <div class="doclinks">
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/Architecture.md">🏛 Architecture</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/Install.md">💿 Install (all hosts)</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/Extension.md">🧩 VS Code Extension</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/Agents.md">🤖 Agents (129)</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/Skills.md">🛠 Skills (510)</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/Roles.md">🎭 Roles (122)</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/CodeExecution.md">▶️ Run code (no installs)</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/LocalPractice.md">🧪 Local labs</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/Memory.md">🧠 Memory</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/MCP.md">🔗 MCP & charts</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/Customize.md">🔧 Customize / extend</a>
+        <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/docs/Roadmap.md">🗺 Roadmap</a>
+      </div>
+    </section>
+
+    <section id="contribute">
+      <div class="logo" style="text-align:left">Open source</div>
+      <h2>Built in the open. Shaped by you.</h2>
+      <p class="sub">LearningOS is MIT licensed. Report bugs, request features, ask questions, and send pull requests. Every contribution is welcome.</p>
+      <div class="grid">
+        <div class="card"><div class="ico">🐛</div><h3>Report a bug</h3><p>Found something broken? File a detailed bug report and we’ll take a look.<br/><a href="https://github.com/Rohithreddy7123/LearningOS/issues/new/choose">Open a bug report ↗</a></p></div>
+        <div class="card"><div class="ico">💡</div><h3>Request a feature</h3><p>Have an idea for a new tool, skill, or surface? Tell us what you need.<br/><a href="https://github.com/Rohithreddy7123/LearningOS/issues/new/choose">Request a feature ↗</a></p></div>
+        <div class="card"><div class="ico">💬</div><h3>Ask and discuss</h3><p>Questions, ideas, and show-and-tell all live in GitHub Discussions.<br/><a href="https://github.com/Rohithreddy7123/LearningOS/discussions">Open Discussions ↗</a></p></div>
+        <div class="card"><div class="ico">🔀</div><h3>Send a pull request</h3><p>Fork the repo, make your change, and open a PR. The guide has the setup.<br/><a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/CONTRIBUTING.md">Read the contributing guide ↗</a></p></div>
+        <div class="card"><div class="ico">🛡️</div><h3>Report a vulnerability</h3><p>Please report security issues privately, never as a public issue.<br/><a href="https://github.com/Rohithreddy7123/LearningOS/security/policy">See the security policy ↗</a></p></div>
+        <div class="card"><div class="ico">⭐</div><h3>Star and share</h3><p>If this helps you, a star and a share go a long way. It’s MIT licensed.<br/><a href="https://github.com/Rohithreddy7123/LearningOS">Star on GitHub ↗</a></p></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Built with ❤️ for lifelong learners. Licensed under <a href="https://github.com/Rohithreddy7123/LearningOS/blob/main/LICENSE">MIT</a>.<br/>
+      LearningOS · Drona — <a href="https://github.com/Rohithreddy7123/LearningOS">github.com/Rohithreddy7123/LearningOS</a></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+{
+  "name": "learningos-drona",
+  "displayName": "LearningOS — Drona",
+  "description": "Drona, your AI learning mentor. @drona in chat teaches from first principles, cites sources, runs and tests your code with no local install (via your choice of Piston or onlinecompiler.io), and helps you learn, plan, practice, and prep — plus a rich learning-metrics dashboard (streak, topics, commands, languages, reviews) that also renders offline via a bundled Flint-Chart engine. First run offers one-click setup; \"Drona: Deploy all LearningOS agents & skills\" installs 128 specialist agents + 510 skills so VS Code Copilot discovers them natively.",
+  "version": "1.1.10",
+  "publisher": "learningos",
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "AI",
+    "Education",
+    "Chat",
+    "Other"
+  ],
+  "keywords": [
+    "learning",
+    "education",
+    "mentor",
+    "teaching",
+    "copilot",
+    "chat",
+    "drona",
+    "interview",
+    "certification"
+  ],
+  "homepage": "https://github.com/Rohithreddy7123/LearningOS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rohithreddy7123/LearningOS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rohithreddy7123/LearningOS/issues"
+  },
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onStartupFinished",
+    "onView:learningos.dashboard",
+    "onCommand:learningos.openDashboard"
+  ],
+  "contributes": {
+    "languageModelTools": [
+      {
+        "name": "learningos_fetch",
+        "displayName": "Fetch web page (LearningOS)",
+        "modelDescription": "Fetch the readable text content of a public https URL (for example an official 'what's new', updates, release-notes, changelog or engineering blog page) so you can summarize current, dated information. Use this whenever the user asks about the latest/current/newest/today's news, releases, versions or 'what's new' for any technology. Input: a single https URL pointing at an official source. Returns the page's readable text (HTML stripped), truncated to about 8000 characters, prefixed with the source URL and retrieval time. Do not use it for private/localhost URLs; it only performs an HTTP GET.",
+        "userDescription": "Lets Drona read an official web page to summarize current, dated information.",
+        "canBeReferencedInPrompt": true,
+        "toolReferenceName": "fetch",
+        "icon": "$(globe)",
+        "tags": [
+          "learningos"
+        ],
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The absolute https URL to fetch (an official source page, e.g. https://azure.microsoft.com/en-us/updates)."
+            }
+          },
+          "required": [
+            "url"
+          ]
+        }
+      },
+      {
+        "name": "learningos_remember",
+        "displayName": "Remember learner facts (LearningOS)",
+        "modelDescription": "Save durable facts about the learner so future sessions are personalized: their goal/target role or cert, current level, tech stack, and the agreed next step. Call this whenever the user states or changes any of these.",
+        "userDescription": "Lets Drona remember your goal, level, stack and next step so future sessions are personalized.",
+        "icon": "$(save)",
+        "tags": [
+          "learningos"
+        ],
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "goal": {
+              "type": "string",
+              "description": "The learner's goal, target role, or target certification (e.g. 'Become an Azure data engineer' or 'Pass DP-700')."
+            },
+            "level": {
+              "type": "string",
+              "description": "The learner's current level (e.g. Beginner, Intermediate, Advanced)."
+            },
+            "stack": {
+              "type": "string",
+              "description": "The technologies the learner is working with, comma-separated (e.g. 'Python, Spark, Azure')."
+            },
+            "nextStep": {
+              "type": "string",
+              "description": "The single agreed next step the learner should take."
+            }
+          }
+        }
+      },
+      {
+        "name": "learningos_runcode",
+        "displayName": "Run code (LearningOS)",
+        "modelDescription": "Execute a code snippet remotely and return its real stdout/stderr/exit code — for practicing/testing code without installing the language locally. Uses the free Piston sandbox by default. Supports 90+ languages (pass a language name or alias such as 'python', 'js', 'cpp', 'go', 'rust'). Optionally pass stdin and a specific runtime version. Use this whenever the learner wants to run, test, or execute code, or asks what a snippet outputs; then teach from the actual output.",
+        "userDescription": "Lets Drona run and test code snippets in 90+ languages remotely (via a Piston sandbox) so you don't have to install a local toolchain.",
+        "canBeReferencedInPrompt": true,
+        "toolReferenceName": "run",
+        "icon": "$(play)",
+        "tags": [
+          "learningos"
+        ],
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "description": "The programming language to run, as a Piston language name or alias (e.g. 'python', 'py', 'javascript', 'js', 'typescript', 'cpp', 'c', 'go', 'rust', 'java', 'csharp')."
+            },
+            "code": {
+              "type": "string",
+              "description": "The complete source code of the program to execute."
+            },
+            "stdin": {
+              "type": "string",
+              "description": "Optional text to feed to the program's standard input."
+            },
+            "version": {
+              "type": "string",
+              "description": "Optional exact runtime version (semver, e.g. '3.10.0'). If omitted, the latest matching runtime is resolved automatically from the code runner."
+            }
+          },
+          "required": [
+            "language",
+            "code"
+          ]
+        }
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "learningos",
+          "title": "LearningOS",
+          "icon": "media/dashboard.svg"
+        }
+      ]
+    },
+    "views": {
+      "learningos": [
+        {
+          "type": "webview",
+          "id": "learningos.dashboard",
+          "name": "Dashboard",
+          "icon": "media/dashboard.svg",
+          "contextualTitle": "LearningOS"
+        }
+      ]
+    },
+    "chatParticipants": [
+      {
+        "id": "learningos.drona",
+        "name": "drona",
+        "fullName": "Drona",
+        "description": "Your AI learning mentor — ask to learn, plan, practice, or prep",
+        "isSticky": true,
+        "commands": [
+          { "name": "learn", "description": "Explain a topic from first principles, with an example" },
+          { "name": "plan", "description": "Build a dated study roadmap toward a goal" },
+          { "name": "interview", "description": "Run one mock-interview question and coach the answer" },
+          { "name": "resume", "description": "Resume where you left off + the single best next step" },
+          { "name": "charts", "description": "Describe a progress chart to render via the flint-chart MCP" }
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "learningos.setup",
+        "title": "Drona: Set up LearningOS in this workspace",
+        "category": "Drona"
+      },
+      {
+        "command": "learningos.setupEverything",
+        "title": "Drona: Set up everything (deploy catalog + charts)",
+        "category": "Drona"
+      },
+      {
+        "command": "learningos.setupCodeExecution",
+        "title": "Drona: Set up code execution (run code with no install)",
+        "category": "Drona"
+      },
+      {
+        "command": "learningos.deployCatalog",
+        "title": "Drona: Deploy all LearningOS agents & skills",
+        "category": "Drona"
+      },
+      {
+        "command": "learningos.showProgress",
+        "title": "Drona: Show my learning progress",
+        "category": "Drona"
+      },
+      {
+        "command": "learningos.openDashboard",
+        "title": "Drona: Open Dashboard",
+        "category": "Drona"
+      }
+    ],
+    "configuration": {
+      "title": "LearningOS — Drona",
+      "properties": {
+        "learningos.enableFlintCharts": {
+          "type": "boolean",
+          "default": true,
+          "description": "When running 'Drona: Set up LearningOS', register the Flint-Chart MCP server (progress charts) into this workspace's .vscode/mcp.json."
+        },
+        "learningos.flintChart.command": {
+          "type": "string",
+          "default": "npx",
+          "markdownDescription": "Launcher for the **online fallback** of the dashboard's **✨ Render with Flint-Chart** button. By default the extension renders with the **bundled** `flint-chart-mcp` shipped inside the `.vsix` (offline, no download); only if that fails does it fall back to this command (default `npx`, i.e. `npx -y flint-chart-mcp`). Set to an **empty string** to use the bundled copy only, or set a custom command (e.g. `flint-chart-mcp` for a global install) to try that **first**, with the bundled copy kept as a safety net."
+        },
+        "learningos.flintChart.args": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": ["-y", "flint-chart-mcp"],
+          "markdownDescription": "Arguments for the online-fallback launcher (`#learningos.flintChart.command#`). Default `[\"-y\", \"flint-chart-mcp\"]` (for `npx`). Ignored when the command is empty (the bundled copy is used)."
+        },
+        "learningos.flintChart.timeoutMs": {
+          "type": "number",
+          "default": 35000,
+          "description": "Timeout in milliseconds for a single Flint-Chart render attempt (spawn → handshake → render). The bundled attempt uses a tighter internal cap; the npx fallback uses this full value so a first-run download can complete. The child process is always killed when it elapses, so the dashboard never hangs."
+        },
+        "learningos.profilePath": {
+          "type": "string",
+          "default": ".learningos/profile.md",
+          "description": "Workspace-relative path to Drona's auto-maintained learner profile export (created on demand by 'Drona: Show my learning progress'). Kept separate from the LearningOS skills' hand-maintained 'learning-profile.md' so the two never collide."
+        },
+        "learningos.codeRunner.provider": {
+          "type": "string",
+          "enum": ["piston", "onlinecompiler"],
+          "enumDescriptions": [
+            "Run code via a Piston-compatible runner — the public Piston or your own self-hosted Piston. Uses learningos.codeRunner.baseUrl.",
+            "Run code via onlinecompiler.io / OneCompiler. Uses learningos.codeRunner.onlinecompilerEndpoint + learningos.codeRunner.apiKey."
+          ],
+          "default": "piston",
+          "markdownDescription": "Which backend the `learningos_runcode` tool uses to execute code. **`piston`** (default) posts to `#learningos.codeRunner.baseUrl#` (a self-hosted or public Piston). **`onlinecompiler`** posts to `#learningos.codeRunner.onlinecompilerEndpoint#` with your `#learningos.codeRunner.apiKey#`. Run **`Drona: Set up code execution`** to pick and configure one via a guided prompt."
+        },
+        "learningos.codeRunner.baseUrl": {
+          "type": "string",
+          "default": "https://emkc.org/api/v2/piston",
+          "markdownDescription": "Base URL of the Piston-compatible code runner used when `#learningos.codeRunner.provider#` is **`piston`**. **The public Piston `/execute` is now whitelist-only and typically returns HTTP 401**, so keyless public execution is not reliable. **Recommended:** self-host Piston with Docker and set this to `http://localhost:2000/api/v2` for **unlimited, offline** runs (90+ languages) — run **`Drona: Set up code execution`** for step-by-step instructions. Any Piston-compatible service also works."
+        },
+        "learningos.codeRunner.onlinecompilerEndpoint": {
+          "type": "string",
+          "default": "https://api.onecompiler.com/v1/run",
+          "markdownDescription": "Run endpoint used when `#learningos.codeRunner.provider#` is **`onlinecompiler`**. The tool POSTs `{ language, stdin?, files:[{ name, content }] }` here with an `X-API-Key` header. The host is ambiguous across sources (onlinecompiler.io vs onecompiler.com), so **set this to match whichever service you signed up for** — the default is the documented OneCompiler API (`https://api.onecompiler.com/v1/run`)."
+        },
+        "learningos.codeRunner.apiKey": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "**Fallback** plaintext API key for the **`onlinecompiler`** code-runner provider, sent as the `X-API-Key` header to `#learningos.codeRunner.onlinecompilerEndpoint#`. **Preferred:** run **`Drona: Set up code execution`**, which stores the key in VS Code **SecretStorage** (encrypted, and not roamed by Settings Sync) instead of here. A key set in this setting is used as a fallback and then **migrated into SecretStorage** (after which this setting is cleared automatically). The **`piston`** provider is **keyless** — this key is **never** sent to any Piston host (public or self-hosted). Get a key from your onlinecompiler.io / onecompiler account."
+        },
+        "learningos.codeRunner.timeoutMs": {
+          "type": "number",
+          "default": 15000,
+          "description": "Timeout in milliseconds for a single code run (used both as the runner's run/compile timeout and, with a small buffer, as the HTTP request timeout)."
+        }
+      }
+    },
+    "walkthroughs": [
+      {
+        "id": "learningos.gettingStarted",
+        "title": "Get started with Drona (LearningOS)",
+        "description": "Meet your AI learning mentor, deploy the catalog, and set up progress charts.",
+        "steps": [
+          {
+            "id": "meet-drona",
+            "title": "Meet @drona",
+            "description": "Open Copilot Chat and type **@drona** followed by what you want to learn.\n[Open Chat](command:workbench.action.chat.open)",
+            "media": { "markdown": "media/welcome.md" }
+          },
+          {
+            "id": "setup-everything",
+            "title": "Set up everything (one click)",
+            "description": "Deploy the full catalog (128 agents + 510 skills) to your user profile so it works in VS Code Chat **and** the Copilot CLI, and enable progress charts.\n[Set up everything](command:learningos.setupEverything)",
+            "media": { "markdown": "media/deploy.md" }
+          },
+          {
+            "id": "deploy-catalog",
+            "title": "Deploy all agents & skills",
+            "description": "Install 128 specialist agents + 510 skills so VS Code discovers them in the agent picker and via **/** in Chat.\n[Deploy agents & skills](command:learningos.deployCatalog)",
+            "media": { "markdown": "media/deploy.md" }
+          },
+          {
+            "id": "setup",
+            "title": "Enable progress charts",
+            "description": "Run setup to register the local Flint-Chart MCP for progress visuals.\n[Set up LearningOS](command:learningos.setup)",
+            "media": { "markdown": "media/setup.md" }
+          },
+          {
+            "id": "run-code",
+            "title": "Run code without installing a language",
+            "description": "Set up real code execution in 90+ languages. The public Piston is now whitelist-only (HTTP 401), so self-host Piston with Docker (free/offline) or add a provider key.\n[Set up code execution](command:learningos.setupCodeExecution)",
+            "media": { "markdown": "media/codeexec.md" }
+          }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run bundle && npm run compile",
+    "bundle": "node scripts/bundle-content.mjs",
+    "prepackage": "npm run bundle",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "npx --yes @vscode/vsce package --allow-missing-repository",
+    "publish:vsce": "npx --yes @vscode/vsce publish",
+    "publish:ovsx": "npx --yes ovsx publish"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "@types/vscode": "~1.95.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "flint-chart-mcp": "^0.2.0"
+  }
+}

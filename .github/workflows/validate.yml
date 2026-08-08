@@ -1,0 +1,36 @@
+name: Validate catalog
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Registry + self-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Rebuild registry (agents / skills / roles → marketplace)
+        run: node scripts/build-registry.mjs
+
+      - name: Validate (counts, names, links, footer, Output-shape, Drona allow-list)
+        run: node scripts/validate.mjs
+
+      - name: Fail if the committed registry is out of date
+        run: |
+          if ! git diff --quiet -- marketplace/registry.json marketplace/CATALOG.md; then
+            echo "::error::marketplace/registry.json or CATALOG.md is out of date."
+            echo "Run 'node scripts/build-registry.mjs' locally and commit the result."
+            git --no-pager diff --stat -- marketplace/registry.json marketplace/CATALOG.md
+            exit 1
+          fi
+          echo "Registry is up to date."

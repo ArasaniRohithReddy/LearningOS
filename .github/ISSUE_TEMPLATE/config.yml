@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussions (questions & ideas)
+    url: https://github.com/Rohithreddy7123/LearningOS/discussions
+    about: Ask questions, share learning setups, or propose big ideas before filing an issue.
+  - name: 📚 Documentation
+    url: https://github.com/Rohithreddy7123/LearningOS/tree/main/docs
+    about: Architecture, Install, Extension, Customize, Code Execution, Memory, MCP, Roadmap and more.
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/Rohithreddy7123/LearningOS/security/advisories/new
+    about: Please report vulnerabilities privately, not as a public issue.
