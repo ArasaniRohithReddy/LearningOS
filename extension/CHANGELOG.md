@@ -1,5 +1,15 @@
 # Change Log
 
+## 1.8.0
+
+Wave 4 expansion (research-driven) — **61 new skills (718 → 779)**, authored by an 8-agent Opus-5 sweep and self-verified by *executing* every worked example (several runs caught and fixed real defects before publish). Plus **individual-level cross-platform portability** so the same catalog runs beyond GitHub Copilot.
+
+- **61 new skills across 7 domains** — **AI/ML (16):** imbalanced-data, hyperparameter-tuning, distributed-training, vision-language-model, whisper-speech, recommender-systems, training-debug, tokenizer-explainer, graph-RAG, synthetic-data, model-card-writer, AI red-team drill (defensive), model-serving, feature-store, diffusion-models, edge-AI-inference; **backend/DB (10):** distributed-locking, multi-tenancy-data, backup-recovery, distributed-SQL, ClickHouse, timeseries-DB, graph-data-modeling, ORM-performance, backpressure, ANN-index-tuning; **DevOps (10):** chaos-engineering, Gateway API, Terraform-testing, platform/IDP, supply-chain-attestation (SLSA/in-toto/cosign), K8s-cost, operator/CRD, service-mesh, external-secrets, release-versioning; **emerging/enterprise (8):** CUDA-kernel, ERC-4337 account-abstraction, XR-comfort/performance, GeoPandas, Biopython, Salesforce-governor-limits, ESP-IDF, OPC-UA; **data engineering (6):** Debezium CDC, RLS & data-masking, LookML, Polars, data-mesh, ingestion-connector; **pedagogy/career/cloud (6):** Graphviz-DOT, prerequisite-graph-generator, Excalidraw-sketch-generator, org-design, referral-outreach, cloud-DR-strategy; **mobile (5):** accessibility, app-performance, app-security, security, UI-testing.
+- **361 hands-on labs** (up from 336) — 25 new local/free labs (CUDA, Polars, ClickHouse, Debezium, service-mesh, chaos, Terraform-testing, ESP-IDF, GeoPandas, Biopython, and more) that run offline or via the no-install runner.
+- **Cross-platform portability (individual level, no tenant-admin needed)** — the plugin now installs for a single user across **GitHub Copilot (CLI + VS Code), Claude Code/Desktop, Cursor, and Gemini CLI**, with the **LearningOS MCP server** wired into each host. New [`docs/Platforms.md`](../docs/Platforms.md) guide; `install.ps1` builds the MCP server on demand and registers it per host.
+- **Opt-in Azure CLI auth (only when needed)** — an `azure_identity` MCP tool and token helper that reuse an existing `az login` session, **strictly disabled by default** (enable with `LEARNINGOS_AZURE_AUTH`); no tokens are ever returned to the model.
+- Grounded in primary sources — CLIP/Whisper/ZeRO/FSDP/DDPM papers, ERC-4337 & SLSA v1.0, PostgreSQL RLS & logical-decoding docs, OpenXR 1.1, Kubernetes Gateway API v1.0 GA, OWASP LLM Top 10 (2025), NIST AI 600-1 — with volatile facts (API names, versions, pricing) flagged "verify on the current page"; all security content is defensive/blue-team only.
+
 ## 1.7.0
 
 Wave 3 expansion (research-driven) — **99 new skills (619 → 718)**, authored by an 11-agent Opus-5 sweep across every technical domain and self-verified against the house-style gates (no stubs).

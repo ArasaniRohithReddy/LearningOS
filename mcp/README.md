@@ -2,7 +2,7 @@
 
 A [Model Context Protocol](https://modelcontextprotocol.io) server that exposes the **LearningOS**
 catalog and capabilities to **any MCP client** (Claude Desktop, VS Code, Cursor, and others). Point your
-client at it and your assistant can browse the 129 specialist agents and 619 skills, recommend **free**
+client at it and your assistant can browse the 129 specialist agents and 779 skills, recommend **free**
 learning resources, list roadmap.sh paths, pull a curated tech-news digest, run code with no local
 install, and load Drona's teaching persona.
 
@@ -11,7 +11,7 @@ install, and load Drona's teaching persona.
 **Tools**
 | Tool | What it does |
 |---|---|
-| `search_skills` | Search the 619 skills by keyword/domain |
+| `search_skills` | Search the 779 skills by keyword/domain |
 | `get_skill` | Full instructions (SKILL.md) for one skill |
 | `search_agents` | Search the 129 specialist agents |
 | `get_agent` | Full persona for one agent |

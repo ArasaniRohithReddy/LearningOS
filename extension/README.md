@@ -5,7 +5,7 @@ principles, cites sources, **runs and tests code for you (no local install neede
 **learn, plan, practice, and prep**. It also **bundles the full
 [LearningOS](https://github.com/ArasaniRohithReddy/LearningOS) catalog** — run **“Drona: Deploy
 all LearningOS agents & skills”** and VS Code Copilot discovers **128 specialist agents** (agent
-picker) and **510 skills** (`/` in Chat) natively.
+picker) and **779 skills** (`/` in Chat) natively.
 
 Works in **VS Code**, **VS Code Insiders**, and VS Code–family editors that support the Chat + Language
 Model APIs.
@@ -16,7 +16,7 @@ Model APIs.
   with a Learning Footer (Recap · Pitfalls · Next topic · Try it). It also **routes you** to the right
   LearningOS specialist agent or `/skill` once you've deployed the catalog (below).
 - **Full catalog, deployed on demand** — the extension **bundles** the complete LearningOS catalog
-  (**128 specialist agents**, **510 skills** incl. every offline/Floci lab, and **123 role configs**).
+  (**128 specialist agents**, **779 skills** incl. every offline/Floci lab, and **123 role configs**).
   Run **“Drona: Deploy all LearningOS agents & skills”** to install them where VS Code Copilot finds
   them natively:
   - **User profile `~/.copilot/`** *(recommended)* — roams across **every** workspace **and** the

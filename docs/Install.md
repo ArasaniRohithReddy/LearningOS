@@ -1,9 +1,13 @@
 # Installing LearningOS
 
-LearningOS is a **portable Copilot plugin**: 129 teaching agents (`.github/agents/`), 509 skills
+LearningOS is a **portable Copilot plugin**: 129 teaching agents (`.github/agents/`), 779 skills
 (`.github/skills/`), a shared constitution ([`AGENTS.md`](../AGENTS.md)), and a bundled chart MCP
 ([`.mcp.json`](../.mcp.json)). The same content works across every host that reads Copilot/agent
 customizations — you install it once per host you use.
+
+> **Using LearningOS at the individual level on a non-Copilot host** (Claude Code/Desktop, Cursor,
+> Gemini, or Microsoft 365 Copilot Cowork)? See [Platforms.md](./Platforms.md) for the per-user
+> zip-import flow, per-host MCP wiring, and the **opt-in** Azure CLI auth (disabled by default).
 
 > **Progress charts are silent-on-install.** Every manifest points at [`.mcp.json`](../.mcp.json), which
 > declares the **Flint-Chart MCP** (`npx -y flint-chart-mcp`). Hosts that honor a plugin's `mcpServers`
@@ -42,7 +46,7 @@ Insiders uses the same workspace file; user-level config differs only by the `Co
 
 > **Prefer a one-click install?** Use the prebuilt **`.vsix`** — it adds the **`@drona`** chat participant
 > and a setup command, no Marketplace account needed. See [Extension.md](./Extension.md):
-> `code --install-extension extension/learningos-drona-1.4.0.vsix`
+> `code --install-extension extension/learningos-drona-1.8.0.vsix`
 
 ### GitHub Copilot Desktop
 Open this folder as your workspace (agents/skills load from `.github/`) and add the same MCP entry to the

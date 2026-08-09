@@ -1,7 +1,7 @@
 {
   "name": "learningos",
-  "description": "LearningOS — an AI learning operating system. Drona orchestrates 129 teaching agents and 718 skills to help you learn, practice, prepare, and grow across every technical role — with cross-session memory, local labs, and progress charts — directly from Claude Code. Teaches the why, not just the answer.",
-  "version": "1.7.0",
+  "description": "LearningOS — an AI learning operating system. Drona orchestrates 129 teaching agents and 779 skills to help you learn, practice, prepare, and grow across every technical role — with cross-session memory, local labs, and progress charts — directly from Claude Code. Teaches the why, not just the answer.",
+  "version": "1.8.0",
   "author": {
     "name": "LearningOS (Drona) contributors",
     "url": "https://github.com/ArasaniRohithReddy"

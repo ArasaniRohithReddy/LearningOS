@@ -1,5 +1,5 @@
 // The `learningos.deployCatalog` command — installs the FULL bundled LearningOS
-// catalog (128 agents + 510 skills + roles) into a location VS Code Copilot
+// catalog (128 agents + 779 skills + roles) into a location VS Code Copilot
 // discovers natively:
 //   * User profile  `~/.copilot/{agents,skills,roles}`  — roams across every
 //     workspace AND the Copilot CLI (recommended default).

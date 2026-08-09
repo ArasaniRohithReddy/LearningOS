@@ -35,7 +35,7 @@ and as **plugin manifests** for the agent-harness hosts. Pick the file for your 
 - **Run code with no install** — the `learningos_runcode` tool executes snippets via your chosen provider
   (**Piston** self-host/public, or **onlinecompiler.io**); pick it with `learningos.codeRunner.provider`.
   See [CodeExecution.md](./CodeExecution.md).
-- **"Drona: Deploy all LearningOS agents & skills"** installs the full catalog (128 agents + 510 skills) to
+- **"Drona: Deploy all LearningOS agents & skills"** installs the full catalog (128 agents + 779 skills) to
   `~/.copilot` so VS Code Chat **and** the Copilot CLI discover them natively.
 - **"Drona: Set up LearningOS"** also registers the Flint-Chart MCP in `.vscode/mcp.json` for `@drona /charts`.
 - A **Getting Started** walkthrough.

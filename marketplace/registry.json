@@ -4,7 +4,7 @@
   "generator": "scripts/build-registry.mjs",
   "counts": {
     "agents": 129,
-    "skills": 718,
+    "skills": 779,
     "roles": 122
   },
   "packs": [
@@ -276,6 +276,7 @@
         "data-modeling-drill",
         "domain-driven-design-coach",
         "estimation-coach",
+        "graph-data-modeling-coach",
         "hexagonal-architecture-coach",
         "openapi-spec-writer",
         "tech-comparison",
@@ -363,6 +364,7 @@
         "cpu-cache-performance-coach",
         "debugging-coach",
         "design-patterns-coach",
+        "distributed-sql-coach",
         "dockerfile-coach",
         "dsa-patterns-coach",
         "dynamic-programming-coach",
@@ -389,6 +391,7 @@
         "string-algorithms-coach",
         "system-design-drill",
         "test-writer",
+        "training-debug-coach",
         "tree-algorithms-coach",
         "type-system-explainer"
       ]
@@ -498,7 +501,8 @@
       "skills": [
         "abap-rap-coach",
         "dataverse-modeling-coach",
-        "power-fx-coach"
+        "power-fx-coach",
+        "salesforce-governor-limits-coach"
       ]
     },
     {
@@ -536,8 +540,37 @@
       "id": "skills-general",
       "domain": "General",
       "skills": [
+        "account-abstraction-coach",
+        "ai-red-team-drill",
+        "ann-index-tuning-coach",
+        "backpressure-coach",
+        "backup-recovery-drill",
+        "cloud-dr-strategy-coach",
+        "data-mesh-coach",
+        "diffusion-models-explainer",
+        "distributed-locking-coach",
+        "distributed-training-coach",
+        "excalidraw-sketch-generator",
+        "feature-store-coach",
+        "graph-rag-coach",
+        "imbalanced-data-coach",
+        "lookml-coach",
+        "model-card-writer",
+        "multi-tenancy-data-coach",
+        "opc-ua-coach",
         "openxr-xr-basics-coach",
+        "org-design-coach",
+        "orm-performance-coach",
+        "platform-idp-coach",
+        "prerequisite-graph-generator",
         "quantum-error-mitigation-coach",
+        "recommender-systems-coach",
+        "referral-outreach-coach",
+        "release-versioning-coach",
+        "rls-and-data-masking-coach",
+        "timeseries-db-coach",
+        "tokenizer-explainer",
+        "xr-comfort-performance-coach",
         "zk-proofs-coach"
       ]
     },
@@ -588,11 +621,14 @@
         "bash-pipes-lab",
         "bash-scripting-lab",
         "bash-text-processing-lab",
+        "biopython-sequence-lab",
         "browser-storage-lab",
         "caddy-local-lab",
         "cadvisor-lab",
         "cassandra-local-lab",
+        "chaos-engineering-lab",
         "chroma-vector-local-lab",
+        "clickhouse-local-lab",
         "container-runtime-security-lab",
         "cosign-signing-lab",
         "cpp-move-semantics-lab",
@@ -605,12 +641,14 @@
         "csharp-linq-lab",
         "csharp-nullable-lab",
         "csharp-records-lab",
+        "cuda-kernel-lab",
         "cypress-test-lab",
         "dagster-local-lab",
         "data-cleaning-lab",
         "data-wrangling-lab",
         "dataweave-transform-lab",
         "dbt-duckdb-lab",
+        "debezium-cdc-lab",
         "delta-lake-lab",
         "django-lab",
         "docker-compose-lab",
@@ -622,11 +660,14 @@
         "drone-ci-local-lab",
         "duckdb-lab",
         "dynamodb-local-lab",
+        "edge-ai-inference-lab",
         "elasticsearch-local-lab",
         "elixir-otp-genserver-lab",
         "email-auth-phishing-defense-lab",
         "envoy-local-lab",
+        "esp-idf-lab",
         "express-lab",
+        "external-secrets-lab",
         "fastapi-lab",
         "firebase-emulator-lab",
         "flask-lab",
@@ -638,6 +679,7 @@
         "floci-oracle-local-lab",
         "flutter-widgets-lab",
         "foundry-forge-lab",
+        "gateway-api-lab",
         "gcp-bigquery-lab",
         "gcp-bigtable-emulator-lab",
         "gcp-cloud-functions-lab",
@@ -653,6 +695,7 @@
         "gcp-storage-emulator-lab",
         "gcp-tasks-emulator-lab",
         "gcp-vpc-networking-lab",
+        "geopandas-lab",
         "git-bisect-lab",
         "git-cherry-pick-lab",
         "git-hooks-lab",
@@ -670,12 +713,15 @@
         "go-modules-lab",
         "gradient-boosting-lab",
         "gradio-local-lab",
+        "graphviz-dot-lab",
         "great-expectations-lab",
         "groupby-aggregation-lab",
         "haproxy-local-lab",
         "haskell-typeclasses-monads-lab",
         "helm-chart-lab",
+        "hyperparameter-tuning-lab",
         "iceberg-table-lab",
+        "ingestion-connector-lab",
         "inp-optimization-lab",
         "interpreter-build-lab",
         "jaeger-tracing-local-lab",
@@ -700,8 +746,10 @@
         "k8s-autoscaling-lab",
         "k8s-cluster-lifecycle-lab",
         "k8s-configmap-secret-lab",
+        "k8s-cost-optimization-lab",
         "k8s-deployment-lab",
         "k8s-network-policy-lab",
+        "k8s-operator-crd-lab",
         "k8s-rbac-lab",
         "k8s-scheduling-lab",
         "k8s-service-networking-lab",
@@ -739,7 +787,10 @@
         "metabase-local-lab",
         "minikube-lab",
         "minio-s3-lab",
+        "mobile-app-performance-lab",
+        "mobile-ui-testing-lab",
         "model-explainability-lab",
+        "model-serving-lab",
         "modern-css-features-lab",
         "mongodb-local-lab",
         "mosquitto-mqtt-lab",
@@ -766,6 +817,7 @@
         "pgvector-local-lab",
         "playwright-test-lab",
         "plotly-lab",
+        "polars-lab",
         "postgis-spatial-lab",
         "postgres-local-lab",
         "pre-commit-lab",
@@ -817,6 +869,7 @@
         "schema-registry-lab",
         "seaborn-lab",
         "semgrep-lab",
+        "service-mesh-lab",
         "servicenow-glide-scripting-lab",
         "sklearn-classification-lab",
         "sklearn-clustering-lab",
@@ -843,11 +896,13 @@
         "sqlite-lab",
         "statsmodels-lab",
         "streamlit-local-lab",
+        "supply-chain-attestation-lab",
         "svelte-basics-lab",
         "svelte-runes-lab",
         "swagger-ui-local-lab",
         "swift-concurrency-lab",
         "swiftui-lab",
+        "synthetic-data-lab",
         "tailwind-lab",
         "tempo-tracing-local-lab",
         "temporal-local-lab",
@@ -856,6 +911,7 @@
         "terraform-modules-lab",
         "terraform-provisioners-lab",
         "terraform-state-lab",
+        "terraform-testing-lab",
         "terraform-workspaces-lab",
         "testcontainers-lab",
         "timeseries-analysis-lab",
@@ -873,12 +929,14 @@
         "vault-local-lab",
         "victoriametrics-local-lab",
         "view-transitions-lab",
+        "vision-language-model-lab",
         "vite-lab",
         "vllm-inference-lab",
         "vue-basics-lab",
         "weaviate-local-lab",
         "web-components-lab",
         "webgpu-compute-lab",
+        "whisper-speech-lab",
         "wiremock-api-mock-lab",
         "zephyr-rtos-lab"
       ]
@@ -907,9 +965,12 @@
       "skills": [
         "android-lifecycle-coach",
         "ios-lifecycle-coach",
+        "mobile-accessibility-coach",
+        "mobile-app-security-coach",
         "mobile-offline-sync-coach",
         "mobile-push-notifications-coach",
-        "mobile-release-coach"
+        "mobile-release-coach",
+        "mobile-security-coach"
       ]
     },
     {
@@ -2930,6 +2991,12 @@
       "path": ".github/skills/accessibility-remediation-coach/SKILL.md"
     },
     {
+      "name": "account-abstraction-coach",
+      "description": "Teach ERC-4337 account abstraction from the ground up — UserOperation, alt mempool, Bundler, the EntryPoint singleton, Paymaster sponsorship, smart accounts vs EOAs, the two-phase validation/execution gas flow, and DEFENSIVE security practices (replay protection, EntryPoint-only callers, scoped session keys, paymaster griefing limits). Use for 'what is ERC-4337', 'account abstraction explained', 'UserOperation fields', 'how does a bundler work', 'EntryPoint contract', 'paymaster gas sponsorship', 'smart account vs EOA', 'gasless transactions', 'validateUserOp', 'session keys', 'social recovery wallet', or 'AA security review'.",
+      "argumentHint": "What you're building or reviewing (smart account | paymaster | bundler integration) + chain, EntryPoint version (v0.6/v0.7/v0.8), and whether it's a design, review, or explainer",
+      "path": ".github/skills/account-abstraction-coach/SKILL.md"
+    },
+    {
       "name": "act-github-actions-lab",
       "description": "Hands-on lab to run GitHub Actions workflows locally with act (nektos/act) in Docker — no subscription, no cloud minutes. List and run jobs, trigger events (push, pull_request), pass secrets/variables, and pick runner images to debug .github/workflows fast. Use for 'run Actions locally', 'test my workflow without pushing', 'act nektos', 'local CI for GitHub Actions', or learning CI by doing.",
       "argumentHint": "The workflow/job to run locally",
@@ -2970,6 +3037,12 @@
       "description": "Turn AI governance from a slide deck into an operating system — classify the system against the EU AI Act risk tiers, wire the four NIST AI RMF functions (Govern / Map / Measure / Manage) to named owners, publish a model card, and run a live risk register with real human-oversight controls. Use for 'AI governance', 'NIST AI RMF', 'EU AI Act risk tier', 'is my model high-risk', 'write a model card', 'AI risk register', 'responsible AI review', 'human in the loop', or 'AI compliance checklist'.",
       "argumentHint": "The AI system + its deployment context (users, jurisdiction, decision it influences) + the stage: design | pre-launch | in-production",
       "path": ".github/skills/ai-governance-coach/SKILL.md"
+    },
+    {
+      "name": "ai-red-team-drill",
+      "description": "Run a DEFENSIVE, authorized red-team drill against an LLM application you own: build a structured probe taxonomy (jailbreak, indirect prompt injection, sensitive-data disclosure, harmful content, excessive agency), score each probe with a repeatable rubric, compute an attack-success rate per category, and turn every failure into a named mitigation and a regression test. Use for 'red team my LLM app', 'AI red teaming', 'test my chatbot for jailbreaks', 'prompt injection testing', 'does my agent leak the system prompt', 'LLM security assessment', 'OWASP LLM Top 10 testing', or 'garak / PyRIT harness'. Authorized systems only; produces mitigations and regression tests, never reusable exploit payloads.",
+      "argumentHint": "The LLM system you own or are explicitly authorized to test + its trust boundaries (tools, data sources, users) + written authorization and scope",
+      "path": ".github/skills/ai-red-team-drill/SKILL.md"
     },
     {
       "name": "airflow-dag-coach",
@@ -3030,6 +3103,12 @@
       "description": "Add web animations and transitions that are smooth and accessible as a lesson — CSS vs JS, compositor-only properties, prefers-reduced-motion, and performance. Use for 'web animation', 'CSS transitions', 'smooth/janky animation', 'prefers-reduced-motion', 'animate performantly', 'CSS vs JS animation', or learning web animation.",
       "argumentHint": "The animation goal",
       "path": ".github/skills/animation-coach/SKILL.md"
+    },
+    {
+      "name": "ann-index-tuning-coach",
+      "description": "Tune approximate-nearest-neighbour indexes with measurements instead of defaults — HNSW (M, efConstruction, efSearch) versus IVF-Flat and IVF-PQ (nlist, nprobe, m, nbits), the recall/latency/memory triangle, ground-truth construction, recall@k computation, and the filtered-search recall trap — in FAISS and pgvector. Use for 'HNSW tuning', 'efSearch', 'nprobe', 'ivfflat lists', 'pgvector slow', 'vector search recall is bad', 'how much memory does my vector index need', 'IVF vs HNSW', 'product quantization', or 'filtered vector search returns too few results'.",
+      "argumentHint": "Vector count + dimensions + distance metric + target recall@k + latency budget + memory budget (and whether queries are filtered)",
+      "path": ".github/skills/ann-index-tuning-coach/SKILL.md"
     },
     {
       "name": "ansible-automation-lab",
@@ -3296,6 +3375,18 @@
       "path": ".github/skills/backfill-and-reprocessing-coach/SKILL.md"
     },
     {
+      "name": "backpressure-coach",
+      "description": "Design backpressure into async and streaming systems — bounded queues, credit/demand-based flow control (Reactive Streams request(n), HTTP/2 WINDOW_UPDATE, TCP receive window), and the four-and-only-four responses to a slow consumer: slow the producer, buffer (bounded), shed load, or scale out — with the queueing arithmetic that shows why an unbounded queue fails as latency long before it fails as OOM. Use for 'backpressure', 'unbounded queue', 'consumer lag growing', 'load shedding vs buffering', 'Reactive Streams demand', 'writable.write returned false', 'asyncio queue maxsize', 'Kafka producer blocked', or 'the system falls over under load spikes'.",
+      "argumentHint": "Producer rate + consumer service rate + queue bound (if any) + what is acceptable when overloaded (drop | delay | reject)",
+      "path": ".github/skills/backpressure-coach/SKILL.md"
+    },
+    {
+      "name": "backup-recovery-drill",
+      "description": "Run a real backup-and-restore drill instead of trusting a green backup job — derive RPO and RTO from an actual failure timeline, pick full vs incremental vs differential with the right restore chain, configure PostgreSQL PITR with WAL archiving, verify restores with pg_verifybackup and a data checksum, and apply 3-2-1(-1-0) including immutable copies. Use for 'RPO RTO', 'point in time recovery', 'test our backups', 'restore drill', 'incremental vs differential', 'WAL archiving', 'how much data would we lose', 'ransomware deleted our backups', or 'the backup job is green but nobody has ever restored'.",
+      "argumentHint": "System + data size + current backup scheme/schedule + business targets (RPO, RTO) + who has ever performed a restore",
+      "path": ".github/skills/backup-recovery-drill/SKILL.md"
+    },
+    {
       "name": "bash-cron-lab",
       "description": "Hands-on Bash lab on scheduling jobs with cron: the five crontab time fields, crontab -e/-l, capturing output to a log, absolute paths in cron's minimal environment, and idempotent jobs guarded by flock. Use for 'practice cron', 'hands-on lab', 'crontab syntax', 'schedule a bash job', 'cron logging', 'stop overlapping cron jobs', or learning job scheduling in Bash by doing.",
       "argumentHint": "The scheduled task",
@@ -3348,6 +3439,12 @@
       "description": "Cut BigQuery cost and latency with mechanism, not folklore — partition and cluster on the real filter columns, prune before you scan, drop SELECT *, prove every change with bq query --dry_run bytes and INFORMATION_SCHEMA slot_ms, and choose between on-demand bytes-scanned and capacity slots deliberately. Use for 'BigQuery is expensive', 'reduce bytes scanned', 'partitioning vs clustering', 'dry run cost estimate', 'slot contention', 'why is my query slow in BigQuery', or 'BigQuery cost guardrails'.",
       "argumentHint": "The query or table DDL + the billing model (on-demand vs. capacity/editions) and the pain: cost, latency, or both",
       "path": ".github/skills/bigquery-optimization-coach/SKILL.md"
+    },
+    {
+      "name": "biopython-sequence-lab",
+      "description": "Hands-on, fully offline sequence bioinformatics with Biopython — parse FASTA and FASTQ with SeqIO, work with immutable Seq objects and SeqRecords, transcribe/translate with the right NCBI codon table, reverse-complement correctly, read Phred quality scores as probabilities, and score a pairwise alignment with Bio.Align.PairwiseAligner. Use for 'learn Biopython', 'parse a FASTA file in Python', 'read FASTQ quality scores', 'Seq object', 'reverse complement', 'translate DNA to protein', 'codon table', 'GC content', 'phred score to probability', 'pairwise sequence alignment in Python', or 'SeqIO.parse vs SeqIO.read'.",
+      "argumentHint": "The sequence task (parse | translate | reverse-complement | QC a FASTQ | align two sequences) + molecule type (DNA/RNA/protein) and organism/codon table if it matters",
+      "path": ".github/skills/biopython-sequence-lab/SKILL.md"
     },
     {
       "name": "bit-manipulation-coach",
@@ -3434,6 +3531,12 @@
       "path": ".github/skills/changelog-writer/SKILL.md"
     },
     {
+      "name": "chaos-engineering-lab",
+      "description": "Hands-on chaos engineering on a free local Kubernetes cluster — state a steady-state hypothesis in measurable terms, define an explicit blast radius and abort conditions, inject real faults (pod-kill, network latency and loss, CPU/memory stress, DNS failure) with Chaos Mesh, observe whether the hypothesis survives, and run the whole thing as a game day with a written record. Use for 'chaos engineering', 'chaos experiment', 'fault injection Kubernetes', 'Chaos Mesh lab', 'pod kill experiment', 'network latency injection', 'blast radius', 'game day', 'resilience testing', or 'how do I prove our retries actually work'.",
+      "argumentHint": "The service to experiment on + the steady-state metric you believe will hold (e.g. 'checkout API, p99 < 500ms and success rate > 99.5%')",
+      "path": ".github/skills/chaos-engineering-lab/SKILL.md"
+    },
+    {
       "name": "cheat-sheet",
       "description": "Produce a dense, well-organized one-page reference for a topic — syntax, common commands, key APIs, patterns, and gotchas — grouped logically and accurate, with sources/dates for version-specific facts. Use for 'cheat sheet', 'quick reference', 'one-pager for X', 'commands/syntax for Y', or a crib sheet. Complements deep understanding; it does not replace it.",
       "argumentHint": "Topic/technology + (optional) version",
@@ -3458,6 +3561,12 @@
       "path": ".github/skills/circuit-breaker-coach/SKILL.md"
     },
     {
+      "name": "clickhouse-local-lab",
+      "description": "Hands-on ClickHouse for OLAP, entirely local and free via docker or the clickhouse-local binary — build a MergeTree table, understand why the primary index is sparse (one mark per index_granularity rows), choose ORDER BY versus PARTITION BY correctly, add data-skipping indexes, build incremental materialized views on AggregatingMergeTree, and prove granule pruning with EXPLAIN indexes=1. Use for 'learn ClickHouse', 'MergeTree ORDER BY', 'ClickHouse primary key', 'sparse index', 'partition by month', 'materialized view ClickHouse', 'why is my ClickHouse query slow', 'clickhouse-local', or 'when does columnar beat Postgres'.",
+      "argumentHint": "Dataset shape (rows, columns, time column, main filter columns) + the 2-3 queries you must make fast",
+      "path": ".github/skills/clickhouse-local-lab/SKILL.md"
+    },
+    {
       "name": "cloud-cert-roadmap-coach",
       "description": "Pick the right CURRENT cloud certification and sequence it — map role to cert across Azure/AWS/Google Cloud, verify a code is still live before you study (2025-26 retirements moved several targets), follow prerequisite chains, and budget cost, study hours, and renewal cadence. Use for 'which cloud cert should I take', 'cloud certification roadmap', 'is AZ-204 still available', 'what replaced AI-102', 'AWS vs Azure vs GCP certification path', 'cert prerequisites', or 'certification renewal'. Not a lab — a planning coach.",
       "argumentHint": "Target role + cloud (+ optional deadline/budget)",
@@ -3468,6 +3577,12 @@
       "description": "Cut cloud spend as a lesson — find the biggest cost drivers, rightsize resources, buy commitments (reserved instances/savings plans/CUDs), tier storage, and kill waste — then produce a prioritized savings plan. Use for 'reduce my AWS/Azure/GCP bill', 'cloud cost optimization', 'FinOps', 'rightsizing', 'savings plans vs reserved instances', 'cut cloud waste', or learning cost management.",
       "argumentHint": "The cloud bill/services + provider",
       "path": ".github/skills/cloud-cost-optimizer/SKILL.md"
+    },
+    {
+      "name": "cloud-dr-strategy-coach",
+      "description": "Choose and cost a cloud disaster recovery strategy — backup & restore vs pilot light vs warm standby vs multi-site active/active — by deriving RTO and RPO from a real incident timeline, mapping each rung onto concrete AWS, Azure and Google Cloud services, modelling the standing cost of each, planning cross-region data replication, and proving the plan with restore drills and game days. Includes an honest verdict on multi-cloud DR. Use for 'cloud DR strategy', 'pilot light vs warm standby', 'multi-region failover', 'cross-region replication', 'what RTO can we actually hit', 'DR cost', 'DR game day', 'active-active', or 'multi-cloud disaster recovery'.",
+      "argumentHint": "The workload + its cloud(s) and regions + the RTO/RPO the business is asking for",
+      "path": ".github/skills/cloud-dr-strategy-coach/SKILL.md"
     },
     {
       "name": "cloud-iam-least-privilege-coach",
@@ -3740,6 +3855,12 @@
       "path": ".github/skills/css-layout-coach/SKILL.md"
     },
     {
+      "name": "cuda-kernel-lab",
+      "description": "Write, launch, verify and profile a real CUDA kernel from first principles — thread/block/grid indexing and the global-index formula, the host/device memory hierarchy, memory coalescing, a worked vector-add followed by a shared-memory reduction, occupancy arithmetic, and Nsight Systems/Compute profiling — on your own GPU or a free Colab T4. Use for 'learn CUDA', 'write a CUDA kernel', 'blockIdx blockDim threadIdx explained', 'CUDA global index formula', 'memory coalescing', 'CUDA reduction', '__syncthreads', 'shared memory tile', 'CUDA occupancy', 'nvcc arch flag', 'profile a kernel with Nsight', or 'my CUDA kernel returns zeros'.",
+      "argumentHint": "The computation to port to the GPU (map | reduce | stencil | matmul) + N, dtype, and your GPU (or 'Colab' if you have none)",
+      "path": ".github/skills/cuda-kernel-lab/SKILL.md"
+    },
+    {
       "name": "curriculum-designer",
       "description": "Design a multi-module curriculum or course for a topic using backward design — define learning objectives with Bloom's verbs, sequence modules by dependency, and give each module outcomes, activities, and aligned assessment. Use for 'design a course', 'build a curriculum', 'course outline', 'syllabus for X', 'teach a class on Y', or structuring a subject to teach others. A teaching plan, not a personal study schedule.",
       "argumentHint": "Subject + audience + duration (e.g. 'intro Python for analysts, 6 weeks')",
@@ -3804,6 +3925,12 @@
       "description": "Plan a data-labeling / annotation project: write clear guidelines, sample what to label, measure inter-annotator agreement, run quality control, and pick tooling. Use for 'create labeling guidelines', 'annotation project plan', 'inter-annotator agreement / Cohen's kappa', 'label quality control', 'how many annotators', 'sampling for labeling', or 'ground-truth dataset'. Teaches reliable labels, not just volume.",
       "argumentHint": "The task + dataset",
       "path": ".github/skills/data-labeling-planner/SKILL.md"
+    },
+    {
+      "name": "data-mesh-coach",
+      "description": "Decide honestly whether data mesh fits, then apply it correctly — Zhamak Dehghani's four principles (domain-oriented decentralised ownership, data as a product, self-serve data platform, federated computational governance), what a data product must guarantee to be usable, how federated governance becomes executable policy instead of a committee, and the organisational preconditions that make mesh an expensive mistake for small teams. Use for 'data mesh', 'should we adopt data mesh', 'domain ownership of data', 'data as a product', 'self-serve data platform', 'federated computational governance', 'data mesh vs data lake', 'data mesh vs data fabric', or 'our central data team is the bottleneck'.",
+      "argumentHint": "Your org shape (number of data-producing domains, size of the central data team, existing platform) + the pain you're trying to fix",
+      "path": ".github/skills/data-mesh-coach/SKILL.md"
     },
     {
       "name": "data-modeling-drill",
@@ -3908,6 +4035,12 @@
       "path": ".github/skills/dbt-semantic-layer-coach/SKILL.md"
     },
     {
+      "name": "debezium-cdc-lab",
+      "description": "Hands-on local lab on log-based change data capture with Debezium — stand up Postgres + Kafka + Kafka Connect with docker compose (free, no cloud account), register the Postgres connector, then read real change events: the before/after/source/op envelope, initial snapshot (op=r) versus streaming, REPLICA IDENTITY and what lands in before, tombstones on delete, incremental snapshots via the signal table, replication-slot/WAL growth and heartbeats, schema change events, and why delivery is at-least-once unless you opt into Kafka Connect exactly-once. Use for 'Debezium tutorial', 'log-based CDC', 'Debezium Postgres connector', 'what is wal_level logical', 'snapshot.mode', 'incremental snapshot', 'replication slot growing', 'Debezium tombstone', 'before is null', or 'does Debezium give exactly-once'.",
+      "argumentHint": "The source table(s) to capture + your sink (Kafka topic, warehouse, search index) and whether you need history or just current state",
+      "path": ".github/skills/debezium-cdc-lab/SKILL.md"
+    },
+    {
       "name": "debugging-coach",
       "description": "Coach the learner through debugging as a repeatable method — reproduce, hypothesize, isolate, verify — so they can debug on their own next time instead of just being handed a fix. Use for 'help me debug', 'why is this failing', 'I'm stuck on a bug', or learning a debugging methodology. Teaches the scientific method for bugs across any language.",
       "argumentHint": "The bug: symptom, expected vs actual, and how to reproduce",
@@ -3986,16 +4119,40 @@
       "path": ".github/skills/diagram-review-coach/SKILL.md"
     },
     {
+      "name": "diffusion-models-explainer",
+      "description": "Explain how diffusion models actually work, from the equations up: the forward noising process and its closed form, the reverse denoising process, why the network predicts noise rather than the image, the noise schedule and signal-to-noise ratio, DDPM versus DDIM sampling, the score-function connection, classifier-free guidance, and latent diffusion. Use for 'how do diffusion models work', 'DDPM explained', 'DDIM vs DDPM', 'what is the noise schedule', 'epsilon prediction', 'classifier-free guidance', 'CFG scale', 'why does Stable Diffusion work in latent space', 'score matching', or 'why do fewer sampling steps still work'.",
+      "argumentHint": "What you want to understand (the forward process? sampling? guidance? latent space?) + your comfort with probability and linear algebra",
+      "path": ".github/skills/diffusion-models-explainer/SKILL.md"
+    },
+    {
       "name": "disaster-recovery-planner",
       "description": "Plan disaster recovery and business continuity properly — derive RTO and RPO from business impact rather than guessing, design a backup strategy (3-2-1, immutability and air gap, retention, and the restore tests that make backups real), choose replication (synchronous vs asynchronous) and a failover/failback procedure, then pick a point on the DR ladder — backup and restore, pilot light, warm standby, multi-site active/active — using an explicit cost vs RTO vs RPO trade-off, and rehearse it with runbooks and game days. Use for 'disaster recovery', 'RTO and RPO', 'backup strategy', 'failover plan', 'pilot light vs warm standby', 'business continuity', 'we have backups but never tested a restore'.",
       "argumentHint": "The system/service + how long the business can survive without it",
       "path": ".github/skills/disaster-recovery-planner/SKILL.md"
     },
     {
+      "name": "distributed-locking-coach",
+      "description": "Teach distributed mutual exclusion honestly — why a lease can never be safe on its own, what the Kleppmann-vs-antirez Redlock debate actually disputes, how fencing tokens move safety from the lock service to the resource, and when etcd/ZooKeeper beats Redis — then classify your lock as 'for efficiency' or 'for correctness' and pick accordingly. Use for 'distributed lock', 'Redlock', 'is Redis locking safe', 'fencing token', 'lease expired while I was paused', 'etcd lock', 'ZooKeeper lock recipe', 'two workers ran the same job', or 'is SET NX PX good enough'.",
+      "argumentHint": "What the lock protects (resource + operation) + the consequence of two holders (duplicate work | corrupted data) + current tech (Redis | etcd | ZooKeeper | none)",
+      "path": ".github/skills/distributed-locking-coach/SKILL.md"
+    },
+    {
+      "name": "distributed-sql-coach",
+      "description": "Understand and evaluate distributed SQL / NewSQL engines — CockroachDB, Google Spanner, YugabyteDB — from the mechanism up: range sharding, one Raft group per range/tablet, leaseholders, TrueTime commit-wait versus hybrid logical clocks and uncertainty intervals, serializable versus strictly serializable, retry loops, hotspot primary keys, and the honest latency cost of surviving a region. Includes a hard 'when NOT to'. Use for 'CockroachDB vs Postgres', 'do we need Spanner', 'YugabyteDB', 'NewSQL', 'distributed SQL latency', 'TrueTime', 'hybrid logical clock', 'serialization failure 40001', 'multi-region database', or 'our primary key is a hotspot'.",
+      "argumentHint": "Workload (read/write mix, TPS, dataset size) + regions + survival goal (zone | region) + what single-node Postgres/MySQL currently fails at",
+      "path": ".github/skills/distributed-sql-coach/SKILL.md"
+    },
+    {
       "name": "distributed-tracing-coach",
       "description": "Instrument distributed tracing with OpenTelemetry as a lesson — model spans, propagate context across services, choose head vs tail sampling, and read a trace waterfall to find the latency culprit. Use for 'add tracing', 'OpenTelemetry traces', 'context propagation', 'trace sampling', 'why is this request slow', or learning distributed tracing. Grounded in OpenTelemetry and W3C Trace Context.",
       "argumentHint": "The services",
       "path": ".github/skills/distributed-tracing-coach/SKILL.md"
+    },
+    {
+      "name": "distributed-training-coach",
+      "description": "Scale training across GPUs and nodes without cargo-culting — separate data parallelism from tensor/pipeline/model parallelism, run PyTorch DDP correctly (DistributedSampler, set_epoch, effective batch size, LR scaling), choose an FSDP/ZeRO sharding stage from an actual memory budget, use gradient accumulation and activation checkpointing when you are memory-bound, and compute communication volume and scaling efficiency so you can say *why* 8 GPUs gave you 5x instead of 8x. Use for 'PyTorch DDP tutorial', 'torchrun', 'DistributedDataParallel', 'FSDP vs DeepSpeed ZeRO', 'ZeRO stage 1 2 3', 'model does not fit on one GPU', 'gradient accumulation', 'multi-node training', 'scaling efficiency', 'linear learning rate scaling rule', 'NCCL vs Gloo', 'why is multi-GPU not faster'.",
+      "argumentHint": "Model size (params) + hardware (GPUs/nodes, VRAM, interconnect) + whether you are memory-bound or throughput-bound",
+      "path": ".github/skills/distributed-training-coach/SKILL.md"
     },
     {
       "name": "django-lab",
@@ -4112,6 +4269,12 @@
       "path": ".github/skills/e2e-testing-coach/SKILL.md"
     },
     {
+      "name": "edge-ai-inference-lab",
+      "description": "Get a model running on-device within a real latency, memory, and power budget: post-training and quantization-aware quantization (per-tensor vs per-channel, and why that choice decides your accuracy), structured pruning and distillation, choosing between LiteRT (formerly TensorFlow Lite), ONNX Runtime, and Core ML, using NPU/GPU/DSP accelerators through execution providers and delegates, and measuring on the actual hardware. Use for 'run a model on device', 'quantize for edge', 'TFLite / LiteRT', 'ONNX Runtime mobile', 'Core ML conversion', 'INT8 quantization accuracy drop', 'model too big for the phone', 'Raspberry Pi inference', 'NPU delegate', or 'on-device latency budget'.",
+      "argumentHint": "The model + the target device (phone/MCU/SBC, with its RAM and any NPU) + the hard budget (ms per inference, MB of RAM, mW)",
+      "path": ".github/skills/edge-ai-inference-lab/SKILL.md"
+    },
+    {
       "name": "elasticsearch-local-lab",
       "description": "Hands-on Elasticsearch lab — run Elasticsearch locally with Docker, free and offline, no cloud, no subscription. Create an index with explicit mappings, bulk-index JSON documents, then run Query DSL match/term/bool searches and aggregations. Use for 'run Elasticsearch locally', 'Elasticsearch Docker lab', 'index documents and mappings', 'Query DSL match vs term', 'full-text search tutorial', or a hands-on lab for local search.",
       "argumentHint": "The searchable corpus",
@@ -4184,6 +4347,12 @@
       "path": ".github/skills/error-handling-coach/SKILL.md"
     },
     {
+      "name": "esp-idf-lab",
+      "description": "Build real ESP32 firmware with Espressif's ESP-IDF — project layout and CMake, the idf.py build/flash/monitor loop, FreeRTOS tasks/queues/delays (with ESP-IDF's byte-sized stacks and tick-rate maths), GPIO input/output and ISR-to-task handoff, NVS key-value persistence, and Wi-Fi station bring-up — on real hardware, in QEMU, or in a free browser simulator. Use for 'learn ESP-IDF', 'ESP32 blink in C', 'idf.py flash monitor', 'xTaskCreate stack size', 'vTaskDelay pdMS_TO_TICKS', 'GPIO interrupt ESP32', 'FreeRTOS queue from ISR', 'NVS save a value', 'ESP32 Wi-Fi station example', 'task watchdog got triggered', or 'ESP32 without hardware'.",
+      "argumentHint": "The firmware goal (blink | read a sensor | button ISR | persist a setting | join Wi-Fi) + target chip (esp32 | esp32s3 | esp32c3) and whether you have hardware",
+      "path": ".github/skills/esp-idf-lab/SKILL.md"
+    },
+    {
       "name": "estimation-coach",
       "description": "Teach back-of-the-envelope / capacity estimation — break the problem into knowns, use round numbers and powers of ten, compute QPS, storage, and bandwidth, then sanity-check the result. Use for 'estimate QPS/storage/bandwidth', 'back-of-the-envelope', 'capacity planning', 'Fermi estimate', or sizing a system for a design interview.",
       "argumentHint": "The quantity/system to estimate",
@@ -4214,6 +4383,12 @@
       "path": ".github/skills/exam-strategy-coach/SKILL.md"
     },
     {
+      "name": "excalidraw-sketch-generator",
+      "description": "Generate hand-drawn-style Excalidraw diagrams as real `.excalidraw` JSON — the file wrapper (`type: \\\"excalidraw\\\"`, `version: 2`, `elements`, `appState`, `files`), the element schema every shape shares (id, type, x/y/width/height, angle, strokeColor, backgroundColor, fillStyle, strokeWidth, strokeStyle, roughness, opacity, groupIds, frameId, roundness, seed, version, versionNonce, isDeleted, boundElements, updated, link, locked), text/arrow-specific fields, container-bound labels and arrow bindings — plus when a sketchy, provisional-looking diagram teaches better than a polished one. Use for 'Excalidraw', 'make an excalidraw file', '.excalidraw JSON', 'hand-drawn diagram', 'whiteboard sketch', 'sketchy diagram', 'embed an editable diagram', or 'convert my Mermaid to Excalidraw'.",
+      "argumentHint": "What to sketch (boxes/arrows/labels or a Mermaid source) + where it will be embedded",
+      "path": ".github/skills/excalidraw-sketch-generator/SKILL.md"
+    },
+    {
       "name": "excel-formula-coach",
       "description": "Teach Excel formulas and analysis as a lesson — lookups (XLOOKUP, INDEX/MATCH), logical and aggregation functions (IF/IFS, SUMIFS, COUNTIFS), dynamic arrays (FILTER, UNIQUE, SORT), and PivotTables — with the why and the failure modes. Use for 'fix my formula', 'XLOOKUP vs VLOOKUP', 'why #N/A', 'sum by category', 'build a PivotTable', or learning Excel.",
       "argumentHint": "The Excel task or a formula to fix",
@@ -4236,6 +4411,12 @@
       "description": "Hands-on Express.js lab: define routes, chain middleware, handle errors with the four-arg handler, and serve a JSON API. Use for 'Express lab', 'hands-on Express.js lab', 'Express routing', 'Express middleware', 'Express error handling', 'express.json body parser', or learning Express by building a small API.",
       "argumentHint": "The API",
       "path": ".github/skills/express-lab/SKILL.md"
+    },
+    {
+      "name": "external-secrets-lab",
+      "description": "Hands-on External Secrets Operator on a free local cluster — install ESO, understand SecretStore vs ClusterSecretStore vs ExternalSecret, sync secrets from a backend (fake provider offline, then HashiCorp Vault in dev mode) into real Kubernetes Secrets, template the output, use dataFrom for whole-map sync, set refreshInterval for rotation, and diagnose SecretSynced conditions when it fails. Use for 'External Secrets Operator', 'ExternalSecret', 'SecretStore', 'ClusterSecretStore', 'sync secrets from Vault to Kubernetes', 'secret rotation Kubernetes', 'stop committing secrets to Git', 'ESO lab', or 'sealed secrets vs external secrets'.",
+      "argumentHint": "The secret backend (Vault / cloud KMS / fake) + which workload needs which keys",
+      "path": ".github/skills/external-secrets-lab/SKILL.md"
     },
     {
       "name": "fabric-lakehouse-coach",
@@ -4266,6 +4447,12 @@
       "description": "Prioritize a backlog with a real framework — RICE, ICE, or value-vs-effort — score items honestly against a goal, then sequence by dependency and risk. Use for 'prioritize my backlog', 'RICE scoring', 'ICE score', 'value vs effort', 'what should we build first', or 'MoSCoW / WSJF'. Distinguishes scoring from sequencing; pairs with prd-writer and okr-coach.",
       "argumentHint": "The features + goals",
       "path": ".github/skills/feature-prioritization-coach/SKILL.md"
+    },
+    {
+      "name": "feature-store-coach",
+      "description": "Decide whether you actually need a feature store, then design one correctly: offline versus online stores, point-in-time-correct joins that prevent label leakage, the training/serving skew that silently destroys production models, Feast concepts (entity, feature view, materialization), and the honest 'a table and a cache is enough' alternative. Use for 'feature store', 'Feast', 'point-in-time join', 'training serving skew', 'my model scored great offline and badly in production', 'online vs offline features', 'feature reuse across teams', 'do I need a feature store', or 'as-of join for ML features'.",
+      "argumentHint": "The model + how features are computed today (SQL? notebook? app code?) + whether serving is online/real-time or batch",
+      "path": ".github/skills/feature-store-coach/SKILL.md"
     },
     {
       "name": "feed-curator",
@@ -4436,6 +4623,12 @@
       "path": ".github/skills/gas-optimization-coach/SKILL.md"
     },
     {
+      "name": "gateway-api-lab",
+      "description": "Hands-on Kubernetes Gateway API on a free local cluster — install the standard-channel CRDs, understand the role-oriented split between GatewayClass, Gateway and HTTPRoute, migrate a legacy Ingress, then do header-based routing, path/method matching, weighted traffic splitting for a canary, request mirroring, and cross-namespace routes gated by ReferenceGrant. Use for 'Gateway API', 'HTTPRoute', 'GatewayClass', 'replace Ingress with Gateway API', 'Ingress vs Gateway API', 'header based routing Kubernetes', 'weighted canary HTTPRoute', 'Envoy Gateway lab', or 'is Gateway API GA'.",
+      "argumentHint": "The service(s) to expose + the routing rule you want (host, path, header, or weighted split)",
+      "path": ".github/skills/gateway-api-lab/SKILL.md"
+    },
+    {
       "name": "gcp-ace-exam-drill",
       "description": "Timed drills for the Google Cloud Associate Cloud Engineer exam, sampled to the published exam-guide sections and scored on gcloud recall — because ACE tests whether you can produce the right command, the right IAM binding, and the right billing or quota action, not whether you recognise a diagram. Use for 'Associate Cloud Engineer practice', 'ACE exam drill', 'gcloud command recall', 'GCP IAM role binding question', 'GCP quota and billing', or 'am I ready for the Google ACE'.",
       "argumentHint": "Section focus (setup | plan | deploy | operate | security | mixed) + question count + timed?",
@@ -4542,6 +4735,12 @@
       "description": "Review a Google Cloud design against the six pillars of the Google Cloud Well-Architected Framework — operational excellence, security/privacy/compliance, reliability, cost optimization, performance optimization, and sustainability — producing scored findings with severity, the exact gcloud check to run, and a prioritized remediation plan. Use for 'GCP architecture review', 'Google Cloud Well-Architected', 'GCP design review', 'six pillars Google Cloud', 'is my GCP design reliable', or 'GCP cost and security audit'.",
       "argumentHint": "The design or project to review (services + regions + SLOs + budget) or a project ID to inspect",
       "path": ".github/skills/gcp-well-architected-review/SKILL.md"
+    },
+    {
+      "name": "geopandas-lab",
+      "description": "Hands-on, fully offline geospatial analysis with GeoPandas — GeoSeries/GeoDataFrame, the geometry column, CRS declaration and reprojection by EPSG code, metre-accurate buffers, spatial joins with predicates, overlay and dissolve, and static/interactive plotting — with the CRS-mismatch traps (degrees vs metres, Web Mercator area distortion, lon/lat axis order) taught explicitly. Use for 'learn GeoPandas', 'GeoDataFrame', 'what is a CRS', 'EPSG:4326 vs 3857', 'reproject to UTM', 'buffer in metres', 'spatial join points in polygons', 'sjoin predicate', 'dissolve by region', 'plot a map in Python', or 'my buffer distances look wrong'.",
+      "argumentHint": "The spatial question (points-in-polygon | catchment/buffer | aggregate by area | nearest) + your data (files or coordinates) and study area",
+      "path": ".github/skills/geopandas-lab/SKILL.md"
     },
     {
       "name": "git-bisect-lab",
@@ -4682,10 +4881,28 @@
       "path": ".github/skills/graph-algorithms-coach/SKILL.md"
     },
     {
+      "name": "graph-data-modeling-coach",
+      "description": "Model connected data properly — property graph (nodes, typed directed relationships, properties on both) versus RDF triples and SPARQL, index-free adjacency versus repeated index joins, Cypher/GQL basics, and the decision of when a node beats a property beats a relationship — with the traversal-versus-join arithmetic that says whether a graph database is actually justified. Use for 'graph database', 'Neo4j Cypher', 'property graph vs RDF', 'should we use a graph database', 'friends of friends query', 'variable length path', 'supernode problem', 'knowledge graph modeling', or 'recursive CTE is too slow'.",
+      "argumentHint": "The domain + the 2-3 questions you must answer (with expected hop depth) + current store (relational | document | none)",
+      "path": ".github/skills/graph-data-modeling-coach/SKILL.md"
+    },
+    {
+      "name": "graph-rag-coach",
+      "description": "Design knowledge-graph-augmented retrieval (GraphRAG) as a lesson: extract entities and relations into a graph, detect communities, pre-summarise them for global questions, and route each query to graph, vector, or hybrid retrieval — with an honest account of when a graph is worth the extra indexing cost and when plain vector RAG already wins. Use for 'GraphRAG', 'knowledge graph RAG', 'graph vs vector RAG', 'multi-hop question answering', 'entity and relation extraction for retrieval', 'community summarization', 'my RAG cannot answer questions about the whole corpus', 'global vs local search', or 'hybrid graph + vector retrieval'.",
+      "argumentHint": "The corpus + the question type you cannot answer today (multi-hop? whole-corpus summary? entity-centric?) + your budget for indexing",
+      "path": ".github/skills/graph-rag-coach/SKILL.md"
+    },
+    {
       "name": "graphql-schema-coach",
       "description": "Design a GraphQL schema as a lesson — types and fields, queries/mutations/subscriptions, resolvers, the N+1 problem and DataLoader batching, cursor connections, nullability, and additive versioning. Use for 'design a GraphQL schema', 'GraphQL resolvers', 'N+1 dataloader', 'GraphQL pagination', 'schema versioning', or learning GraphQL API design.",
       "argumentHint": "The API/domain",
       "path": ".github/skills/graphql-schema-coach/SKILL.md"
+    },
+    {
+      "name": "graphviz-dot-lab",
+      "description": "Hands-on Graphviz DOT lab — write valid DOT (graphs, nodes, edges, attribute defaults), group with subgraphs and `cluster_` boxes, control shape with rankdir/rank/ranksep/newrank, pick the right layout engine (dot vs neato vs fdp vs sfdp vs circo vs twopi), render to SVG/PNG/PDF, and gate parse errors in CI — plus an honest answer to when DOT beats Mermaid and when it doesn't. Use for 'Graphviz', 'DOT language', 'dot -Tsvg', 'digraph', 'rankdir=LR', 'cluster subgraph', 'neato vs dot', 'my graph is a hairball', 'generate a dependency graph', or 'Graphviz vs Mermaid'.",
+      "argumentHint": "The graph you want to draw (nodes/edges or the command that generates them) + where the image must land",
+      "path": ".github/skills/graphviz-dot-lab/SKILL.md"
     },
     {
       "name": "great-expectations-lab",
@@ -4766,6 +4983,12 @@
       "path": ".github/skills/hybrid-search-reranking-coach/SKILL.md"
     },
     {
+      "name": "hyperparameter-tuning-lab",
+      "description": "Hands-on, local, free hyperparameter optimisation — build a real search with scikit-learn and Optuna, understand why random search beats grid search when only a few hyperparameters matter, define search spaces on the right scale (log vs linear), prune bad trials early with median/Hyperband stopping, and wrap the whole search in nested cross-validation so the reported score is not the optimistic bias of the selection procedure itself. Use for 'hyperparameter tuning', 'Optuna tutorial', 'GridSearchCV vs RandomizedSearchCV', 'Bayesian optimisation', 'TPE sampler', 'how many trials do I need', 'early stopping bad trials', 'nested cross-validation', 'my tuned model does worse on test', 'log-uniform search space', 'HalvingRandomSearchCV'.",
+      "argumentHint": "The estimator + which hyperparameters + your compute budget (wall-clock or number of trials)",
+      "path": ".github/skills/hyperparameter-tuning-lab/SKILL.md"
+    },
+    {
       "name": "hypothesis-testing-coach",
       "description": "Teach hypothesis testing from first principles: frame the null and alternative, choose the right test (one/two-sample or paired t-test, chi-square, nonparametric), compute and interpret p-values correctly, and reason about Type I/II errors and power. Use for 'is this significant', 'which statistical test', 't-test vs chi-square', 'what does the p-value mean', 'null vs alternative hypothesis', or 'Type I error'. Teaches honest inference, not p-hacking.",
       "argumentHint": "The question",
@@ -4784,6 +5007,12 @@
       "path": ".github/skills/idempotency-coach/SKILL.md"
     },
     {
+      "name": "imbalanced-data-coach",
+      "description": "Handle skewed class distributions without fooling yourself — retire accuracy in favour of PR-AUC and F-beta, decide honestly whether you need resampling at all, apply SMOTE/undersampling/class weights *inside* the cross-validation fold so nothing leaks, move the decision threshold instead of the data where that is enough, keep probabilities calibrated, and stratify every split so rare-class folds are not empty. Use for 'class imbalance', 'imbalanced dataset', 'SMOTE', 'oversampling vs undersampling', 'class_weight balanced', 'my model has 99% accuracy but finds no frauds', 'PR-AUC vs ROC-AUC', 'F1 vs F2 score', 'how do I pick a classification threshold', 'rare event prediction', 'fraud detection metrics', 'stratified k-fold'.",
+      "argumentHint": "The dataset + positive-class prevalence + what a false negative and a false positive actually cost",
+      "path": ".github/skills/imbalanced-data-coach/SKILL.md"
+    },
+    {
       "name": "incident-postmortem",
       "description": "Write a blameless incident postmortem that teaches — timeline, quantified impact, root cause via the 5 Whys, contributing factors, what went well/poorly, and tracked action items with owners. Use for 'write a postmortem', 'incident retrospective', 'blameless RCA', 'root cause analysis', or 'after-action review'. Focus on fixing systems, never blaming people.",
       "argumentHint": "The incident details",
@@ -4794,6 +5023,12 @@
       "description": "Run a DEFENSIVE blue-team incident-response tabletop as a lesson — assign roles (IC, ops, comms, scribe), then walk detection, triage, containment, eradication, communication, and recovery for a simulated scenario, ending in a blameless postmortem. Authorized and simulated only. Use for 'run an incident tabletop', 'IR drill', 'practice on-call', 'incident roles', or learning incident management. Defense only.",
       "argumentHint": "The scenario/system",
       "path": ".github/skills/incident-response-drill/SKILL.md"
+    },
+    {
+      "name": "ingestion-connector-lab",
+      "description": "Build a source connector that is safe to re-run — full refresh vs incremental sync, cursor/watermark selection and why '>' loses rows while '>=' plus an idempotent upsert does not, at-least-once delivery with state committed in the same transaction as the data, HTTP 429 handling with Retry-After and exponential backoff with full jitter, pagination, hard deletes that cursors cannot see, and schema drift. Runnable end to end in Python with only the standard library. Use for 'write a data connector', 'incremental sync', 'watermark vs cursor', 'idempotent upsert', 'API pagination ingestion', 'rate limit backoff', 'my sync missed rows', 'duplicate rows after retry', or 'schema drift in ingestion'.",
+      "argumentHint": "The source (REST API, DB table, file drop) + its cursor field and pagination style + your sink (warehouse table/file) and the freshness you need",
+      "path": ".github/skills/ingestion-connector-lab/SKILL.md"
     },
     {
       "name": "inp-optimization-lab",
@@ -4976,6 +5211,12 @@
       "path": ".github/skills/k8s-configmap-secret-lab/SKILL.md"
     },
     {
+      "name": "k8s-cost-optimization-lab",
+      "description": "Cut Kubernetes spend without cutting reliability — measure real usage, right-size requests and limits with arithmetic instead of superstition, understand why requests (not limits) drive cost and scheduling, use VPA recommendations and HPA correctly together, improve bin-packing and node shapes, exploit spot/preemptible capacity safely, cap tenants with ResourceQuota and LimitRange, and attribute spend per namespace with OpenCost. Use for 'Kubernetes cost', 'right-size requests and limits', 'reduce cluster cost', 'VPA recommendations', 'HPA and VPA together', 'bin packing Kubernetes', 'spot instances Kubernetes', 'ResourceQuota', 'OpenCost', 'kubecost', or 'our cluster is 20% utilised and costs a fortune'.",
+      "argumentHint": "The workload or namespace to optimise + the current requests/limits and observed usage (or 'help me measure it')",
+      "path": ".github/skills/k8s-cost-optimization-lab/SKILL.md"
+    },
+    {
       "name": "k8s-deployment-lab",
       "description": "Hands-on lab on a Kubernetes Deployment — build one step by step: pods, replicas, label selectors, a rolling update, and a rollback, applying and observing each change with kubectl. Use for 'Kubernetes Deployment lab', 'the app to deploy', 'roll out a new image', 'rolling update', 'roll back a bad deploy', or learning Deployments by doing. Includes a prod-apply safety note.",
       "argumentHint": "The app to deploy",
@@ -4986,6 +5227,12 @@
       "description": "Hands-on NetworkPolicy lab on a local kind/k3d/minikube cluster with a policy-enforcing CNI — start from a default-deny baseline, add ingress and egress allow-lists with podSelector, namespaceSelector and ipBlock, fix the CoreDNS egress gotcha, and prove with curl from real pods that traffic is actually blocked rather than merely declared. Use for 'Kubernetes NetworkPolicy lab', 'default deny in Kubernetes', 'zero trust pod networking', 'why is my NetworkPolicy not working', 'egress allow-list', or 'DNS broken after NetworkPolicy'.",
       "argumentHint": "The namespace or app to lock down (e.g. web → api → db three-tier app)",
       "path": ".github/skills/k8s-network-policy-lab/SKILL.md"
+    },
+    {
+      "name": "k8s-operator-crd-lab",
+      "description": "Build a real Kubernetes operator on a free local cluster — design a CustomResourceDefinition with a spec/status split and OpenAPI validation, scaffold a controller with kubebuilder and controller-runtime, write a level-triggered idempotent reconcile loop that compares desired to observed state, own child objects with controller references, report progress with standard status conditions and observedGeneration, and handle deletion safely with finalizers. Use for 'write a Kubernetes operator', 'CRD tutorial', 'kubebuilder', 'controller-runtime', 'reconcile loop', 'status conditions', 'finalizers Kubernetes', 'custom controller', or 'should this be an operator at all'.",
+      "argumentHint": "The domain object you want to make declarative + what its controller must create/own (or 'help me decide if a CRD is right')",
+      "path": ".github/skills/k8s-operator-crd-lab/SKILL.md"
     },
     {
       "name": "k8s-rbac-lab",
@@ -5282,6 +5529,12 @@
       "path": ".github/skills/loki-logging-local-lab/SKILL.md"
     },
     {
+      "name": "lookml-coach",
+      "description": "Model a governed semantic layer in LookML — views, dimensions, dimension_groups and measures, explores and joins with the relationship parameter that makes symmetric aggregates work, SQL derived tables vs native derived tables vs persisted derived tables (PDTs) and incremental PDTs, access_grant / access_filter / sql_always_where for row-level governance, and the field-level fields parameter. Use for 'LookML', 'Looker model', 'explore joins', 'symmetric aggregates', 'fanout in Looker', 'my sums are inflated', 'derived table vs PDT', 'native derived table', 'access_grant', 'access_filter', 'Looker row level security', or 'how do I define a measure in Looker'.",
+      "argumentHint": "The fact/dimension tables to model + the questions the explore must answer + your governance rule (who sees which rows/fields)",
+      "path": ".github/skills/lookml-coach/SKILL.md"
+    },
+    {
       "name": "lwc-component-lab",
       "description": "Hands-on Lightning Web Component lab in a free Salesforce Developer Edition org — build a component with @api/@wire/@track, choose between wire and imperative Apex, read and write records through Lightning Data Service instead of custom Apex, publish and subscribe over Lightning Message Service, and prove behaviour with sfdx-lwc-jest tests. Use for 'build an LWC', 'Lightning Web Component', '@wire vs imperative Apex', 'LWC decorators', 'Lightning Data Service', 'Lightning Message Service', 'component communication', 'LWC Jest test', or 'lwc not re-rendering'.",
       "argumentHint": "A component goal, e.g. 'record list with search', 'child-to-parent event', or 'why doesn't my array update the UI'",
@@ -5414,6 +5667,24 @@
       "path": ".github/skills/ml-system-design-drill/SKILL.md"
     },
     {
+      "name": "mobile-accessibility-coach",
+      "description": "Teach and fix mobile accessibility on iOS and Android — VoiceOver and TalkBack navigation, semantic labels/roles/traits, focus order and grouping, 44pt/48dp touch targets, Dynamic Type and Android font scaling, colour contrast, reduce-motion, and automated audits with Accessibility Inspector, Accessibility Scanner and Espresso checks. Use for 'mobile accessibility', 'VoiceOver', 'TalkBack', 'contentDescription', 'accessibilityLabel', 'screen reader says button button', 'Dynamic Type', 'font scaling breaks my layout', 'touch target too small', 'colour contrast', 'WCAG on mobile', 'accessibility audit for my app', or 'a11y for iOS/Android'.",
+      "argumentHint": "The screen or component to make accessible + platform (iOS/Android/Flutter/RN) + the target (e.g. WCAG 2.2 AA, EN 301 549)",
+      "path": ".github/skills/mobile-accessibility-coach/SKILL.md"
+    },
+    {
+      "name": "mobile-app-performance-lab",
+      "description": "Hands-on mobile performance lab that measures before it optimises — cold/warm/hot start time, jank and dropped frames against a 60/90/120 fps frame budget, memory footprint and terminations, and battery/network cost — using Instruments and XCTest metrics on iOS and Android Profiler, Macrobenchmark and JankStats on Android. Use for 'mobile performance', 'app is slow to launch', 'cold start time', 'jank', 'dropped frames', 'scrolling stutters', 'ANR', 'app killed in background', 'memory leak on mobile', 'battery drain', 'Instruments', 'Time Profiler', 'Android Profiler', 'Macrobenchmark', 'Baseline Profile', or 'how do I profile my iOS/Android app'.",
+      "argumentHint": "The app + the symptom (e.g. 'cold start 3.1s on a Pixel 6a') + platform, device model and build configuration",
+      "path": ".github/skills/mobile-app-performance-lab/SKILL.md"
+    },
+    {
+      "name": "mobile-app-security-coach",
+      "description": "Run a structured, DEFENSIVE, authorised-only security review of a mobile app YOU own — scope and authorisation first, then an OWASP MASVS/MASTG-guided assessment: data-at-rest in the app sandbox, data-in-transit and TLS validation, secrets and configuration in your own build artifacts, insecure logging and other leak paths, dependency and SDK risk, a static-then-dynamic analysis plan on devices you control, and a severity-ranked report with remediation and retest. Use for 'mobile app security review', 'MASVS assessment', 'MASTG checklist', 'pentest readiness for our app', 'are we leaking data on device', 'secrets in our APK/IPA', 'insecure logging', 'security review before app store release', or 'how do I audit my own mobile app'. AUTHORISED-ONLY — never for apps you do not own.",
+      "argumentHint": "The app + build artifact you own (APK/AAB/IPA + source) + written authorisation + scope and deadline",
+      "path": ".github/skills/mobile-app-security-coach/SKILL.md"
+    },
+    {
       "name": "mobile-offline-sync-coach",
       "description": "Design offline-first mobile apps as a lesson — local store, background sync, conflict resolution, and an outbox queue on iOS and Android. Use for 'offline-first', 'offline sync', 'Core Data/SwiftData vs Room', 'CloudKit sync', 'WorkManager sync', 'conflict resolution / last-write-wins', 'outbox queue', or 'app must work with no network'.",
       "argumentHint": "The offline need",
@@ -5432,16 +5703,34 @@
       "path": ".github/skills/mobile-release-coach/SKILL.md"
     },
     {
+      "name": "mobile-security-coach",
+      "description": "Teach mobile security fundamentals for apps you build — the iOS/Android sandbox and permission models, secure local storage with the iOS Keychain and Android Keystore, transport security (ATS, Network Security Config, TLS and certificate/public-key pinning), biometric authentication done as a key gate rather than a boolean, what jailbreak/root detection can and cannot buy you, and the OWASP MASVS control areas. Use for 'mobile security', 'where do I store a token on mobile', 'iOS Keychain', 'Android Keystore', 'EncryptedSharedPreferences', 'certificate pinning', 'SSL pinning on mobile', 'BiometricPrompt', 'Face ID login', 'root detection', 'jailbreak detection', 'OWASP MASVS', or 'is it safe to store an API key in my app'. DEFENSIVE ONLY — hardening apps you own.",
+      "argumentHint": "What you are protecting (e.g. 'session token + offline health records') + platform + threat you care about (device theft, hostile network, malicious app)",
+      "path": ".github/skills/mobile-security-coach/SKILL.md"
+    },
+    {
       "name": "mobile-state-management-coach",
       "description": "Structure mobile app state as a lesson — unidirectional data flow, state hoisting, persistence, and surviving process death on iOS and Android. Use for 'mobile state management', 'SwiftUI @State/@Observable', 'Jetpack ViewModel/StateFlow', 'state hoisting', 'single source of truth', 'restore after the OS kills my app', or 'process death'.",
       "argumentHint": "The state need",
       "path": ".github/skills/mobile-state-management-coach/SKILL.md"
     },
     {
+      "name": "mobile-ui-testing-lab",
+      "description": "Hands-on mobile UI test lab — write XCUITest on iOS, Espresso/Compose tests on Android, and cross-platform Appium suites, then make them fast and non-flaky with proper synchronisation (idling resources, waitForExistence, composeTestRule.waitUntil), stable accessibility-id selectors, hermetic test data, snapshot/screenshot testing and device farms. Use for 'XCUITest', 'Espresso', 'Appium', 'Compose UI test', 'my UI tests are flaky', 'test keeps failing on CI but passes locally', 'Thread.sleep in tests', 'IdlingResource', 'snapshot testing', 'screenshot tests', 'Firebase Test Lab', 'device farm', or 'how do I test my mobile UI'.",
+      "argumentHint": "The flow to test (e.g. 'login → cart → checkout') + platform/framework + where it must run (local, CI, device farm)",
+      "path": ".github/skills/mobile-ui-testing-lab/SKILL.md"
+    },
+    {
       "name": "mock-exam",
       "description": "Run a full, timed mock exam for a certification or subject with a realistic item mix, then score by objective domain, explain every answer, and produce a targeted study plan for the gaps. Use for 'full mock exam', 'timed practice test', 'exam simulation', or a final readiness check. Complements the Exam and Certification Coach.",
       "argumentHint": "Exam/cert code or subject + number of questions + time limit",
       "path": ".github/skills/mock-exam/SKILL.md"
+    },
+    {
+      "name": "model-card-writer",
+      "description": "Write a model card that a reviewer, an auditor, and the next engineer can all act on: the nine Mitchell et al. sections, intended and out-of-scope use, training-data provenance, disaggregated evaluation across slices, honest limitations, and ethical considerations — generated from real evaluation numbers and regenerated in CI so it cannot drift from the deployed artefact. Use for 'write a model card', 'model documentation', 'Mitchell model card', 'Hugging Face model card', 'document my model for review', 'datasheet for datasets', 'what are the limitations of my model', 'disaggregated evaluation', or 'AI Act technical documentation'.",
+      "argumentHint": "The model (task + artefact/version) + its evaluation results + who reads the card (internal reviewer, customer, regulator, open-source user)",
+      "path": ".github/skills/model-card-writer/SKILL.md"
     },
     {
       "name": "model-explainability-lab",
@@ -5460,6 +5749,12 @@
       "description": "Choose the right ML model/approach for a problem: frame it (classification, regression, ranking, clustering, forecasting), start from a simple baseline, weigh model complexity against data size, and evaluate — with trade-offs made explicit. Use for 'which model should I use', 'what algorithm for my data', 'is this classification or regression', 'do I need deep learning', 'baseline model', or 'simplest model that works'. Teaches the choice, not just a library call.",
       "argumentHint": "The problem + data + constraints",
       "path": ".github/skills/model-selection-advisor/SKILL.md"
+    },
+    {
+      "name": "model-serving-lab",
+      "description": "Put a trained model behind an HTTP endpoint that survives production: choose between a FastAPI wrapper, ONNX Runtime, and Triton Inference Server, implement dynamic micro-batching, reason about the latency-versus-throughput trade with Little's Law, wire real liveness/readiness probes, and pick the autoscaling signal that actually tracks saturation. Use for 'serve my ML model', 'deploy model as an API', 'FastAPI model endpoint', 'ONNX Runtime inference server', 'Triton dynamic batching', 'model inference is too slow', 'p99 latency spikes under load', 'health check for an ML service', or 'how do I autoscale model inference'.",
+      "argumentHint": "The model (framework + size) + the SLO you must hit (p99 latency, req/s) + where it will run (CPU/GPU, container/k8s)",
+      "path": ".github/skills/model-serving-lab/SKILL.md"
     },
     {
       "name": "modern-css-features-lab",
@@ -5490,6 +5785,12 @@
       "description": "Orchestrate multiple LLM agents that work together: roles/specialization, handoffs, shared state/memory, supervisor (orchestrator-worker) vs. peer patterns, and failure/loop/cost control. Use for 'multi-agent system', 'agents talking to each other', 'supervisor/router agent', 'agent handoff', 'crew/team of agents', 'agents stuck in a loop', or 'is one agent enough'. Teaches when NOT to go multi-agent, too.",
       "argumentHint": "The multi-agent goal",
       "path": ".github/skills/multi-agent-orchestration-coach/SKILL.md"
+    },
+    {
+      "name": "multi-tenancy-data-coach",
+      "description": "Choose and defend a tenant-isolation model for your data layer — silo (database per tenant), bridge (schema per tenant), or pool (shared tables + tenant_id) — then make it actually safe with PostgreSQL row-level security, fail-closed tenant context, noisy-neighbour controls, per-tenant keys and crypto-shredding, and a migration path between models. Use for 'multi-tenant database design', 'database per tenant vs shared schema', 'row level security', 'tenant isolation', 'noisy neighbour', 'one tenant is huge', 'per-tenant encryption keys', 'schema per tenant migrations', or 'we leaked another tenant's data'.",
+      "argumentHint": "Tenant count + size skew (largest tenant % of data) + compliance/residency needs + current model (none | pool | bridge | silo)",
+      "path": ".github/skills/multi-tenancy-data-coach/SKILL.md"
     },
     {
       "name": "mutation-testing-coach",
@@ -5666,6 +5967,12 @@
       "path": ".github/skills/opa-policy-lab/SKILL.md"
     },
     {
+      "name": "opc-ua-coach",
+      "description": "Teach OPC UA (IEC 62541) for industrial IoT from the address space up — nodes, references, NodeIds and namespaces, type definitions and companion specifications, the SecureChannel → Session → Subscription/MonitoredItem stack, security modes and policies, client-server vs Part 14 PubSub, and what interoperability and certification actually guarantee — with a free, fully local Python server and client. Use for 'what is OPC UA', 'OPC UA address space', 'NodeId and namespace index', 'browse vs read', 'OPC UA subscription monitored item', 'SecurityPolicy Basic256Sha256', 'SignAndEncrypt', 'OPC UA pub sub vs client server', 'OPC UA vs MQTT', 'companion specification', or 'connect to an OPC UA server in Python'.",
+      "argumentHint": "What you're doing (model a machine | integrate a server | choose transport/security | debug a connection) + the devices/vendors involved and whether you need PubSub",
+      "path": ".github/skills/opc-ua-coach/SKILL.md"
+    },
+    {
       "name": "openapi-spec-writer",
       "description": "Write an OpenAPI (Swagger) specification as a lesson — model paths and operations, request/response schemas, parameters, status responses, reusable components, security schemes, and examples for a described API. Use for 'write an OpenAPI spec', 'document my API in Swagger', 'define the schema', 'add examples to the spec', or learning OpenAPI.",
       "argumentHint": "The API to specify",
@@ -5688,6 +5995,18 @@
       "description": "Teach portable XR development from the Khronos OpenXR object lifecycle upward — instance → system → session → reference spaces → action sets → the xrWaitFrame/xrBeginFrame/xrEndFrame loop — so one binary runs on Quest, SteamVR, WMR, and the open-source Monado runtime without vendor #ifdefs. Use for 'learn OpenXR', 'OpenXR session state machine', 'what is a reference space', 'OpenXR action bindings', 'why is my XR frame loop stalling', 'port my VR app off a vendor SDK', or 'run XR without a headset'.",
       "argumentHint": "Your target runtime/device (Quest | SteamVR | Monado | simulator) + language/graphics API (C++/Vulkan, C#/Unity, ...)",
       "path": ".github/skills/openxr-xr-basics-coach/SKILL.md"
+    },
+    {
+      "name": "org-design-coach",
+      "description": "Design engineering organisations for fast flow — apply the four Team Topologies team types (stream-aligned, platform, enabling, complicated-subsystem) and three interaction modes (collaboration, X-as-a-Service, facilitating), use Conway's law deliberately via the inverse Conway manoeuvre, cut teams along fracture planes, size them to Dunbar limits, measure and reduce team cognitive load, and publish a team API so dependencies stop being surprises. Use for 'team topologies', 'how should we structure our teams', 'Conway's law', 'inverse Conway manoeuvre', 'platform team', 'enabling team', 'team cognitive load', 'we have too many dependencies', 'should we reorg', or 'who owns this service'.",
+      "argumentHint": "The current team/service map + the flow problem you're trying to fix (slow delivery, handoffs, ownership gaps)",
+      "path": ".github/skills/org-design-coach/SKILL.md"
+    },
+    {
+      "name": "orm-performance-coach",
+      "description": "Find and fix ORM performance problems from the SQL up — detect select-N+1 by counting queries, choose between lazy, joined and select-in (batch) loading, understand why joined eager loading of collections multiplies rows and breaks LIMIT, stop over-fetching columns, and decide when to drop to raw SQL — with concrete recipes for SQLAlchemy, Django ORM, Hibernate/JPA, ActiveRecord and Prisma. Use for 'N+1 queries', 'select N+1', 'eager vs lazy loading', 'why is my ORM slow', 'joinedload vs selectinload', 'select_related vs prefetch_related', 'HHH000104', 'LazyInitializationException', 'includes vs preload vs eager_load', or 'should I write raw SQL'.",
+      "argumentHint": "ORM + the slow endpoint/page + how many rows it renders + the query log or query count if you have it",
+      "path": ".github/skills/orm-performance-coach/SKILL.md"
     },
     {
       "name": "os-internals-coach",
@@ -5768,6 +6087,12 @@
       "path": ".github/skills/phishing-resistant-auth-coach/SKILL.md"
     },
     {
+      "name": "platform-idp-coach",
+      "description": "Design an internal developer platform that engineers actually choose to use — treat the platform as a product with users and a roadmap, build paved-road golden paths instead of mandates, make self-service the default (templates, ephemeral environments, one-command provisioning), decide what Backstage or a portal is and is not for, and measure the platform with DevEx and DORA signals rather than adoption vanity metrics. Use for 'internal developer platform', 'IDP', 'platform engineering', 'golden path', 'paved road', 'Backstage', 'developer portal', 'self-service infrastructure', 'platform as a product', 'developer experience', or 'nobody uses our platform'.",
+      "argumentHint": "The platform's intended users + the one developer journey you want to make boring (e.g. 'new service from zero to production in a day')",
+      "path": ".github/skills/platform-idp-coach/SKILL.md"
+    },
+    {
       "name": "playwright-test-lab",
       "description": "Hands-on lab: build reliable end-to-end browser tests locally with Playwright, the free OSS framework. Learn to scaffold a project, generate a first test with codegen, use resilient role/test-id locators, rely on web-first auto-retrying assertions (no sleeps), run headless across Chromium/Firefox/WebKit, and debug failures with the trace viewer. Use for 'Playwright', 'E2E test locally', 'browser test lab', 'trace viewer', or learning reliable E2E testing hands-on.",
       "argumentHint": "The app URL + critical flow",
@@ -5784,6 +6109,12 @@
       "description": "Run one timed product-management interview question at a time — product sense with CIRCLES, execution/metrics debugging ('DAU dropped 12%, diagnose it'), market-sizing estimation, and product strategy — then score the answer against an explicit rubric, show a model answer, and set one targeted follow-up. Use for 'PM interview practice', 'product sense question', 'CIRCLES framework', 'metrics debugging interview', 'estimation question', 'product strategy interview', or 'mock PM interview'.",
       "argumentHint": "Round type (product sense | execution | estimation | strategy) + level (APM/PM/senior) + time budget",
       "path": ".github/skills/pm-interview-drill/SKILL.md"
+    },
+    {
+      "name": "polars-lab",
+      "description": "Hands-on Polars lab you can run locally for free — eager DataFrame vs lazy LazyFrame, the expression API and why expressions parallelise, group_by/agg, the join how= variants including semi/anti, scan_parquet with projection and predicate pushdown read from .explain(), out-of-core/streaming collection and sink_parquet, and the concrete semantic differences from pandas (no index, null vs NaN, strict types, immutability). Use for 'learn Polars', 'Polars vs pandas', 'Polars lazy vs eager', 'polars group_by', 'polars join', 'LazyFrame explain', 'polars streaming larger than memory', 'polars expression API', or 'why is my pandas code slow'.",
+      "argumentHint": "The dataset (CSV/Parquet path or a toy frame) + the transformation you want to express, and whether it must fit in memory",
+      "path": ".github/skills/polars-lab/SKILL.md"
     },
     {
       "name": "portfolio-reviewer",
@@ -5856,6 +6187,12 @@
       "description": "Choose and run the right alignment method — SFT to teach the format, RLHF/PPO to optimise a learned reward, or DPO to skip the reward model entirely — and understand what each one costs in data, compute, and failure modes. Use for 'SFT vs RLHF vs DPO', 'direct preference optimization', 'align my model', 'reward model', 'preference data quality', 'my fine-tune became verbose', 'reward hacking', 'KTO or ORPO', or 'RLHF pipeline'.",
       "argumentHint": "Base model + what behaviour must change (format, tone, refusal, task quality) + how much preference data and GPU budget you have",
       "path": ".github/skills/preference-tuning-coach/SKILL.md"
+    },
+    {
+      "name": "prerequisite-graph-generator",
+      "description": "Turn a learning goal into a prerequisite DAG — decompose the topic into atomic concepts, state the dependency between each pair as a testable claim ('you cannot understand B until you can do A'), detect and break cycles, topologically sort into levels, and emit a labelled Mermaid graph plus a sequenced learning path with checkpoints. Use for 'what should I learn first', 'prerequisites for X', 'learning dependency graph', 'in what order should I study', 'prerequisite tree', 'I keep getting lost halfway through the tutorial', or 'build me a study order'.",
+      "argumentHint": "The learning goal + what you already know (and any deadline or weekly hours)",
+      "path": ".github/skills/prerequisite-graph-generator/SKILL.md"
     },
     {
       "name": "pricing-strategy-coach",
@@ -6194,6 +6531,12 @@
       "path": ".github/skills/reasoning-models-coach/SKILL.md"
     },
     {
+      "name": "recommender-systems-coach",
+      "description": "Design and evaluate recommenders that survive contact with production — choose between content-based, neighbourhood collaborative filtering and matrix factorisation, model implicit feedback with confidence weights instead of pretending clicks are ratings, rank with NDCG/MAP/Recall@k instead of RMSE, split by time so you never train on the future, always beat a popularity baseline before claiming progress, and handle user/item cold start explicitly. Use for 'recommender system', 'collaborative filtering', 'matrix factorization', 'implicit feedback ALS', 'BPR ranking loss', 'NDCG explained', 'MAP@k', 'Recall@k', 'cold start problem', 'why does my recommender do worse in production', 'popularity bias', 'offline evaluation of recommenders', 'user-item matrix'.",
+      "argumentHint": "The interaction data (users, items, explicit or implicit signal, time span) + what a good recommendation is worth",
+      "path": ".github/skills/recommender-systems-coach/SKILL.md"
+    },
+    {
       "name": "recursion-backtracking-coach",
       "description": "Teach how to think recursively and how to search systematically — base case vs recursive case, the leap of faith (trust the recursion), what the call stack actually holds, converting recursion to iteration and back, the backtracking template (choose, explore, un-choose) with pruning, the classics (subsets, combinations, permutations, N-queens, sudoku, word search, generating parentheses), recursion-tree complexity, and the pitfalls (missing base case, mutated shared state, stack overflow, redundant work that should be memoized). Use for 'recursion', 'backtracking', 'how to think recursively', 'permutations', 'subsets', 'N-queens', 'prune the search', 'recursion vs iteration', 'stack overflow in recursion'.",
       "argumentHint": "The recursive/backtracking problem or concept (+ optional language)",
@@ -6218,6 +6561,12 @@
       "path": ".github/skills/refactoring-coach/SKILL.md"
     },
     {
+      "name": "referral-outreach-coach",
+      "description": "Ask for a job referral honestly and effectively — map who can actually refer you (weak ties beat close friends), qualify the role before you ask, write a short specific message that makes it easy to say yes *or* no, run a bounded follow-up cadence, and handle silence, a decline, or a referral that doesn't convert with grace. Ethical by design: no fabricated connections, no pressure, no mass-spam, full honesty about your fit. Use for 'ask for a referral', 'cold message a recruiter', 'LinkedIn outreach', 'referral request template', 'how do I follow up', 'networking for a job', or 'is it rude to ask a stranger for a referral'.",
+      "argumentHint": "The target role/company + who you already know there (or how you found them) + your strongest evidence of fit",
+      "path": ".github/skills/referral-outreach-coach/SKILL.md"
+    },
+    {
       "name": "regex-explainer",
       "description": "Explain a regular expression part by part, or build one from a matching goal — break the pattern into a table of tokens, show what it matches (and doesn't) on real examples, warn about catastrophic backtracking, and give a tested final pattern. Use for 'explain this regex', 'what does this pattern do', 'write a regex for…', 'is this regex safe', or learning regex.",
       "argumentHint": "A regex to explain OR a matching goal + language/flavor",
@@ -6228,6 +6577,12 @@
       "description": "Diagnose a fitted regression before trusting it: read residual plots for nonlinearity and heteroscedasticity, detect multicollinearity with VIF, and find influential points with leverage and Cook's distance. Use for 'check my regression assumptions', 'residual plot', 'heteroscedasticity', 'multicollinearity / VIF', 'outliers and influence', or 'why are my coefficients unstable'. Teaches honest model checking, not R-squared chasing.",
       "argumentHint": "The model",
       "path": ".github/skills/regression-diagnostics-coach/SKILL.md"
+    },
+    {
+      "name": "release-versioning-coach",
+      "description": "Design a release process people can trust — apply Semantic Versioning 2.0.0 correctly (including 0.y.z, pre-releases and precedence), write Conventional Commits that mechanically derive the next version, generate a Keep a Changelog-style changelog humans actually read, automate the whole thing with release-please or semantic-release, define a deprecation and breaking-change policy with a real notice period, and choose fixed vs independent versioning in a monorepo. Use for 'semantic versioning', 'SemVer', 'conventional commits', 'changelog', 'release automation', 'release-please', 'semantic-release', 'breaking change policy', 'deprecation policy', 'monorepo versioning', or 'when do we bump major'.",
+      "argumentHint": "What you release (library / service / CLI / monorepo) + who consumes it and how they upgrade",
+      "path": ".github/skills/release-versioning-coach/SKILL.md"
     },
     {
       "name": "remote-code-runner",
@@ -6282,6 +6637,12 @@
       "description": "Design retry behaviour that heals transient faults without amplifying an outage — timeout budgets across a call chain, exponential backoff with full/decorrelated jitter, capped attempts, retry budgets and token buckets, deciding which errors are retryable, idempotency keys for safe replay, dead-letter queues and poison-pill handling, and avoiding retry storms and metastable failure. Use for 'retry strategy', 'exponential backoff', 'jitter', 'retry storm', 'timeout budget', 'idempotency key', 'dead letter queue', 'poison pill', or 'should I retry this error'.",
       "argumentHint": "The call (RPC, HTTP, queue consumer) + its timeout, SLO, and failure symptom",
       "path": ".github/skills/retry-backoff-coach/SKILL.md"
+    },
+    {
+      "name": "rls-and-data-masking-coach",
+      "description": "Design and verify row-level security and dynamic data masking without leaving a hole — PostgreSQL RLS policies and the exact difference between USING (filters existing rows, fails silently) and WITH CHECK (validates new rows, fails loudly), permissive vs restrictive policies, FORCE ROW LEVEL SECURITY and the owner/BYPASSRLS bypass, security_invoker views for column masking, plus Snowflake row access + masking policies and BigQuery row access policies and data policies. Use for 'row level security', 'RLS policy', 'USING vs WITH CHECK', 'multi-tenant isolation in Postgres', 'BYPASSRLS', 'FORCE ROW LEVEL SECURITY', 'dynamic data masking', 'column masking', 'Snowflake masking policy', 'BigQuery row access policy', or 'my tenant filter leaked'.",
+      "argumentHint": "The table + the isolation rule you must enforce (tenant, region, role) + engine: PostgreSQL | Snowflake | BigQuery",
+      "path": ".github/skills/rls-and-data-masking-coach/SKILL.md"
     },
     {
       "name": "roadmap-builder",
@@ -6374,6 +6735,12 @@
       "path": ".github/skills/salary-negotiation/SKILL.md"
     },
     {
+      "name": "salesforce-governor-limits-coach",
+      "description": "Design Apex that never throws a LimitException — why multitenancy forces per-transaction governor limits, the sync vs async budgets, bulkification patterns (no SOQL/DML in loops, bind a Set, build a Map, one DML), query selectivity, heap and CPU-time control, and choosing between @future, Queueable, Batch, Scheduled and Platform Events. Use for 'governor limits', 'Too many SOQL queries 101', 'Too many DML statements 151', 'Apex CPU time limit exceeded', 'heap size limit', 'bulkify my trigger', 'SOQL inside a for loop', 'future vs queueable vs batch', 'non-selective query against large object', 'chain queueable jobs', or 'LimitException'.",
+      "argumentHint": "The Apex code or scenario + the limit you're hitting (SOQL | DML | CPU | heap | callouts) and the record volume you must survive",
+      "path": ".github/skills/salesforce-governor-limits-coach/SKILL.md"
+    },
+    {
       "name": "sampling-methods-coach",
       "description": "Teach sampling from first principles: pick a probability design (simple random, stratified, cluster, systematic), size the sample from a target margin of error, and spot bias (selection, coverage, nonresponse, voluntary-response) that no sample size can fix. Use for 'how do I sample', 'stratified vs cluster sampling', 'what sample size do I need', 'is my sample representative', 'sampling bias', or 'margin of error'. Teaches representative, honest study design.",
       "argumentHint": "The study",
@@ -6456,6 +6823,12 @@
       "description": "Design a serverless architecture — functions, API gateway, event sources, managed data stores, cold starts, statelessness, and the pay-per-use cost model — plus a clear-eyed take on when NOT to go serverless. Use for 'design serverless', 'AWS Lambda architecture', 'Azure Functions', 'event-driven design', 'API Gateway + functions', 'is serverless right for me', or learning serverless.",
       "argumentHint": "The workload + provider",
       "path": ".github/skills/serverless-designer/SKILL.md"
+    },
+    {
+      "name": "service-mesh-lab",
+      "description": "Hands-on service mesh on a free local cluster — see what a sidecar or ambient data plane actually does, turn on automatic mTLS and prove it with STRICT PeerAuthentication, shift traffic for a canary, add timeouts, retries and outlier detection, inject L7 faults, and weigh the real cost of a mesh (latency, memory, upgrade risk, debugging) against doing it in libraries or at the gateway. Use for 'service mesh', 'Istio lab', 'Linkerd lab', 'mTLS between services', 'sidecar vs ambient', 'canary with a mesh', 'traffic shifting', 'do we need a service mesh', or 'mesh retries and timeouts'.",
+      "argumentHint": "The two or three services to mesh + the one property you want (mTLS, canary, retries, or L7 visibility)",
+      "path": ".github/skills/service-mesh-lab/SKILL.md"
     },
     {
       "name": "servicenow-glide-scripting-lab",
@@ -6782,6 +7155,12 @@
       "path": ".github/skills/structured-output-coach/SKILL.md"
     },
     {
+      "name": "supply-chain-attestation-lab",
+      "description": "Hands-on software supply-chain attestation, entirely local and free — understand SLSA build levels and what provenance actually proves, read the in-toto Statement/predicate envelope, sign and verify artifacts with sigstore cosign (key-based offline and keyless with Fulcio/Rekor), attach SLSA provenance and SBOM attestations to an image in a local registry, then verify them and watch a tampered artifact fail. Use for 'SLSA', 'provenance', 'in-toto attestation', 'cosign sign', 'cosign verify-attestation', 'sigstore', 'SBOM attestation', 'sign container images', 'verify build provenance', or 'prove where this artifact came from'.",
+      "argumentHint": "The artifact to attest (image or file) + what a consumer must be able to prove about it",
+      "path": ".github/skills/supply-chain-attestation-lab/SKILL.md"
+    },
+    {
       "name": "supply-chain-security-coach",
       "description": "Secure the software supply chain — DEFENSIVE ONLY. Teaches the threat model (typosquatted and malicious dependencies, dependency confusion, compromised maintainers, tampered build systems and artifacts), then the layered defenses: pin and lock dependencies, verify integrity with hashes and lockfiles, generate and actually consume an SBOM, establish build provenance and climb the SLSA levels, sign and verify artifacts (Sigstore/cosign by concept), harden CI/CD with least-privilege tokens and isolated ephemeral runners, scan for leaked secrets, and review every new dependency before it lands. Use for 'supply chain security', 'SBOM', 'dependency security', 'SLSA provenance', 'sign and verify artifacts', 'typosquatting', 'harden my CI/CD pipeline', 'is this npm package safe'.",
       "argumentHint": "The project/ecosystem (npm, PyPI, Maven, Go, containers) + its build pipeline",
@@ -6816,6 +7195,12 @@
       "description": "Hands-on SwiftUI lab that builds one real screen from first principles — view identity, @State/@Binding/@Observable ownership, the layout negotiation, NavigationStack with a bound path, stable list identity and performance, previews as the feedback loop, and Dynamic Type / Dark Mode checks. Use for 'SwiftUI lab', 'learn SwiftUI', 'why does my SwiftUI view not update', '@State vs @Binding vs @Observable', 'NavigationStack path', 'SwiftUI list is slow', 'ForEach id', or 'SwiftUI preview practice'.",
       "argumentHint": "The screen to build (e.g. 'a searchable task list with a detail screen') + target OS version",
       "path": ".github/skills/swiftui-lab/SKILL.md"
+    },
+    {
+      "name": "synthetic-data-lab",
+      "description": "Generate synthetic data and — the hard part — prove it is good enough: tabular synthesis with SDV/CTGAN or a Gaussian copula, LLM-generated text datasets, and augmentation, then score the three-way trade-off of fidelity vs utility vs privacy with KS/correlation checks, train-on-synthetic-test-on-real (TSTR), and distance-to-closest-record. Use for 'generate synthetic data', 'SDV', 'CTGAN', 'fake data for testing', 'my dataset is too small', 'I cannot share the real data', 'synthetic training data with an LLM', 'is my synthetic data private', 'data augmentation', or 'why did my model get worse on synthetic data'.",
+      "argumentHint": "The real dataset (or its schema) + why you need synthetic data (privacy? volume? rare classes? test fixtures?) + what the data will be used for downstream",
+      "path": ".github/skills/synthetic-data-lab/SKILL.md"
     },
     {
       "name": "system-design-drill",
@@ -6920,6 +7305,12 @@
       "path": ".github/skills/terraform-state-lab/SKILL.md"
     },
     {
+      "name": "terraform-testing-lab",
+      "description": "Test Terraform properly on your own machine — write native `terraform test` files (.tftest.hcl) with run blocks, assertions and expect_failures, mock providers so tests need no cloud account, assert on the JSON plan, add policy-as-code gates with OPA/conftest, and know when to escalate to Terratest for real end-to-end verification. Use for 'terraform test', 'tftest.hcl', 'how do I unit test a Terraform module', 'Terratest', 'validate a terraform plan in CI', 'conftest terraform', 'policy as code for Terraform', or 'my module broke and nothing caught it'.",
+      "argumentHint": "The module under test + the behaviour you want to guarantee (naming, tagging, encryption, count, failure case)",
+      "path": ".github/skills/terraform-testing-lab/SKILL.md"
+    },
+    {
       "name": "terraform-workspaces-lab",
       "description": "Hands-on Terraform lab: use CLI workspaces for multiple environments — workspace new/select/list, per-workspace state, the terraform.workspace variable, and when to prefer separate backends/directories instead. Use for 'Terraform workspaces lab', 'terraform workspace', 'multiple environments', 'dev vs prod state', 'Terraform workspaces hands-on lab', or learning to separate Terraform environments.",
       "argumentHint": "The environments",
@@ -6980,16 +7371,34 @@
       "path": ".github/skills/timeseries-analysis-lab/SKILL.md"
     },
     {
+      "name": "timeseries-db-coach",
+      "description": "Design and operate a time-series store — TimescaleDB hypertables and chunks, InfluxDB buckets and tasks, Prometheus TSDB blocks — with the maths that actually governs cost: series cardinality as a product of label cardinalities, retention and downsampling tiers (continuous aggregates, recording rules), delta-of-delta plus XOR compression, and chunk/block sizing. Use for 'time series database', 'TimescaleDB hypertable', 'continuous aggregate', 'Prometheus retention', 'cardinality explosion', 'too many series', 'downsampling', 'InfluxDB vs Timescale vs Prometheus', or 'our metrics bill exploded'.",
+      "argumentHint": "Data shape (metrics/events per second, tags/labels + their cardinalities), query patterns, and retention requirement per resolution",
+      "path": ".github/skills/timeseries-db-coach/SKILL.md"
+    },
+    {
       "name": "tls-ssl-explainer",
       "description": "Explain TLS/HTTPS defensively: the handshake, certificates & chains of trust, cipher suites, SNI, and common errors (expired, self-signed, hostname mismatch) — without ever bypassing validation. Use for 'how does HTTPS work', 'explain the TLS handshake', 'what is a certificate chain', 'SSL/cert error', 'ERR_CERT...', or understanding a TLS failure.",
       "argumentHint": "The TLS topic or an error to understand",
       "path": ".github/skills/tls-ssl-explainer/SKILL.md"
     },
     {
+      "name": "tokenizer-explainer",
+      "description": "Explain and demonstrate how text becomes tokens — the normalisation/pre-tokenisation/model/post-processing pipeline, BPE vs WordPiece vs Unigram vs byte-level BPE, why subword vocabularies exist at all, special tokens and their off-by-one traps, counting tokens with tiktoken and Hugging Face tokenizers, and why tokenisation silently drives API cost, context limits, latency and model behaviour (arithmetic, spelling, non-English text). Use for 'what is a token', 'BPE explained', 'WordPiece vs BPE', 'SentencePiece Unigram', 'tiktoken count tokens', 'how many tokens is my prompt', 'why does the model miscount letters in strawberry', 'why is my non-English prompt more expensive', 'subword tokenization', 'special tokens BOS EOS', 'vocab size', 'byte-level BPE'.",
+      "argumentHint": "The text or corpus + the model/tokenizer in question + what you need (cost estimate, vocabulary design, or a behaviour explained)",
+      "path": ".github/skills/tokenizer-explainer/SKILL.md"
+    },
+    {
       "name": "traefik-local-lab",
       "description": "Hands-on lab: run Traefik locally to learn dynamic routing with the Docker provider and middlewares — free, open-source, no subscription. Traefik auto-discovers containers by their labels and builds routers, services, and middleware chains with no restart. Use for 'Traefik lab', 'dynamic routing locally', 'Docker provider labels', 'Traefik middlewares', 'auto-discover containers', or learning Traefik by doing.",
       "argumentHint": "The containers to route",
       "path": ".github/skills/traefik-local-lab/SKILL.md"
+    },
+    {
+      "name": "training-debug-coach",
+      "description": "Systematically diagnose a neural network that will not train — check the loss at initialisation against ln(C), overfit a single batch before touching hyperparameters, find NaN/Inf with anomaly detection and gradient norms, separate underfitting from overfitting from a data bug, run an LR range test instead of guessing, catch the classic silent errors (missing zero_grad, double softmax, forgotten model.eval(), shuffled labels, cross-sample leakage, normalisation computed on the full dataset), and lock down seeds and determinism so a bug is reproducible. Use for 'loss not decreasing', 'loss is NaN', 'training diverges', 'model not learning', 'PyTorch training bug', 'overfitting vs underfitting', 'learning rate too high', 'exploding gradients', 'why is my validation loss lower than training loss', 'debug training loop', 'reproducible training', 'set seed PyTorch'.",
+      "argumentHint": "The symptom (flat loss / NaN / diverging / train-val gap) + the loss curve so far + framework and hardware",
+      "path": ".github/skills/training-debug-coach/SKILL.md"
     },
     {
       "name": "transaction-isolation-explainer",
@@ -7112,6 +7521,12 @@
       "path": ".github/skills/view-transitions-lab/SKILL.md"
     },
     {
+      "name": "vision-language-model-lab",
+      "description": "Run a vision-language model on your own laptop, free and CPU-only — do CLIP zero-shot image classification from nothing but label strings, reproduce the logits by hand from normalised image/text embeddings and the learned temperature, see why prompt templates change the answer, caption an image with a small BLIP/LLaVA-style model, ground a text phrase to a box with open-vocabulary detection, and learn where these models reliably fail (counting, spatial relations, compositionality). Use for 'CLIP tutorial', 'zero-shot image classification', 'image and text embeddings', 'run a VLM locally', 'LLaVA explained', 'image captioning without a GPU', 'SigLIP vs CLIP', 'open-vocabulary detection', 'multimodal embeddings', 'grounding text in an image', 'why does CLIP get counting wrong'.",
+      "argumentHint": "The images + the task (zero-shot labels, caption, or text-to-region grounding) + your hardware (CPU is fine)",
+      "path": ".github/skills/vision-language-model-lab/SKILL.md"
+    },
+    {
       "name": "visual-explainer",
       "description": "Turn a concept into the RIGHT visual — pick from the full palette (Mermaid flowchart/sequence/class/ER/state/mindmap/timeline/journey/pie/quadrant/xychart/gitGraph/sankey/C4/requirement, KaTeX math, comparison tables, ASCII traces & number lines, and data charts) matched to what the idea is about, then render it correctly. Use for 'visualize this', 'draw a diagram for X', 'show me visually', 'make it a chart/timeline/mind map', 'which diagram fits', or when text alone isn't landing.",
       "argumentHint": "The concept/data to visualize (+ any preferred visual type or your learning style)",
@@ -7178,6 +7593,12 @@
       "path": ".github/skills/webhook-designer/SKILL.md"
     },
     {
+      "name": "whisper-speech-lab",
+      "description": "Transcribe speech locally and for free with OpenAI Whisper or faster-whisper — pick a model size from an explicit accuracy/latency budget, get segment and word-level timestamps, handle multilingual audio and the translate task, understand the fixed 30-second window and how long files are chunked, measure real Word Error Rate with proper text normalisation, and defuse the classic failure modes (hallucinated text over silence, repetition loops, wrong language detection). Use for 'Whisper tutorial', 'speech to text locally', 'faster-whisper', 'transcribe audio for free', 'word level timestamps', 'generate SRT subtitles', 'Whisper model sizes tiny base small medium large', 'transcribe long audio file', 'Whisper hallucinating text', 'measure WER', 'Whisper language detection', 'speech translation to English'.",
+      "argumentHint": "The audio (length, language, recording quality) + what you need out (plain text, SRT, word timings) + CPU or GPU",
+      "path": ".github/skills/whisper-speech-lab/SKILL.md"
+    },
+    {
       "name": "whiteboard-explainer",
       "description": "Coach the learner to explain a concept out loud like an interview whiteboard/verbal round — prompt them to explain first, listen for gaps, jargon, and weak structure, ask the probing follow-ups an interviewer would, then give a crisp model explanation they can reuse. Use for 'help me explain X in an interview', 'whiteboard practice', 'verbal round prep', 'talk me through Y', or 'am I explaining this clearly'. Learner talks first.",
       "argumentHint": "Concept + interview context",
@@ -7194,6 +7615,12 @@
       "description": "Teach by fully working ONE representative problem end to end — restate it, plan the approach, solve step by step showing the reasoning at each step, verify, then generalize the pattern and give a similar exercise to try. Use for 'work through an example', 'show me step by step', 'solve this and explain each step', 'demonstrate how to approach X', or learning a method by seeing it done well once.",
       "argumentHint": "Problem or concept to work through + level",
       "path": ".github/skills/worked-example/SKILL.md"
+    },
+    {
+      "name": "xr-comfort-performance-coach",
+      "description": "Budget and defend XR comfort and performance from first principles — motion-to-photon latency, the per-frame millisecond budget at 72/90/120 Hz, judder vs reprojection (timewarp/spacewarp), fixed and eye-tracked foveated rendering, vection and sensory-conflict-driven locomotion design (teleport, snap turn, vignette, rest frames), and the comfort settings that must ship on by default — framed in portable OpenXR terms. Use for 'VR makes users sick', 'motion-to-photon latency', 'XR frame budget', 'why is my VR app juddering', 'foveated rendering explained', 'timewarp vs spacewarp', 'comfortable locomotion in VR', 'snap turn vs smooth turn', 'VR performance optimization', or 'XR comfort settings checklist'.",
+      "argumentHint": "The XR app + target device/runtime and refresh rate (e.g. 'standalone headset @ 72 Hz, OpenXR/Vulkan') + the symptom (sickness | judder | over budget) or the design question",
+      "path": ".github/skills/xr-comfort-performance-coach/SKILL.md"
     },
     {
       "name": "zephyr-rtos-lab",

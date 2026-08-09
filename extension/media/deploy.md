@@ -5,7 +5,7 @@ location VS Code Copilot discovers natively:
 
 - **128 specialist agents** — appear in the **Chat agent picker** (e.g. *Exam and Certification
   Coach*, *Data Engineer*, *Security Engineer*).
-- **509 skills** — invoked with **`/`** in Chat (e.g. `/mock-exam`, `/concept-explainer`,
+- **779 skills** — invoked with **`/`** in Chat (e.g. `/mock-exam`, `/concept-explainer`,
   `/research-brief`).
 
 You choose where to install:

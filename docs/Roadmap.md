@@ -43,18 +43,22 @@ Architecture, and Product/Management; MCP sample; community files.
 - **Breadth toward the 100+ agent / 500+ skill vision** — added in reviewed, high-quality batches of
   role-agents and skills across every domain (no stubs; each follows the constitution). **Progress:
   the roster grew 24 → 50 → 98 → 122 role-agents (129 agents total — well past the 100+ milestone),
-  and the skill library grew 8 → 18 → 21 → 39 → 75 → 123 → 171 → 261 → 336 → 444 → 510 → 520 → 536 → 619 → 718** (added source-discovery,
+  and the skill library grew 8 → 18 → 21 → 39 → 75 → 123 → 171 → 261 → 336 → 444 → 510 → 520 → 536 → 619 → 718 → 779** (added source-discovery,
   assessment, code, career, architecture, writing/docs, AI/data, testing, defensive security,
   DevOps/cloud, data, frontend, backend, product, databases, networking/OS, paradigms, ML-in-production,
   soft-skills, teaching, enterprise-tools, distributed-systems, observability/SRE, GenAI-production, and
-  **336 hands-on labs** (languages, frameworks, cloud, data, ML, DevOps) — including **Floci** and
+  **361 hands-on labs** (languages, frameworks, cloud, data, ML, DevOps) — including **Floci** and
   **LocalStack/Azurite/MinIO/Ollama/Postgres/Redpanda/minikube/…** so learners practice AWS/Azure/GCP,
   databases, messaging, Kubernetes, and even LLMs/RAG **locally on their laptop, free, no subscription**
-  (see [LocalPractice.md](./LocalPractice.md))). **Past the 700-skill milestone — 718 and counting.**
+  (see [LocalPractice.md](./LocalPractice.md))). **Past the 700-skill milestone — 779 and counting.**
 - **Enterprise Plugin Marketplace shipped** (first cut): a generated, machine-readable index
   ([`marketplace/registry.json`](../marketplace/registry.json) + [`CATALOG.md`](../marketplace/CATALOG.md))
   built by [`scripts/build-registry.mjs`](../scripts/build-registry.mjs), plus a pack/install model in
   [Marketplace.md](./Marketplace.md).
+- **Individual-level cross-platform portability shipped**: the same catalog installs per-user (no
+  tenant-admin) across GitHub Copilot (CLI + VS Code), Claude Code/Desktop, Cursor, and Gemini CLI,
+  with the LearningOS MCP server wired into each host and **opt-in** Azure CLI auth (off by default).
+  See [Platforms.md](./Platforms.md).
 - Live MCP wiring (Microsoft Learn, GitHub, Fetch, RSS/arXiv) for grounded, current lessons.
 - Learning analytics (progress, gaps, streaks) and an evaluation harness (golden-prompt CI).
 - Team/org profiles and shareable role packs; a hosted marketplace index with one-command install.

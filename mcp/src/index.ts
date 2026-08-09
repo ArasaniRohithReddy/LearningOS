@@ -27,6 +27,7 @@ import {
 } from "./catalog.js";
 import { fetchRaw, htmlToText, runPiston } from "./net.js";
 import { parseFeedItems } from "./feedParse.js";
+import { isAzureAuthEnabled, getAzureIdentity, configuredResource } from "./azureAuth.js";
 
 const PISTON_URL = process.env.PISTON_URL || "https://emkc.org/api/v2/piston";
 
@@ -41,7 +42,7 @@ const DRONA_PROMPT = [
   "Source discipline: prefer official docs and primary sources; cite them with dates; never fabricate APIs, versions, or citations.",
   "Teach visually by default, and vary the format to fit the idea — pick from the full palette, not always a flowchart: Mermaid flowchart/sequenceDiagram/classDiagram/erDiagram/stateDiagram-v2/mindmap/timeline/journey/pie/quadrantChart/xychart-beta/gitGraph/sankey-beta/C4Context/requirementDiagram, KaTeX ($...$) for math, Markdown tables for comparisons, and ASCII step-tables/number-lines for tracing. Keep visuals correct, minimal, labelled, with a caption + short alt-text.",
   "Ask their style first: at the start of a learning journey, ask how the learner likes to learn (visual density + preferred formats: diagrams / worked examples / hands-on / concise) and then match every answer to it; default to rich, varied visuals.",
-  "You have LearningOS MCP tools available — use them: search_skills / get_skill (619 skills) and search_agents / get_agent (129 specialists) to route to the right helper; find_learning_resources to suggest the best FREE resources (YouTube, MOOCs, interactive) link-out only; list_roadmaps for roadmap.sh paths; tech_news for a dated, cited digest; run_code to execute and teach from real output; fetch_page to read an official page.",
+  "You have LearningOS MCP tools available — use them: search_skills / get_skill (779 skills) and search_agents / get_agent (129 specialists) to route to the right helper; find_learning_resources to suggest the best FREE resources (YouTube, MOOCs, interactive) link-out only; list_roadmaps for roadmap.sh paths; tech_news for a dated, cited digest; run_code to execute and teach from real output; fetch_page to read an official page.",
   "End every substantive answer with the Learning Footer:",
   "---",
   "Recap: <2–4 bullets> · Common pitfalls: <1–3> · Next topic: <the single best next thing> · Try it: <one hands-on exercise> · Level: <Beginner|Intermediate|Advanced> · Est. study time: <e.g. 30 min>",
@@ -103,7 +104,7 @@ async function main() {
     {
       title: "Search LearningOS skills",
       description:
-        "Search the 619 LearningOS skills (labs, coaches, drills) by keyword and/or domain. Returns matching skill names, one-line descriptions, and domains. Follow up with get_skill to load a skill's full instructions.",
+        "Search the 779 LearningOS skills (labs, coaches, drills) by keyword and/or domain. Returns matching skill names, one-line descriptions, and domains. Follow up with get_skill to load a skill's full instructions.",
       inputSchema: { query: z.string().optional(), domain: z.string().optional(), limit: z.number().int().optional() },
     },
     async ({ query, domain, limit }) => {
@@ -250,6 +251,41 @@ async function main() {
   );
 
   // --- Resources -------------------------------------------------------------
+
+  // Opt-in only: an Azure-authenticated status tool, registered ONLY when the user
+  // sets LEARNINGOS_AZURE_AUTH. It reports whether the server can authenticate on the
+  // user's behalf via their existing `az login` — it NEVER returns a token.
+  if (isAzureAuthEnabled()) {
+    server.registerTool(
+      "azure_identity",
+      {
+        title: "Azure identity (opt-in)",
+        description:
+          "Report whether this server can authenticate to Azure on your behalf, reusing your existing `az login` session. Returns only your account identity (user, tenant, subscription) — NEVER a token. Available only when LEARNINGOS_AZURE_AUTH is set; used to confirm authenticated scenarios work.",
+        inputSchema: {},
+      },
+      async () => {
+        const id = await getAzureIdentity();
+        const res = configuredResource();
+        if (!id.authenticated) {
+          return text(`Azure auth: NOT available — ${id.reason ?? "unknown"}. Run \`az login\`, then retry.`);
+        }
+        return text(
+          [
+            "Azure auth: available (via your Azure CLI session).",
+            `User: ${id.user ?? "<unknown>"}`,
+            `Tenant: ${id.tenantId ?? "<unknown>"}`,
+            `Subscription: ${id.subscription ?? "<unknown>"}`,
+            id.cloud ? `Cloud: ${id.cloud}` : undefined,
+            `Default resource/audience: ${res ?? "(none set — LEARNINGOS_AZURE_RESOURCE)"}`,
+            "Note: tokens stay server-side, are resource-scoped and short-lived, and are never returned here.",
+          ]
+            .filter(Boolean)
+            .join("\n"),
+        );
+      },
+    );
+  }
 
   server.registerResource(
     "constitution",
