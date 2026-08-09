@@ -1,5 +1,14 @@
 # Change Log
 
+## 1.6.0
+
+Phase 4 mega-expansion (research-driven) — **83 new skills (536 → 619)**, authored after an 11-agent research sweep across every technical domain and reviewed for correctness (no stubs).
+
+- **83 new skills across 10 domains** — mobile/web (SwiftUI, Jetpack Compose, Swift/Kotlin concurrency, RN new architecture, Flutter); cloud + certs (Cloud Run, Entra ID, EventBridge, Monitor KQL, Bicep, cert-roadmap); defensive security (broken-access-control, detection-engineering, phishing-resistant auth, IAM least-privilege, vuln prioritization, OAuth2/OIDC, privacy-by-design, agent permissions); core CS (OS internals, sorting/searching, hash tables, floating-point, interpreter build, computability, Elixir/OTP); interview drills (ML/PM/data/frontend/SRE + offer-eval + exec comms); AI/agents (transformer internals, quantization, LoRA/QLoRA, vLLM, hybrid search + reranking, agent memory + evaluation); backend/DB (DDD, replication topology, retry/backoff, query-plan tuning, storage engines, transactional outbox, MVCC/vacuum); data (Iceberg, Flink SQL, Delta Lake, Unity Catalog, Fabric, Snowflake perf, schema registry); Kubernetes/DevOps (troubleshooting, RBAC, network policy, Argo CD, progressive delivery, cluster lifecycle, admission policy); enterprise/emerging (Apex/SOQL, LWC, Qiskit, ROS 2, Foundry, ServiceNow, ABAP RAP, Power Fx); and visualization (sequence/state/ER diagram generators, dual-coding, KaTeX, diagram accessibility, data-viz, diagram-as-code, concept maps, Manim, diagram review).
+- **Two new catalog domains** — *Enterprise platforms* and *Visualization & diagramming* — so the visual-first and enterprise tracks are first-class.
+- **294 hands-on labs** (up from 256); every new lab is local/free where possible and runs code via the no-install runner.
+- Reviewed for accuracy: cloud-cert retirements (AZ-204/AI-102 → AI-200, DP-203 → DP-700, AZ-500 → SC-500), OWASP 2025 framing, and Azure/AWS CLI-command corrections applied.
+
 ## 1.5.0
 
 Phase 4 breadth — 16 new expert skills, and one visitor counter that finally agrees with itself.

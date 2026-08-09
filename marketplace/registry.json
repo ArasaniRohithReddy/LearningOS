@@ -4,7 +4,7 @@
   "generator": "scripts/build-registry.mjs",
   "counts": {
     "agents": 129,
-    "skills": 536,
+    "skills": 619,
     "roles": 122
   },
   "packs": [
@@ -234,6 +234,8 @@
       "skills": [
         "ab-test-designer",
         "agent-designer",
+        "agent-evaluation-coach",
+        "agent-memory-coach",
         "context-window-optimizer",
         "data-labeling-planner",
         "dataset-explorer",
@@ -244,6 +246,7 @@
         "fine-tuning-planner",
         "function-calling-coach",
         "hallucination-mitigation-coach",
+        "hybrid-search-reranking-coach",
         "llm-cost-optimizer",
         "llm-guardrails-designer",
         "mcp-server-builder",
@@ -268,10 +271,12 @@
         "architecture-diagram",
         "consistency-models-coach",
         "data-modeling-drill",
+        "domain-driven-design-coach",
         "estimation-coach",
         "openapi-spec-writer",
         "tech-comparison",
-        "threat-model"
+        "threat-model",
+        "transformer-architecture-explainer"
       ]
     },
     {
@@ -291,6 +296,7 @@
         "message-queue-coach",
         "microservices-decomposer",
         "rate-limiter-designer",
+        "retry-backoff-coach",
         "saga-pattern-coach",
         "webhook-designer"
       ]
@@ -309,13 +315,18 @@
         "case-study",
         "coding-interview-drill",
         "cover-letter",
+        "data-interview-drill",
         "demo-script",
+        "frontend-interview-drill",
         "linkedin-optimizer",
+        "offer-evaluation-coach",
+        "pm-interview-drill",
         "portfolio-reviewer",
         "resume-enhancer",
         "resume-tailor",
         "salary-negotiation",
         "slide-outline",
+        "sre-interview-drill",
         "star-story-builder",
         "whiteboard-explainer"
       ]
@@ -331,6 +342,7 @@
         "code-walkthrough",
         "competitive-programming-drill",
         "complexity-analyzer",
+        "computability-complexity-coach",
         "contest-prep-coach",
         "debugging-coach",
         "design-patterns-coach",
@@ -338,18 +350,22 @@
         "dsa-patterns-coach",
         "dynamic-programming-coach",
         "error-handling-coach",
+        "floating-point-numerics-coach",
         "functional-programming-coach",
         "git-coach",
         "graph-algorithms-coach",
         "greedy-algorithms-coach",
+        "hash-table-internals-coach",
         "math-for-programming-coach",
         "memory-management-coach",
+        "ml-system-design-drill",
         "oop-design-coach",
         "pair-programmer",
         "recursion-backtracking-coach",
         "refactoring-coach",
         "regex-explainer",
         "remote-code-runner",
+        "sorting-searching-coach",
         "sql-coach",
         "string-algorithms-coach",
         "system-design-drill",
@@ -364,6 +380,7 @@
       "skills": [
         "conflict-resolution-coach",
         "email-writing-coach",
+        "exec-communication-coach",
         "feedback-giver",
         "negotiation-coach",
         "public-speaking-coach",
@@ -384,10 +401,13 @@
         "data-warehouse-modeling",
         "dbt-model-coach",
         "excel-formula-coach",
+        "fabric-lakehouse-coach",
         "lakehouse-designer",
         "power-bi-dax-coach",
+        "snowflake-performance-coach",
         "spark-job-coach",
-        "streaming-pipeline-designer"
+        "streaming-pipeline-designer",
+        "unity-catalog-coach"
       ]
     },
     {
@@ -396,9 +416,12 @@
       "skills": [
         "database-migration-coach",
         "database-selection-advisor",
+        "mvcc-vacuum-explainer",
         "nosql-data-modeling",
+        "replication-topology-coach",
         "sharding-strategy-coach",
         "sql-query-explainer",
+        "storage-engine-explainer",
         "transaction-isolation-explainer"
       ]
     },
@@ -442,6 +465,14 @@
       ]
     },
     {
+      "id": "skills-enterprise-platforms",
+      "domain": "Enterprise platforms",
+      "skills": [
+        "abap-rap-coach",
+        "power-fx-coach"
+      ]
+    },
+    {
       "id": "skills-frontend-web",
       "domain": "Frontend & web",
       "skills": [
@@ -480,10 +511,13 @@
         "airflow-local-lab",
         "alertmanager-lab",
         "angular-basics-lab",
+        "apex-soql-lab",
+        "argocd-local-lab",
         "aws-apigateway-lab",
         "aws-cloudwatch-lab",
         "aws-dynamodb-lab",
         "aws-ecs-lab",
+        "aws-eventbridge-lab",
         "aws-iam-lab",
         "aws-lambda-lab",
         "aws-rds-lab",
@@ -493,9 +527,12 @@
         "aws-stepfunctions-lab",
         "aws-vpc-lab",
         "azure-aks-lab",
+        "azure-bicep-lab",
         "azure-cosmosdb-lab",
+        "azure-entra-id-lab",
         "azure-functions-lab",
         "azure-keyvault-lab",
+        "azure-monitor-kql-lab",
         "azure-servicebus-lab",
         "azure-storage-lab",
         "azurite-lab",
@@ -510,6 +547,7 @@
         "cassandra-local-lab",
         "chroma-vector-local-lab",
         "cosign-signing-lab",
+        "cpp-smart-pointers-raii-lab",
         "cron-scheduler-lab",
         "csharp-async-await-lab",
         "csharp-delegates-events-lab",
@@ -522,6 +560,7 @@
         "data-cleaning-lab",
         "data-wrangling-lab",
         "dbt-duckdb-lab",
+        "delta-lake-lab",
         "django-lab",
         "docker-compose-lab",
         "docker-networking-lab",
@@ -532,18 +571,23 @@
         "duckdb-lab",
         "dynamodb-local-lab",
         "elasticsearch-local-lab",
+        "elixir-otp-genserver-lab",
         "envoy-local-lab",
         "express-lab",
         "fastapi-lab",
         "firebase-emulator-lab",
         "flask-lab",
+        "flink-sql-lab",
         "floci-aws-local-lab",
         "floci-azure-local-lab",
         "floci-gcp-local-lab",
         "floci-oracle-local-lab",
+        "flutter-widgets-lab",
+        "foundry-forge-lab",
         "gcp-bigquery-lab",
         "gcp-bigtable-emulator-lab",
         "gcp-cloud-functions-lab",
+        "gcp-cloud-run-lab",
         "gcp-cloud-storage-lab",
         "gcp-datastore-emulator-lab",
         "gcp-firestore-emulator-lab",
@@ -572,6 +616,8 @@
         "groupby-aggregation-lab",
         "haproxy-local-lab",
         "helm-chart-lab",
+        "iceberg-table-lab",
+        "interpreter-build-lab",
         "jaeger-tracing-local-lab",
         "java-collections-lab",
         "java-concurrency-lab",
@@ -579,6 +625,8 @@
         "java-optional-lab",
         "java-records-lab",
         "java-streams-lab",
+        "java-virtual-threads-lab",
+        "jetpack-compose-lab",
         "js-closures-lab",
         "js-event-loop-lab",
         "js-generators-lab",
@@ -588,10 +636,15 @@
         "jupyter-notebook-lab",
         "k3d-lab",
         "k6-load-test-lab",
+        "k8s-admission-policy-lab",
         "k8s-autoscaling-lab",
+        "k8s-cluster-lifecycle-lab",
         "k8s-configmap-secret-lab",
         "k8s-deployment-lab",
+        "k8s-network-policy-lab",
+        "k8s-rbac-lab",
         "k8s-service-networking-lab",
+        "k8s-troubleshooting-lab",
         "kafka-connect-lab",
         "kafka-consumer-groups-lab",
         "kafka-consumer-lab",
@@ -601,17 +654,21 @@
         "kafka-topics-partitions-lab",
         "keycloak-auth-local-lab",
         "kind-lab",
+        "kotlin-coroutines-flow-lab",
         "linux-networking-lab",
         "linux-permissions-lab",
         "linux-processes-lab",
         "linux-storage-lab",
         "linux-systemd-lab",
         "linux-users-lab",
+        "llm-quantization-lab",
         "local-llm-agent-lab",
         "localstack-lab",
         "locust-load-test-lab",
         "loki-logging-local-lab",
+        "lwc-component-lab",
         "mailpit-email-local-lab",
+        "manim-animation-lab",
         "matplotlib-lab",
         "meilisearch-local-lab",
         "metabase-local-lab",
@@ -635,12 +692,14 @@
         "owasp-zap-baseline-lab",
         "pact-contract-lab",
         "pandas-lab",
+        "peft-lora-lab",
         "pgvector-local-lab",
         "playwright-test-lab",
         "plotly-lab",
         "postgres-local-lab",
         "pre-commit-lab",
         "prefect-local-lab",
+        "progressive-delivery-lab",
         "prometheus-grafana-local-lab",
         "pulsar-local-lab",
         "python-asyncio-lab",
@@ -662,23 +721,29 @@
         "pytorch-training-loop-lab",
         "pytorch-transfer-learning-lab",
         "qdrant-local-lab",
+        "qiskit-circuits-lab",
+        "query-plan-tuning-lab",
         "rabbitmq-local-lab",
         "react-context-lab",
         "react-forms-lab",
         "react-hooks-lab",
+        "react-native-new-architecture-lab",
         "react-performance-lab",
         "react-server-components-lab",
         "react-suspense-lab",
         "redis-local-lab",
         "redpanda-local-lab",
+        "ros2-nodes-lab",
         "rust-async-lab",
         "rust-borrowing-lab",
         "rust-error-handling-lab",
         "rust-lifetimes-lab",
         "rust-ownership-lab",
         "rust-traits-lab",
+        "schema-registry-lab",
         "seaborn-lab",
         "semgrep-lab",
+        "servicenow-glide-scripting-lab",
         "sklearn-classification-lab",
         "sklearn-clustering-lab",
         "sklearn-model-selection-lab",
@@ -705,6 +770,8 @@
         "streamlit-local-lab",
         "svelte-basics-lab",
         "swagger-ui-local-lab",
+        "swift-concurrency-lab",
+        "swiftui-lab",
         "tailwind-lab",
         "tempo-tracing-local-lab",
         "temporal-local-lab",
@@ -717,6 +784,7 @@
         "testcontainers-lab",
         "timeseries-analysis-lab",
         "traefik-local-lab",
+        "transactional-outbox-lab",
         "trino-local-lab",
         "trivy-scan-lab",
         "ts-declaration-files-lab",
@@ -729,6 +797,7 @@
         "vault-local-lab",
         "victoriametrics-local-lab",
         "vite-lab",
+        "vllm-inference-lab",
         "vue-basics-lab",
         "weaviate-local-lab",
         "wiremock-api-mock-lab"
@@ -771,6 +840,7 @@
         "linux-command-coach",
         "load-balancing-coach",
         "networking-fundamentals-coach",
+        "os-internals-coach",
         "shell-scripting-coach",
         "tls-ssl-explainer"
       ]
@@ -780,6 +850,7 @@
       "domain": "Plan & track",
       "skills": [
         "career-ladder",
+        "cloud-cert-roadmap-coach",
         "learner-memory",
         "learner-onboarding",
         "learning-resource-finder",
@@ -842,20 +913,28 @@
       "id": "skills-security",
       "domain": "Security",
       "skills": [
+        "ai-agent-permissions-coach",
         "api-security-coach",
         "auth-designer",
+        "broken-access-control-coach",
+        "cloud-iam-least-privilege-coach",
         "cryptography-basics-coach",
         "csp-headers-coach",
         "dependency-audit",
+        "detection-engineering-coach",
         "incident-postmortem",
         "incident-response-drill",
         "jwt-security-coach",
+        "oauth2-oidc-security-coach",
         "owasp-top10-explainer",
+        "phishing-resistant-auth-coach",
+        "privacy-by-design-coach",
         "secrets-management-coach",
         "secure-code-review",
         "security-hardening-checklist",
         "sql-injection-defense",
-        "supply-chain-security-coach"
+        "supply-chain-security-coach",
+        "vulnerability-prioritization-coach"
       ]
     },
     {
@@ -900,6 +979,22 @@
         "test-data-builder",
         "test-doubles-coach",
         "test-plan-designer"
+      ]
+    },
+    {
+      "id": "skills-visualization-diagramming",
+      "domain": "Visualization & diagramming",
+      "skills": [
+        "concept-map-generator",
+        "data-viz-coach",
+        "diagram-accessibility-coach",
+        "diagram-as-code-coach",
+        "diagram-review-coach",
+        "dual-coding-coach",
+        "er-diagram-generator",
+        "latex-math-coach",
+        "sequence-diagram-generator",
+        "state-machine-visualizer"
       ]
     },
     {
@@ -2712,6 +2807,12 @@
       "path": ".github/skills/ab-test-designer/SKILL.md"
     },
     {
+      "name": "abap-rap-coach",
+      "description": "Coach for the ABAP RESTful Application Programming Model on a free SAP BTP ABAP environment trial — build the stack from CDS view entity to behavior definition and implementation class, expose it as an OData V4 service through a service definition and binding, add draft handling for Fiori Elements, and understand where managed, unmanaged and ABAP Cloud differ from classic ABAP. Use for 'learn RAP', 'ABAP RESTful Application Programming', 'CDS view entity', 'behavior definition', 'service binding OData V4', 'RAP draft handling', 'managed vs unmanaged RAP', 'ABAP Cloud vs classic ABAP', or 'expose a Fiori app from ABAP'.",
+      "argumentHint": "A RAP goal, e.g. 'CRUD service over a Z table', 'add a validation and an action', or 'enable draft'",
+      "path": ".github/skills/abap-rap-coach/SKILL.md"
+    },
+    {
       "name": "accessibility-audit",
       "description": "Audit a UI against WCAG 2.2 — check semantic HTML, keyboard operability, colour contrast, ARIA use, and visible focus, then report issues by severity with the success criterion and a concrete fix. Use for 'accessibility audit', 'is this accessible', 'WCAG', 'a11y review', 'screen reader / keyboard support', or learning accessible UI.",
       "argumentHint": "UI/component/markup to audit",
@@ -2740,6 +2841,24 @@
       "description": "Design an LLM agent: decompose the task, wire tool/function calling, choose memory, pick a planning loop (ReAct/reflection), integrate tools via MCP, add guardrails, and evaluate agentic behavior end to end. Use for 'build an AI agent', 'tool/function calling', 'ReAct/planning loop', 'give the LLM tools', 'agent memory', 'MCP integration', or 'why is my agent looping'. Teaches the design and its failure modes.",
       "argumentHint": "The agent's goal + available tools",
       "path": ".github/skills/agent-designer/SKILL.md"
+    },
+    {
+      "name": "agent-evaluation-coach",
+      "description": "Evaluate an agent by its whole trajectory, not just its final answer — score tool-selection accuracy and argument validity, measure step efficiency against an optimal path, detect loops and thrashing, test recovery after a tool error, check goal completion and termination, build golden traces that replay deterministically in CI with mocked tools, and separate flaky-model failures from real regressions. Use for 'evaluate an AI agent', 'agent eval harness', 'tool selection accuracy', 'agent stuck in a loop', 'step efficiency', 'golden traces', 'regression test my agent', 'why did my agent fail but the answer looked fine'.",
+      "argumentHint": "The agent + its tools, and what a successful run looks like",
+      "path": ".github/skills/agent-evaluation-coach/SKILL.md"
+    },
+    {
+      "name": "agent-memory-coach",
+      "description": "Design what an AI agent remembers and what it deliberately forgets — separate the context window from real persistence, model episodic, semantic and procedural memory, define an explicit write-promote-forget policy with provenance and confidence, compact long conversations by summarizing instead of truncating, retrieve memories by relevance and recency rather than dumping everything, isolate sub-agent context so one worker cannot poison the whole run, and evaluate memory with recall, precision and staleness tests. Use for 'agent memory', 'long-term memory for LLM', 'my agent forgets', 'context window overflow', 'conversation summarization', 'episodic vs semantic memory', 'when to write to memory', 'sub-agent context isolation', 'memory poisoning'.",
+      "argumentHint": "The agent + what it must remember across sessions (and for how long)",
+      "path": ".github/skills/agent-memory-coach/SKILL.md"
+    },
+    {
+      "name": "ai-agent-permissions-coach",
+      "description": "DEFENSIVE coach for containing excessive agency in LLM and agentic systems — tool allow-lists, scoped short-lived per-tool credentials, human-in-the-loop gates for irreversible actions, blast-radius limits, tamper-evident agent action audit trails, MCP/plugin trust boundaries, and unbounded-consumption quotas. Use for 'agent permissions', 'excessive agency', 'tool allow-list', 'human in the loop gate', 'MCP server trust', 'agent blast radius', 'agent audit trail', or 'OWASP LLM Top 10 agentic risks'.",
+      "argumentHint": "The agent + the tools/APIs it can call and the data it can reach",
+      "path": ".github/skills/ai-agent-permissions-coach/SKILL.md"
     },
     {
       "name": "airflow-dag-coach",
@@ -2796,6 +2915,12 @@
       "path": ".github/skills/animation-coach/SKILL.md"
     },
     {
+      "name": "apex-soql-lab",
+      "description": "Hands-on Apex lab in a free Salesforce Developer Edition org — write Apex classes and triggers, query with SOQL and SOSL, apply the one-trigger-per-object handler pattern, bulkify DML and queries against governor limits, and prove it with @isTest unit tests and Test.startTest/stopTest limit resets. Use for 'learn Apex', 'Apex trigger', 'SOQL query', 'SOSL search', 'bulkify Apex', 'governor limits', 'SOQL inside a loop', 'trigger handler pattern', 'Apex test class', or 'Salesforce code coverage'.",
+      "argumentHint": "An Apex/SOQL goal, e.g. 'trigger to roll up child amounts', 'fix SOQL 101 error', or 'bulkify this class'",
+      "path": ".github/skills/apex-soql-lab/SKILL.md"
+    },
+    {
       "name": "api-design-review",
       "description": "Review an API design (REST, GraphQL, or gRPC) as a lesson — resource modeling, HTTP semantics and status codes, naming, versioning, pagination, errors, auth, and idempotency — with concrete fixes and the principle behind each. Use for 'review my API', 'is this REST endpoint right', 'API design feedback', 'GraphQL/gRPC schema review', or learning API best practices.",
       "argumentHint": "API spec/endpoints to review (REST/GraphQL/gRPC) + context",
@@ -2826,6 +2951,12 @@
       "path": ".github/skills/architecture-diagram/SKILL.md"
     },
     {
+      "name": "argocd-local-lab",
+      "description": "Hands-on Argo CD lab on a local kind/k3d cluster — install the controller, register a Git repo, declare an Application CR, turn on automated sync with prune and selfHeal, deliberately drift the cluster and watch it repair, then order rollouts with sync waves and scale to many apps with app-of-apps and ApplicationSet. Use for 'Argo CD lab', 'GitOps hands on', 'Argo CD Application CR', 'selfHeal and prune', 'sync waves', 'app of apps', or 'ApplicationSet tutorial'.",
+      "argumentHint": "The Git repo/path to deploy from, and the target namespace",
+      "path": ".github/skills/argocd-local-lab/SKILL.md"
+    },
+    {
       "name": "auth-designer",
       "description": "Design authentication and authorization as a lesson — choose between sessions, JWT, OAuth 2.0/OIDC; model roles and permissions with RBAC or ABAC; and avoid common pitfalls. Use for 'design auth for my app', 'sessions vs JWT', 'OAuth2 / OIDC', 'RBAC vs ABAC', or 'how should I do login and permissions'. Defensive; use vetted libraries, never home-grown crypto.",
       "argumentHint": "The app + auth requirements",
@@ -2854,6 +2985,12 @@
       "description": "Hands-on AWS lab: run a container on ECS end to end — write a task definition, choose Fargate vs EC2, create a service, and put it behind a load balancer. Use for 'AWS ECS lab', 'run a container on ECS', 'ECS task definition', 'Fargate vs EC2', 'ECS service', 'load balance ECS', 'ECS hands-on lab', or learning container orchestration on AWS by doing.",
       "argumentHint": "The container workload",
       "path": ".github/skills/aws-ecs-lab/SKILL.md"
+    },
+    {
+      "name": "aws-eventbridge-lab",
+      "description": "Hands-on AWS lab: build event-driven fan-out with Amazon EventBridge — create a custom event bus, write rules with event patterns, attach multiple targets with an input transformer, add a DLQ and retry policy, schedule with cron/rate or EventBridge Scheduler, and archive then replay events. Use for 'EventBridge lab', 'event bus and rules', 'EventBridge event pattern', 'EventBridge scheduled rule cron', 'EventBridge DLQ retry', 'archive and replay events', 'EventBridge vs SNS vs SQS', or learning event-driven AWS by doing.",
+      "argumentHint": "The event flow (producer -> consumers)",
+      "path": ".github/skills/aws-eventbridge-lab/SKILL.md"
     },
     {
       "name": "aws-iam-lab",
@@ -2916,10 +3053,22 @@
       "path": ".github/skills/azure-aks-lab/SKILL.md"
     },
     {
+      "name": "azure-bicep-lab",
+      "description": "Hands-on Azure lab: author, deploy, and decompile Bicep end to end — write resource/param/var/output syntax, factor reusable modules, preview changes with what-if, target resource-group / subscription / management-group scopes, decompile existing ARM JSON to Bicep, and prove idempotency with a redeploy. Use for 'Bicep lab', 'write a Bicep template', 'az deployment what-if', 'Bicep modules', 'decompile ARM JSON to Bicep', 'Bicep deployment scopes', 'infrastructure as code on Azure', or learning Azure IaC by doing.",
+      "argumentHint": "The infrastructure to declare (+ optional resource group)",
+      "path": ".github/skills/azure-bicep-lab/SKILL.md"
+    },
+    {
       "name": "azure-cosmosdb-lab",
       "description": "Hands-on Azure lab: model an Azure Cosmos DB for NoSQL container from access patterns — choose a partition key, provision RU/s, pick a consistency level, and favor point reads over cross-partition queries. Use for 'Azure Cosmos DB lab', 'choose a partition key', 'RU/s throughput', 'consistency levels', 'Cosmos access patterns', 'point read vs query', 'Cosmos hands-on lab', or learning NoSQL data modeling on Azure by doing.",
       "argumentHint": "The data + queries",
       "path": ".github/skills/azure-cosmosdb-lab/SKILL.md"
+    },
+    {
+      "name": "azure-entra-id-lab",
+      "description": "Hands-on Azure lab: work identity end to end in Microsoft Entra ID — create users and groups, assign built-in Azure RBAC roles at management-group / subscription / resource-group / resource scope, compare managed identity vs service principal, enable self-service password reset, and read effective access. Use for 'Entra ID lab', 'Azure RBAC lab', 'assign a role at resource group scope', 'managed identity vs service principal', 'Entra groups and roles', 'SSPR setup', 'check effective access in Azure', or learning Azure identity by doing.",
+      "argumentHint": "The identity/access scenario (+ optional subscription or RG)",
+      "path": ".github/skills/azure-entra-id-lab/SKILL.md"
     },
     {
       "name": "azure-functions-lab",
@@ -2938,6 +3087,12 @@
       "description": "Design an Azure landing zone the Cloud Adoption Framework way — management group hierarchy, subscription topology, hub-spoke networking, Entra ID identity, and Azure Policy governance — so workloads land in a secure, scalable foundation. Use for 'design an Azure landing zone', 'Azure management groups', 'subscription strategy', 'Azure governance/policy', 'CAF enterprise-scale', or learning Azure platform design.",
       "argumentHint": "The org/workload + constraints",
       "path": ".github/skills/azure-landing-zone-coach/SKILL.md"
+    },
+    {
+      "name": "azure-monitor-kql-lab",
+      "description": "Hands-on Azure lab: query Azure Monitor logs with KQL end to end — route diagnostic settings into a Log Analytics workspace, write where/summarize/bin/join/render queries, turn a query into a log search alert, compare it with a metric alert, wire an action group, pin results into a workbook, and control ingestion and retention cost. Use for 'Azure Monitor KQL lab', 'Log Analytics query', 'KQL summarize bin', 'diagnostic settings to workspace', 'metric alert vs log alert', 'action group', 'Azure workbook', or learning Azure observability by doing.",
+      "argumentHint": "What you need to observe (resource + question)",
+      "path": ".github/skills/azure-monitor-kql-lab/SKILL.md"
     },
     {
       "name": "azure-servicebus-lab",
@@ -3010,6 +3165,12 @@
       "description": "Teach binary and bitwise thinking from first principles — two's complement, AND/OR/XOR/NOT and the shift operators, the reusable idioms (set/clear/toggle/test a bit, isolate the lowest set bit with x & -x, clear it with x & (x-1), popcount, power-of-two check, XOR to find the unique element, swap without a temp), subset enumeration with bitmasks, and the pitfalls (signed vs logical shifts, overflow, operator precedence, language differences). Use for 'bit manipulation', 'bitmask', 'XOR trick', 'count set bits', 'bitwise operators', 'subset enumeration', 'what does x & (x-1) do'.",
       "argumentHint": "The bit trick, problem, or language you want explained",
       "path": ".github/skills/bit-manipulation-coach/SKILL.md"
+    },
+    {
+      "name": "broken-access-control-coach",
+      "description": "DEFENSIVE coach for authorization design and verification — deny-by-default, object-level checks (IDOR/BOLA), function-level checks, multi-tenant isolation, and SSRF defense, plus choosing RBAC vs ABAC vs ReBAC and writing the tests that prove authorization holds. Use for 'broken access control', 'IDOR / BOLA', 'A01', 'authorization design review', 'multi-tenant isolation', 'RBAC vs ABAC vs ReBAC', 'deny by default', or 'SSRF defense'.",
+      "argumentHint": "The endpoint, resource model, or service to review (+ roles, tenants, stack)",
+      "path": ".github/skills/broken-access-control-coach/SKILL.md"
     },
     {
       "name": "business-case-writer",
@@ -3096,10 +3257,22 @@
       "path": ".github/skills/circuit-breaker-coach/SKILL.md"
     },
     {
+      "name": "cloud-cert-roadmap-coach",
+      "description": "Pick the right CURRENT cloud certification and sequence it — map role to cert across Azure/AWS/Google Cloud, verify a code is still live before you study (2025-26 retirements moved several targets), follow prerequisite chains, and budget cost, study hours, and renewal cadence. Use for 'which cloud cert should I take', 'cloud certification roadmap', 'is AZ-204 still available', 'what replaced AI-102', 'AWS vs Azure vs GCP certification path', 'cert prerequisites', or 'certification renewal'. Not a lab — a planning coach.",
+      "argumentHint": "Target role + cloud (+ optional deadline/budget)",
+      "path": ".github/skills/cloud-cert-roadmap-coach/SKILL.md"
+    },
+    {
       "name": "cloud-cost-optimizer",
       "description": "Cut cloud spend as a lesson — find the biggest cost drivers, rightsize resources, buy commitments (reserved instances/savings plans/CUDs), tier storage, and kill waste — then produce a prioritized savings plan. Use for 'reduce my AWS/Azure/GCP bill', 'cloud cost optimization', 'FinOps', 'rightsizing', 'savings plans vs reserved instances', 'cut cloud waste', or learning cost management.",
       "argumentHint": "The cloud bill/services + provider",
       "path": ".github/skills/cloud-cost-optimizer/SKILL.md"
+    },
+    {
+      "name": "cloud-iam-least-privilege-coach",
+      "description": "DEFENSIVE coach for cloud identity hardening across AWS, Azure, and GCP — find and close privilege-escalation attack paths, replace wildcard policies with scoped grants, apply permission boundaries and SCPs/deny policies, break role-chaining, swap long-lived keys for workload identity federation, and add JIT/PIM elevation with audit. Use for 'least privilege in AWS/Azure/GCP', 'IAM review', 'privilege escalation path', 'wildcard policy', 'permission boundary vs SCP', 'workload identity federation', or 'just-in-time access'.",
+      "argumentHint": "Cloud provider + the identity, role, or account you are hardening",
+      "path": ".github/skills/cloud-iam-least-privilege-coach/SKILL.md"
     },
     {
       "name": "cloud-migration-planner",
@@ -3162,10 +3335,22 @@
       "path": ".github/skills/component-designer/SKILL.md"
     },
     {
+      "name": "computability-complexity-coach",
+      "description": "Teaches theory of computation and complexity classes from first principles — Turing machines and automata, decidability and the halting problem, P vs NP vs NP-complete vs NP-hard, building reductions to prove a problem hard, and coping strategies (approximation, heuristics, parameterized/FPT, special cases). Use for 'what is NP-complete', 'prove this problem is NP-hard', 'polynomial-time reduction', 'halting problem', 'undecidable', 'P vs NP', 'Turing machine', 'regular vs context-free', or 'my problem is intractable, now what'.",
+      "argumentHint": "A problem statement, a class (P/NP/NP-hard), or a theory topic",
+      "path": ".github/skills/computability-complexity-coach/SKILL.md"
+    },
+    {
       "name": "concept-explainer",
       "description": "Explain any topic from first principles with analogies, worked examples, a diagram, and a check for understanding, adapted to the learner's level. Use for 'explain X', 'how does Y work', 'ELI5', 'go deeper on Z', 'help me understand', or teaching any technical or conceptual topic. Produces a structured lesson, not a wall of text.",
       "argumentHint": "Topic to explain (+ optional level: beginner / intermediate / advanced)",
       "path": ".github/skills/concept-explainer/SKILL.md"
+    },
+    {
+      "name": "concept-map-generator",
+      "description": "Build a Novak-style concept map for a topic — a focus question, a ranked parking lot of concepts, a general-to-specific hierarchy, and labelled linking phrases so every edge reads as a true proposition, plus cross-links between branches that reveal real understanding. Use for 'concept map', 'make a knowledge map', 'how do these ideas connect', 'map this topic', 'concept map vs mind map', 'linking phrases', or 'show the propositions in this chapter'.",
+      "argumentHint": "The topic or source material + your focus question (+ current level: beginner/intermediate)",
+      "path": ".github/skills/concept-map-generator/SKILL.md"
     },
     {
       "name": "concurrency-coach",
@@ -3220,6 +3405,12 @@
       "description": "Coach a tailored, honest cover letter — extract the role's real needs, map the learner's actual experience to them, draft a tight three-paragraph letter in the learner's voice, and cut clichés and filler. Use for 'write a cover letter', 'tailor my cover letter to this JD', 'why-us paragraph help', or 'make my letter less generic'. Never invents experience, metrics, or enthusiasm.",
       "argumentHint": "Target role/JD + the learner's background",
       "path": ".github/skills/cover-letter/SKILL.md"
+    },
+    {
+      "name": "cpp-smart-pointers-raii-lab",
+      "description": "Hands-on C++ lab on RAII and ownership: replace raw new/delete with unique_ptr, shared_ptr and weak_ptr, use make_unique/make_shared, write custom deleters for C handles, reproduce and break a shared_ptr reference cycle, and apply the rule of zero/three/five. Use for 'teach me smart pointers', 'unique_ptr vs shared_ptr', 'RAII lab', 'shared_ptr memory leak cycle', 'custom deleter for FILE*', 'rule of five', or 'how do I stop using new and delete'.",
+      "argumentHint": "A C++ type or resource to make RAII-safe (e.g. 'a FILE* wrapper', 'a tree with parent pointers')",
+      "path": ".github/skills/cpp-smart-pointers-raii-lab/SKILL.md"
     },
     {
       "name": "cqrs-coach",
@@ -3336,6 +3527,12 @@
       "path": ".github/skills/data-contract-designer/SKILL.md"
     },
     {
+      "name": "data-interview-drill",
+      "description": "Run one timed data analyst / data scientist interview task at a time — window-function SQL under the clock, A/B test interpretation, a 'metric dropped 15% — diagnose it' case, defining a metric from an ambiguous request, or a take-home dataset case study — then score it against an explicit rubric, show a model answer, and set one targeted follow-up. Use for 'data analyst interview practice', 'SQL interview drill', 'A/B test interview question', 'metric drop case study', 'data science case interview', or 'take-home data challenge review'.",
+      "argumentHint": "Round type (sql | ab-test | metric-drop | metric-definition | take-home) + level + time budget",
+      "path": ".github/skills/data-interview-drill/SKILL.md"
+    },
+    {
       "name": "data-labeling-planner",
       "description": "Plan a data-labeling / annotation project: write clear guidelines, sample what to label, measure inter-annotator agreement, run quality control, and pick tooling. Use for 'create labeling guidelines', 'annotation project plan', 'inter-annotator agreement / Cohen's kappa', 'label quality control', 'how many annotators', 'sampling for labeling', or 'ground-truth dataset'. Teaches reliable labels, not just volume.",
       "argumentHint": "The task + dataset",
@@ -3358,6 +3555,12 @@
       "description": "Define data-quality checks for a dataset or pipeline as a lesson — the dimensions (completeness, validity, uniqueness, freshness, accuracy, consistency), executable tests, warn/error thresholds, placement, and alerting. Use for 'add data quality checks', 'is this data trustworthy', 'dbt tests / Great Expectations', 'detect nulls/duplicates/stale data', 'set DQ thresholds', or learning data reliability.",
       "argumentHint": "The dataset/table + rules",
       "path": ".github/skills/data-quality-checker/SKILL.md"
+    },
+    {
+      "name": "data-viz-coach",
+      "description": "Teach ONE chart from human perception upward — rank the visual encodings (position > length > angle > area > colour), enforce axis honesty, show uncertainty instead of hiding it, and prefer small multiples over an overloaded single panel — then emit a runnable, copy-pasteable Vega-Lite spec plus a one-sentence honest reading of the data. Use for 'which chart should I use', 'is this chart misleading', 'fix my axis', 'show uncertainty in a chart', 'small multiples', 'Vega-Lite spec', or 'review my visualization'.",
+      "argumentHint": "The dataset/columns + the question the chart must answer (+ tool: Vega-Lite | matplotlib | Plotly)",
+      "path": ".github/skills/data-viz-coach/SKILL.md"
     },
     {
       "name": "data-warehouse-modeling",
@@ -3426,6 +3629,12 @@
       "path": ".github/skills/delegation-coach/SKILL.md"
     },
     {
+      "name": "delta-lake-lab",
+      "description": "Hands-on local lab on Delta Lake — build a table with delta-rs or Spark on your laptop (free, no cloud account), then open the _delta_log yourself: JSON commit files and their actions, checkpoints and _last_checkpoint, optimistic concurrency and conflict retry, MERGE for upserts and SCD Type 2, liquid clustering vs Hive-style partitioning, OPTIMIZE, VACUUM retention, and Change Data Feed. Use for 'Delta Lake lab', 'what is in _delta_log', 'Delta checkpoint', 'Delta MERGE', 'SCD2 in Delta', 'liquid clustering vs partitioning', 'VACUUM retention', 'Change Data Feed', or learning Delta by doing.",
+      "argumentHint": "The dataset + engine (delta-rs/Python or Spark local) to run the lab on",
+      "path": ".github/skills/delta-lake-lab/SKILL.md"
+    },
+    {
       "name": "demo-script",
       "description": "Script a live technical demo end to end — define the win, script a step-by-step happy path with what to say and show, add checkpoints and timing, and prepare fallbacks for when things break. Use for 'demo script', 'plan my live demo', 'walkthrough for my product demo', 'rehearse my demo', or 'what if my demo fails'. Pairs with the Meeting and Presentation Coach.",
       "argumentHint": "What to demo + audience + time",
@@ -3448,6 +3657,30 @@
       "description": "Define and use design tokens as a lesson — naming, layering, scales (color/space/type), light/dark theming, and wiring them to CSS and components. Use for 'design tokens', 'theming', 'dark mode', 'color/spacing/type scale', 'CSS variables for a design system', 'token naming', or learning design tokens.",
       "argumentHint": "The design system + scope",
       "path": ".github/skills/design-tokens-coach/SKILL.md"
+    },
+    {
+      "name": "detection-engineering-coach",
+      "description": "DEFENSIVE blue-team coach for detection-as-code — pick log sources, write and tune Sigma rules, map coverage to MITRE ATT&CK, cut false positives, version and CI-test detections, and measure real coverage instead of rule count. Use for 'detection engineering', 'write a Sigma rule', 'detection as code', 'ATT&CK coverage', 'tune false positives', 'SIEM rule review', or 'how do I detect <technique>'.",
+      "argumentHint": "The behaviour/technique to detect + available log sources and SIEM",
+      "path": ".github/skills/detection-engineering-coach/SKILL.md"
+    },
+    {
+      "name": "diagram-accessibility-coach",
+      "description": "Make any diagram usable without sight and without colour vision — short alt text plus a structured long description, a data-table equivalent, Mermaid accTitle/accDescr, redundant encoding beyond hue (labels, shape, pattern, position), contrast and text-size checks against WCAG 2.2, and colourblind-safe palettes. Use for 'alt text for this diagram', 'is my chart accessible', 'colorblind safe colors', 'describe this figure for screen readers', 'WCAG for images', or 'accessible Mermaid'.",
+      "argumentHint": "The diagram, chart or figure to make accessible (+ where it will be published)",
+      "path": ".github/skills/diagram-accessibility-coach/SKILL.md"
+    },
+    {
+      "name": "diagram-as-code-coach",
+      "description": "Choose and use the right diagram-as-code ecosystem — Mermaid vs PlantUML vs D2 vs Graphviz DOT vs Structurizr DSL — by matching the diagram's job to the tool's layout engine, then set up local rendering, CI checks, and a git-friendly workflow where diagrams live beside the code and review as text diffs. Use for 'Mermaid vs PlantUML', 'which diagram tool', 'D2 vs Graphviz', 'render diagrams in CI', 'diagrams in git', 'C4 as code', 'my graph layout is a hairball', or 'diagram as code'.",
+      "argumentHint": "What you need to diagram + where it must render (GitHub, docs site, slides, CI)",
+      "path": ".github/skills/diagram-as-code-coach/SKILL.md"
+    },
+    {
+      "name": "diagram-review-coach",
+      "description": "Critique a learner-drawn diagram like a design reviewer — check factual correctness first, then C4 level mixing, unlabelled or ambiguous edges, sync vs async confusion, node overload, missing trust boundaries, absent legends, and inconsistent shapes — and hand back a scored rubric plus a corrected redraw. Use for 'review my diagram', 'critique this architecture diagram', 'is my C4 diagram right', 'why is my diagram confusing', 'diagram feedback', 'too many boxes', or 'what's wrong with this flowchart'.",
+      "argumentHint": "Paste the diagram source (Mermaid/PlantUML/D2) or describe it + the audience it's for",
+      "path": ".github/skills/diagram-review-coach/SKILL.md"
     },
     {
       "name": "disaster-recovery-planner",
@@ -3510,6 +3743,12 @@
       "path": ".github/skills/documentation-planner/SKILL.md"
     },
     {
+      "name": "domain-driven-design-coach",
+      "description": "Teach Domain-Driven Design end to end — strategic design (ubiquitous language, bounded contexts, subdomains, context maps and their integration patterns) and tactical design (entities, value objects, aggregates, invariants, domain events, repositories, domain services) — plus how to run an event storming session that derives those boundaries from real business behaviour instead of from a database schema. Use for 'domain-driven design', 'DDD', 'bounded context', 'ubiquitous language', 'context map', 'aggregate design', 'anti-corruption layer', 'event storming', or 'split this monolith by domain'.",
+      "argumentHint": "The business domain, a candidate aggregate, or a monolith you want to carve up",
+      "path": ".github/skills/domain-driven-design-coach/SKILL.md"
+    },
+    {
       "name": "dotnet-webapi-lab",
       "description": "Hands-on ASP.NET Core Web API lab: expose endpoints with minimal APIs or controllers, register services with dependency injection, and bind request data with model binding. Use for 'ASP.NET Core Web API lab', 'hands-on .NET Web API lab', 'minimal API vs controller', '.NET dependency injection', 'model binding', 'service lifetimes', or learning ASP.NET Core by building an API.",
       "argumentHint": "The API",
@@ -3526,6 +3765,12 @@
       "description": "Pattern router and cheat-sheet for data structures and algorithms — given a problem or topic, identify which of the ~18 core pattern families applies (two pointers, sliding window, fast/slow pointers, merge intervals, cyclic sort, in-place linked-list reversal, BFS, DFS, backtracking, binary search on answer, top-K heap, K-way merge, subsets/combinations, topological sort, union-find, trie, bitmask, dynamic programming), explain the SIGNAL that triggers it, give the reusable template and typical time/space complexity, then route to the right deep-dive or drill. Use for 'which DSA pattern', 'pattern recognition', 'coding patterns cheat sheet', 'what approach does this problem want', or 'how do I know when to use sliding window vs two pointers'.",
       "argumentHint": "A problem statement, a topic, or a pattern name (+ optional language)",
       "path": ".github/skills/dsa-patterns-coach/SKILL.md"
+    },
+    {
+      "name": "dual-coding-coach",
+      "description": "Rebuild an explanation so words and visuals work as one channel instead of two — apply Mayer's multimedia principles (signaling, segmenting, coherence, pre-training, spatial/temporal contiguity, redundancy, modality) to cut split attention, kill decorative noise, and place labels where the eye already is. Use for 'make this explanation clearer', 'words and visuals together', 'reduce cognitive load', 'my slides/docs are overwhelming', 'dual coding', or 'why isn't this landing'.",
+      "argumentHint": "The explanation, slide, doc section or diagram+text pair to rebuild (+ audience level)",
+      "path": ".github/skills/dual-coding-coach/SKILL.md"
     },
     {
       "name": "duckdb-lab",
@@ -3558,6 +3803,12 @@
       "path": ".github/skills/elasticsearch-local-lab/SKILL.md"
     },
     {
+      "name": "elixir-otp-genserver-lab",
+      "description": "Hands-on Elixir/OTP lab: spawn processes and message passing, links vs monitors, a full GenServer with init/handle_call/handle_cast/handle_info and state, Supervisors with one_for_one and rest_for_one restart strategies, and what 'let it crash' really means. Use for 'learn Elixir OTP', 'GenServer tutorial', 'handle_call vs handle_cast', 'links vs monitors', 'supervisor restart strategy', 'let it crash', 'Elixir processes', or 'build a supervised worker'.",
+      "argumentHint": "The worker or system to build (+ optional focus: processes | genserver | supervisor)",
+      "path": ".github/skills/elixir-otp-genserver-lab/SKILL.md"
+    },
+    {
       "name": "email-writing-coach",
       "description": "Write a clear, professional email — lead with the purpose, structure it for the reader, match tone to the audience, make the ask concrete, and craft a subject line, with a before/after rewrite. Use for 'write a professional email', 'improve this email', 'email tone', 'subject line help', or 'how do I ask for X by email'. Pairs with technical-writing-coach.",
       "argumentHint": "The email's goal + audience",
@@ -3586,6 +3837,12 @@
       "description": "Hands-on lab: run Envoy locally to learn its core objects — listeners, clusters, and routes — free, open-source, no subscription. Write a static bootstrap where a listener's HTTP connection manager routes virtual hosts to upstream clusters. Use for 'Envoy lab', 'listeners clusters routes locally', 'Envoy static config', 'HTTP connection manager', 'route to a cluster', or learning Envoy by doing.",
       "argumentHint": "The upstream to front with Envoy",
       "path": ".github/skills/envoy-local-lab/SKILL.md"
+    },
+    {
+      "name": "er-diagram-generator",
+      "description": "Generate a correct Mermaid erDiagram from DDL, ORM models, JSON samples or plain prose — entities and attributes with PK/FK/UK markers, precise crow's-foot cardinality, identifying vs non-identifying relationships, junction tables for many-to-many — plus normalization commentary (1NF→3NF, when to denormalize) and the questions the model can't answer yet. Use for 'ER diagram', 'draw my schema', 'diagram these tables', 'model this domain', 'is my schema normalized', or 'turn this DDL into a picture'.",
+      "argumentHint": "DDL, ORM models, sample JSON, or a prose description of the domain",
+      "path": ".github/skills/er-diagram-generator/SKILL.md"
     },
     {
       "name": "error-handling-coach",
@@ -3630,6 +3887,12 @@
       "path": ".github/skills/excel-formula-coach/SKILL.md"
     },
     {
+      "name": "exec-communication-coach",
+      "description": "Rewrite technical updates into answer-first executive communication — BLUF opening, Minto Pyramid structure, MECE grouping, and the right container (one-pager, six-pager narrative, decision memo, status update, or escalation) — then score the draft against a rubric, show a rewritten model version, and set one targeted revision. Use for 'write a decision memo', 'BLUF', 'Minto pyramid', 'executive summary of this update', 'one-pager for leadership', 'how do I escalate this', 'make this status report shorter', or 'turn my technical update into something a VP will read'.",
+      "argumentHint": "Your draft/update + audience (VP, exec staff, board) + container (memo | one-pager | status | escalation) + the decision you need",
+      "path": ".github/skills/exec-communication-coach/SKILL.md"
+    },
+    {
       "name": "experiment-analysis-coach",
       "description": "Analyze an experiment's results honestly: quantify effect size and its confidence interval, weigh statistical vs practical significance, and catch pitfalls like peeking, sample-ratio mismatch, multiple comparisons, and Simpson's paradox. Use for 'is my A/B test significant', 'how big is the effect', 'can I stop the test early', 'why did my result flip', or 'interpret these experiment results'. Teaches trustworthy read-outs, not dashboard-watching.",
       "argumentHint": "The results",
@@ -3640,6 +3903,12 @@
       "description": "Hands-on Express.js lab: define routes, chain middleware, handle errors with the four-arg handler, and serve a JSON API. Use for 'Express lab', 'hands-on Express.js lab', 'Express routing', 'Express middleware', 'Express error handling', 'express.json body parser', or learning Express by building a small API.",
       "argumentHint": "The API",
       "path": ".github/skills/express-lab/SKILL.md"
+    },
+    {
+      "name": "fabric-lakehouse-coach",
+      "description": "Teach Microsoft Fabric data engineering end to end with the trade-offs made explicit — OneLake as the single tenant-wide lake, shortcuts vs copying data, Lakehouse (Spark + read-only SQL analytics endpoint) vs Warehouse (full T-SQL, multi-table transactions), Direct Lake vs Import vs DirectQuery and what causes DirectQuery fallback, data pipelines vs Dataflows Gen2 vs notebooks, and capacity/SKU sizing. Use for 'Microsoft Fabric', 'OneLake', 'OneLake shortcuts', 'Lakehouse vs Warehouse in Fabric', 'Direct Lake', 'DirectQuery fallback', 'Fabric capacity F SKU', 'Fabric pipeline vs dataflow', or learning Fabric data engineering from first principles.",
+      "argumentHint": "The Fabric workload + the decision you are stuck on (storage, mode, or capacity)",
+      "path": ".github/skills/fabric-lakehouse-coach/SKILL.md"
     },
     {
       "name": "fastapi-lab",
@@ -3714,6 +3983,18 @@
       "path": ".github/skills/flask-lab/SKILL.md"
     },
     {
+      "name": "flink-sql-lab",
+      "description": "Hands-on local lab on stateful stream processing with Apache Flink SQL — run the SQL Client in Docker (free, no cloud), then build up dynamic tables and changelog streams, event-time watermarks, windowing TVFs (TUMBLE/HOP/CUMULATE), keyed aggregation state and state TTL, regular vs interval vs temporal vs lookup joins, and checkpoints for exactly-once recovery. Use for 'Flink SQL lab', 'Flink locally', 'dynamic tables', 'watermarks explained', 'tumbling window in SQL', 'Flink streaming join', 'keyed state TTL', 'Flink checkpointing', or learning stream processing by doing.",
+      "argumentHint": "The stream + question (windowed aggregation, join, or late data) to run the lab on",
+      "path": ".github/skills/flink-sql-lab/SKILL.md"
+    },
+    {
+      "name": "floating-point-numerics-coach",
+      "description": "Teaches IEEE 754 floating point from the bits up — sign/exponent/mantissa layout, why 0.1 + 0.2 != 0.3, ULP and epsilon-based comparison, catastrophic cancellation, NaN and Infinity semantics, when to use integers or decimals for money, and numerically stable summation. Use for 'why is 0.1 + 0.2 wrong', 'floating point precision', 'IEEE 754', 'compare floats safely', 'epsilon comparison', 'NaN behaviour', 'rounding errors', 'money data type', or 'my sum drifts'.",
+      "argumentHint": "The symptom, expression, or topic (+ optional language)",
+      "path": ".github/skills/floating-point-numerics-coach/SKILL.md"
+    },
+    {
       "name": "floci-aws-local-lab",
       "description": "Hands-on AWS lab: practice AWS locally and fully offline with the free, open-source Floci emulator — no cloud account, no subscription, no real credentials. Spin up floci/floci with docker compose, point the AWS CLI/SDK/Terraform/CDK at http://localhost:4566, then run S3, DynamoDB, and Lambda exercises. Use for 'learn AWS without an account', 'local AWS emulator', 'offline AWS lab', 'AWS CLI localhost:4566', 'Floci AWS', or practicing AWS by doing.",
       "argumentHint": "The AWS service to practice (S3/DynamoDB/Lambda/…)",
@@ -3738,10 +4019,28 @@
       "path": ".github/skills/floci-oracle-local-lab/SKILL.md"
     },
     {
+      "name": "flutter-widgets-lab",
+      "description": "Hands-on Flutter lab on the widget model — the widget/element/render three-tree architecture, composition over inheritance, StatelessWidget vs StatefulWidget, the constraints protocol ('constraints go down, sizes go up, parent sets position'), ListView.builder, keys and state preservation, and const constructors vs rebuild cost. Use for 'Flutter widgets lab', 'learn Flutter layout', 'BoxConstraints error', 'unbounded height', 'Column overflow', 'ListView.builder', 'Flutter keys', 'setState rebuilds too much', or 'const constructor performance'.",
+      "argumentHint": "The screen or widget to build (e.g. 'a reorderable checklist with a detail panel') + Flutter channel/version",
+      "path": ".github/skills/flutter-widgets-lab/SKILL.md"
+    },
+    {
       "name": "form-design-coach",
       "description": "Design robust web forms as a lesson — labels, the right input types, accessible inline validation, clear error messages, and forgiving submission UX. Use for 'form design', 'form validation', 'accessible forms', 'inline validation', 'error messages', 'which input type', 'form UX', or learning to build forms.",
       "argumentHint": "The form + fields",
       "path": ".github/skills/form-design-coach/SKILL.md"
+    },
+    {
+      "name": "foundry-forge-lab",
+      "description": "Hands-on Foundry lab running entirely on a free local toolchain — scaffold with forge init, write Solidity tests, drive them with cheatcodes like vm.prank and vm.expectRevert, escalate from unit tests to fuzz tests to handler-based invariant testing, fork mainnet state locally for integration tests, and gate quality with forge coverage and gas snapshots. Use for 'learn Foundry', 'forge test', 'Solidity fuzz testing', 'invariant testing', 'Foundry cheatcodes', 'mainnet fork test', 'forge coverage', 'gas snapshot', or 'how do I test a smart contract'.",
+      "argumentHint": "A testing goal, e.g. 'invariant for my vault', 'fuzz a swap function', or 'fork test against a live pool'",
+      "path": ".github/skills/foundry-forge-lab/SKILL.md"
+    },
+    {
+      "name": "frontend-interview-drill",
+      "description": "Run one timed frontend interview task at a time — vanilla DOM/JS live-coding (debounce, throttle, event delegation, custom hooks), a practical UI build (autocomplete, modal, infinite list), component API design, rendering-performance debugging, an accessibility fix, or a frontend system design round — then score it against an explicit rubric, show a model answer, and set one targeted follow-up. Use for 'frontend interview practice', 'implement debounce', 'build an autocomplete in an interview', 'React interview drill', 'frontend system design', 'component API design question', or 'a11y interview question'.",
+      "argumentHint": "Round type (js-fundamentals | ui-build | component-api | perf | a11y | fe-system-design) + framework + time budget",
+      "path": ".github/skills/frontend-interview-drill/SKILL.md"
     },
     {
       "name": "function-calling-coach",
@@ -3814,6 +4113,12 @@
       "description": "Hands-on GCP lab: build a Cloud Functions service end to end — an HTTP function, event triggers (Pub/Sub, Cloud Storage, Eventarc), environment/config variables, secrets, and Cloud Logging. Use for 'Cloud Functions lab', 'GCP HTTP function', 'add a Cloud Functions trigger', 'Cloud Run functions env vars', 'Cloud Functions logging', 'Google Cloud serverless lab', or learning GCP functions by doing.",
       "argumentHint": "The function",
       "path": ".github/skills/gcp-cloud-functions-lab/SKILL.md"
+    },
+    {
+      "name": "gcp-cloud-run-lab",
+      "description": "Hands-on GCP lab: deploy a container to Cloud Run end to end — build and deploy a service, split traffic across revisions, tune concurrency and min/max instances, measure scale-to-zero cold starts, run a Cloud Run job, and lock the service down to invoker-only IAM. Use for 'Cloud Run lab', 'deploy a container to Cloud Run', 'Cloud Run traffic splitting', 'Cloud Run concurrency', 'Cloud Run cold start', 'Cloud Run job vs service', 'Cloud Run IAM invoker', or learning GCP serverless containers by doing.",
+      "argumentHint": "The container/workload to run (+ optional region)",
+      "path": ".github/skills/gcp-cloud-run-lab/SKILL.md"
     },
     {
       "name": "gcp-cloud-storage-lab",
@@ -4050,6 +4355,12 @@
       "path": ".github/skills/haproxy-local-lab/SKILL.md"
     },
     {
+      "name": "hash-table-internals-coach",
+      "description": "Deep-dive coach for hash tables and heaps: what makes a good hash function, separate chaining vs open addressing (linear/quadratic probing, Robin Hood, cuckoo), load factor and amortized O(1) resize, tombstones and deletion, hash-flooding DoS and randomized seeds, why iteration order is not a guarantee, and the sibling structure — binary heaps and priority queues. Use for 'how does a hash map work', 'chaining vs open addressing', 'what is load factor', 'why is my dict slow', 'hash collision attack', 'is dictionary order guaranteed', 'tombstones in hash tables', or 'explain binary heap and priority queue'.",
+      "argumentHint": "The hash/heap question, a key type to hash, or a slow map/priority-queue to diagnose",
+      "path": ".github/skills/hash-table-internals-coach/SKILL.md"
+    },
+    {
       "name": "helm-chart-lab",
       "description": "Hands-on lab on Helm — package a Kubernetes app step by step: chart structure, values, templates, then install, upgrade, and rollback a release. Use for 'Helm lab', 'the app to package', 'create a Helm chart', 'templatize my manifests', 'helm upgrade/rollback', or learning Helm by doing. Includes a prod-upgrade safety note.",
       "argumentHint": "The app to package",
@@ -4062,10 +4373,22 @@
       "path": ".github/skills/hiring-process-coach/SKILL.md"
     },
     {
+      "name": "hybrid-search-reranking-coach",
+      "description": "Fix retrieval quality by combining lexical and semantic search and then re-ranking — run BM25 alongside dense vector search, fuse the two ranked lists with Reciprocal Rank Fusion or score normalization, add a cross-encoder re-ranker over the top candidates, understand where ColBERT-style late interaction sits between bi-encoders and cross-encoders, choose candidate-K against a latency budget, and prove the gain with Recall@k, MRR and nDCG on a golden set rather than by looking at three queries. Use for 'hybrid search', 'BM25 plus embeddings', 'reciprocal rank fusion', 'RRF', 'cross-encoder reranker', 'ColBERT late interaction', 'my RAG retrieves the wrong chunks', 'nDCG vs recall@k', 'how many candidates to rerank'.",
+      "argumentHint": "The corpus + the queries that currently retrieve the wrong thing, and your latency budget",
+      "path": ".github/skills/hybrid-search-reranking-coach/SKILL.md"
+    },
+    {
       "name": "hypothesis-testing-coach",
       "description": "Teach hypothesis testing from first principles: frame the null and alternative, choose the right test (one/two-sample or paired t-test, chi-square, nonparametric), compute and interpret p-values correctly, and reason about Type I/II errors and power. Use for 'is this significant', 'which statistical test', 't-test vs chi-square', 'what does the p-value mean', 'null vs alternative hypothesis', or 'Type I error'. Teaches honest inference, not p-hacking.",
       "argumentHint": "The question",
       "path": ".github/skills/hypothesis-testing-coach/SKILL.md"
+    },
+    {
+      "name": "iceberg-table-lab",
+      "description": "Hands-on local lab on Apache Iceberg — create a table with pyiceberg or Spark on your laptop (free, no cloud account), then open the metadata tree yourself: metadata.json, manifest lists, manifests, hidden partitioning and partition evolution, snapshots and time travel, compaction and expire-snapshots maintenance, and what spec v3 changes. Use for 'Iceberg lab', 'Iceberg locally', 'what is a manifest list', 'hidden partitioning', 'Iceberg time travel', 'rewrite_data_files', 'expire_snapshots', 'Iceberg v2 vs v3', or learning open table formats by doing.",
+      "argumentHint": "The dataset + engine (pyiceberg or Spark local) to run the lab on",
+      "path": ".github/skills/iceberg-table-lab/SKILL.md"
     },
     {
       "name": "idempotency-coach",
@@ -4084,6 +4407,12 @@
       "description": "Run a DEFENSIVE blue-team incident-response tabletop as a lesson — assign roles (IC, ops, comms, scribe), then walk detection, triage, containment, eradication, communication, and recovery for a simulated scenario, ending in a blameless postmortem. Authorized and simulated only. Use for 'run an incident tabletop', 'IR drill', 'practice on-call', 'incident roles', or learning incident management. Defense only.",
       "argumentHint": "The scenario/system",
       "path": ".github/skills/incident-response-drill/SKILL.md"
+    },
+    {
+      "name": "interpreter-build-lab",
+      "description": "Hands-on lab that builds a tiny programming language end to end — tokenizer, recursive-descent parser with precedence, AST, tree-walking evaluator, environments and closures — then shows what a bytecode VM changes and why. Use for 'build an interpreter', 'write a tokenizer', 'recursive descent parser', 'how do closures work', 'tree-walking evaluator', 'AST from scratch', 'build my own language', or 'tree-walker vs bytecode VM'.",
+      "argumentHint": "Implementation language (+ optional stage: lexer | parser | eval | closures | VM)",
+      "path": ".github/skills/interpreter-build-lab/SKILL.md"
     },
     {
       "name": "ios-lifecycle-coach",
@@ -4132,6 +4461,18 @@
       "description": "Hands-on Java lab on the Streams API: build a map/filter/reduce/collect pipeline, understand lazy intermediate vs. eager terminal operations, use Collectors (toList, groupingBy), and avoid pitfalls like reusing a consumed stream or mutating shared state. Use for 'teach me Java streams', 'hands-on streams lab', 'map filter reduce collect', 'why is my stream lazy', 'Collectors.groupingBy', or practicing java.util.stream by building pipelines.",
       "argumentHint": "The data transform",
       "path": ".github/skills/java-streams-lab/SKILL.md"
+    },
+    {
+      "name": "java-virtual-threads-lab",
+      "description": "Hands-on Java lab on Project Loom: create virtual threads with Thread.ofVirtual and newVirtualThreadPerTaskExecutor, learn why blocking is fine again, measure carrier-thread pinning, replace ThreadLocal with ScopedValue, and fan out with StructuredTaskScope on Java 21/25 LTS. Use for 'teach me virtual threads', 'Project Loom lab', 'newVirtualThreadPerTaskExecutor', 'virtual threads vs thread pool', 'carrier thread pinning', 'ScopedValue vs ThreadLocal', or 'StructuredTaskScope example'.",
+      "argumentHint": "The blocking workload to scale (e.g. '10k HTTP calls', 'JDBC fan-out', 'a slow file read')",
+      "path": ".github/skills/java-virtual-threads-lab/SKILL.md"
+    },
+    {
+      "name": "jetpack-compose-lab",
+      "description": "Hands-on Jetpack Compose lab that builds one screen while proving each rule of the runtime — composition vs recomposition, state hoisting and unidirectional data flow, modifier order, LazyColumn with stable keys, side-effect APIs (LaunchedEffect/DisposableEffect/rememberUpdatedState), and the stability rule that Compose only skips composables whose parameters are stable. Use for 'Jetpack Compose lab', 'learn Compose', 'why does my composable recompose', 'state hoisting', 'remember vs rememberSaveable', 'modifier order', 'LazyColumn key', 'LaunchedEffect', or 'Compose stability and skipping'.",
+      "argumentHint": "The screen to build (e.g. 'a searchable note list with a detail route') + Compose BOM / Kotlin version",
+      "path": ".github/skills/jetpack-compose-lab/SKILL.md"
     },
     {
       "name": "js-closures-lab",
@@ -4194,10 +4535,22 @@
       "path": ".github/skills/k6-load-test-lab/SKILL.md"
     },
     {
+      "name": "k8s-admission-policy-lab",
+      "description": "Hands-on admission control lab on a local kind/k3d cluster — enable built-in Pod Security Admission profiles per namespace in warn/audit before enforce, then add custom rules with Kyverno ClusterPolicies and with in-tree CEL ValidatingAdmissionPolicy, grant scoped exceptions, and run policy unit tests in CI so a bad manifest fails the pipeline instead of the cluster. Use for 'Pod Security Admission lab', 'Kyverno policy tutorial', 'ValidatingAdmissionPolicy CEL', 'enforce pod security standards', 'policy as code Kubernetes', or 'block privileged containers'.",
+      "argumentHint": "The rule to enforce (e.g. no privileged containers, require resource limits, signed images only)",
+      "path": ".github/skills/k8s-admission-policy-lab/SKILL.md"
+    },
+    {
       "name": "k8s-autoscaling-lab",
       "description": "Hands-on lab on Kubernetes autoscaling — build it step by step: set resource requests/limits, install metrics-server, create a Horizontal Pod Autoscaler, then generate load and watch replicas scale. Use for 'HPA lab', 'the scaling need', 'autoscale my Deployment', 'requests vs limits', 'CPU-based scaling', or learning the Horizontal Pod Autoscaler by doing. Includes a max-replicas safety note.",
       "argumentHint": "The scaling need",
       "path": ".github/skills/k8s-autoscaling-lab/SKILL.md"
+    },
+    {
+      "name": "k8s-cluster-lifecycle-lab",
+      "description": "Hands-on cluster operations lab — bootstrap a control plane with kubeadm init and join a worker, then rehearse the operations that keep it alive: a minor-version upgrade under the version skew policy, etcd snapshot backup and restore, cordon and drain with PodDisruptionBudgets, certificate expiry checks and renewal, and what changes in a stacked HA topology. Use for 'kubeadm lab', 'upgrade a Kubernetes cluster', 'etcd backup and restore', 'drain a node safely', 'kubernetes certificate expired', 'version skew policy', or 'HA control plane'.",
+      "argumentHint": "The lifecycle operation to rehearse (upgrade, etcd restore, node drain, cert renewal)",
+      "path": ".github/skills/k8s-cluster-lifecycle-lab/SKILL.md"
     },
     {
       "name": "k8s-configmap-secret-lab",
@@ -4212,10 +4565,28 @@
       "path": ".github/skills/k8s-deployment-lab/SKILL.md"
     },
     {
+      "name": "k8s-network-policy-lab",
+      "description": "Hands-on NetworkPolicy lab on a local kind/k3d/minikube cluster with a policy-enforcing CNI — start from a default-deny baseline, add ingress and egress allow-lists with podSelector, namespaceSelector and ipBlock, fix the CoreDNS egress gotcha, and prove with curl from real pods that traffic is actually blocked rather than merely declared. Use for 'Kubernetes NetworkPolicy lab', 'default deny in Kubernetes', 'zero trust pod networking', 'why is my NetworkPolicy not working', 'egress allow-list', or 'DNS broken after NetworkPolicy'.",
+      "argumentHint": "The namespace or app to lock down (e.g. web → api → db three-tier app)",
+      "path": ".github/skills/k8s-network-policy-lab/SKILL.md"
+    },
+    {
+      "name": "k8s-rbac-lab",
+      "description": "Hands-on RBAC lab on a local kind/k3d/minikube cluster — build least-privilege access from scratch with ServiceAccounts, Roles and ClusterRoles, RoleBindings and ClusterRoleBindings, projected bound service account tokens, then audit it with kubectl auth can-i --as and close the privilege-escalation paths opened by the escalate, bind and impersonate verbs. Use for 'Kubernetes RBAC lab', 'least privilege in Kubernetes', 'ServiceAccount permissions', 'kubectl auth can-i', 'why can this pod delete secrets', or 'RBAC privilege escalation'.",
+      "argumentHint": "The identity and the job it must do (e.g. CI ServiceAccount that deploys to one namespace)",
+      "path": ".github/skills/k8s-rbac-lab/SKILL.md"
+    },
+    {
       "name": "k8s-service-networking-lab",
       "description": "Hands-on lab on Kubernetes Services and networking — expose a workload step by step: ClusterIP vs NodePort vs LoadBalancer, in-cluster DNS, endpoints, and Ingress basics, testing each with kubectl. Use for 'Kubernetes Service lab', 'the service exposure', 'expose my app', 'ClusterIP vs NodePort vs LoadBalancer', 'Ingress basics', or 'my Service has no endpoints'. Includes a public-exposure safety note.",
       "argumentHint": "The service exposure",
       "path": ".github/skills/k8s-service-networking-lab/SKILL.md"
+    },
+    {
+      "name": "k8s-troubleshooting-lab",
+      "description": "Hands-on lab that builds a systematic Kubernetes debugging reflex on a local kind/k3d/minikube cluster — deliberately break things, then triage CrashLoopBackOff, ImagePullBackOff, Pending and OOMKilled pods with describe/events/logs, ephemeral debug containers, kubelet and crictl on the node, and walk the Service → EndpointSlice → DNS chain until traffic flows again. Use for 'Kubernetes troubleshooting lab', 'CrashLoopBackOff', 'pod stuck Pending', 'ImagePullBackOff', 'debug a broken Service', 'DNS not resolving in cluster', or 'how do I debug a Kubernetes app'.",
+      "argumentHint": "The symptom to reproduce (e.g. CrashLoopBackOff, Pending pod, Service returns nothing)",
+      "path": ".github/skills/k8s-troubleshooting-lab/SKILL.md"
     },
     {
       "name": "kafka-connect-lab",
@@ -4278,6 +4649,12 @@
       "path": ".github/skills/knowledge-graph/SKILL.md"
     },
     {
+      "name": "kotlin-coroutines-flow-lab",
+      "description": "Hands-on Kotlin coroutines and Flow lab — structured concurrency and CoroutineScope, launch vs async, dispatchers, cooperative cancellation and NonCancellable cleanup, cold Flow vs hot StateFlow/SharedFlow, backpressure via buffer/conflate/collectLatest, and deterministic tests with runTest virtual time. Use for 'Kotlin coroutines lab', 'structured concurrency', 'launch vs async', 'Dispatchers.IO vs Default', 'coroutine cancellation', 'cold flow vs StateFlow', 'SharedFlow replay', 'flow backpressure conflate', or 'testing coroutines with runTest'.",
+      "argumentHint": "The concurrency scenario (e.g. 'parallel API calls with cancel on scope death') + Kotlin / kotlinx-coroutines version",
+      "path": ".github/skills/kotlin-coroutines-flow-lab/SKILL.md"
+    },
+    {
       "name": "kubernetes-manifest-coach",
       "description": "Write and critique Kubernetes manifests as a lesson — Deployment, Service, ConfigMap, liveness/readiness/startup probes, resource requests and limits, securityContext, and common misconfigurations. Use for 'write a k8s Deployment', 'review my manifest', 'add probes', 'set resource limits', 'why is my pod CrashLooping', or learning Kubernetes. Includes a prod-apply safety note.",
       "argumentHint": "The workload to deploy or a manifest to review",
@@ -4288,6 +4665,12 @@
       "description": "Design a lakehouse on an open table format as a lesson (Delta Lake / Apache Iceberg) — ACID on object storage, partitioning, compaction/clustering, and time travel — with explicit trade-offs. Use for 'lakehouse design', 'Delta vs Iceberg', 'ACID on S3/ADLS', 'partitioning strategy', 'small files / compaction', 'time travel', or learning open table formats.",
       "argumentHint": "The workload + scale",
       "path": ".github/skills/lakehouse-designer/SKILL.md"
+    },
+    {
+      "name": "latex-math-coach",
+      "description": "Author math that renders correctly and reads clearly in KaTeX — inline vs display, aligned multi-step derivations, sums/products/limits, Big-O and complexity, matrices and cases, text inside math mode, spacing and delimiter sizing, plus the real KaTeX-vs-LaTeX gaps (no packages, no TikZ, no \\\\label/\\\\ref) and the accessibility story. Use for 'write this in LaTeX', 'my math isn't rendering', 'KaTeX not supported', 'format this derivation', 'align these equations', or 'how do I typeset Big-O / a matrix / a piecewise function'.",
+      "argumentHint": "The math to typeset or the broken KaTeX to fix (+ where it renders: Copilot Chat, GitHub, docs)",
+      "path": ".github/skills/latex-math-coach/SKILL.md"
     },
     {
       "name": "learner-memory",
@@ -4386,6 +4769,12 @@
       "path": ".github/skills/llm-guardrails-designer/SKILL.md"
     },
     {
+      "name": "llm-quantization-lab",
+      "description": "Hands-on local lab for shrinking an open-weight LLM and measuring what you paid for it — load a small model in fp16, then in 8-bit and 4-bit NF4 with bitsandbytes, export and run GGUF quantizations (Q8_0, Q5_K_M, Q4_K_M) with llama.cpp/Ollama, try a calibrated post-training method (GPTQ or AWQ), and benchmark disk size, VRAM, tokens/sec, and quality side by side so the size/speed/quality trade-off becomes a measurement instead of a rumour. Use for 'quantize an LLM', 'GGUF vs bitsandbytes', 'what is NF4', 'Q4_K_M meaning', 'GPTQ vs AWQ', 'run a big model on a small GPU', 'does quantization hurt quality', 'llama.cpp quantize'.",
+      "argumentHint": "The model you want to shrink + your hardware (VRAM/RAM, CPU or GPU)",
+      "path": ".github/skills/llm-quantization-lab/SKILL.md"
+    },
+    {
       "name": "load-balancing-coach",
       "description": "Design load balancing from first principles: L4 vs L7, algorithms (round-robin, least-connections, hashing), health checks, session affinity/stickiness, TLS termination, and failover. Use for 'design a load balancer', 'L4 vs L7', 'which LB algorithm', 'health checks', 'sticky sessions', or scaling a service across replicas.",
       "argumentHint": "The service + traffic",
@@ -4428,10 +4817,22 @@
       "path": ".github/skills/loki-logging-local-lab/SKILL.md"
     },
     {
+      "name": "lwc-component-lab",
+      "description": "Hands-on Lightning Web Component lab in a free Salesforce Developer Edition org — build a component with @api/@wire/@track, choose between wire and imperative Apex, read and write records through Lightning Data Service instead of custom Apex, publish and subscribe over Lightning Message Service, and prove behaviour with sfdx-lwc-jest tests. Use for 'build an LWC', 'Lightning Web Component', '@wire vs imperative Apex', 'LWC decorators', 'Lightning Data Service', 'Lightning Message Service', 'component communication', 'LWC Jest test', or 'lwc not re-rendering'.",
+      "argumentHint": "A component goal, e.g. 'record list with search', 'child-to-parent event', or 'why doesn't my array update the UI'",
+      "path": ".github/skills/lwc-component-lab/SKILL.md"
+    },
+    {
       "name": "mailpit-email-local-lab",
       "description": "Hands-on lab: run Mailpit locally with Docker — a fake SMTP server plus web UI that captures test emails so no real mail is sent. Local, free, open-source, no subscription. Use for 'Mailpit lab', 'the email testing', 'local SMTP catcher', 'capture test emails', 'preview outgoing mail', or learning email testing by doing.",
       "argumentHint": "The email testing",
       "path": ".github/skills/mailpit-email-local-lab/SKILL.md"
+    },
+    {
+      "name": "manim-animation-lab",
+      "description": "Hands-on local lab for Manim Community Edition in Python — set up a free offline environment, write a Scene that animates an algorithm, a geometric transformation, or a proof step, render it to MP4 or GIF, and fall back to a static PNG frame when ffmpeg or LaTeX is missing. Use for 'manim lab', 'animate an algorithm', 'math animation in Python', 'render a manim scene', 'manim install', '3Blue1Brown style animation', 'manim GIF', or 'animate this proof'.",
+      "argumentHint": "What to animate (algorithm step, transformation, proof) + output: mp4 | gif | png frame",
+      "path": ".github/skills/manim-animation-lab/SKILL.md"
     },
     {
       "name": "math-for-programming-coach",
@@ -4530,6 +4931,12 @@
       "path": ".github/skills/ml-pipeline-designer/SKILL.md"
     },
     {
+      "name": "ml-system-design-drill",
+      "description": "Run one timed end-to-end ML system design round the way an applied-ML interview flows — frame the business problem into an ML problem, choose labels and data sources, design features and the feature store, pick a baseline and a model, design training and serving (batch vs. online), then close the loop with offline/online metrics, drift detection, retraining cadence, and latency/cost budgets — scored against an explicit rubric with a model answer and a targeted follow-up. Use for 'ML system design interview', 'design a recommender', 'design a fraud detection system', 'applied ML interview practice', 'ML design round', or 'how do I answer an ML design question'.",
+      "argumentHint": "An ML product to design (e.g. 'ranking feed', 'fraud scoring') + level (mid/senior/staff) + time budget",
+      "path": ".github/skills/ml-system-design-drill/SKILL.md"
+    },
+    {
       "name": "mobile-offline-sync-coach",
       "description": "Design offline-first mobile apps as a lesson — local store, background sync, conflict resolution, and an outbox queue on iOS and Android. Use for 'offline-first', 'offline sync', 'Core Data/SwiftData vs Room', 'CloudKit sync', 'WorkManager sync', 'conflict resolution / last-write-wins', 'outbox queue', or 'app must work with no network'.",
       "argumentHint": "The offline need",
@@ -4594,6 +5001,12 @@
       "description": "Teach mutation testing to measure how good a test suite really is — what mutants are, how to read the mutation score, killing surviving mutants by adding assertions, and the technique's limits and cost. Use for 'mutation testing', 'is my test suite actually good', 'mutation score', 'Stryker/PIT/mutmut', 'kill survivors', or learning test-suite quality beyond coverage.",
       "argumentHint": "Code + existing tests + tool/language",
       "path": ".github/skills/mutation-testing-coach/SKILL.md"
+    },
+    {
+      "name": "mvcc-vacuum-explainer",
+      "description": "Explain multi-version concurrency control and the garbage it creates — row versions and snapshots, why readers never block writers, dead tuples and table/index bloat, HOT updates, the visibility map and index-only scans, autovacuum tuning (scale factors, cost delay, freeze thresholds), transaction-ID wraparound and aggressive freeze, plus how InnoDB differs with undo logs and the purge thread. Use for 'MVCC', 'dead tuples', 'table bloat', 'autovacuum tuning', 'VACUUM vs VACUUM FULL', 'XID wraparound', 'visibility map', 'long running transaction blocking vacuum', or 'InnoDB undo log and purge'.",
+      "argumentHint": "The symptom (bloat, slow vacuum, wraparound warning) or the engine to compare",
+      "path": ".github/skills/mvcc-vacuum-explainer/SKILL.md"
     },
     {
       "name": "mysql-local-lab",
@@ -4674,10 +5087,22 @@
       "path": ".github/skills/numpy-lab/SKILL.md"
     },
     {
+      "name": "oauth2-oidc-security-coach",
+      "description": "DEFENSIVE coach for safe OAuth 2.0 and OpenID Connect design — pick the right flow (authorization code + PKCE, since implicit and password grants are retired), validate redirect URIs strictly, use state and nonce correctly, minimize scopes, resist consent phishing, rotate refresh tokens with reuse detection, and adopt sender-constrained tokens (DPoP/mTLS) or the BFF pattern. Use for 'OAuth security', 'OIDC flow review', 'PKCE', 'redirect URI validation', 'refresh token rotation', 'DPoP / sender-constrained tokens', 'consent phishing', or 'BFF vs SPA tokens'.",
+      "argumentHint": "The client type (SPA, mobile, server, CLI, machine) + identity provider and current flow",
+      "path": ".github/skills/oauth2-oidc-security-coach/SKILL.md"
+    },
+    {
       "name": "observability-plan",
       "description": "Instrument a service for observability as a lesson — the three pillars (metrics, logs, traces), OpenTelemetry, which signals matter (RED/USE), controlling cardinality and cost, and turning signals into dashboards and alerts. Use for 'add observability', 'instrument my service', 'set up metrics/logs/traces', 'OpenTelemetry setup', 'what should I monitor', or learning telemetry.",
       "argumentHint": "The service/stack",
       "path": ".github/skills/observability-plan/SKILL.md"
+    },
+    {
+      "name": "offer-evaluation-coach",
+      "description": "Model and compare job offers as year-by-year cash flows instead of headline numbers — build the vesting schedule (cliffs, front- vs. back-loaded, monthly vs. annual), value RSUs vs. options (strike, 409A/FMV, exercise cost, AMT exposure, expiry) vs. bonus and sign-on, adjust for cost of living, tax bracket, benefits and 401k/pension match, then apply a risk discount for company stage and produce a normalized comparison table and a decision. Use for 'compare two job offers', 'is this offer good', 'RSU vs options', 'model my vesting schedule', 'normalize total compensation', 'evaluate a startup offer', or 'offer decision help'.",
+      "argumentHint": "Two or more offers: base, bonus, equity grant + vesting schedule, sign-on, location, company stage",
+      "path": ".github/skills/offer-evaluation-coach/SKILL.md"
     },
     {
       "name": "official-docs-finder",
@@ -4752,6 +5177,12 @@
       "path": ".github/skills/opentelemetry-collector-lab/SKILL.md"
     },
     {
+      "name": "os-internals-coach",
+      "description": "First-principles coach for operating-system internals: processes vs threads, what a context switch actually costs, how schedulers pick the next runnable task (Linux CFS then EEVDF, priorities, preemption), virtual memory, page tables, TLBs and page faults, the syscall and user/kernel boundary, and the buffered vs direct vs async I/O paths. Use for 'explain processes vs threads', 'what is a context switch', 'how does the Linux scheduler work', 'virtual memory and page faults', 'what happens during a syscall', 'user space vs kernel space', or 'why is my program slow at the OS level'.",
+      "argumentHint": "The OS concept or symptom to explain (e.g. 'context switch cost', 'page faults', 'why is my I/O slow')",
+      "path": ".github/skills/os-internals-coach/SKILL.md"
+    },
+    {
       "name": "owasp-top10-explainer",
       "description": "Explain the OWASP Top 10 (or a single category) for learning — with a minimal vulnerable-vs-fixed code example and the mitigation, so the learner recognizes and prevents the risk. DEFENSIVE and educational only. Use for 'explain the OWASP Top 10', 'what is injection / broken access control', 'OWASP A03', 'teach me web app security risks', or 'how do I prevent X'.",
       "argumentHint": "A category or 'all' + stack",
@@ -4794,6 +5225,12 @@
       "path": ".github/skills/peer-review-coach/SKILL.md"
     },
     {
+      "name": "peft-lora-lab",
+      "description": "Hands-on local lab for parameter-efficient fine-tuning — run a real LoRA and QLoRA supervised fine-tune on a small open-weight model with Hugging Face PEFT and TRL's SFTTrainer, choose rank r, alpha and dropout deliberately, pick target modules (attention projections vs. all-linear), format the dataset with the right chat template and completion-only loss, watch train/eval loss, merge the adapter or serve it separately, and prove improvement with a before/after evaluation instead of eyeballing samples. Use for 'LoRA fine-tune', 'QLoRA on my GPU', 'PEFT SFTTrainer example', 'what rank should I use', 'target_modules for LoRA', 'merge LoRA adapter', 'my fine-tune got worse', 'fine-tune a small LLM locally'.",
+      "argumentHint": "The task + dataset you want to adapt a model to, and your GPU/VRAM",
+      "path": ".github/skills/peft-lora-lab/SKILL.md"
+    },
+    {
       "name": "performance-review-coach",
       "description": "Run a fair, evidence-based performance review — gather examples across the whole cycle, rate against a rubric, calibrate with peers, and name growth areas — while avoiding recency, halo, and central-tendency bias. Use for 'write a performance review', 'prepare a self-review', 'calibration prep', 'rate my report fairly', or 'give growth feedback in a review'. Pairs with feedback-giver and okr-coach.",
       "argumentHint": "The review",
@@ -4806,6 +5243,12 @@
       "path": ".github/skills/pgvector-local-lab/SKILL.md"
     },
     {
+      "name": "phishing-resistant-auth-coach",
+      "description": "DEFENSIVE coach for phishing-resistant authentication — passkeys, WebAuthn/FIDO2 and smart cards, picking the right NIST SP 800-63-4 assurance level (AAL1-3), synced vs device-bound authenticators, and defending sessions against token theft, adversary-in-the-middle proxies, and MFA fatigue with token binding, continuous access evaluation, and revocation. Use for 'passkeys', 'WebAuthn / FIDO2', 'phishing-resistant MFA', 'AAL2 vs AAL3', 'MFA fatigue', 'AiTM / token theft defense', or 'session revocation'.",
+      "argumentHint": "The app/user population + current auth factors and risk level",
+      "path": ".github/skills/phishing-resistant-auth-coach/SKILL.md"
+    },
+    {
       "name": "playwright-test-lab",
       "description": "Hands-on lab: build reliable end-to-end browser tests locally with Playwright, the free OSS framework. Learn to scaffold a project, generate a first test with codegen, use resilient role/test-id locators, rely on web-first auto-retrying assertions (no sleeps), run headless across Chromium/Firefox/WebKit, and debug failures with the trace viewer. Use for 'Playwright', 'E2E test locally', 'browser test lab', 'trace viewer', or learning reliable E2E testing hands-on.",
       "argumentHint": "The app URL + critical flow",
@@ -4816,6 +5259,12 @@
       "description": "Hands-on lab on Plotly: build interactive charts with Plotly Express (hover, zoom, legend toggle), export to standalone HTML, then wire a minimal local Dash app with a dropdown and a callback — learning by running real code. Use for 'plotly lab', 'hands-on plotly lab', 'interactive charts', 'plotly express', 'write_html', 'basic Dash app', 'dcc.Graph callback', or a guided interactive-visualization exercise. Teaches by doing, honestly.",
       "argumentHint": "The data + interaction",
       "path": ".github/skills/plotly-lab/SKILL.md"
+    },
+    {
+      "name": "pm-interview-drill",
+      "description": "Run one timed product-management interview question at a time — product sense with CIRCLES, execution/metrics debugging ('DAU dropped 12%, diagnose it'), market-sizing estimation, and product strategy — then score the answer against an explicit rubric, show a model answer, and set one targeted follow-up. Use for 'PM interview practice', 'product sense question', 'CIRCLES framework', 'metrics debugging interview', 'estimation question', 'product strategy interview', or 'mock PM interview'.",
+      "argumentHint": "Round type (product sense | execution | estimation | strategy) + level (APM/PM/senior) + time budget",
+      "path": ".github/skills/pm-interview-drill/SKILL.md"
     },
     {
       "name": "portfolio-reviewer",
@@ -4840,6 +5289,12 @@
       "description": "Teach and debug DAX for Power BI as a lesson — measures vs calculated columns, row vs filter context, CALCULATE and context transition, time intelligence, and the classic mistakes. Use for 'fix my DAX', 'why is this measure wrong', 'explain filter context', 'CALCULATE isn't working', 'year-to-date measure', or learning DAX.",
       "argumentHint": "The DAX goal or a measure to fix",
       "path": ".github/skills/power-bi-dax-coach/SKILL.md"
+    },
+    {
+      "name": "power-fx-coach",
+      "description": "Coach for Power Fx as a declarative, Excel-like language on the free Power Apps Developer Plan — read and fix delegation warnings, keep Filter/LookUp/Sort work on the server, understand the non-delegable data row limit, use collections and named formulas deliberately, and handle errors with IfError/Errors instead of hoping. Use for 'learn Power Fx', 'delegation warning', 'blue dot delegation', 'Filter vs LookUp', 'Power Apps 500 record limit', 'ClearCollect', 'named formulas', 'Power Fx error handling', or 'my gallery only shows 500 rows'.",
+      "argumentHint": "A Power Fx goal, e.g. 'fix a delegation warning on SharePoint', 'search 50k rows', or 'refactor OnStart'",
+      "path": ".github/skills/power-fx-coach/SKILL.md"
     },
     {
       "name": "practice-generator",
@@ -4872,6 +5327,12 @@
       "path": ".github/skills/pricing-strategy-coach/SKILL.md"
     },
     {
+      "name": "privacy-by-design-coach",
+      "description": "DEFENSIVE coach for building privacy into a system — GDPR Article 25 and 35 in practice: data inventory and flow mapping, lawful basis, data minimization, purpose limitation, retention and deletion, DSAR handling, a worked DPIA, and LINDDUN privacy threat modeling. Use for 'privacy by design', 'GDPR Article 25', 'DPIA walkthrough', 'data inventory / ROPA', 'lawful basis', 'data minimization', 'retention policy', 'DSAR process', or 'LINDDUN privacy threats'.",
+      "argumentHint": "The feature/system processing personal data (+ jurisdictions and data subjects)",
+      "path": ".github/skills/privacy-by-design-coach/SKILL.md"
+    },
+    {
       "name": "progress-charts",
       "description": "Visualize a learner's progress as real charts using the Flint-Chart MCP server — render an activity/streak trend, topics completed by domain, mastery/coverage, and a spaced-repetition review burn-down from `learning-profile.md` and the progress log. Charts render locally (SVG/PNG); data never leaves the machine. Use for 'show my progress', 'progress chart/graph', 'visualize my learning', 'mastery by topic', or 'am I on track'. Falls back to a Mermaid/table view if no chart MCP is available.",
       "argumentHint": "What to visualize (e.g. 'streak', 'mastery by domain', 'all'), optional",
@@ -4882,6 +5343,12 @@
       "description": "Track learning progress over time — record completed topics, quiz scores, streaks, and due reviews into a simple Markdown log, then summarize momentum and what to do next. Use for 'track my progress', 'learning log', 'how am I doing', 'update my streak', 'what's due', or 'log this session'. Operationalizes the LearningOS memory model.",
       "argumentHint": "What to log / the learner's recent activity",
       "path": ".github/skills/progress-tracker/SKILL.md"
+    },
+    {
+      "name": "progressive-delivery-lab",
+      "description": "Hands-on progressive delivery lab with Argo Rollouts on a local kind/k3d cluster — replace a Deployment with a Rollout, run a weighted canary with pause steps, run a blue-green release with a preview Service and manual promotion, wire an AnalysisTemplate so bad metrics auto-abort, and rehearse a mid-rollout abort and rollback. Use for 'Argo Rollouts lab', 'canary deployment Kubernetes', 'blue green deployment', 'progressive delivery', 'automated rollback on metrics', or 'how do I promote a canary'.",
+      "argumentHint": "The workload to release progressively and the success metric to gate on",
+      "path": ".github/skills/progressive-delivery-lab/SKILL.md"
     },
     {
       "name": "project-mentor",
@@ -5046,6 +5513,18 @@
       "path": ".github/skills/qdrant-local-lab/SKILL.md"
     },
     {
+      "name": "qiskit-circuits-lab",
+      "description": "Hands-on Qiskit 2.x lab on a free local simulator — build a QuantumCircuit, understand why circuits must be transpiled to a backend's ISA with generate_preset_pass_manager, run SamplerV2 for bitstring distributions and EstimatorV2 for expectation values, then compare ideal statevector simulation against a noisy Aer model and real-device constraints. Use for 'learn Qiskit', 'quantum circuit', 'Bell state', 'transpile to ISA', 'SamplerV2 vs EstimatorV2', 'Qiskit primitives', 'AerSimulator noise model', 'qiskit migration 1.x to 2.x', or 'why does my circuit fail on a backend'.",
+      "argumentHint": "A circuit or concept goal, e.g. 'Bell state with Sampler', 'expectation value of ZZ', or 'add depolarizing noise'",
+      "path": ".github/skills/qiskit-circuits-lab/SKILL.md"
+    },
+    {
+      "name": "query-plan-tuning-lab",
+      "description": "Hands-on local lab for reading and fixing query plans — run PostgreSQL (and MySQL) free in Docker, seed realistic data, then use EXPLAIN (ANALYZE, BUFFERS) to identify scan and join node types, spot row misestimates (estimated vs actual), read shared hit/read buffers, fix stale statistics with ANALYZE and n_distinct, and benchmark a query before and after an index with real timings. Use for 'EXPLAIN ANALYZE', 'read a query plan', 'why is my query slow', 'seq scan vs index scan', 'nested loop vs hash join', 'row estimate is wrong', 'BUFFERS', or 'benchmark before and after an index'.",
+      "argumentHint": "The slow query (+ schema), or 'walk me through a plan from scratch'",
+      "path": ".github/skills/query-plan-tuning-lab/SKILL.md"
+    },
+    {
       "name": "quiz-generator",
       "description": "Create an adaptive quiz or mock exam with an answer key and explanations. Supports multiple-choice, true/false, short-answer, and code questions across difficulty levels, with scoring and per-question rationale. Use for 'quiz me', 'test my knowledge', 'give me practice questions', 'mock exam', or self-assessment on any topic.",
       "argumentHint": "Topic + number of questions + level (and optional format: MCQ / short / code / mixed)",
@@ -5092,6 +5571,12 @@
       "description": "Hands-on React lab on core hooks — useState, useEffect, useRef, useMemo, useCallback, dependency arrays, and the Rules of Hooks — by building and fixing one small component. Use for 'React hooks lab', 'useEffect dependency array', 'stale closure', 'rules of hooks', 'useMemo vs useCallback', 'useRef', or practicing hooks hands-on.",
       "argumentHint": "The component behavior",
       "path": ".github/skills/react-hooks-lab/SKILL.md"
+    },
+    {
+      "name": "react-native-new-architecture-lab",
+      "description": "Hands-on React Native New Architecture lab — JSI instead of the async bridge, the Fabric renderer, TurboModules with Codegen, bridgeless mode (default since React Native 0.76), verifying which architecture is actually running, writing a typed TurboModule end to end, and the interop layer for legacy native modules. Use for 'React Native new architecture lab', 'Fabric renderer', 'TurboModules', 'Codegen', 'bridgeless mode', 'JSI', 'is the new architecture enabled', 'migrate native module to TurboModule', or 'legacy native module interop'.",
+      "argumentHint": "The native capability to expose (e.g. 'a device battery TurboModule') + React Native version and platform(s)",
+      "path": ".github/skills/react-native-new-architecture-lab/SKILL.md"
     },
     {
       "name": "react-performance-lab",
@@ -5166,6 +5651,12 @@
       "path": ".github/skills/remote-code-runner/SKILL.md"
     },
     {
+      "name": "replication-topology-coach",
+      "description": "Choose and reason about database replication topologies — single-leader, multi-leader and leaderless (quorum) — covering synchronous vs asynchronous vs semi-synchronous commit, replication lag and read-your-writes, failover and split brain, fencing tokens, conflict resolution (LWW, CRDTs, application merge), quorum arithmetic (w + r > n) and how to route reads safely. Use for 'replication topology', 'single leader vs multi leader', 'leaderless replication', 'quorum reads and writes', 'replication lag', 'read replica routing', 'failover and split brain', or 'sync vs async replication'.",
+      "argumentHint": "The datastore + read/write pattern + your durability and availability targets",
+      "path": ".github/skills/replication-topology-coach/SKILL.md"
+    },
+    {
       "name": "research-brief",
       "description": "Produce a cited, dated research brief from official and primary sources — documentation, standards/RFCs, vendor engineering blogs, release notes/changelogs, official repos, and peer-reviewed papers. Use for 'what's new in X', 'summarize the docs/spec/paper on Y', 'compare A vs B', 'latest updates for my stack', or any request that must be grounded in trustworthy, verifiable sources. Never fabricates sources.",
       "argumentHint": "Topic/technology + scope (time window, official-only?) + depth",
@@ -5196,10 +5687,22 @@
       "path": ".github/skills/retrospective-facilitator/SKILL.md"
     },
     {
+      "name": "retry-backoff-coach",
+      "description": "Design retry behaviour that heals transient faults without amplifying an outage — timeout budgets across a call chain, exponential backoff with full/decorrelated jitter, capped attempts, retry budgets and token buckets, deciding which errors are retryable, idempotency keys for safe replay, dead-letter queues and poison-pill handling, and avoiding retry storms and metastable failure. Use for 'retry strategy', 'exponential backoff', 'jitter', 'retry storm', 'timeout budget', 'idempotency key', 'dead letter queue', 'poison pill', or 'should I retry this error'.",
+      "argumentHint": "The call (RPC, HTTP, queue consumer) + its timeout, SLO, and failure symptom",
+      "path": ".github/skills/retry-backoff-coach/SKILL.md"
+    },
+    {
       "name": "role-composer",
       "description": "Compose a brand-new specialist agent from a small YAML role config — the config-driven way to add role-agents (Data Engineer, Azure AI Engineer, DevOps/SRE, Security, Power BI, etc.) without hand-writing a prompt. Reads a .github/roles/*.role.yml file and generates a correctly-formatted .github/agents/<slug>.agent.md, then wires it into Drona. Use for 'create a <role> agent', 'build an agent from this config', 'add a new specialist', or 'turn this role.yml into an agent'.",
       "argumentHint": "Path to a .role.yml (or a role name to scaffold one from the template first)",
       "path": ".github/skills/role-composer/SKILL.md"
+    },
+    {
+      "name": "ros2-nodes-lab",
+      "description": "Hands-on ROS 2 lab on a free local install — write rclpy nodes with publishers and subscribers, pick the right QoS profile so topics actually connect, choose between topics, services and actions, declare parameters, wire it together with a Python launch file, and debug live with ros2 topic/node/param and ros2 bag. Use for 'learn ROS 2', 'rclpy node', 'publisher subscriber', 'ROS 2 QoS mismatch', 'service vs action', 'ROS 2 launch file', 'ros2 bag record', 'ROS 2 parameters', or 'my subscriber receives nothing'.",
+      "argumentHint": "A robotics goal, e.g. 'publish sensor data at 10 Hz', 'action for a long move', or 'debug a silent topic'",
+      "path": ".github/skills/ros2-nodes-lab/SKILL.md"
     },
     {
       "name": "rubric-grader",
@@ -5268,6 +5771,12 @@
       "path": ".github/skills/sampling-methods-coach/SKILL.md"
     },
     {
+      "name": "schema-registry-lab",
+      "description": "Hands-on local lab that puts a real contract on a Kafka topic — run Confluent Schema Registry (or Karapace) in Docker for free, register Avro/Protobuf/JSON Schema subjects, set the compatibility mode, decode the 5-byte wire format by hand, watch a breaking change get rejected, and wire a compatibility check into CI. Use for 'Schema Registry lab', 'Avro on Kafka', 'subject naming strategy', 'BACKWARD vs FORWARD compatibility', 'schema evolution rules', 'magic byte schema id', 'schema compatibility in CI', or learning data contracts on streams by doing.",
+      "argumentHint": "The topic + payload format (Avro, Protobuf, or JSON Schema) to put under contract",
+      "path": ".github/skills/schema-registry-lab/SKILL.md"
+    },
+    {
       "name": "seaborn-lab",
       "description": "Hands-on lab on Seaborn: set a theme, plot distributions (histplot/kdeplot/ecdfplot) and statistical views (boxplot/violinplot/regplot), and map categories with hue and facets on tidy DataFrames — learning by running real code. Use for 'seaborn lab', 'hands-on seaborn lab', 'statistical plots', 'distribution plot', 'kdeplot bandwidth', 'boxplot by group', 'hue/col facets', or a guided statistical-plotting exercise. Teaches by doing, honestly.",
       "argumentHint": "The DataFrame + question",
@@ -5304,10 +5813,22 @@
       "path": ".github/skills/seo-optimizer/SKILL.md"
     },
     {
+      "name": "sequence-diagram-generator",
+      "description": "Turn any protocol, API call chain, auth handshake or event flow into a correct Mermaid sequenceDiagram — lifelines and activations, autonumber, alt/opt/par/loop/critical/break fragments, async arrows, notes, and the failure path most diagrams forget. Use for 'sequence diagram', 'draw this API flow', 'diagram the OAuth handshake', 'show the request/response order', 'visualize this protocol', or 'what happens when this call fails'.",
+      "argumentHint": "The flow to diagram (protocol, endpoint trace, log excerpt, or prose) + optional participants",
+      "path": ".github/skills/sequence-diagram-generator/SKILL.md"
+    },
+    {
       "name": "serverless-designer",
       "description": "Design a serverless architecture — functions, API gateway, event sources, managed data stores, cold starts, statelessness, and the pay-per-use cost model — plus a clear-eyed take on when NOT to go serverless. Use for 'design serverless', 'AWS Lambda architecture', 'Azure Functions', 'event-driven design', 'API Gateway + functions', 'is serverless right for me', or learning serverless.",
       "argumentHint": "The workload + provider",
       "path": ".github/skills/serverless-designer/SKILL.md"
+    },
+    {
+      "name": "servicenow-glide-scripting-lab",
+      "description": "Hands-on ServiceNow server-side scripting lab on a free Personal Developer Instance — query with GlideRecord and encoded queries, write business rules that run in the right phase, move logic into Script Includes, call them from the client with GlideAjax instead of client-side GlideRecord, package work in a scoped application, and secure it with ACLs. Use for 'learn ServiceNow scripting', 'GlideRecord query', 'business rule', 'Script Include', 'GlideAjax', 'client script performance', 'scoped application', 'ServiceNow ACL', or 'debug a ServiceNow script'.",
+      "argumentHint": "A scripting goal, e.g. 'auto-assign incidents on insert', 'lookup via GlideAjax', or 'why is my form slow'",
+      "path": ".github/skills/servicenow-glide-scripting-lab/SKILL.md"
     },
     {
       "name": "session-resume",
@@ -5394,6 +5915,12 @@
       "path": ".github/skills/smart-contract-coach/SKILL.md"
     },
     {
+      "name": "snowflake-performance-coach",
+      "description": "Teach Snowflake performance and cost from its architecture — the separation of storage, compute (virtual warehouses) and cloud services — then make every knob explicit: warehouse size vs credits, auto-suspend and auto-resume, scale-up vs multi-cluster scale-out, micro-partitions and pruning, clustering keys and automatic clustering, the three caches, query profile reading, and dynamic tables with a target lag. Use for 'Snowflake performance', 'Snowflake warehouse sizing', 'Snowflake credits cost', 'auto-suspend', 'micro-partitions', 'clustering key', 'Snowflake result cache', 'spilling to remote storage', 'dynamic tables', or learning Snowflake tuning from first principles.",
+      "argumentHint": "The slow query or the cost problem + current warehouse size and table sizes",
+      "path": ".github/skills/snowflake-performance-coach/SKILL.md"
+    },
+    {
       "name": "socratic-tutor",
       "description": "Teach a topic purely through Socratic questioning — ask a ladder of guiding questions, react to the learner's answers, and lead them to derive the idea themselves, only confirming or correcting rather than lecturing up front. Use for 'ask me questions', 'Socratic method', 'guide me to the answer', 'don't just tell me', 'help me reason it out', or learning by discovery. One question at a time, not a monologue.",
       "argumentHint": "Topic + the learner's current understanding",
@@ -5416,6 +5943,12 @@
       "description": "Hands-on lab to run SonarQube Community Build (free, open-source, no subscription) locally in Docker and scan a project with SonarScanner — surface bugs, code smells, vulnerabilities, duplications, and a quality gate at localhost:9000. Use for 'local code quality', 'static analysis', 'SonarQube setup', 'find code smells', 'quality gate', or learning SAST / code quality by doing.",
       "argumentHint": "The project/language to analyze",
       "path": ".github/skills/sonarqube-local-lab/SKILL.md"
+    },
+    {
+      "name": "sorting-searching-coach",
+      "description": "Deep-dive coach for sorting and searching: why comparison sorts cannot beat n log n, stability and when it matters, how real libraries actually sort (Timsort, introsort, pdqsort, dual-pivot quicksort), quickselect for order statistics, linear-time counting/radix/bucket sorts and their preconditions, and binary search invariants that kill off-by-one bugs. Use for 'explain sorting algorithms', 'why is sorting n log n', 'stable vs unstable sort', 'how does Timsort work', 'quickselect kth largest', 'radix sort when', 'binary search off by one', or 'lower bound and upper bound'.",
+      "argumentHint": "The sorting/searching question, algorithm, or buggy binary search to fix",
+      "path": ".github/skills/sorting-searching-coach/SKILL.md"
     },
     {
       "name": "spaced-repetition-scheduler",
@@ -5532,6 +6065,12 @@
       "path": ".github/skills/sqlite-lab/SKILL.md"
     },
     {
+      "name": "sre-interview-drill",
+      "description": "Run one timed SRE / production-engineering interview round at a time — NALSD-style capacity-math system design, a Linux/production troubleshooting scenario, a live incident-command roleplay, or SLO and error-budget reasoning — then score it against an explicit rubric, show a model answer, and set one targeted follow-up. Use for 'SRE interview practice', 'NALSD design question', 'production troubleshooting interview', 'Linux debugging interview', 'incident response interview', 'SLO error budget question', or 'mock SRE interview'.",
+      "argumentHint": "Round type (nalsd | troubleshooting | incident | slo) + level + time budget",
+      "path": ".github/skills/sre-interview-drill/SKILL.md"
+    },
+    {
       "name": "stakeholder-management-coach",
       "description": "Manage stakeholders on a project — map them on a power/interest grid, tailor communication and cadence, align on shared goals with RACI, and handle conflict by interests not positions. Use for 'stakeholder analysis', 'stakeholder map', 'power interest grid', 'RACI chart', 'align stakeholders', or 'manage a difficult stakeholder'. Pairs with okr-coach and conflict-resolution-coach.",
       "argumentHint": "The project + stakeholders",
@@ -5550,6 +6089,12 @@
       "path": ".github/skills/star-story-builder/SKILL.md"
     },
     {
+      "name": "state-machine-visualizer",
+      "description": "Model any lifecycle as a correct Mermaid stateDiagram-v2 — composite (nested) states, fork/join for concurrency, choice pseudostates for guards, entry/exit notes and history — then back it with a full transition table and an explicit illegal-transition list you can turn into tests. Use for 'state machine', 'state diagram', 'model this lifecycle', 'order/ticket/subscription states', 'what transitions are legal', or 'draw the workflow states'.",
+      "argumentHint": "The entity and its states (or the code/enum/status column to reverse-engineer)",
+      "path": ".github/skills/state-machine-visualizer/SKILL.md"
+    },
+    {
       "name": "state-management-coach",
       "description": "Choose and structure frontend state as a lesson — local vs global vs server state, when to reach for a store, and the anti-patterns to avoid. Use for 'state management', 'local vs global state', 'do I need Redux/Zustand/Pinia', 'prop drilling', 'server state / React Query', or learning to structure state.",
       "argumentHint": "The app + state problem + framework",
@@ -5560,6 +6105,12 @@
       "description": "Hands-on lab on statsmodels: fit an OLS regression with the formula API, read the summary() table (coefficients, p-values, R-squared, confidence intervals), and run diagnostics (residual and QQ plots, Breusch-Pagan, VIF, Durbin-Watson) — learning by running real code. Use for 'statsmodels lab', 'hands-on statsmodels lab', 'OLS regression', 'read regression summary', 'regression diagnostics', 'check assumptions', or a guided regression exercise. Teaches by doing, honestly.",
       "argumentHint": "The outcome + predictors",
       "path": ".github/skills/statsmodels-lab/SKILL.md"
+    },
+    {
+      "name": "storage-engine-explainer",
+      "description": "Explain how databases actually store bytes — B-tree (page-oriented, in-place update) vs LSM-tree (memtable, SSTables, compaction), write-ahead logging and checkpoints, the buffer pool and page replacement, read/write/space amplification and their trade-offs, plus row-oriented vs columnar layouts with compression and vectorized scans — so engine and schema choices become measurable rather than tribal. Use for 'B-tree vs LSM tree', 'how does a storage engine work', 'write amplification', 'compaction', 'SSTable', 'write-ahead log', 'buffer pool', 'checkpoint', or 'row store vs column store'.",
+      "argumentHint": "The engine, workload (read/write mix), or the storage question to unpack",
+      "path": ".github/skills/storage-engine-explainer/SKILL.md"
     },
     {
       "name": "streaming-pipeline-designer",
@@ -5602,6 +6153,18 @@
       "description": "Hands-on lab: render and try an OpenAPI spec locally with Swagger UI or Redoc — free, open-source, no subscription. Mount an openapi.yaml, browse interactive docs, and use 'Try it out' to call your API from the browser; Redoc gives a clean read-only reference. Use for 'Swagger UI lab', 'render OpenAPI locally', 'Redoc lab', 'try it out from the browser', 'view API docs offline', or learning OpenAPI tooling by doing.",
       "argumentHint": "The OpenAPI spec to render",
       "path": ".github/skills/swagger-ui-local-lab/SKILL.md"
+    },
+    {
+      "name": "swift-concurrency-lab",
+      "description": "Hands-on Swift concurrency lab — async/await, structured tasks and task groups, cancellation, actors and @MainActor isolation, Sendable, and adopting Swift 6 compile-time data-race safety incrementally through the strict-concurrency settings. Use for 'Swift concurrency lab', 'async await Swift', 'task group', 'actor isolation', '@MainActor', 'Sendable error', 'data race safety', 'Swift 6 language mode', or 'migrate to strict concurrency'.",
+      "argumentHint": "The concurrent scenario (e.g. 'fetch 20 thumbnails in parallel with cancellation') + Swift version / language mode",
+      "path": ".github/skills/swift-concurrency-lab/SKILL.md"
+    },
+    {
+      "name": "swiftui-lab",
+      "description": "Hands-on SwiftUI lab that builds one real screen from first principles — view identity, @State/@Binding/@Observable ownership, the layout negotiation, NavigationStack with a bound path, stable list identity and performance, previews as the feedback loop, and Dynamic Type / Dark Mode checks. Use for 'SwiftUI lab', 'learn SwiftUI', 'why does my SwiftUI view not update', '@State vs @Binding vs @Observable', 'NavigationStack path', 'SwiftUI list is slow', 'ForEach id', or 'SwiftUI preview practice'.",
+      "argumentHint": "The screen to build (e.g. 'a searchable task list with a detail screen') + target OS version",
+      "path": ".github/skills/swiftui-lab/SKILL.md"
     },
     {
       "name": "system-design-drill",
@@ -5772,6 +6335,18 @@
       "path": ".github/skills/transaction-isolation-explainer/SKILL.md"
     },
     {
+      "name": "transactional-outbox-lab",
+      "description": "Hands-on local lab that fixes the dual-write problem — write the business row and an outbox row in ONE local transaction, then publish to Kafka either by polling the outbox or by log-tailing the WAL with Debezium CDC, running entirely free in Docker (Postgres + Kafka in KRaft + Kafka Connect/Debezium). Covers per-aggregate ordering, at-least-once delivery, idempotent consumers with a processed-messages table, outbox cleanup, and a crash test that proves no message is lost. Use for 'transactional outbox', 'dual write problem', 'outbox pattern', 'Debezium CDC', 'change data capture', 'publish events reliably', 'exactly once vs idempotent consumer', or 'polling publisher vs log tailing'.",
+      "argumentHint": "The service + the event it must publish (e.g. OrderPlaced) and your broker",
+      "path": ".github/skills/transactional-outbox-lab/SKILL.md"
+    },
+    {
+      "name": "transformer-architecture-explainer",
+      "description": "Explain a decoder-only transformer from first principles — tokens to embeddings, why Q/K/V exist at all, scaled dot-product and multi-head attention, causal masking, positional information (learned vs. sinusoidal vs. RoPE), residual streams and normalization (pre-LN vs. post-LN), the feed-forward block and its Mixture-of-Experts variant, the KV cache, and why attention costs O(n^2) in sequence length while the FFN dominates parameter count — so the learner can predict memory, latency, and context-length behaviour instead of memorizing a diagram. Use for 'how do transformers work', 'explain self-attention', 'what are Q K V', 'why sqrt(d_k)', 'what is RoPE', 'why is long context expensive', 'what is the KV cache', 'MoE vs dense', 'attention is O(n^2)'.",
+      "argumentHint": "The part you want explained (attention, RoPE, KV cache, MoE) + your current level",
+      "path": ".github/skills/transformer-architecture-explainer/SKILL.md"
+    },
+    {
       "name": "tree-algorithms-coach",
       "description": "Teach binary trees and BSTs from first principles — the four traversals (pre-order, in-order, post-order, level-order) with both recursive and iterative templates, the recursion-on-trees mental model (what do I ask my children, what do I return to my parent), height and diameter, lowest common ancestor, BST validate/insert/delete, tree DP such as subtree aggregates and rob-the-tree, plus the intuition for balanced trees, Fenwick/BIT and segment trees. Use for 'tree problems', 'binary tree traversal', 'BST', 'lowest common ancestor', 'tree DP', 'segment tree vs Fenwick', 'height of a tree', 'iterative in-order'.",
       "argumentHint": "The tree problem or concept (+ optional language)",
@@ -5838,6 +6413,12 @@
       "path": ".github/skills/typesense-local-lab/SKILL.md"
     },
     {
+      "name": "unity-catalog-coach",
+      "description": "Teach Databricks Unity Catalog governance from first principles — metastore and the three-level namespace catalog.schema.table, managed vs external tables and volumes, storage credentials and external locations, the inheritance-based privilege model with GRANT/REVOKE and ownership, automatic table and column lineage, and fine-grained access control with row filters and column masks. Use for 'Unity Catalog', 'three-level namespace', 'managed vs external table Databricks', 'storage credential external location', 'Databricks GRANT privileges', 'row filter column mask', 'Databricks lineage', 'volumes in Unity Catalog', or learning lakehouse governance from first principles.",
+      "argumentHint": "The workspace/data estate + the governance problem (isolation, access, or lineage)",
+      "path": ".github/skills/unity-catalog-coach/SKILL.md"
+    },
+    {
       "name": "user-story-writer",
       "description": "Write clear user stories with acceptance criteria — role-goal-benefit format, INVEST quality checks, and Given/When/Then criteria, splitting stories that are too big. Use for 'write a user story', 'acceptance criteria for X', 'break this feature into stories', 'INVEST check', or 'turn this requirement into a backlog item'. Pairs with prd-writer and bdd-scenario-writer.",
       "argumentHint": "The feature/need + user",
@@ -5874,10 +6455,22 @@
       "path": ".github/skills/vite-lab/SKILL.md"
     },
     {
+      "name": "vllm-inference-lab",
+      "description": "Hands-on lab for self-hosting an open-weight LLM with vLLM and understanding why it is fast — start the OpenAI-compatible server locally, learn PagedAttention and why KV-cache fragmentation was the bottleneck, watch continuous batching turn concurrency into throughput, enable prefix caching for shared system prompts, try speculative decoding, tune gpu-memory-utilization and max-model-len, then measure TTFT, inter-token latency, tokens/sec and throughput under real concurrency instead of trusting a README number. Use for 'self-host an LLM', 'vLLM server', 'what is PagedAttention', 'continuous batching', 'prefix caching', 'speculative decoding', 'measure TTFT', 'why is my LLM server slow', 'OpenAI-compatible local endpoint'.",
+      "argumentHint": "The model to serve + your GPU (or CPU-only) and the traffic shape you expect",
+      "path": ".github/skills/vllm-inference-lab/SKILL.md"
+    },
+    {
       "name": "vue-basics-lab",
       "description": "Hands-on Vue 3 lab — reactivity with ref/reactive, the Composition API and <script setup>, components, props, and custom events — by building one small app. Use for 'Vue basics', 'Composition API', 'ref vs reactive', 'script setup', 'defineProps/defineEmits', 'v-model', or practicing Vue hands-on.",
       "argumentHint": "The app",
       "path": ".github/skills/vue-basics-lab/SKILL.md"
+    },
+    {
+      "name": "vulnerability-prioritization-coach",
+      "description": "DEFENSIVE coach for triaging vulnerabilities at scale — combine CVSS 4.0 severity, EPSS exploitation likelihood, CISA KEV known-exploited status, SSVC decision trees, and your own asset/exposure context into a defensible, SLA-driven remediation queue instead of a 40,000-row spreadsheet. Use for 'vulnerability prioritization', 'CVSS vs EPSS', 'CISA KEV', 'SSVC decision tree', 'patch SLA', 'which CVEs first', or 'risk-based vulnerability management'.",
+      "argumentHint": "The scan output / CVE list + asset context and current SLAs",
+      "path": ".github/skills/vulnerability-prioritization-coach/SKILL.md"
     },
     {
       "name": "weaviate-local-lab",
