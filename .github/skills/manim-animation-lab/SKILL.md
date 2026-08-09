@@ -13,8 +13,8 @@ equation. This lab builds that locally with Manim Community Edition, per [`AGENT
 ## When to use
 
 - A static diagram can't carry the idea because the *transition* is the point.
-- The learner wants a reusable animation of an algorithm step, a transformation, or a proof rewrite.
-- They want an offline, free, no-account toolchain that produces files they own.
+- The learner wants a reusable animation of an algorithm step, a transformation, or a proof rewrite, on an
+  offline, free, no-account toolchain that produces files they own.
 - **Don't** use it for a static structure or a data chart — use
   [visual-explainer](../visual-explainer/SKILL.md) or [data-viz-coach](../data-viz-coach/SKILL.md).
 
@@ -40,10 +40,8 @@ call into an animation.
 | --- | --- | --- |
 | `-ql` | low quality, 480p15 | every iteration while developing |
 | `-qh` | high quality, 1080p60 | the final render only |
-| `-p` | preview: open the file when done | pair as `-pql` |
 | `-s` | save the **last frame** as PNG, no video | the fallback when ffmpeg is missing |
 | `--format=gif` | GIF instead of MP4 | embedding in a README or slide |
-| `-o name` | output file name | keeping renders organised |
 
 ## Setup (free, local, offline after install)
 
@@ -55,9 +53,8 @@ manim --version        # confirm the install before writing a scene
 ```
 
 **System dependencies, honestly:** Manim Community needs **ffmpeg** for video output (`winget install
-Gyan.FFmpeg`, `brew install ffmpeg`, or `apt install ffmpeg`), and a **LaTeX** distribution (MiKTeX or TeX
-Live) *only* for `Tex` / `MathTex` — `Text` and `MarkupText` go through Pango and need no LaTeX. If either
-is missing, the lab still works: see the fallback in step 6.
+Gyan.FFmpeg`, `brew install ffmpeg`, `apt install ffmpeg`) and a **LaTeX** distribution (MiKTeX or TeX Live)
+*only* for `Tex` / `MathTex` — `Text` and `MarkupText` go through Pango. If either is missing, see step 6.
 
 ## Procedure
 
@@ -66,14 +63,13 @@ is missing, the lab still works: see the fallback in step 6.
 2. **Create the environment** with the commands above, inside the project — not a global install
    ([python-venv-lab](../python-venv-lab/SKILL.md)).
 3. **Write `scene.py`** — start from Exercise A below: one `Scene` subclass, one `construct` method.
-4. **Render a draft and watch it**: `manim -pql scene.py SquareToCircle` →
+4. **Render a draft and watch it**: `manim -pql scene.py SquareToCircle` (`-p` previews when done) →
    `media/videos/scene/480p15/SquareToCircle.mp4`.
 5. **Iterate on the timing**: `run_time=`, `self.wait(1)`, `rate_func=smooth|linear|there_and_back`. Slow
    the moment that carries the meaning; hurry the setup.
-6. **Fallback — always have one.** If ffmpeg or LaTeX is unavailable, or renders are too slow to iterate,
+6. **Fallback — always have one.** No ffmpeg or LaTeX, or renders too slow to iterate?
    `manim -sql scene.py SquareToCircle` writes one PNG to `media/images/scene/` and needs no ffmpeg; swap
-   `MathTex("x^2")` for `Text("x²")` to drop LaTeX entirely. A labelled still frame plus a Mermaid diagram
-   beats a broken pipeline every time.
+   `MathTex("x^2")` for `Text("x²")` to drop LaTeX. A still frame beats a broken pipeline every time.
 7. **Export for the destination**: `manim -qh --format=gif scene.py SquareToCircle` for a README loop,
    `-qh` MP4 for slides. Commit the `.py`, `.gitignore` the `media/` folder.
 8. **Explain what changed, in words**, and add alt-text — an animation without a caption is inaccessible.
@@ -140,11 +136,10 @@ Beats: 1) <setup>  2) <the moment that matters, slowed>  3) <resolution>
 Setup:  python -m venv .venv && pip install manim
 Draft:  manim -pql scene.py <ClassName>   -> media/videos/scene/480p15/<ClassName>.mp4
 Final:  manim -qh scene.py <ClassName>    |  manim -qh --format=gif scene.py <ClassName>
-Fallback: manim -sql scene.py <ClassName> -> media/images/scene/<ClassName>.png (no ffmpeg)
+Fallback: manim -sql scene.py <ClassName> -> media/images/scene/<ClassName>.png (no ffmpeg);
           LaTeX missing -> replace MathTex(...) with Text(...)
 Run it yourself, then report: <what surprised you in the playback>
-Caption + alt-text: <one line describing the change>
-Learning Footer
+Caption + alt-text: <one line describing the change>   ·   Learning Footer
 ```
 
 ## Tips
@@ -152,15 +147,14 @@ Learning Footer
 - Iterate at `-ql`; a 1080p60 render of a scene you're still editing is wasted minutes.
 - One idea per `Scene`. Several short scenes edit and re-render far better than one long one.
 - `.animate` is sugar over the method call — `mob.animate.shift(RIGHT)`, not `mob.shift(RIGHT)` inside `play`.
-- Manim interpolates *start* to *end*; `mob.animate.rotate(2*PI)` may look like no motion at all, so rotate
-  in halves or use `Rotate(mob, angle=2*PI)`.
+- Manim interpolates *start* to *end*, so `mob.animate.rotate(2*PI)` can look like no motion — rotate in
+  halves, or use `Rotate(mob, angle=2*PI)`.
 - LaTeX errors from `MathTex` are almost always a missing TeX install, not bad Python — test with `Text` first.
-- `media/` is generated output: `.gitignore` it and commit the scene source, per
-  [diagram-as-code-coach](../diagram-as-code-coach/SKILL.md).
-- Verify by watching the render, not by reading the code (`AGENTS.md`): claim nothing you haven't played back.
+- `media/` is generated output: `.gitignore` it, commit the scene source
+  ([diagram-as-code-coach](../diagram-as-code-coach/SKILL.md)), and claim nothing you haven't played back
+  (`AGENTS.md`) — verify by watching the render, not by reading the code.
 - Pair with [algorithm-visualizer](../algorithm-visualizer/SKILL.md),
-  [visual-explainer](../visual-explainer/SKILL.md),
-  [data-viz-coach](../data-viz-coach/SKILL.md),
+  [visual-explainer](../visual-explainer/SKILL.md), [data-viz-coach](../data-viz-coach/SKILL.md),
   [math-for-programming-coach](../math-for-programming-coach/SKILL.md), and
   [whiteboard-explainer](../whiteboard-explainer/SKILL.md).
   End with the **Learning Footer** (`AGENTS.md`).

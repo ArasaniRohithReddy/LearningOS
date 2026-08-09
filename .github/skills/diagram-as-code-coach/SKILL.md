@@ -13,8 +13,7 @@ This skill picks the ecosystem and wires up rendering, per [`AGENTS.md`](../../.
 
 - The learner is choosing between Mermaid, PlantUML, D2, Graphviz, or Structurizr and wants a real reason.
 - Their graph renders as a hairball and they suspect they picked the wrong **layout engine**.
-- They want diagrams rendered in CI, or failing the build when a diagram no longer parses.
-- They're documenting architecture and want one C4 model to export to several formats.
+- They want diagrams rendered in CI, failing the build on a parse error, or one C4 model exported many ways.
 
 ## First principles: a diagram-as-code toolchain has three layers
 
@@ -51,11 +50,10 @@ context/container/component views, which is what stops C4 levels drifting apart.
 
 ## Real, minimal examples
 
-Mermaid (renders inline in Markdown, no tooling):
+Mermaid (renders inline in Markdown, no tooling) — solid = sync, open dashed = async:
 
 ```mermaid
 sequenceDiagram
-  autonumber
   participant C as Client
   participant A as API
   participant Q as Queue
@@ -88,6 +86,7 @@ platform: Platform {
 }
 users -> platform.api: HTTPS
 ```
+
 Structurizr DSL — one model, two views:
 
 ```
@@ -104,21 +103,19 @@ workspace "Shop" {
   views {
     systemContext shop { include *  autolayout lr }
     container     shop { include *  autolayout lr }
-    theme default
   }
 }
 ```
 
 ## Procedure
 
-1. **Name the diagram's job**: process, interaction, structure, state, dependency graph, or C4 model.
-   Use [visual-explainer](../visual-explainer/SKILL.md) if the *form* itself is unsettled.
+1. **Name the diagram's job**: process, interaction, structure, state, dependency graph, or C4 model —
+   use [visual-explainer](../visual-explainer/SKILL.md) if the *form* itself is unsettled.
 2. **Name the destination** — GitHub README, docs site, slide deck, PDF. Distribution constrains the tool
    more than features do: if it must render in a GitHub comment, that means Mermaid.
 3. **Pick from the table**, and say the runner-up plus why it lost.
 4. **Choose the layout engine deliberately.** DAG → hierarchical (`dot`, dagre, ELK layered); undirected
-   clusters → force-directed (`neato`, `fdp`, `sfdp`); ring → `circo`. Try a second engine before
-   hand-tuning positions.
+   clusters → force-directed (`neato`, `fdp`, `sfdp`); ring → `circo`. Try a second engine before hand-tuning.
 5. **Install and render locally** (all free, all offline after install):
    - Mermaid: `npm install -g @mermaid-js/mermaid-cli` → `mmdc -i diagram.mmd -o diagram.svg`
    - Graphviz: `winget install Graphviz.Graphviz` (or `apt install graphviz`) → `dot -Tsvg deps.dot -o deps.svg`
@@ -126,10 +123,10 @@ workspace "Shop" {
    - PlantUML: `java -jar plantuml.jar -tsvg model.puml` (Graphviz needed for non-sequence types)
    - Structurizr: `structurizr.sh export -workspace workspace.dsl -format mermaid`
 6. **Commit the source; decide about the output.** Commit `.mmd`/`.d2`/`.dot`; then either commit the SVG
-   (readable in GitHub, noisy diffs) *or* generate it in CI (clean history, needs a build) — pick one and
-   write it down, because mixing the two is how stale PNGs survive.
-7. **Gate it in CI**: render on every PR and fail on a parse error, so a broken diagram cannot merge —
-   wire it with [ci-pipeline-builder](../ci-pipeline-builder/SKILL.md).
+   (readable in GitHub, noisy diffs) *or* build it in CI (clean history, needs a build) — pick one, because
+   mixing the two is how stale PNGs survive.
+7. **Gate it in CI**: render on every PR and fail on a parse error, so a broken diagram cannot merge
+   ([ci-pipeline-builder](../ci-pipeline-builder/SKILL.md)).
 8. **Review the result** for correctness and overload with
    [diagram-review-coach](../diagram-review-coach/SKILL.md), then close with the **Learning Footer**.
 
@@ -139,28 +136,25 @@ workspace "Shop" {
 Job: <process | interaction | structure | state | dependency graph | C4 model>
 Destination: <GitHub README | docs site | slides | PDF>
 => Tool: <Mermaid | PlantUML | D2 | Graphviz | Structurizr>
-   Why: <the one constraint that decided it>
-   Runner-up: <tool> — rejected because <...>
+   Why: <the one constraint that decided it>   Runner-up: <tool> — rejected because <...>
 Layout engine: <dot | dagre | ELK | TALA | neato | fdp | circo>  (because <graph shape>)
 Source (<file.ext>): <minimal working diagram source>
 Render: <exact install command> ; <exact render command>
 Git policy: source committed=<yes> · output=<committed | built in CI>
 CI gate: <command that fails the build on a parse error>
-Next: diagram-review-coach · architecture-diagram
-Learning Footer
+Next: diagram-review-coach · architecture-diagram   ·   Learning Footer
 ```
 
 ## Tips
 
 - Distribution beats features: the best diagram is the one your reader can see without a build.
-- If the picture is a hairball, change the **engine** before you change the diagram — `neato`/`fdp` and ELK
-  often fix in one flag what hours of manual nudging cannot.
-- Never hand-place nodes until layout options are exhausted; hand-placement is the thing that rots.
+- If the picture is a hairball, change the **engine** before the diagram — `neato`/`fdp`/ELK fix in one flag
+  what hours of hand-nudging cannot.
 - One model, many views (Structurizr) beats five hand-drawn C4 diagrams that silently disagree.
-- Keep a view near a dozen nodes — split by level, per [architecture-diagram](../architecture-diagram/SKILL.md).
-- Don't draw relationships you can't justify (`AGENTS.md` §2) — a confident wrong arrow spreads fast.
+- Keep a view near a dozen nodes ([architecture-diagram](../architecture-diagram/SKILL.md)), and draw no
+  relationship you can't justify (`AGENTS.md` §2) — a confident wrong arrow spreads fast.
 - Pair with [visual-explainer](../visual-explainer/SKILL.md),
   [data-viz-coach](../data-viz-coach/SKILL.md) when the content is really *data*,
   [concept-map-generator](../concept-map-generator/SKILL.md) for knowledge rather than systems,
-  [adr-writer](../adr-writer/SKILL.md), and [technical-writing-coach](../technical-writing-coach/SKILL.md).
+  [adr-writer](../adr-writer/SKILL.md), [technical-writing-coach](../technical-writing-coach/SKILL.md).
   End with the **Learning Footer** (`AGENTS.md`).

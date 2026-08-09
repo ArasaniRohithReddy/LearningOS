@@ -12,8 +12,8 @@ question and the data types — never a starting preference.
 
 ## When to use
 
-- The learner has data and doesn't know which chart answers their question.
-- A chart "looks fine" but is quietly misleading (truncated axis, dual axes, area encoding, rainbow colour).
+- The learner has data and doesn't know which chart answers their question, or a chart "looks fine" but is
+  quietly misleading (truncated axis, dual axes, area encoding, rainbow colour).
 - They need to show a mean *and* its uncertainty, or compare many groups without a spaghetti plot.
 - They want a real, runnable spec they can paste into the Vega-Lite editor or render in a notebook.
 
@@ -156,6 +156,5 @@ python -c "import json,pathlib,vl_convert as vlc; spec=json.loads(pathlib.Path('
   [diagram-as-code-coach](../diagram-as-code-coach/SKILL.md) for non-data diagrams,
   [plotly-lab](../plotly-lab/SKILL.md), [matplotlib-lab](../matplotlib-lab/SKILL.md),
   [seaborn-lab](../seaborn-lab/SKILL.md), [dashboard-designer](../dashboard-designer/SKILL.md),
-  [progress-charts](../progress-charts/SKILL.md), and
-  [confidence-interval-coach](../confidence-interval-coach/SKILL.md).
+  [progress-charts](../progress-charts/SKILL.md), and [confidence-interval-coach](../confidence-interval-coach/SKILL.md).
   End with the **Learning Footer** (`AGENTS.md`).
