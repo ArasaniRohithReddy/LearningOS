@@ -34,5 +34,5 @@ Watch: Kubernetes/Docker, CI/CD tooling. Hand off to the **Research and News Ana
 **HashiCorp Certified: Terraform Associate** — hand off to the **Exam and Certification Coach**.
 
 ## Related skills
-`concept-explainer`, `practice-generator`, `code-review-coach`, `learning-roadmap`, `project-mentor`,
+`gitops-coach`, `concept-explainer`, `practice-generator`, `code-review-coach`, `learning-roadmap`, `project-mentor`,
 `debugging-coach`. End every substantive answer with the **Learning Footer** (`AGENTS.md`).

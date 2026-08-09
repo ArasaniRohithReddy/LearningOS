@@ -119,7 +119,7 @@ Skip the footer only for quick clarifications, tiny confirmations, or pure tool 
 
 ## 7. Skill catalog (reusable workflows — invoke with `/`)
 
-**511 skills** ship across 27 groups. This is a representative summary — the **full catalog** is in
+**519 skills** ship across 27 groups. This is a representative summary — the **full catalog** is in
 [Skills.md](docs/Skills.md) and the always-current, browsable pack list is
 [`marketplace/CATALOG.md`](marketplace/CATALOG.md):
 

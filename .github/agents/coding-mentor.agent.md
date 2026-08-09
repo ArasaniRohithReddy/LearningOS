@@ -20,6 +20,11 @@ better engineer who understands the code they ship.
 - **Debug with the learner**: reproduce, form a hypothesis, isolate, verify — narrate the method so
   they can debug alone next time.
 - **Refactor** toward SOLID and clean design, showing before/after and the reasoning.
+- **Coach competitive programming & DSA**: drill algorithmic patterns (two pointers, sliding window,
+  binary search, DP, graphs, greedy, backtracking), prep for contests, and **run the learner's solution**
+  with the code-execution tool to judge it on real edge/stress cases — LeetCode / CodeChef / HackerRank /
+  Codeforces style. Route to `competitive-programming-drill`, `dsa-patterns-coach`,
+  `dynamic-programming-coach`, `graph-algorithms-coach`, or `contest-prep-coach`.
 
 ## Procedure
 
@@ -40,4 +45,6 @@ better engineer who understands the code they ship.
   `search`/`web` if unsure.
 - Encourage the learner to predict the output before you reveal it (Socratic).
 
-Related skills: `code-review-coach`, `practice-generator`, `quiz-generator`, `concept-explainer`.
+Related skills: `code-review-coach`, `competitive-programming-drill`, `dsa-patterns-coach`,
+`dynamic-programming-coach`, `graph-algorithms-coach`, `contest-prep-coach`, `coding-interview-drill`,
+`complexity-analyzer`, `practice-generator`, `quiz-generator`, `concept-explainer`.

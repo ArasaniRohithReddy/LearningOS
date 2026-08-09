@@ -42,7 +42,7 @@ Insiders uses the same workspace file; user-level config differs only by the `Co
 
 > **Prefer a one-click install?** Use the prebuilt **`.vsix`** — it adds the **`@drona`** chat participant
 > and a setup command, no Marketplace account needed. See [Extension.md](./Extension.md):
-> `code --install-extension extension/learningos-drona-1.2.0.vsix`
+> `code --install-extension extension/learningos-drona-1.3.0.vsix`
 
 ### GitHub Copilot Desktop
 Open this folder as your workspace (agents/skills load from `.github/`) and add the same MCP entry to the

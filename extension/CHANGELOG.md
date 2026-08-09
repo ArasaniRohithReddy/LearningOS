@@ -1,5 +1,24 @@
 # Change Log
 
+## 1.3.0
+
+Learn to code by doing — competitive programming, DSA deep-dives, and a curated library of **free** resources.
+
+- **Competitive-programming practice** (8 new skills): `competitive-programming-drill` (picks a pattern,
+  presents an original/classic problem, then **runs your solution** via the code tool on edge/stress
+  cases), `contest-prep-coach` (Codeforces/CodeChef/AtCoder/LeetCode strategy + rating ladders),
+  `dsa-patterns-coach` (a pattern router across ~18 families), plus deep dives
+  `dynamic-programming-coach` and `graph-algorithms-coach`. LeetCode/CodeChef/HackerRank/Codeforces are
+  referenced as places to practice — problems are original/classic, never copied.
+- **System-design & infra gaps filled:** `consistency-models-coach` (CAP/PACELC/quorums/consensus) and
+  `gitops-coach` (Argo CD/Flux, pull-based delivery).
+- **Free learning resources:** a new `learning-resource-finder` skill + a **verified** catalog of 146
+  free resources (`data/learning-resources.json`) — YouTube channels/playlists, MOOCs (freeCodeCamp,
+  CS50, MIT OpenCourseWare, fast.ai), interactive sites (exercism, roadmap.sh, The Odin Project), docs,
+  and free books. Drona now proactively suggests the best free resources for a topic (link-out, ToS-safe).
+- `@drona` and the Coding Mentor now route to these and run your solutions; the catalogs ship bundled so
+  everything works offline-first. **519 skills** total.
+
 ## 1.2.0
 
 Tech News + Roadmaps: stay current and find your path — without leaving VS Code.

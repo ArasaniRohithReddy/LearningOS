@@ -35,5 +35,5 @@ Watch: cloud architecture, distributed systems. Hand off to the **Research and N
 Certification Coach**.
 
 ## Related skills
-`concept-explainer`, `learning-roadmap`, `mind-map`, `research-brief`, `project-mentor`,
+`consistency-models-coach`, `concept-explainer`, `learning-roadmap`, `mind-map`, `research-brief`, `project-mentor`,
 `note-generator`. End every substantive answer with the **Learning Footer** (`AGENTS.md`).

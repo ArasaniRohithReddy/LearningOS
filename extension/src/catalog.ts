@@ -6,7 +6,7 @@
 //      can install the whole catalog into a location VS Code Copilot discovers.
 //   2. Build a COMPACT, size-bounded catalog index from `content/registry.json` that
 //      is injected into Drona's system prompt so `@drona` can route the learner to the
-//      exact specialist agent or `/skill` — without dumping all 511 names verbatim.
+//      exact specialist agent or `/skill` — without dumping all 519 names verbatim.
 
 import * as vscode from "vscode";
 
@@ -54,7 +54,7 @@ export async function loadRegistry(context: vscode.ExtensionContext): Promise<Re
  *   - specialist agents grouped by domain (display names), so Drona can name the
  *     right agent to switch to in the Chat agent picker;
  *   - skill packs by domain with a count + a few example `/skill` names.
- * Never emits all 511 skill names; the whole string is hard-capped.
+ * Never emits all 519 skill names; the whole string is hard-capped.
  */
 export function buildCatalogIndex(reg: Registry): string {
   const nameBySlug = new Map<string, string>();

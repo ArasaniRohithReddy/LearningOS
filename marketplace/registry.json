@@ -1,10 +1,10 @@
 {
   "$schema": "https://learningos.dev/marketplace/registry.schema.json",
-  "generatedAt": "2026-08-08",
+  "generatedAt": "2026-08-09",
   "generator": "scripts/build-registry.mjs",
   "counts": {
     "agents": 129,
-    "skills": 511,
+    "skills": 519,
     "roles": 122
   },
   "packs": [
@@ -262,6 +262,7 @@
       "skills": [
         "api-design-review",
         "architecture-diagram",
+        "consistency-models-coach",
         "data-modeling-drill",
         "estimation-coach",
         "openapi-spec-writer",
@@ -321,13 +322,18 @@
         "code-optimizer",
         "code-review-coach",
         "code-walkthrough",
+        "competitive-programming-drill",
         "complexity-analyzer",
+        "contest-prep-coach",
         "debugging-coach",
         "design-patterns-coach",
         "dockerfile-coach",
+        "dsa-patterns-coach",
+        "dynamic-programming-coach",
         "error-handling-coach",
         "functional-programming-coach",
         "git-coach",
+        "graph-algorithms-coach",
         "memory-management-coach",
         "oop-design-coach",
         "pair-programmer",
@@ -398,6 +404,7 @@
         "distributed-tracing-coach",
         "gcp-project-structure-coach",
         "git-workflow-designer",
+        "gitops-coach",
         "kubernetes-manifest-coach",
         "logging-strategy-coach",
         "observability-plan",
@@ -760,6 +767,7 @@
         "career-ladder",
         "learner-memory",
         "learner-onboarding",
+        "learning-resource-finder",
         "learning-roadmap",
         "onboarding-plan",
         "progress-charts",
@@ -3107,6 +3115,12 @@
       "path": ".github/skills/competitive-analysis-coach/SKILL.md"
     },
     {
+      "name": "competitive-programming-drill",
+      "description": "Run one full competitive-programming rep the way the grind actually works — pick a pattern (two pointers, sliding window, binary search on answer, DP, graphs, greedy, backtracking, heap, union-find, trie, bitmask, number theory), get ONE original/classic problem with constraints, plan the complexity, code it, then execute it with #run against edge and stress cases and review from the REAL output. Use for 'competitive programming practice', 'do a LeetCode/CodeChef/HackerRank problem with me', 'DSA pattern drill', 'run my solution', 'sliding window / DP / graph practice', or 'Codeforces-style problem'. Teaches the reusable pattern template, never dumps the answer.",
+      "argumentHint": "Pattern + difficulty + platform style + language + time budget (e.g. 'sliding window, medium, LeetCode style, Python, 30 min')",
+      "path": ".github/skills/competitive-programming-drill/SKILL.md"
+    },
+    {
       "name": "complexity-analyzer",
       "description": "Analyze and teach time and space complexity — derive Big-O from the code, show the growth intuition with KaTeX math, identify the dominant term and the bottleneck, and compare alternatives. Use for 'what's the Big-O', 'analyze complexity', 'is this efficient', 'why is this slow', or learning to reason about how code scales.",
       "argumentHint": "Code or algorithm to analyze",
@@ -3141,6 +3155,18 @@
       "description": "Work through a workplace conflict constructively — surface both sides' interests, separate the people from the problem, find common ground, and agree concrete next steps. Use for 'resolve a conflict', 'disagreement with a coworker', 'team tension', 'how do I handle this conflict', or 'difficult conversation prep'. Pairs with negotiation-coach and feedback-giver.",
       "argumentHint": "The situation + the people/roles",
       "path": ".github/skills/conflict-resolution-coach/SKILL.md"
+    },
+    {
+      "name": "consistency-models-coach",
+      "description": "Teach distributed-systems consistency for system design — the CAP theorem (and why 'pick 2' oversimplifies), PACELC, the consistency spectrum from linearizable to eventual, quorums (R + W > N) and tunable consistency, consensus (Raft/Paxos) at a conceptual level, and how to CHOOSE a model from a requirement. Use for 'CAP theorem', 'consistency models', 'eventual vs strong consistency', 'quorum', 'R + W > N', 'consensus Raft/Paxos', 'PACELC', 'read-your-writes', or 'which consistency level should I pick?'.",
+      "argumentHint": "The system/requirement (e.g. 'multi-region cart') + your current level",
+      "path": ".github/skills/consistency-models-coach/SKILL.md"
+    },
+    {
+      "name": "contest-prep-coach",
+      "description": "Prepare for competitive-programming contests end to end — explain the formats (Codeforces Div rounds, CodeChef Starters, AtCoder ABC/ARC/AGC, LeetCode weekly/biweekly), build a rating-ladder study plan, drill in-contest triage and problem order under time pressure, set up a template library with fast I/O, name the classic traps (overflow, off-by-one, TLE, edge constraints), and enforce disciplined upsolving and virtual contests. Use for 'contest preparation', 'Codeforces rating plan', 'how do I climb from 1200 to 1600', 'LeetCode weekly contest strategy', 'what problem should I solve next in a contest', or 'upsolving plan'.",
+      "argumentHint": "Platform + current rating/level + target + weekly hours (e.g. 'Codeforces, 1250, target 1600, 8 h/week')",
+      "path": ".github/skills/contest-prep-coach/SKILL.md"
     },
     {
       "name": "context-window-optimizer",
@@ -3455,10 +3481,22 @@
       "path": ".github/skills/drone-ci-local-lab/SKILL.md"
     },
     {
+      "name": "dsa-patterns-coach",
+      "description": "Pattern router and cheat-sheet for data structures and algorithms — given a problem or topic, identify which of the ~18 core pattern families applies (two pointers, sliding window, fast/slow pointers, merge intervals, cyclic sort, in-place linked-list reversal, BFS, DFS, backtracking, binary search on answer, top-K heap, K-way merge, subsets/combinations, topological sort, union-find, trie, bitmask, dynamic programming), explain the SIGNAL that triggers it, give the reusable template and typical time/space complexity, then route to the right deep-dive or drill. Use for 'which DSA pattern', 'pattern recognition', 'coding patterns cheat sheet', 'what approach does this problem want', or 'how do I know when to use sliding window vs two pointers'.",
+      "argumentHint": "A problem statement, a topic, or a pattern name (+ optional language)",
+      "path": ".github/skills/dsa-patterns-coach/SKILL.md"
+    },
+    {
       "name": "duckdb-lab",
       "description": "Hands-on lab on DuckDB, an in-process (embedded) OLAP database: query Parquet and CSV and run analytical SQL on your laptop with no server — free, local, and no subscription. Use for 'DuckDB lab', 'query Parquet with SQL', 'analyze a CSV locally', 'embedded OLAP', 'no-server warehouse', or learning columnar analytics by doing.",
       "argumentHint": "The dataset/files to query",
       "path": ".github/skills/duckdb-lab/SKILL.md"
+    },
+    {
+      "name": "dynamic-programming-coach",
+      "description": "Teach dynamic programming from first principles — recognize optimal substructure + overlapping subproblems, DESIGN THE STATE, derive the recurrence and base cases, then go memoization → tabulation → space optimization across the classic families. Use for 'dynamic programming', 'DP patterns', 'memoization vs tabulation', 'design the DP state', 'knapsack/LIS/LCS/edit distance', 'coin change', 'grid path DP', 'DP on trees', 'bitmask DP', or 'is this a DP problem?'.",
+      "argumentHint": "The problem (or DP family) + language + your current level",
+      "path": ".github/skills/dynamic-programming-coach/SKILL.md"
     },
     {
       "name": "dynamodb-local-lab",
@@ -3851,6 +3889,12 @@
       "path": ".github/skills/github-repo-finder/SKILL.md"
     },
     {
+      "name": "gitops-coach",
+      "description": "Teach GitOps for infrastructure and continuous delivery — the four principles (declarative, versioned in Git, pulled automatically, continuously reconciled), Git as the single source of truth, pull-based reconciliation with Argo CD and Flux, the app-of-apps pattern, drift detection and self-healing, environment promotion, secrets (Sealed Secrets / SOPS), and rollback by reverting a commit. Use for 'GitOps', 'Argo CD', 'Flux', 'declarative continuous delivery', 'pull-based deployment', 'drift detection', 'app-of-apps', or 'how do I promote to prod with GitOps?'.",
+      "argumentHint": "The app/cluster + environments + tool (Argo CD/Flux)",
+      "path": ".github/skills/gitops-coach/SKILL.md"
+    },
+    {
       "name": "glossary-builder",
       "description": "Build a clear, alphabetized glossary of the key terms in a domain — concise, level-appropriate definitions with a quick example and 'see also' links between related terms. Use for 'glossary', 'define the key terms for X', 'terminology/jargon for Y', 'vocab list', or a jargon-buster before a course, meeting, or exam. Feeds the knowledge-graph.",
       "argumentHint": "Domain/topic + level",
@@ -3897,6 +3941,12 @@
       "description": "Hands-on lab building a Gradio demo UI locally: wrap a Python function with gr.Interface, choose typed components (Textbox/Slider/Image/Label), build a custom layout with gr.Blocks and a button event, then launch on localhost — no hosting or account. Use for 'gradio lab', 'hands-on gradio lab', 'gradio interface', 'gr.Blocks', 'ML demo UI', 'launch gradio locally', 'demo.launch()', or a guided local demo-UI exercise. Teaches by doing, honestly.",
       "argumentHint": "The function + demo UI",
       "path": ".github/skills/gradio-local-lab/SKILL.md"
+    },
+    {
+      "name": "graph-algorithms-coach",
+      "description": "Teach graph algorithms and — more importantly — WHICH one to reach for: representations, BFS/DFS, connected components, topological sort (Kahn + DFS), shortest paths (BFS, 0-1 BFS, Dijkstra, Bellman-Ford, Floyd-Warshall), MST (Kruskal + Prim), union-find/DSU, cycle detection, bipartite check, and SCC. Use for 'graph algorithms', 'BFS vs DFS', 'Dijkstra', 'Bellman-Ford', 'topological sort', 'union-find', 'MST', 'shortest path', 'detect a cycle', or 'which graph algorithm should I use?'.",
+      "argumentHint": "The problem or graph topic + language + your current level",
+      "path": ".github/skills/graph-algorithms-coach/SKILL.md"
     },
     {
       "name": "graphql-schema-coach",
@@ -4191,6 +4241,12 @@
       "description": "First-run experience for a new learner — welcome them, interview to build their `learning-profile.md` (role/status, goals, target cert/role, level, learning style, time, stack, strengths/gaps), optionally run a placement diagnostic, draft an initial study plan, and persist it so every future session is personalized. Use for 'I'm new', 'get started', 'set me up', 'onboard me', 'build my profile', or 'where do I begin'. The front door to LearningOS.",
       "argumentHint": "Optional: your goal or role to start (e.g. 'aiming for DP-700'), or just 'get started'",
       "path": ".github/skills/learner-onboarding/SKILL.md"
+    },
+    {
+      "name": "learning-resource-finder",
+      "description": "Recommend the best FREE learning resources for a topic — YouTube channels/playlists, MOOCs (freeCodeCamp, CS50, MIT OpenCourseWare, fast.ai, Full Stack Open), interactive platforms (exercism, Kaggle Learn, roadmap.sh, The Odin Project), official docs, and free books — matched to the learner's level and preferred format, then sequenced into a short path. Use for 'free resources to learn X', 'best YouTube channel/playlist for X', 'free course for X', 'where can I learn X for free', 'MOOC for X', or 'give me a free learning path'. Link-out only; suggests, never pirates.",
+      "argumentHint": "Topic + level + format preference (video / interactive / course / reading)",
+      "path": ".github/skills/learning-resource-finder/SKILL.md"
     },
     {
       "name": "learning-roadmap",

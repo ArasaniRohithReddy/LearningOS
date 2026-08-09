@@ -35,8 +35,11 @@ catalog of ~190 sources lives at [`data/news-feeds.json`](../../data/news-feeds.
 category (ai-ml, cloud-vendor, release-notes, devops, data, security, language, web, eng-blog,
 research, news, …) with topic tags, plus an OPML at `data/feeds.opml`. Use it as your source shortlist.
 For structured learning paths, [`data/roadmaps.json`](../../data/roadmaps.json) links to roadmap.sh
-roadmaps (link-out only; credit: roadmaps courtesy of roadmap.sh by Kamran Ahmed). In the VS Code
-extension these power the **Tech News** view and the `learningos_news` tool.
+roadmaps, and [`data/learning-resources.json`](../../data/learning-resources.json) curates the best
+**free** learning resources (YouTube channels/playlists, MOOCs, interactive sites, docs, free books) —
+recommend from it (link-out) and hand off to the `learning-resource-finder` skill. (Credits: roadmaps
+courtesy of roadmap.sh by Kamran Ahmed.) In the VS Code extension these power the **Tech News** view and
+the `learningos_news` tool.
 
 ## Procedure
 

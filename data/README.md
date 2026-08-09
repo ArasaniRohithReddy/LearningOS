@@ -9,6 +9,7 @@
 | [`news-feeds.json`](news-feeds.json) | Curated RSS/Atom feed catalog (~190 sources) grouped into categories, each with topic tags. |
 | [`feeds.opml`](feeds.opml) | The same feeds as an **OPML 2.0** file — import into any RSS reader (Feedly, NetNewsWire, etc.). Regenerated from `news-feeds.json`. |
 | [`roadmaps.json`](roadmaps.json) | A **link-out** catalog of [roadmap.sh](https://roadmap.sh) learning paths (title, slug, canonical URL, our own description). |
+| [`learning-resources.json`](learning-resources.json) | A **verified, link-out** catalog of genuinely **free** learning resources (YouTube channels/playlists, MOOCs, interactive platforms, official docs, free books) by domain/level — powers the `learning-resource-finder` skill. |
 
 ## `news-feeds.json` shape
 
