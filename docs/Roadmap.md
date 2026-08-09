@@ -47,7 +47,7 @@ Architecture, and Product/Management; MCP sample; community files.
   assessment, code, career, architecture, writing/docs, AI/data, testing, defensive security,
   DevOps/cloud, data, frontend, backend, product, databases, networking/OS, paradigms, ML-in-production,
   soft-skills, teaching, enterprise-tools, distributed-systems, observability/SRE, GenAI-production, and
-  **255 hands-on labs** (languages, frameworks, cloud, data, ML, DevOps) — including **Floci** and
+  **256 hands-on labs** (languages, frameworks, cloud, data, ML, DevOps) — including **Floci** and
   **LocalStack/Azurite/MinIO/Ollama/Postgres/Redpanda/minikube/…** so learners practice AWS/Azure/GCP,
   databases, messaging, Kubernetes, and even LLMs/RAG **locally on their laptop, free, no subscription**
   (see [LocalPractice.md](./LocalPractice.md))). Onward toward 500+.

@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Pages](https://img.shields.io/badge/live%20site-arasanirohithreddy.github.io%2FLearningOS-7c9cff)](https://arasanirohithreddy.github.io/LearningOS/)
 [![Validate](https://github.com/ArasaniRohithReddy/LearningOS/actions/workflows/validate.yml/badge.svg)](https://github.com/ArasaniRohithReddy/LearningOS/actions/workflows/validate.yml)
-[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ArasaniRohithReddy.LearningOS&left_text=visitors)](https://github.com/ArasaniRohithReddy/LearningOS)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FArasaniRohithReddy%2FLearningOS&label=Visitors&countColor=%237c9cff&style=flat)](https://github.com/ArasaniRohithReddy/LearningOS)
 &nbsp;·&nbsp; **129 agents · 520 skills · 122 roles**
 
 > A modular, config-driven **GitHub Copilot Agent framework for learning, teaching, research, and
@@ -19,6 +19,17 @@
 LearningOS is **not** a single chatbot prompt. It is a small platform: agents compose reusable
 skills, behavior is shared through a single constitution ([`AGENTS.md`](AGENTS.md)), and new
 role-agents are built from tiny YAML config files instead of hand-written prompts.
+
+## Highlights
+
+- **Teaches, not just answers** — first-principles, trade-offs, pitfalls, and a signature *Learning Footer* on every substantive reply ([`AGENTS.md`](AGENTS.md)).
+- **129 agents · 520 skills · 122 role configs** — Drona routes to specialist mentors and reusable `/`-skills across every technical domain.
+- **Visual-first learning** — Mermaid, tables, KaTeX and step-traces by default, and Drona asks your preferred learning style up front ([`/visual-explainer`](.github/skills/visual-explainer/SKILL.md)).
+- **256 no-subscription labs** + run code in **90+ languages** with nothing installed; practice **AWS / Azure / GCP / Oracle** locally via [floci](docs/Floci.md).
+- **414 curated free resources** — incl. **275 YouTube channels** — plus dated **tech news** from 190+ RSS/Atom feeds and **130+ roadmap.sh** paths turned into personalized plans ([resources](data/learning-resources.json) · [news](docs/News.md)).
+- **Competitive programming & DSA** — LeetCode / Codeforces-style practice: `/competitive-programming-drill`, `/dsa-patterns-coach`, `/dynamic-programming-coach`, `/graph-algorithms-coach`.
+- **Own MCP server** ([`mcp/`](mcp/README.md)) — exposes the whole catalog (search skills & agents, resources, roadmaps, news, run code) to Claude Desktop, VS Code and Cursor.
+- **Config-driven & multi-host** — VS Code, Insiders, Copilot CLI, Claude, Cursor, Gemini; add a role in YAML with `/role-composer`.
 
 ---
 
@@ -79,10 +90,11 @@ Learning Agents/
 ├── LICENSE                        # MIT
 ├── CONTRIBUTING.md                # How to add roles / skills / agents / docs
 ├── CODE_OF_CONDUCT.md
-├── docs/                          # The framework "brain" — how & why it works (12 guides)
-│   ├── Architecture.md  Agents.md   Skills.md    Roles.md
-│   ├── PluginSDK.md     MCP.md      Memory.md    News.md
-│   ├── Standards.md     Security.md Testing.md   Roadmap.md
+├── docs/                          # The framework "brain" — how & why it works (20 guides)
+│   ├── Architecture.md  Agents.md      Skills.md       Roles.md      Standards.md
+│   ├── PluginSDK.md     Marketplace.md Extension.md    Install.md    Customize.md
+│   ├── CodeExecution.md LocalPractice.md Floci.md      MCP.md        Memory.md
+│   ├── News.md          Sources.md     Security.md     Testing.md    Roadmap.md
 │   └── mcp.sample.json            # Copy servers into .vscode/mcp.json to enable MCP
 ├── .github/
 │   ├── agents/                    # 129 custom agents (personas)
@@ -107,6 +119,10 @@ Learning Agents/
 │       ├── Security (App/Cloud/SOC/DevSecOps/IAM/GRC/Privacy) · QA/SDET · Architecture
 │       ├── Emerging (AR/VR · Quantum · Edge · Graphics · Bioinformatics · Quant · GIS · HPC)
 │       └── Design · Docs · DevRel · Product · EM · TPM · BA · Scrum · Business/Support · Enterprise (SF/ServiceNow/SAP/D365)
+├── data/                          # Curated catalogs: 193 news feeds, 134 roadmaps, 414 free learning resources
+├── mcp/                           # LearningOS MCP server (learningos-mcp) — 9 tools · 2 resources · 3 prompts
+├── extension/                     # VS Code extension (@drona + dashboard + Tech News / Roadmaps views)
+├── templates/                     # Optional MCP config templates (e.g., floci.mcp.json)
 ├── marketplace/                   # Generated pack index (registry.json + CATALOG.md)
 ├── scripts/build-registry.mjs     # Scans agents/skills/roles → rebuilds the marketplace index
 ```
@@ -179,13 +195,14 @@ LearningOS includes **256 hands-on labs** (`*-lab` skills) so you learn by doing
 (Python, JS, TS, Go, Rust, Java, C#), framework (React), data (pandas, SQL, Spark, Kafka, PyTorch),
 and tooling (Git, Docker/Kubernetes).
 
-For **AWS / Azure / GCP**, you can do the cloud labs **entirely offline** against the free,
-open-source **[Floci](https://github.com/floci-io/floci)** local emulators — `docker compose up`, no
-cloud account, token, or paid tier. The dedicated skills walk you through setup:
+For **AWS / Azure / GCP / Oracle (OCI)**, you can do the cloud labs **entirely offline** against the
+free, open-source **[Floci](https://github.com/floci-io/floci)** local emulators — `docker compose up`,
+no cloud account, token, or paid tier. The dedicated skills walk you through setup:
 
 - `/floci-aws-local-lab` — AWS locally via [Floci](https://github.com/floci-io/floci) (`http://localhost:4566`)
 - `/floci-azure-local-lab` — Azure locally via [Floci AZ](https://github.com/floci-io/floci-az) (`http://localhost:4577`)
 - `/floci-gcp-local-lab` — GCP locally via [floci-gcp](https://github.com/floci-io/floci-gcp) (`http://localhost:4588`)
+- `/floci-oracle-local-lab` — Oracle (OCI) locally via [floci-oci](https://github.com/floci-io/floci-oci) (`http://localhost:4599`)
 
 Point your existing SDK / CLI / Terraform at the local endpoint and run the `aws-*-lab`, `azure-*-lab`,
 and `gcp-*-lab` exercises for free. (Floci is an emulator for learning/dev/testing — verify behavior
