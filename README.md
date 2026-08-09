@@ -129,7 +129,7 @@ The [`docs/`](docs/) folder is the framework's brain — how and why it works:
 | [Marketplace](docs/Marketplace.md) | Enterprise plugin marketplace: pack model + generated registry |
 | [LocalPractice](docs/LocalPractice.md) | Practice every domain locally & free (no subscriptions) — the tool catalog |
 | [Floci — local cloud](docs/Floci.md) | Practice **AWS, Azure, GCP & Oracle (OCI)** locally & free with floci emulators — install, per-cloud endpoints, and the honest "AI-ready"/MCP story |
-| [MCP](docs/MCP.md) | Live docs/data via MCP (+ [sample config](docs/mcp.sample.json)) |
+| [MCP](docs/MCP.md) | Live docs/data via MCP + **LearningOS's own MCP server** ([`mcp/`](mcp/README.md)) for any client (Claude/VS Code/Cursor) + [sample config](docs/mcp.sample.json) |
 | [Memory](docs/Memory.md) | Learner profile, spaced repetition, RAG |
 | [News](docs/News.md) | News / RSS / research framework |
 | [Standards](docs/Standards.md) | Coding & teaching standards |

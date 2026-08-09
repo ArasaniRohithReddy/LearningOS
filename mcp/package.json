@@ -1,0 +1,47 @@
+{
+  "name": "learningos-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for LearningOS — Drona. Exposes the catalog of 129 specialist agents + 519 skills, 146+ free learning resources, roadmap.sh paths, curated tech-news, remote code execution, and Drona's teaching prompt to any MCP client (Claude Desktop, VS Code, Cursor, …).",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "learningos-mcp": "out/index.js"
+  },
+  "files": [
+    "out",
+    "content",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://github.com/ArasaniRohithReddy/LearningOS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArasaniRohithReddy/LearningOS.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "learningos",
+    "drona",
+    "learning",
+    "education",
+    "ai"
+  ],
+  "scripts": {
+    "bundle": "node scripts/bundle.mjs",
+    "build": "npm run bundle && tsc -p ./",
+    "test": "npm run build && node test/smoke.mjs",
+    "prepare": "npm run build",
+    "start": "node out/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^5.6.3"
+  }
+}

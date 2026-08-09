@@ -56,3 +56,25 @@ jobs:
       - name: Compile + run feed-parser unit tests
         working-directory: extension
         run: npm test
+
+  mcp-tests:
+    name: MCP server build + smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: mcp/package-lock.json
+
+      - name: Install MCP server dependencies
+        working-directory: mcp
+        run: npm ci
+
+      - name: Build + smoke test (stdio initialize / tools / calls)
+        working-directory: mcp
+        run: npm test

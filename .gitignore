@@ -30,3 +30,7 @@ Thumbs.db
 
 # Node crash dumps
 report.*.json
+
+# MCP server generated content (bundled at build)
+mcp/content/
+

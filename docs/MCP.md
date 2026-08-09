@@ -7,6 +7,32 @@ the vision's "MCP-first / MCP-ready" principle.
 > MCP is **optional**. LearningOS works fully without it (agents fall back to `web`/`search`). Enable
 > servers as you need them.
 
+## LearningOS *as* an MCP server (`learningos-mcp`)
+
+LearningOS now ships its **own** MCP server ([`mcp/`](../mcp/), see [`mcp/README.md`](../mcp/README.md)) so
+**any** MCP client — Claude Desktop, VS Code, Cursor — can use LearningOS directly, not just the VS Code
+extension. It exposes:
+
+- **Tools:** `search_skills`, `get_skill`, `search_agents`, `get_agent` (browse the 129 agents + 519
+  skills), `find_learning_resources` (best **free** resources — link-out), `list_roadmaps` (roadmap.sh),
+  `tech_news` (curated, SSRF-guarded RSS/Atom digest), `run_code` (90+ languages via Piston), `fetch_page`
+  (SSRF-guarded readable text).
+- **Resources:** `learningos://constitution` (AGENTS.md), `learningos://catalog` (counts + domains).
+- **Prompts:** `drona` (load the teaching persona), `teach`, `plan`.
+
+```jsonc
+// Claude Desktop (claude_desktop_config.json) — or .vscode/mcp.json / ~/.cursor/mcp.json
+{ "mcpServers": { "learningos": {
+  "command": "node",
+  "args": ["/absolute/path/to/LearningOS/mcp/out/index.js"],
+  "env": { "LEARNINGOS_ROOT": "/absolute/path/to/LearningOS" }
+} } }
+```
+
+Build it with `cd mcp && npm install` (then point your client at `mcp/out/index.js`); once published you'll
+run it via `npx learningos-mcp`. Full setup, env vars (`LEARNINGOS_ROOT`, `PISTON_URL`) and per-client
+configs are in [`mcp/README.md`](../mcp/README.md).
+
 ## Bundled: Flint-Chart (progress charts, silent-on-install)
 
 LearningOS ships **one** MCP server so progress visualization works out of the box: **Flint-Chart**
