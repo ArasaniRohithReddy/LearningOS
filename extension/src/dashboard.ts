@@ -81,7 +81,7 @@ export class DashboardViewProvider implements vscode.WebviewViewProvider {
       case "onboard":
         void vscode.commands.executeCommand("workbench.action.chat.open", {
           query:
-            "@drona I'm setting up my learning profile. Ask me my goal, current level, and tech stack, then save a plan.",
+            "@drona I'm setting up my learning profile. Ask me my goal, current level, tech stack, and how I like to learn (diagram-heavy / worked examples / hands-on / concise), then save it and suggest a plan.",
         });
         break;
       case "resume":

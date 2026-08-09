@@ -4,7 +4,7 @@
   "generator": "scripts/build-registry.mjs",
   "counts": {
     "agents": 129,
-    "skills": 519,
+    "skills": 520,
     "roles": 122
   },
   "packs": [
@@ -734,6 +734,7 @@
         "note-generator",
         "socratic-tutor",
         "teach-back",
+        "visual-explainer",
         "worked-example"
       ]
     },
@@ -5747,6 +5748,12 @@
       "description": "Hands-on lab: run VictoriaMetrics (single-node OSS) locally with Docker — scrape and ingest metrics, then query them with MetricsQL in the built-in vmui. Local, free, open-source, no subscription. Use for 'VictoriaMetrics lab', 'the metrics', 'ingest metrics locally', 'MetricsQL practice', 'vmui query', or learning a time-series database by doing.",
       "argumentHint": "The metrics",
       "path": ".github/skills/victoriametrics-local-lab/SKILL.md"
+    },
+    {
+      "name": "visual-explainer",
+      "description": "Turn a concept into the RIGHT visual — pick from the full palette (Mermaid flowchart/sequence/class/ER/state/mindmap/timeline/journey/pie/quadrant/xychart/gitGraph/sankey/C4/requirement, KaTeX math, comparison tables, ASCII traces & number lines, and data charts) matched to what the idea is about, then render it correctly. Use for 'visualize this', 'draw a diagram for X', 'show me visually', 'make it a chart/timeline/mind map', 'which diagram fits', or when text alone isn't landing.",
+      "argumentHint": "The concept/data to visualize (+ any preferred visual type or your learning style)",
+      "path": ".github/skills/visual-explainer/SKILL.md"
     },
     {
       "name": "vite-lab",

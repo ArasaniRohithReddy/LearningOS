@@ -25,7 +25,8 @@ fills the [`learning-profile.template.md`](../../../templates/learning-profile.t
    🎤 interview prep · 🎓 academic exam · 🧠 personal growth. Record it as the profile's **objective**.
 3. **Interview** to fill the rest of the profile from the
    [template](../../../templates/learning-profile.template.md): role/status, **primary goal**, target
-   role/cert + date, current **level**, **learning style**, **time/day**, **stack**, strengths & weak areas.
+   role/cert + date, current **level**, **learning style** (visual density — diagram-heavy ↔ concise — and
+   preferred formats: diagrams / worked examples / hands-on / analogies), **time/day**, **stack**, strengths & weak areas.
    Ask a few at a time, infer sensibly, keep it short and **secret-free**.
 4. **Place their level (optional but offered).** Run [`skill-assessment`](../skill-assessment/SKILL.md) —
    a short adaptive diagnostic — for an objective Beginner/Intermediate/Advanced + strengths/gaps map.

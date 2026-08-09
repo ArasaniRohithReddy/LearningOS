@@ -5,582 +5,96 @@
   "description": "Curated, verified catalog of genuinely FREE learning resources (YouTube channels/playlists, MOOCs, interactive platforms, official docs, free books) powering the learning-resource-finder skill and Drona's recommendations.",
   "note": "Link-out only. Every resource is free or free-audit (audit-only is marked cost=free-audit). LearningOS is not affiliated with these platforms — recommend and link, never reproduce or pirate paywalled/copyrighted content (videos, transcripts, books). URLs verified on the 'updated' date; platforms move, so verify a link before relying on it.",
   "counts": {
-    "total": 146,
+    "total": 414,
     "byType": {
-      "youtube-channel": 49,
+      "book": 21,
+      "docs": 38,
+      "mooc": 38,
+      "youtube-channel": 274,
       "youtube-playlist": 1,
-      "interactive": 10,
-      "mooc": 28,
-      "practice": 17,
-      "docs": 26,
-      "book": 15
+      "practice": 21,
+      "interactive": 21
     },
     "byDomain": {
-      "programming": 29,
-      "web": 19,
-      "math": 8,
-      "ai-ml": 18,
-      "cs-fundamentals": 14,
-      "system-design": 5,
-      "dsa": 16,
-      "devops": 9,
-      "cloud": 6,
-      "game-dev": 3,
-      "security": 6,
-      "mobile": 4,
-      "databases": 5,
-      "data": 4
+      "ai-ml": 45,
+      "cloud": 22,
+      "cs-fundamentals": 24,
+      "data": 27,
+      "databases": 24,
+      "devops": 33,
+      "dsa": 28,
+      "game-dev": 9,
+      "math": 14,
+      "mobile": 10,
+      "programming": 82,
+      "security": 23,
+      "system-design": 18,
+      "web": 55
     }
   },
   "resources": [
     {
-      "name": "freeCodeCamp.org",
-      "url": "https://www.youtube.com/@freecodecamp",
-      "type": "youtube-channel",
-      "domain": "programming",
-      "level": "all",
-      "cost": "free",
-      "description": "Nonprofit channel publishing multi-hour, full-length course videos across nearly every programming topic."
-    },
-    {
-      "name": "Fireship",
-      "url": "https://www.youtube.com/@Fireship",
-      "type": "youtube-channel",
-      "domain": "web",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "High-density short explainers on web frameworks, tooling, and industry news."
-    },
-    {
-      "name": "Net Ninja",
-      "url": "https://www.youtube.com/@NetNinja",
-      "type": "youtube-channel",
-      "domain": "web",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Clean, well-sequenced playlist courses on front-end and back-end web stacks."
-    },
-    {
-      "name": "Traversy Media",
-      "url": "https://www.youtube.com/@TraversyMedia",
-      "type": "youtube-channel",
-      "domain": "web",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Practical crash courses and build-along projects for modern web development."
-    },
-    {
-      "name": "Programming with Mosh",
-      "url": "https://www.youtube.com/@programmingwithmosh",
-      "type": "youtube-channel",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Polished beginner tutorials on Python, JavaScript, C#, and SQL fundamentals."
-    },
-    {
-      "name": "CS Dojo",
-      "url": "https://www.youtube.com/@CSDojo",
-      "type": "youtube-channel",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Approachable Python and coding-interview explanations aimed at newcomers."
-    },
-    {
-      "name": "mCoding",
-      "url": "https://www.youtube.com/@mCoding",
-      "type": "youtube-channel",
-      "domain": "programming",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Deep, precise dives into Python internals and idiomatic engineering practice."
-    },
-    {
-      "name": "ArjanCodes",
-      "url": "https://www.youtube.com/@ArjanCodes",
-      "type": "youtube-channel",
-      "domain": "programming",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Software design, architecture, and refactoring lessons taught through Python."
-    },
-    {
-      "name": "Corey Schafer",
-      "url": "https://www.youtube.com/@coreyms",
-      "type": "youtube-channel",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Thorough Python tutorial series covering language features, Django, and Flask."
-    },
-    {
-      "name": "Tech With Tim",
-      "url": "https://www.youtube.com/@TechWithTim",
-      "type": "youtube-channel",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Project-driven Python, automation, and beginner machine-learning walkthroughs."
-    },
-    {
-      "name": "3Blue1Brown",
-      "url": "https://www.youtube.com/@3blue1brown",
-      "type": "youtube-channel",
-      "domain": "math",
-      "level": "all",
-      "cost": "free",
-      "description": "Animated, intuition-first explanations of linear algebra, calculus, and neural networks."
-    },
-    {
-      "name": "StatQuest with Josh Starmer",
-      "url": "https://www.youtube.com/@statquest",
-      "type": "youtube-channel",
+      "name": "Dive into Deep Learning",
+      "url": "https://d2l.ai/",
+      "type": "book",
       "domain": "ai-ml",
-      "level": "beginner",
+      "level": "intermediate",
       "cost": "free",
-      "description": "Statistics and machine-learning concepts broken down step by step in plain language."
+      "description": "Interactive open textbook with math, code, and notebooks across major DL frameworks."
     },
     {
-      "name": "Andrej Karpathy",
-      "url": "https://www.youtube.com/@AndrejKarpathy",
-      "type": "youtube-channel",
+      "name": "OpenAI Cookbook",
+      "url": "https://developers.openai.com/cookbook",
+      "type": "docs",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official OpenAI recipe collection with runnable examples for embeddings, RAG, agents and evals."
+    },
+    {
+      "name": "PyTorch Tutorials",
+      "url": "https://docs.pytorch.org/tutorials/",
+      "type": "docs",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official PyTorch tutorials spanning tensors, training loops, and deployment."
+    },
+    {
+      "name": "Spinning Up in Deep RL",
+      "url": "https://spinningup.openai.com/en/latest/",
+      "type": "docs",
       "domain": "ai-ml",
       "level": "advanced",
       "cost": "free",
-      "description": "From-scratch neural network and LLM implementation lectures by a leading researcher."
+      "description": "OpenAI's free educational resource on reinforcement learning theory and implementations."
     },
     {
-      "name": "Two Minute Papers",
-      "url": "https://www.youtube.com/@TwoMinutePapers",
-      "type": "youtube-channel",
-      "domain": "ai-ml",
-      "level": "all",
-      "cost": "free",
-      "description": "Short summaries of recent AI and graphics research papers for a general audience."
-    },
-    {
-      "name": "sentdex",
-      "url": "https://www.youtube.com/@sentdex",
-      "type": "youtube-channel",
+      "name": "TensorFlow Tutorials",
+      "url": "https://www.tensorflow.org/tutorials",
+      "type": "docs",
       "domain": "ai-ml",
       "level": "intermediate",
       "cost": "free",
-      "description": "Hands-on Python machine learning, neural networks, and data-analysis project series."
+      "description": "Official Keras and TensorFlow guides from beginner models to custom training."
     },
     {
-      "name": "Computerphile",
-      "url": "https://www.youtube.com/@Computerphile",
-      "type": "youtube-channel",
-      "domain": "cs-fundamentals",
-      "level": "all",
-      "cost": "free",
-      "description": "Academic-quality interviews explaining core computer science ideas and algorithms."
-    },
-    {
-      "name": "Hussein Nasser",
-      "url": "https://www.youtube.com/@hnasr",
-      "type": "youtube-channel",
-      "domain": "system-design",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Backend engineering deep dives on networking, protocols, and database internals."
-    },
-    {
-      "name": "Gaurav Sen",
-      "url": "https://www.youtube.com/@gkcs",
-      "type": "youtube-channel",
-      "domain": "system-design",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Whiteboard-style system design interview walkthroughs and distributed systems concepts."
-    },
-    {
-      "name": "ByteByteGo",
-      "url": "https://www.youtube.com/@ByteByteGo",
-      "type": "youtube-channel",
-      "domain": "system-design",
-      "level": "all",
-      "cost": "free",
-      "description": "Animated explainers of large-scale architecture patterns and system design tradeoffs."
-    },
-    {
-      "name": "NeetCode",
-      "url": "https://www.youtube.com/@NeetCode",
-      "type": "youtube-channel",
-      "domain": "dsa",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Structured LeetCode solution walkthroughs emphasizing recognizable problem patterns."
-    },
-    {
-      "name": "Abdul Bari",
-      "url": "https://www.youtube.com/@abdul_bari",
-      "type": "youtube-channel",
-      "domain": "dsa",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Classroom-style algorithm and data structure lectures with careful complexity analysis."
-    },
-    {
-      "name": "Errichto Algorithms",
-      "url": "https://www.youtube.com/@Errichto",
-      "type": "youtube-channel",
-      "domain": "dsa",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Competitive programming tutorials and contest editorials from a top-ranked competitor."
-    },
-    {
-      "name": "William Lin",
-      "url": "https://www.youtube.com/@WilliamLin",
-      "type": "youtube-channel",
-      "domain": "dsa",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Live competitive programming contest screencasts and problem-solving commentary."
-    },
-    {
-      "name": "TechWorld with Nana",
-      "url": "https://www.youtube.com/@TechWorldwithNana",
-      "type": "youtube-channel",
-      "domain": "devops",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Clear DevOps roadmaps covering Docker, Kubernetes, Terraform, and CI/CD pipelines."
-    },
-    {
-      "name": "KodeKloud",
-      "url": "https://www.youtube.com/@KodeKloud",
-      "type": "youtube-channel",
-      "domain": "devops",
-      "level": "all",
-      "cost": "free",
-      "description": "DevOps certification prep and hands-on labs for Kubernetes, Ansible, and cloud tooling."
-    },
-    {
-      "name": "NetworkChuck",
-      "url": "https://www.youtube.com/@NetworkChuck",
-      "type": "youtube-channel",
-      "domain": "devops",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Energetic intros to Linux, networking, and homelab infrastructure projects."
-    },
-    {
-      "name": "MIT OpenCourseWare",
-      "url": "https://www.youtube.com/@mitocw",
-      "type": "youtube-channel",
-      "domain": "cs-fundamentals",
-      "level": "all",
-      "cost": "free",
-      "description": "Full recorded MIT lecture series spanning algorithms, math, and engineering."
-    },
-    {
-      "name": "Khan Academy",
-      "url": "https://www.youtube.com/@khanacademy",
-      "type": "youtube-channel",
-      "domain": "math",
-      "level": "all",
-      "cost": "free",
-      "description": "Foundational math and science lessons from arithmetic through calculus."
-    },
-    {
-      "name": "Numberphile",
-      "url": "https://www.youtube.com/@numberphile",
-      "type": "youtube-channel",
-      "domain": "math",
-      "level": "all",
-      "cost": "free",
-      "description": "Engaging mathematician-led explorations of number theory and curious math results."
-    },
-    {
-      "name": "Google for Developers",
-      "url": "https://www.youtube.com/@GoogleDevelopers",
-      "type": "youtube-channel",
-      "domain": "programming",
-      "level": "all",
-      "cost": "free",
-      "description": "Official Google channel with product deep dives, conference talks, and dev tutorials."
-    },
-    {
-      "name": "Amazon Web Services",
-      "url": "https://www.youtube.com/@amazonwebservices",
-      "type": "youtube-channel",
-      "domain": "cloud",
-      "level": "all",
-      "cost": "free",
-      "description": "Official AWS channel featuring service walkthroughs and re:Invent session recordings."
-    },
-    {
-      "name": "Google Cloud Tech",
-      "url": "https://www.youtube.com/@googlecloudtech",
-      "type": "youtube-channel",
-      "domain": "cloud",
-      "level": "all",
-      "cost": "free",
-      "description": "Official Google Cloud technical content on GCP services, architecture, and AI tooling."
-    },
-    {
-      "name": "Microsoft Azure",
-      "url": "https://www.youtube.com/@MicrosoftAzure",
-      "type": "youtube-channel",
-      "domain": "cloud",
-      "level": "all",
-      "cost": "free",
-      "description": "Official Azure channel covering cloud services, architecture guidance, and demos."
-    },
-    {
-      "name": "CS50",
-      "url": "https://www.youtube.com/@cs50",
-      "type": "youtube-channel",
-      "domain": "cs-fundamentals",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Harvard's CS50 lecture recordings, shorts, and seminars in full production quality."
-    },
-    {
-      "name": "Stanford Online",
-      "url": "https://www.youtube.com/@stanfordonline",
-      "type": "youtube-channel",
-      "domain": "ai-ml",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Complete Stanford course lecture series including machine learning and NLP."
-    },
-    {
-      "name": "DeepLearningAI",
-      "url": "https://www.youtube.com/@Deeplearningai",
-      "type": "youtube-channel",
-      "domain": "ai-ml",
-      "level": "all",
-      "cost": "free",
-      "description": "Andrew Ng's organization sharing AI lectures, interviews, and short-course previews."
-    },
-    {
-      "name": "Web Dev Simplified",
-      "url": "https://www.youtube.com/@WebDevSimplified",
-      "type": "youtube-channel",
-      "domain": "web",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Focused, jargon-light explanations of JavaScript, React, and CSS concepts."
-    },
-    {
-      "name": "Kevin Powell",
-      "url": "https://www.youtube.com/@KevinPowell",
-      "type": "youtube-channel",
-      "domain": "web",
-      "level": "all",
-      "cost": "free",
-      "description": "CSS-specialist channel on modern layout, responsive design, and styling techniques."
-    },
-    {
-      "name": "ThePrimeagen",
-      "url": "https://www.youtube.com/@ThePrimeagen",
-      "type": "youtube-channel",
-      "domain": "programming",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Editor tooling, performance, and pragmatic engineering commentary from a senior dev."
-    },
-    {
-      "name": "The Coding Train",
-      "url": "https://www.youtube.com/@TheCodingTrain",
-      "type": "youtube-channel",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Creative coding challenges teaching programming through generative art and simulation."
-    },
-    {
-      "name": "The Cherno",
-      "url": "https://www.youtube.com/@TheCherno",
-      "type": "youtube-channel",
-      "domain": "game-dev",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "In-depth C++ and game engine development series from an ex-EA engineer."
-    },
-    {
-      "name": "Sebastian Lague",
-      "url": "https://www.youtube.com/@SebastianLague",
-      "type": "youtube-channel",
-      "domain": "game-dev",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Beautifully produced coding adventures in graphics, simulation, and procedural generation."
-    },
-    {
-      "name": "Brackeys",
-      "url": "https://www.youtube.com/@Brackeys",
-      "type": "youtube-channel",
-      "domain": "game-dev",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Widely used beginner game development tutorials for Unity and Godot."
-    },
-    {
-      "name": "LiveOverflow",
-      "url": "https://www.youtube.com/@LiveOverflow",
-      "type": "youtube-channel",
-      "domain": "security",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Binary exploitation, reverse engineering, and CTF technique deep dives."
-    },
-    {
-      "name": "John Hammond",
-      "url": "https://www.youtube.com/@_JohnHammond",
-      "type": "youtube-channel",
-      "domain": "security",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Malware analysis, CTF walkthroughs, and practical offensive security demonstrations."
-    },
-    {
-      "name": "take U forward",
-      "url": "https://www.youtube.com/@takeUforward",
-      "type": "youtube-channel",
-      "domain": "dsa",
-      "level": "all",
-      "cost": "free",
-      "description": "Complete structured DSA sheet and interview preparation lecture series."
-    },
-    {
-      "name": "Android Developers",
-      "url": "https://www.youtube.com/@AndroidDevelopers",
-      "type": "youtube-channel",
-      "domain": "mobile",
-      "level": "all",
-      "cost": "free",
-      "description": "Official Android channel on Kotlin, Jetpack Compose, and platform best practices."
-    },
-    {
-      "name": "Flutter",
-      "url": "https://www.youtube.com/@flutterdev",
-      "type": "youtube-channel",
-      "domain": "mobile",
-      "level": "all",
-      "cost": "free",
-      "description": "Official Flutter channel covering widgets, Dart, and cross-platform app patterns."
-    },
-    {
-      "name": "Low Level",
-      "url": "https://www.youtube.com/@LowLevelTV",
-      "type": "youtube-channel",
-      "domain": "cs-fundamentals",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Systems programming, memory, and C/assembly concepts explained concisely."
-    },
-    {
-      "name": "Neural Networks: Zero to Hero",
-      "url": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
-      "type": "youtube-playlist",
-      "domain": "ai-ml",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Karpathy's code-along series building neural networks and a GPT from scratch."
-    },
-    {
-      "name": "freeCodeCamp Curriculum",
-      "url": "https://www.freecodecamp.org/learn",
-      "type": "interactive",
-      "domain": "web",
-      "level": "all",
-      "cost": "free",
-      "description": "Free certification tracks with in-browser exercises and portfolio projects."
-    },
-    {
-      "name": "Harvard CS50x",
-      "url": "https://cs50.harvard.edu/x/",
-      "type": "mooc",
-      "domain": "cs-fundamentals",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Harvard's flagship intro to computer science, from C and memory through Python and SQL."
-    },
-    {
-      "name": "Harvard CS50P: Introduction to Programming with Python",
-      "url": "https://cs50.harvard.edu/python/",
-      "type": "mooc",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Python-focused CS50 course covering testing, OOP, regex, and file handling."
-    },
-    {
-      "name": "Harvard CS50 AI",
-      "url": "https://cs50.harvard.edu/ai/",
+      "name": "Anthropic Courses",
+      "url": "https://github.com/anthropics/courses",
       "type": "mooc",
       "domain": "ai-ml",
       "level": "intermediate",
       "cost": "free",
-      "description": "Seven-week course on search, optimization, and machine learning with Python projects."
+      "description": "Anthropic's free official course repo: API fundamentals, prompt engineering, tool use and evaluations."
     },
     {
-      "name": "Harvard CS50 Web Programming",
-      "url": "https://cs50.harvard.edu/web/",
+      "name": "DeepLearning.AI Courses",
+      "url": "https://www.deeplearning.ai/courses",
       "type": "mooc",
-      "domain": "web",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Follow-on CS50 course building web apps with Django, React, and SQL."
-    },
-    {
-      "name": "Harvard CS50 SQL",
-      "url": "https://cs50.harvard.edu/sql/",
-      "type": "mooc",
-      "domain": "databases",
-      "level": "beginner",
-      "cost": "free",
-      "description": "CS50's relational database course covering modeling, joins, indexes, and normalization."
-    },
-    {
-      "name": "MIT OpenCourseWare",
-      "url": "https://ocw.mit.edu/",
-      "type": "mooc",
-      "domain": "cs-fundamentals",
+      "domain": "ai-ml",
       "level": "all",
       "cost": "free",
-      "description": "Open archive of MIT course materials including notes, assignments, and exams."
-    },
-    {
-      "name": "MIT 6.006: Introduction to Algorithms",
-      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
-      "type": "mooc",
-      "domain": "dsa",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "MIT's canonical algorithms course with full lecture videos and problem sets."
-    },
-    {
-      "name": "MIT 18.06: Linear Algebra",
-      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
-      "type": "mooc",
-      "domain": "math",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Gilbert Strang's celebrated linear algebra lectures, essential groundwork for ML."
-    },
-    {
-      "name": "Stanford CS231n: Deep Learning for Computer Vision",
-      "url": "https://cs231n.stanford.edu/",
-      "type": "mooc",
-      "domain": "ai-ml",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Public course site with notes and assignments on CNNs and visual recognition."
-    },
-    {
-      "name": "Stanford CS224n: NLP with Deep Learning",
-      "url": "https://web.stanford.edu/class/cs224n/",
-      "type": "mooc",
-      "domain": "ai-ml",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Public materials on word vectors, transformers, and large language model evaluation."
+      "description": "Catalog including many fully free short courses on LLMs and applied AI tooling."
     },
     {
       "name": "fast.ai: Practical Deep Learning for Coders",
@@ -592,58 +106,364 @@
       "description": "Top-down deep learning course that trains working models from the first lesson."
     },
     {
-      "name": "Full Stack Open",
-      "url": "https://fullstackopen.com/en/",
+      "name": "Google Machine Learning Crash Course",
+      "url": "https://developers.google.com/machine-learning/crash-course",
       "type": "mooc",
-      "domain": "web",
+      "domain": "ai-ml",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Google's free interactive introduction to core ML concepts and modern AI advances."
+    },
+    {
+      "name": "Harvard CS50 AI",
+      "url": "https://cs50.harvard.edu/ai/",
+      "type": "mooc",
+      "domain": "ai-ml",
       "level": "intermediate",
       "cost": "free",
-      "description": "University of Helsinki's rigorous course on React, Node, GraphQL, and TypeScript."
+      "description": "Seven-week course on search, optimization, and machine learning with Python projects."
     },
     {
-      "name": "The Odin Project",
-      "url": "https://www.theodinproject.com/",
+      "name": "Hugging Face LLM Course",
+      "url": "https://huggingface.co/learn/llm-course/chapter1/1",
       "type": "mooc",
-      "domain": "web",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Free hands-on course on transformers, tokenizers, and building NLP applications."
+    },
+    {
+      "name": "IBM SkillsBuild",
+      "url": "https://skillsbuild.org",
+      "type": "mooc",
+      "domain": "ai-ml",
       "level": "beginner",
       "cost": "free",
-      "description": "Open-source full-stack curriculum that teaches by forcing independent project work."
+      "description": "IBM's 100% free skilling platform with courses and credentials in AI, cybersecurity and data."
     },
     {
-      "name": "Coursera",
-      "url": "https://www.coursera.org/",
+      "name": "Learn Prompting",
+      "url": "https://learnprompting.org",
       "type": "mooc",
-      "domain": "programming",
-      "level": "all",
-      "cost": "free-audit",
-      "description": "University course platform where most courses can be audited free without a certificate."
-    },
-    {
-      "name": "edX",
-      "url": "https://www.edx.org/",
-      "type": "mooc",
-      "domain": "programming",
-      "level": "all",
-      "cost": "free-audit",
-      "description": "University MOOC platform offering free audit access to most course content."
-    },
-    {
-      "name": "Codecademy",
-      "url": "https://www.codecademy.com/",
-      "type": "interactive",
-      "domain": "programming",
+      "domain": "ai-ml",
       "level": "beginner",
       "cost": "free",
-      "description": "Browser-based coding lessons with a free tier covering core language basics."
+      "description": "Open-source curriculum on prompt engineering and prompt-injection/LLM security fundamentals."
     },
     {
-      "name": "Microsoft Learn Training",
-      "url": "https://learn.microsoft.com/en-us/training/",
+      "name": "Made With ML",
+      "url": "https://madewithml.com",
       "type": "mooc",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Free course on combining ML with software engineering to design, deploy and iterate on production ML systems."
+    },
+    {
+      "name": "Stanford CS224n: NLP with Deep Learning",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "type": "mooc",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Public materials on word vectors, transformers, and large language model evaluation."
+    },
+    {
+      "name": "Stanford CS231n: Deep Learning for Computer Vision",
+      "url": "https://cs231n.stanford.edu/",
+      "type": "mooc",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Public course site with notes and assignments on CNNs and visual recognition."
+    },
+    {
+      "name": "AI at Meta",
+      "url": "https://www.youtube.com/@AIatMeta",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Meta's AI research channel: Llama model announcements, research explainers and technical talks."
+    },
+    {
+      "name": "AI Coffee Break with Letitia",
+      "url": "https://www.youtube.com/@AICoffeeBreak",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Short, visual explainers of ML papers and transformer/diffusion model concepts."
+    },
+    {
+      "name": "Andrej Karpathy",
+      "url": "https://www.youtube.com/@AndrejKarpathy",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "From-scratch neural network and LLM implementation lectures by a leading researcher."
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.youtube.com/@anthropic-ai",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Anthropic channel: Claude product demos, prompt-engineering guidance and research talks."
+    },
+    {
+      "name": "AssemblyAI",
+      "url": "https://www.youtube.com/@AssemblyAI",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "AssemblyAI's developer channel: speech and NLP API tutorials plus general ML explainer series."
+    },
+    {
+      "name": "CampusX",
+      "url": "https://www.youtube.com/@campusx-official",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Long-form, university-style data science and deep learning course playlists."
+    },
+    {
+      "name": "DeepLearningAI",
+      "url": "https://www.youtube.com/@Deeplearningai",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "all",
+      "cost": "free",
+      "description": "Andrew Ng's organization sharing AI lectures, interviews, and short-course previews."
+    },
+    {
+      "name": "Google DeepMind",
+      "url": "https://www.youtube.com/@GoogleDeepMind",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official DeepMind channel with research explainers, model announcements and AI science talks."
+    },
+    {
+      "name": "Hugging Face",
+      "url": "https://www.youtube.com/@HuggingFace",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Hugging Face channel: transformers and diffusers course videos plus open-model walkthroughs."
+    },
+    {
+      "name": "IBM Research",
+      "url": "https://www.youtube.com/@IBMResearch",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Research talks and explainers from IBM Research on AI, quantum computing and semiconductors."
+    },
+    {
+      "name": "Jeff Heaton",
+      "url": "https://www.youtube.com/@HeatonResearch",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "University-course-quality deep learning lectures plus applied ML tooling tutorials."
+    },
+    {
+      "name": "Krish Naik",
+      "url": "https://www.youtube.com/@krishnaik06",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "End-to-end data science, ML and generative-AI project tutorials with an industry focus."
+    },
+    {
+      "name": "LangChain",
+      "url": "https://www.youtube.com/@LangChain",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official LangChain channel: LLM app and agent build tutorials, LangGraph demos and webinars."
+    },
+    {
+      "name": "LlamaIndex",
+      "url": "https://www.youtube.com/@LlamaIndex",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official LlamaIndex channel with RAG pipeline tutorials and agentic-workflow product demos."
+    },
+    {
+      "name": "Machine Learning Street Talk",
+      "url": "https://www.youtube.com/@MachineLearningStreetTalk",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Long-form technical interviews with leading AI researchers on theory and foundations."
+    },
+    {
+      "name": "Mistral AI",
+      "url": "https://www.youtube.com/@MistralAI",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official Mistral AI channel with open-weight model announcements and developer demos."
+    },
+    {
+      "name": "Nicholas Renotte",
+      "url": "https://www.youtube.com/@NicholasRenotte",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Hands-on ML and deep learning project builds with TensorFlow, PyTorch and computer vision."
+    },
+    {
+      "name": "NVIDIA",
+      "url": "https://www.youtube.com/@NVIDIA",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "all",
+      "cost": "free",
+      "description": "NVIDIA's main channel — GTC keynotes and AI/accelerated-computing product demos."
+    },
+    {
+      "name": "NVIDIA Developer",
+      "url": "https://www.youtube.com/@NVIDIADeveloper",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official NVIDIA developer channel: CUDA, TensorRT and GTC session talks on GPU computing and deep learning."
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://www.youtube.com/@OpenAI",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "all",
+      "cost": "free",
+      "description": "Official OpenAI channel with model launch demos, DevDay talks and API how-to sessions."
+    },
+    {
+      "name": "PyTorch",
+      "url": "https://www.youtube.com/@PyTorch",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official PyTorch channel: framework tutorials, ecosystem demos and PyTorch Conference talks."
+    },
+    {
+      "name": "sentdex",
+      "url": "https://www.youtube.com/@sentdex",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Hands-on Python machine learning, neural networks, and data-analysis project series."
+    },
+    {
+      "name": "Stanford Online",
+      "url": "https://www.youtube.com/@stanfordonline",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Complete Stanford course lecture series including machine learning and NLP."
+    },
+    {
+      "name": "StatQuest with Josh Starmer",
+      "url": "https://www.youtube.com/@statquest",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Statistics and machine-learning concepts broken down step by step in plain language."
+    },
+    {
+      "name": "TensorFlow",
+      "url": "https://www.youtube.com/@TensorFlow",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official TensorFlow channel with ML zero-to-hero series, Keras tutorials and TF Dev Summit talks."
+    },
+    {
+      "name": "Two Minute Papers",
+      "url": "https://www.youtube.com/@TwoMinutePapers",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "all",
+      "cost": "free",
+      "description": "Short summaries of recent AI and graphics research papers for a general audience."
+    },
+    {
+      "name": "Weights & Biases",
+      "url": "https://www.youtube.com/@WeightsBiases",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official W&B channel with MLOps and experiment-tracking tutorials plus practitioner interviews."
+    },
+    {
+      "name": "Yannic Kilcher",
+      "url": "https://www.youtube.com/@YannicKilcher",
+      "type": "youtube-channel",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "In-depth ML research paper walkthroughs and commentary on the AI research landscape."
+    },
+    {
+      "name": "Neural Networks: Zero to Hero",
+      "url": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
+      "type": "youtube-playlist",
+      "domain": "ai-ml",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Karpathy's code-along series building neural networks and a GPT from scratch."
+    },
+    {
+      "name": "AWS Well-Architected",
+      "url": "https://aws.amazon.com/architecture/well-architected/",
+      "type": "docs",
       "domain": "cloud",
-      "level": "all",
+      "level": "advanced",
       "cost": "free",
-      "description": "Free self-paced modules and learning paths for Azure, .NET, and Microsoft tooling."
+      "description": "AWS's six-pillar architecture framework with free whitepapers, lenses and hands-on labs."
+    },
+    {
+      "name": "Azure Architecture Center",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/",
+      "type": "docs",
+      "domain": "cloud",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Microsoft's free catalogue of reference architectures, workload guides and cloud design patterns."
+    },
+    {
+      "name": "Google Cloud Architecture Center",
+      "url": "https://docs.cloud.google.com/architecture",
+      "type": "docs",
+      "domain": "cloud",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Google's free reference architectures, deployment archetypes and best-practice design guides."
     },
     {
       "name": "AWS Skill Builder",
@@ -664,445 +484,166 @@
       "description": "Google Cloud's training catalog (formerly Cloud Skills Boost) with free course tracks."
     },
     {
-      "name": "Kaggle Learn",
-      "url": "https://www.kaggle.com/learn",
+      "name": "Microsoft Learn Training",
+      "url": "https://learn.microsoft.com/en-us/training/",
       "type": "mooc",
-      "domain": "data",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Short, notebook-based micro-courses on Python, pandas, visualization, and ML."
-    },
-    {
-      "name": "Google Machine Learning Crash Course",
-      "url": "https://developers.google.com/machine-learning/crash-course",
-      "type": "mooc",
-      "domain": "ai-ml",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Google's free interactive introduction to core ML concepts and modern AI advances."
-    },
-    {
-      "name": "DeepLearning.AI Courses",
-      "url": "https://www.deeplearning.ai/courses",
-      "type": "mooc",
-      "domain": "ai-ml",
+      "domain": "cloud",
       "level": "all",
       "cost": "free",
-      "description": "Catalog including many fully free short courses on LLMs and applied AI tooling."
+      "description": "Free self-paced modules and learning paths for Azure, .NET, and Microsoft tooling."
     },
     {
-      "name": "Hugging Face LLM Course",
-      "url": "https://huggingface.co/learn/llm-course/chapter1/1",
-      "type": "mooc",
-      "domain": "ai-ml",
+      "name": "Akamai Technologies",
+      "url": "https://www.youtube.com/@Akamai",
+      "type": "youtube-channel",
+      "domain": "cloud",
       "level": "intermediate",
       "cost": "free",
-      "description": "Free hands-on course on transformers, tokenizers, and building NLP applications."
+      "description": "Official Akamai (incl. Linode) channel: CDN and edge-security explainers plus cloud-compute tutorials."
     },
     {
-      "name": "MIT 6.5840: Distributed Systems",
-      "url": "https://pdos.csail.mit.edu/6.5840/",
-      "type": "mooc",
-      "domain": "system-design",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Graduate course on fault tolerance, replication, and consistency with public labs."
-    },
-    {
-      "name": "UC Berkeley CS61A",
-      "url": "https://cs61a.org/",
-      "type": "mooc",
-      "domain": "cs-fundamentals",
+      "name": "Alibaba Cloud",
+      "url": "https://www.youtube.com/@AlibabaCloud",
+      "type": "youtube-channel",
+      "domain": "cloud",
       "level": "beginner",
       "cost": "free",
-      "description": "Berkeley's structure and interpretation of programs course with open assignments."
+      "description": "Official Alibaba Cloud channel: product demos and getting-started tutorials for its cloud services."
     },
     {
-      "name": "Nand2Tetris",
-      "url": "https://www.nand2tetris.org/",
-      "type": "mooc",
-      "domain": "cs-fundamentals",
+      "name": "Amazon Web Services",
+      "url": "https://www.youtube.com/@amazonwebservices",
+      "type": "youtube-channel",
+      "domain": "cloud",
+      "level": "all",
+      "cost": "free",
+      "description": "Official AWS channel featuring service walkthroughs and re:Invent session recordings."
+    },
+    {
+      "name": "AWS Developers",
+      "url": "https://www.youtube.com/@AWSDevelopers",
+      "type": "youtube-channel",
+      "domain": "cloud",
+      "level": "all",
+      "cost": "free",
+      "description": "Official AWS developer-advocacy channel: hands-on build sessions, SDK how-tos and live coding streams."
+    },
+    {
+      "name": "AWS Events",
+      "url": "https://www.youtube.com/@AWSEventsChannel",
+      "type": "youtube-channel",
+      "domain": "cloud",
+      "level": "all",
+      "cost": "free",
+      "description": "Full session recordings from re:Invent, AWS Summits and Online Tech Talks — deep-dive conference talks."
+    },
+    {
+      "name": "Azure Academy",
+      "url": "https://www.youtube.com/@AzureAcademy",
+      "type": "youtube-channel",
+      "domain": "cloud",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Step-by-step Azure how-to tutorials and certification-oriented walkthroughs."
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://www.youtube.com/@Cloudflare",
+      "type": "youtube-channel",
+      "domain": "cloud",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Cloudflare channel: networking and security explainers plus Developer Week product announcements."
+    },
+    {
+      "name": "DigitalOcean",
+      "url": "https://www.youtube.com/@DigitalOcean",
+      "type": "youtube-channel",
+      "domain": "cloud",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official DigitalOcean channel with deployment tutorials, Kubernetes demos and developer webinars."
+    },
+    {
+      "name": "Google Cloud Events",
+      "url": "https://www.youtube.com/@GoogleCloudEvents",
+      "type": "youtube-channel",
+      "domain": "cloud",
       "level": "intermediate",
       "cost": "free",
-      "description": "Build a working computer and compiler from first principles using free open materials."
+      "description": "Session recordings from Google Cloud Next and related events — architecture and product deep-dive talks."
     },
     {
-      "name": "The Missing Semester of Your CS Education",
-      "url": "https://missing.csail.mit.edu/",
-      "type": "mooc",
-      "domain": "cs-fundamentals",
+      "name": "Google Cloud Tech",
+      "url": "https://www.youtube.com/@googlecloudtech",
+      "type": "youtube-channel",
+      "domain": "cloud",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Google Cloud technical content on GCP services, architecture, and AI tooling."
+    },
+    {
+      "name": "Microsoft Azure",
+      "url": "https://www.youtube.com/@MicrosoftAzure",
+      "type": "youtube-channel",
+      "domain": "cloud",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Azure channel covering cloud services, architecture guidance, and demos."
+    },
+    {
+      "name": "Microsoft Learn",
+      "url": "https://www.youtube.com/@MicrosoftLearn",
+      "type": "youtube-channel",
+      "domain": "cloud",
       "level": "beginner",
       "cost": "free",
-      "description": "MIT course on the practical tooling gap: shell, editors, version control, and debugging."
+      "description": "Official Microsoft Learn channel: certification prep, exam readiness and guided skilling series."
     },
     {
-      "name": "Open Source Society University: Computer Science",
-      "url": "https://github.com/ossu/computer-science",
-      "type": "mooc",
-      "domain": "cs-fundamentals",
-      "level": "all",
-      "cost": "free",
-      "description": "Community-curated degree-equivalent CS path assembled entirely from free courses."
-    },
-    {
-      "name": "Exercism",
-      "url": "https://exercism.org/",
-      "type": "practice",
-      "domain": "programming",
-      "level": "all",
-      "cost": "free",
-      "description": "Open-source practice platform with exercises and human mentoring across 70+ languages."
-    },
-    {
-      "name": "LeetCode",
-      "url": "https://leetcode.com/",
-      "type": "practice",
-      "domain": "dsa",
-      "level": "all",
-      "cost": "free",
-      "description": "Large interview-style problem bank with a substantial free problem set and contests."
-    },
-    {
-      "name": "Codeforces",
-      "url": "https://codeforces.com/",
-      "type": "practice",
-      "domain": "dsa",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Long-running competitive programming site with frequent rated contests and editorials."
-    },
-    {
-      "name": "Codeforces EDU",
-      "url": "https://codeforces.com/edu/courses",
-      "type": "interactive",
-      "domain": "dsa",
+      "name": "Microsoft Mechanics",
+      "url": "https://www.youtube.com/@MSFTMechanics",
+      "type": "youtube-channel",
+      "domain": "cloud",
       "level": "intermediate",
       "cost": "free",
-      "description": "Free structured lessons on segment trees, binary search, and other algorithm topics."
+      "description": "Official Microsoft product-demo channel with engineer-led walkthroughs of Azure, M365 and security features."
     },
     {
-      "name": "CodeChef",
-      "url": "https://www.codechef.com/",
-      "type": "practice",
-      "domain": "dsa",
-      "level": "all",
-      "cost": "free",
-      "description": "Practice problems and contests with free beginner-friendly learning tracks."
-    },
-    {
-      "name": "HackerRank",
-      "url": "https://www.hackerrank.com/",
-      "type": "practice",
-      "domain": "dsa",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Domain-organized coding challenges useful for language drills and interview warmups."
-    },
-    {
-      "name": "Codewars",
-      "url": "https://www.codewars.com/",
-      "type": "practice",
-      "domain": "programming",
-      "level": "all",
-      "cost": "free",
-      "description": "Community kata challenges with test-driven feedback and comparison of solutions."
-    },
-    {
-      "name": "AtCoder",
-      "url": "https://atcoder.jp/",
-      "type": "practice",
-      "domain": "dsa",
-      "level": "all",
-      "cost": "free",
-      "description": "Japanese contest platform known for well-graded beginner-to-expert problem sets."
-    },
-    {
-      "name": "roadmap.sh",
-      "url": "https://roadmap.sh/",
-      "type": "interactive",
-      "domain": "programming",
-      "level": "all",
-      "cost": "free",
-      "description": "Community-maintained visual roadmaps showing what to learn next for each dev role."
-    },
-    {
-      "name": "Frontend Mentor",
-      "url": "https://www.frontendmentor.io/",
-      "type": "practice",
-      "domain": "web",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Real design-to-code challenges with a free tier for building front-end portfolio work."
-    },
-    {
-      "name": "Project Euler",
-      "url": "https://projecteuler.net/",
-      "type": "practice",
-      "domain": "math",
+      "name": "Oracle Developers",
+      "url": "https://www.youtube.com/@OracleDevelopers",
+      "type": "youtube-channel",
+      "domain": "cloud",
       "level": "intermediate",
       "cost": "free",
-      "description": "Mathematical programming problems that reward algorithmic insight over brute force."
+      "description": "Oracle's developer-advocacy channel: OCI demos, Java and database tutorials, dev conference talks."
     },
     {
-      "name": "Advent of Code",
-      "url": "https://adventofcode.com/",
-      "type": "practice",
-      "domain": "programming",
-      "level": "all",
-      "cost": "free",
-      "description": "Annual December puzzle series solvable in any language, with a large archive."
-    },
-    {
-      "name": "VisuAlgo",
-      "url": "https://visualgo.net/en",
-      "type": "interactive",
-      "domain": "dsa",
+      "name": "Oracle Learning",
+      "url": "https://www.youtube.com/@OracleLearning",
+      "type": "youtube-channel",
+      "domain": "cloud",
       "level": "beginner",
       "cost": "free",
-      "description": "Animated visualizations of data structures and algorithms from NUS Computing."
+      "description": "Official Oracle training channel with certification-oriented product tutorials and how-to walkthroughs."
     },
     {
-      "name": "NeetCode",
-      "url": "https://neetcode.io/",
-      "type": "practice",
-      "domain": "dsa",
-      "level": "all",
-      "cost": "free",
-      "description": "Curated interview problem roadmap with free ordered practice lists and solutions."
-    },
-    {
-      "name": "USACO Guide",
-      "url": "https://usaco.guide/",
-      "type": "practice",
-      "domain": "dsa",
-      "level": "all",
-      "cost": "free",
-      "description": "Free nonprofit-run competitive programming curriculum organized by difficulty tier."
-    },
-    {
-      "name": "CP-Algorithms",
-      "url": "https://cp-algorithms.com/",
-      "type": "docs",
-      "domain": "dsa",
-      "level": "advanced",
-      "cost": "free",
-      "description": "Open reference of competitive programming algorithms with proofs and implementations."
-    },
-    {
-      "name": "SQLZoo",
-      "url": "https://sqlzoo.net/",
-      "type": "interactive",
-      "domain": "databases",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Browser-based SQL tutorial with graded exercises from SELECT through joins."
-    },
-    {
-      "name": "PostgreSQL Exercises",
-      "url": "https://pgexercises.com/",
-      "type": "practice",
-      "domain": "databases",
+      "name": "VMware",
+      "url": "https://www.youtube.com/@VMware",
+      "type": "youtube-channel",
+      "domain": "cloud",
       "level": "intermediate",
       "cost": "free",
-      "description": "Progressive SQL problems on one dataset, from basic filters to window functions."
+      "description": "Official VMware channel with virtualization, vSphere and Tanzu product demos and technical sessions."
     },
     {
-      "name": "Kaggle",
-      "url": "https://www.kaggle.com/",
-      "type": "practice",
-      "domain": "data",
-      "level": "all",
-      "cost": "free",
-      "description": "Datasets, notebooks, and competitions for applied data science practice."
-    },
-    {
-      "name": "OverTheWire Wargames",
-      "url": "https://overthewire.org/wargames/",
-      "type": "practice",
-      "domain": "security",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Classic SSH-based security wargames starting with Linux basics in Bandit."
-    },
-    {
-      "name": "PortSwigger Web Security Academy",
-      "url": "https://portswigger.net/web-security",
-      "type": "interactive",
-      "domain": "security",
-      "level": "all",
-      "cost": "free",
-      "description": "Free continuously updated web security training with interactive exploit labs."
-    },
-    {
-      "name": "CyLab Security Academy (formerly picoCTF)",
-      "url": "https://picoctf.org/",
-      "type": "practice",
-      "domain": "security",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Carnegie Mellon's free cybersecurity platform, successor to the picoCTF competition."
-    },
-    {
-      "name": "TryHackMe",
-      "url": "https://tryhackme.com/",
-      "type": "interactive",
-      "domain": "security",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Guided hacking rooms with a free tier covering hundreds of hands-on security labs."
-    },
-    {
-      "name": "build-your-own-x",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "type": "practice",
-      "domain": "programming",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Curated index of tutorials for rebuilding databases, compilers, and other core tech."
-    },
-    {
-      "name": "Eloquent JavaScript",
-      "url": "https://eloquentjavascript.net/",
-      "type": "book",
-      "domain": "web",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Free online JavaScript book pairing language fundamentals with substantial projects."
-    },
-    {
-      "name": "The JavaScript Language (javascript.info)",
-      "url": "https://javascript.info/",
-      "type": "book",
-      "domain": "web",
-      "level": "all",
-      "cost": "free",
-      "description": "Comprehensive open JavaScript tutorial from basics to advanced browser APIs."
-    },
-    {
-      "name": "The Rust Programming Language",
-      "url": "https://doc.rust-lang.org/book/",
-      "type": "book",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "The official free Rust book covering ownership, lifetimes, and concurrency."
-    },
-    {
-      "name": "Rust by Example",
-      "url": "https://doc.rust-lang.org/rust-by-example/",
-      "type": "docs",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Runnable annotated Rust examples that complement the official book."
-    },
-    {
-      "name": "Dive into Deep Learning",
-      "url": "https://d2l.ai/",
-      "type": "book",
-      "domain": "ai-ml",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Interactive open textbook with math, code, and notebooks across major DL frameworks."
-    },
-    {
-      "name": "The Python Tutorial",
-      "url": "https://docs.python.org/3/tutorial/",
-      "type": "docs",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "The official Python language tour aimed at programmers new to Python."
-    },
-    {
-      "name": "Automate the Boring Stuff with Python",
-      "url": "https://automatetheboringstuff.com/",
-      "type": "book",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Free Creative Commons book teaching Python through practical task automation."
-    },
-    {
-      "name": "Think Python",
-      "url": "https://greenteapress.com/wp/think-python-3rd-edition/",
-      "type": "book",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Allen Downey's free introductory Python text with an online notebook edition."
-    },
-    {
-      "name": "MDN Web Docs",
-      "url": "https://developer.mozilla.org/en-US/",
-      "type": "docs",
-      "domain": "web",
-      "level": "all",
-      "cost": "free",
-      "description": "The authoritative open reference for HTML, CSS, JavaScript, and web APIs."
-    },
-    {
-      "name": "MDN Learn Web Development",
-      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
-      "type": "docs",
-      "domain": "web",
-      "level": "beginner",
-      "cost": "free",
-      "description": "MDN's structured beginner curriculum for becoming a working web developer."
-    },
-    {
-      "name": "React Documentation",
-      "url": "https://react.dev/learn",
-      "type": "docs",
-      "domain": "web",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Official React learning path with interactive examples and modern hooks guidance."
-    },
-    {
-      "name": "TypeScript Handbook",
-      "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
-      "type": "docs",
-      "domain": "web",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "The official reference for TypeScript's type system and language features."
-    },
-    {
-      "name": "web.dev",
-      "url": "https://web.dev/",
-      "type": "docs",
-      "domain": "web",
-      "level": "all",
-      "cost": "free",
-      "description": "Chrome team guidance on performance, accessibility, and modern web best practices."
-    },
-    {
-      "name": "Go by Example",
-      "url": "https://gobyexample.com/",
-      "type": "docs",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Hands-on introduction to Go through short annotated example programs."
-    },
-    {
-      "name": "A Tour of Go",
-      "url": "https://go.dev/tour/",
-      "type": "interactive",
-      "domain": "programming",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Official in-browser interactive tour of the Go language."
-    },
-    {
-      "name": "Operating Systems: Three Easy Pieces",
-      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "name": "Beej's Guide to Network Programming",
+      "url": "https://beej.us/guide/bgnet/",
       "type": "book",
       "domain": "cs-fundamentals",
       "level": "intermediate",
       "cost": "free",
-      "description": "Free university OS textbook organized around virtualization, concurrency, and persistence."
+      "description": "The classic free guide to Berkeley sockets and TCP/IP network programming in C."
     },
     {
       "name": "Crafting Interpreters",
@@ -1112,6 +653,15 @@
       "level": "advanced",
       "cost": "free",
       "description": "Free complete book on building two working interpreters, including a bytecode VM."
+    },
+    {
+      "name": "Operating Systems: Three Easy Pieces",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "type": "book",
+      "domain": "cs-fundamentals",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Free university OS textbook organized around virtualization, concurrency, and persistence."
     },
     {
       "name": "Structure and Interpretation of Computer Programs",
@@ -1132,112 +682,175 @@
       "description": "Opinionated guide naming the best book and course for each core CS subject."
     },
     {
-      "name": "Pro Git",
-      "url": "https://git-scm.com/book/en/v2",
-      "type": "book",
-      "domain": "devops",
-      "level": "all",
-      "cost": "free",
-      "description": "The official Git book, free online, from basics through internals and workflows."
-    },
-    {
-      "name": "The Linux Command Line",
-      "url": "https://linuxcommand.org/tlcl.php",
-      "type": "book",
-      "domain": "devops",
+      "name": "Harvard CS50x",
+      "url": "https://cs50.harvard.edu/x/",
+      "type": "mooc",
+      "domain": "cs-fundamentals",
       "level": "beginner",
       "cost": "free",
-      "description": "Free 500+ page book on shell usage, scripting, and common command-line tools."
+      "description": "Harvard's flagship intro to computer science, from C and memory through Python and SQL."
     },
     {
-      "name": "Google SRE Books",
-      "url": "https://sre.google/books/",
-      "type": "book",
-      "domain": "devops",
+      "name": "Harvard Online Free Courses",
+      "url": "https://pll.harvard.edu/catalog/free",
+      "type": "mooc",
+      "domain": "cs-fundamentals",
+      "level": "all",
+      "cost": "free-audit",
+      "description": "Harvard's catalogue of free-to-audit online courses including CS, data science and TinyML."
+    },
+    {
+      "name": "MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/",
+      "type": "mooc",
+      "domain": "cs-fundamentals",
+      "level": "all",
+      "cost": "free",
+      "description": "Open archive of MIT course materials including notes, assignments, and exams."
+    },
+    {
+      "name": "Nand2Tetris",
+      "url": "https://www.nand2tetris.org/",
+      "type": "mooc",
+      "domain": "cs-fundamentals",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Build a working computer and compiler from first principles using free open materials."
+    },
+    {
+      "name": "Open Source Society University: Computer Science",
+      "url": "https://github.com/ossu/computer-science",
+      "type": "mooc",
+      "domain": "cs-fundamentals",
+      "level": "all",
+      "cost": "free",
+      "description": "Community-curated degree-equivalent CS path assembled entirely from free courses."
+    },
+    {
+      "name": "The Missing Semester of Your CS Education",
+      "url": "https://missing.csail.mit.edu/",
+      "type": "mooc",
+      "domain": "cs-fundamentals",
+      "level": "beginner",
+      "cost": "free",
+      "description": "MIT course on the practical tooling gap: shell, editors, version control, and debugging."
+    },
+    {
+      "name": "UC Berkeley CS61A",
+      "url": "https://cs61a.org/",
+      "type": "mooc",
+      "domain": "cs-fundamentals",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Berkeley's structure and interpretation of programs course with open assignments."
+    },
+    {
+      "name": "ACM SIGPLAN",
+      "url": "https://www.youtube.com/@ACMSIGPLAN",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
       "level": "advanced",
       "cost": "free",
-      "description": "Google's Site Reliability Engineering books, readable free online in full."
+      "description": "Programming-languages research talks from POPL, PLDI, ICFP and OOPSLA conferences."
     },
     {
-      "name": "The Twelve-Factor App",
-      "url": "https://12factor.net/",
-      "type": "docs",
-      "domain": "devops",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Concise methodology for building portable, cloud-ready service applications."
-    },
-    {
-      "name": "Docker Get Started",
-      "url": "https://docs.docker.com/get-started/",
-      "type": "docs",
-      "domain": "devops",
-      "level": "beginner",
-      "cost": "free",
-      "description": "Official Docker onboarding guides covering images, containers, and workflows."
-    },
-    {
-      "name": "Kubernetes Tutorials",
-      "url": "https://kubernetes.io/docs/tutorials/",
-      "type": "docs",
-      "domain": "devops",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Official step-by-step Kubernetes tutorials from basics to stateful applications."
-    },
-    {
-      "name": "System Design Primer",
-      "url": "https://github.com/donnemartin/system-design-primer",
-      "type": "docs",
-      "domain": "system-design",
+      "name": "Computerphile",
+      "url": "https://www.youtube.com/@Computerphile",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
       "level": "all",
       "cost": "free",
-      "description": "Open study guide for designing large-scale systems and preparing for design interviews."
+      "description": "Academic-quality interviews explaining core computer science ideas and algorithms."
     },
     {
-      "name": "Refactoring Guru: Design Patterns",
-      "url": "https://refactoring.guru/design-patterns",
-      "type": "docs",
-      "domain": "programming",
+      "name": "CS50",
+      "url": "https://www.youtube.com/@cs50",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Harvard's CS50 lecture recordings, shorts, and seminars in full production quality."
+    },
+    {
+      "name": "Gate Smashers",
+      "url": "https://www.youtube.com/@gatesmashers",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Fast, exam-focused core CS lessons on operating systems, DBMS, networks and architecture."
+    },
+    {
+      "name": "Google TechTalks",
+      "url": "https://www.youtube.com/@GoogleTechTalks",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Long-running archive of research and engineering talks hosted at Google across CS, ML and systems."
+    },
+    {
+      "name": "IBM Technology",
+      "url": "https://www.youtube.com/@IBMTechnology",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
+      "level": "all",
+      "cost": "free",
+      "description": "Official IBM whiteboard-style explainers on AI, cloud, security and data architecture concepts."
+    },
+    {
+      "name": "Low Level",
+      "url": "https://www.youtube.com/@LowLevelTV",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
       "level": "intermediate",
       "cost": "free",
-      "description": "Illustrated free catalog of classic design patterns with multi-language examples."
+      "description": "Systems programming, memory, and C/assembly concepts explained concisely."
     },
     {
-      "name": "Learn X in Y Minutes",
-      "url": "https://learnxinyminutes.com/",
-      "type": "docs",
-      "domain": "programming",
+      "name": "MIT CSAIL",
+      "url": "https://www.youtube.com/@MITCSAIL",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Research talks and seminars from MIT's Computer Science and AI Laboratory."
+    },
+    {
+      "name": "MIT OpenCourseWare",
+      "url": "https://www.youtube.com/@mitocw",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
       "level": "all",
       "cost": "free",
-      "description": "Rapid syntax tours of dozens of languages via heavily commented sample code."
+      "description": "Full recorded MIT lecture series spanning algorithms, math, and engineering."
     },
     {
-      "name": "Free Programming Books",
-      "url": "https://github.com/EbookFoundation/free-programming-books",
-      "type": "docs",
-      "domain": "programming",
-      "level": "all",
-      "cost": "free",
-      "description": "Massive community-maintained index of legally free programming books and courses."
-    },
-    {
-      "name": "PostgreSQL Tutorial",
-      "url": "https://www.postgresql.org/docs/current/tutorial.html",
-      "type": "docs",
-      "domain": "databases",
+      "name": "Neso Academy",
+      "url": "https://www.youtube.com/@nesoacademy",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
       "level": "beginner",
       "cost": "free",
-      "description": "The official PostgreSQL introduction to relational concepts and SQL."
+      "description": "University-syllabus lecture series on OS, networks, digital logic, DBMS and compilers."
     },
     {
-      "name": "SQL Tutorial for Data Analysis",
-      "url": "https://www.thoughtspot.com/sql-tutorial",
-      "type": "docs",
-      "domain": "databases",
-      "level": "beginner",
+      "name": "Strange Loop Conference",
+      "url": "https://www.youtube.com/@StrangeLoopConf",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
+      "level": "advanced",
       "cost": "free",
-      "description": "Free analyst-oriented SQL course (originally Mode's) built around real query tasks."
+      "description": "Archived Strange Loop talks — a legendary collection of deep, idea-driven software engineering sessions."
+    },
+    {
+      "name": "USENIX",
+      "url": "https://www.youtube.com/@UsenixOrg",
+      "type": "youtube-channel",
+      "domain": "cs-fundamentals",
+      "level": "advanced",
+      "cost": "free",
+      "description": "USENIX conference talks (OSDI, NSDI, ATC, Security, SREcon) on systems, networking and security research."
     },
     {
       "name": "pandas Getting Started",
@@ -1258,40 +871,1075 @@
       "description": "Official quickstart for fitting, evaluating, and tuning classical ML models."
     },
     {
-      "name": "PyTorch Tutorials",
-      "url": "https://docs.pytorch.org/tutorials/",
-      "type": "docs",
-      "domain": "ai-ml",
+      "name": "Confluent Developer",
+      "url": "https://developer.confluent.io",
+      "type": "mooc",
+      "domain": "data",
       "level": "intermediate",
       "cost": "free",
-      "description": "Official PyTorch tutorials spanning tensors, training loops, and deployment."
+      "description": "Confluent's free Apache Kafka courses, hands-on exercises and event-streaming patterns library."
     },
     {
-      "name": "TensorFlow Tutorials",
-      "url": "https://www.tensorflow.org/tutorials",
-      "type": "docs",
-      "domain": "ai-ml",
-      "level": "intermediate",
-      "cost": "free",
-      "description": "Official Keras and TensorFlow guides from beginner models to custom training."
-    },
-    {
-      "name": "Spinning Up in Deep RL",
-      "url": "https://spinningup.openai.com/en/latest/",
-      "type": "docs",
-      "domain": "ai-ml",
-      "level": "advanced",
-      "cost": "free",
-      "description": "OpenAI's free educational resource on reinforcement learning theory and implementations."
-    },
-    {
-      "name": "Seeing Theory",
-      "url": "https://seeing-theory.brown.edu/",
-      "type": "interactive",
-      "domain": "math",
+      "name": "DataCamp: Introduction to R",
+      "url": "https://www.datacamp.com/courses/free-introduction-to-r",
+      "type": "mooc",
+      "domain": "data",
       "level": "beginner",
       "cost": "free",
-      "description": "Brown University's visual, interactive introduction to probability and statistics."
+      "description": "DataCamp's permanently free interactive R course covering vectors, matrices and data frames."
+    },
+    {
+      "name": "Kaggle Learn",
+      "url": "https://www.kaggle.com/learn",
+      "type": "mooc",
+      "domain": "data",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Short, notebook-based micro-courses on Python, pandas, visualization, and ML."
+    },
+    {
+      "name": "Kaggle",
+      "url": "https://www.kaggle.com/",
+      "type": "practice",
+      "domain": "data",
+      "level": "all",
+      "cost": "free",
+      "description": "Datasets, notebooks, and competitions for applied data science practice."
+    },
+    {
+      "name": "Alex The Analyst",
+      "url": "https://www.youtube.com/@AlexTheAnalyst",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Free data-analyst bootcamp series covering Excel, SQL, Tableau, Power BI and Python."
+    },
+    {
+      "name": "Apache Airflow",
+      "url": "https://www.youtube.com/@ApacheAirflow",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Airflow channel: DAG authoring tutorials, release demos and Airflow Summit talks."
+    },
+    {
+      "name": "codebasics",
+      "url": "https://www.youtube.com/@codebasics",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Beginner-friendly data analytics, Python, SQL and machine learning course playlists."
+    },
+    {
+      "name": "Confluent",
+      "url": "https://www.youtube.com/@Confluent",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Confluent channel — Apache Kafka fundamentals courses, streaming demos and Current talks."
+    },
+    {
+      "name": "Data Professor",
+      "url": "https://www.youtube.com/@DataProfessor",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Professor-led tutorials on Python data science, Streamlit apps and ML workflows."
+    },
+    {
+      "name": "Data School",
+      "url": "https://www.youtube.com/@dataschool",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Clear pandas and scikit-learn tutorials focused on practical data-analysis workflows."
+    },
+    {
+      "name": "Databricks",
+      "url": "https://www.youtube.com/@Databricks",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official Databricks channel with Spark and Delta Lake tutorials plus Data+AI Summit conference talks."
+    },
+    {
+      "name": "dbt Labs",
+      "url": "https://www.youtube.com/@dbt-labs",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official dbt Labs channel: analytics-engineering tutorials, product demos and Coalesce conference talks."
+    },
+    {
+      "name": "Elastic",
+      "url": "https://www.youtube.com/@elastic",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Elastic channel — Elasticsearch and Kibana product demos, search and observability tutorials."
+    },
+    {
+      "name": "Google Analytics",
+      "url": "https://www.youtube.com/@GoogleAnalytics",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Google Analytics channel: measurement product demos and reporting how-to tutorials."
+    },
+    {
+      "name": "Kaggle (YouTube)",
+      "url": "https://www.youtube.com/@kaggle",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Kaggle channel: competition walkthroughs, notebook tutorials and grandmaster interviews."
+    },
+    {
+      "name": "Ken Jee",
+      "url": "https://www.youtube.com/@KenJee_ds",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Data science career guidance, portfolio project walkthroughs and practitioner interviews."
+    },
+    {
+      "name": "Luke Barousse",
+      "url": "https://www.youtube.com/@LukeBarousse",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Data-analyst career content plus practical SQL, Python and job-market analysis projects."
+    },
+    {
+      "name": "Microsoft Fabric",
+      "url": "https://www.youtube.com/@MicrosoftFabric",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Microsoft Fabric channel covering lakehouse, data engineering and analytics product tutorials."
+    },
+    {
+      "name": "Microsoft Power BI",
+      "url": "https://www.youtube.com/@MicrosoftPowerBI",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Power BI channel: feature demos, DAX and data-modelling tutorials, monthly release walkthroughs."
+    },
+    {
+      "name": "PyData",
+      "url": "https://www.youtube.com/@PyDataTV",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "PyData conference talk archive on the scientific Python and data-science tooling ecosystem."
+    },
+    {
+      "name": "Rob Mulla",
+      "url": "https://www.youtube.com/@robmulla",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Kaggle-grandmaster tutorials on pandas, feature engineering and competitive data science."
+    },
+    {
+      "name": "SAS Software",
+      "url": "https://www.youtube.com/@SASSoftware",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official SAS channel: statistics and analytics software tutorials plus product demos."
+    },
+    {
+      "name": "Seattle Data Guy",
+      "url": "https://www.youtube.com/@SeattleDataGuy",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Data engineering architecture, pipeline design and consulting-career insights."
+    },
+    {
+      "name": "Snowflake Inc.",
+      "url": "https://www.youtube.com/@SnowflakeInc",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Snowflake channel: data-warehouse product demos, hands-on labs and Summit sessions."
+    },
+    {
+      "name": "Tableau",
+      "url": "https://www.youtube.com/@tableau",
+      "type": "youtube-channel",
+      "domain": "data",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Tableau channel with data-visualisation how-tos and product demo series."
+    },
+    {
+      "name": "PostgreSQL Tutorial",
+      "url": "https://www.postgresql.org/docs/current/tutorial.html",
+      "type": "docs",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "The official PostgreSQL introduction to relational concepts and SQL."
+    },
+    {
+      "name": "Redis Developer Hub",
+      "url": "https://redis.io/dev/",
+      "type": "docs",
+      "domain": "databases",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Redis tutorials and learning paths for caching, data structures and vector search."
+    },
+    {
+      "name": "SQL Tutorial for Data Analysis",
+      "url": "https://www.thoughtspot.com/sql-tutorial",
+      "type": "docs",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Free analyst-oriented SQL course (originally Mode's) built around real query tasks."
+    },
+    {
+      "name": "Select Star SQL",
+      "url": "https://selectstarsql.com",
+      "type": "interactive",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Free interactive SQL book that teaches querying against a real dataset with a mental model, not just syntax."
+    },
+    {
+      "name": "SQLBolt",
+      "url": "https://sqlbolt.com",
+      "type": "interactive",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Interactive in-browser SQL lessons and exercises requiring no setup or signup."
+    },
+    {
+      "name": "SQLZoo",
+      "url": "https://sqlzoo.net/",
+      "type": "interactive",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Browser-based SQL tutorial with graded exercises from SELECT through joins."
+    },
+    {
+      "name": "Harvard CS50 SQL",
+      "url": "https://cs50.harvard.edu/sql/",
+      "type": "mooc",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "CS50's relational database course covering modeling, joins, indexes, and normalization."
+    },
+    {
+      "name": "MongoDB University",
+      "url": "https://learn.mongodb.com",
+      "type": "mooc",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "MongoDB's official free courses and certification learning paths for developers and DBAs."
+    },
+    {
+      "name": "Neo4j GraphAcademy",
+      "url": "https://graphacademy.neo4j.com",
+      "type": "mooc",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Neo4j's official free platform for Cypher, graph data modelling, graph data science and GraphRAG."
+    },
+    {
+      "name": "PostgreSQL Exercises",
+      "url": "https://pgexercises.com/",
+      "type": "practice",
+      "domain": "databases",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Progressive SQL problems on one dataset, from basic filters to window functions."
+    },
+    {
+      "name": "SQL Murder Mystery",
+      "url": "https://mystery.knightlab.com",
+      "type": "practice",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Gamified SQL puzzle where you solve a crime by querying a database — a great first practice project."
+    },
+    {
+      "name": "ClickHouse",
+      "url": "https://www.youtube.com/@ClickHouseDB",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official ClickHouse channel with OLAP performance deep-dives, product demos and community talks."
+    },
+    {
+      "name": "CockroachDB",
+      "url": "https://www.youtube.com/@cockroachdb",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official Cockroach Labs channel: distributed SQL architecture explainers and product tutorials."
+    },
+    {
+      "name": "DataStax Developers",
+      "url": "https://www.youtube.com/@DataStaxDevs",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "DataStax developer channel covering Apache Cassandra, vector search and GenAI app tutorials."
+    },
+    {
+      "name": "InfluxData",
+      "url": "https://www.youtube.com/@influxdata",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official InfluxData channel covering time-series database tutorials and IoT/observability demos."
+    },
+    {
+      "name": "MongoDB",
+      "url": "https://www.youtube.com/@MongoDB",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "all",
+      "cost": "free",
+      "description": "Official MongoDB channel: Atlas product demos, data-modelling tutorials and MongoDB World talks."
+    },
+    {
+      "name": "MongoDB for Developers",
+      "url": "https://www.youtube.com/@MongoDBDevelopers",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "MongoDB's developer-focused channel with language-specific driver tutorials and code-alongs."
+    },
+    {
+      "name": "Neo4j",
+      "url": "https://www.youtube.com/@Neo4j",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Neo4j channel: graph data modelling, Cypher tutorials and GraphRAG product demos."
+    },
+    {
+      "name": "PlanetScale",
+      "url": "https://www.youtube.com/@PlanetScale",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official PlanetScale channel: MySQL/Vitess internals explainers and database-branching product demos."
+    },
+    {
+      "name": "Prisma",
+      "url": "https://www.youtube.com/@PrismaData",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Prisma channel with TypeScript ORM tutorials, schema design demos and livestreams."
+    },
+    {
+      "name": "Redis",
+      "url": "https://www.youtube.com/@Redisinc",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Redis channel: caching patterns, data-structure tutorials and RedisConf talks."
+    },
+    {
+      "name": "ScyllaDB",
+      "url": "https://www.youtube.com/@ScyllaDB",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official ScyllaDB channel — low-latency NoSQL engineering talks and P99 CONF performance sessions."
+    },
+    {
+      "name": "Tiger Data (TimescaleDB)",
+      "url": "https://www.youtube.com/@TimescaleDB",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official channel of the TimescaleDB creators: time-series and PostgreSQL extension tutorials."
+    },
+    {
+      "name": "Trino",
+      "url": "https://www.youtube.com/@TrinoDB",
+      "type": "youtube-channel",
+      "domain": "databases",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official Trino channel with distributed query-engine tutorials, community broadcasts and Trino Summit talks."
+    },
+    {
+      "name": "Google SRE Books",
+      "url": "https://sre.google/books/",
+      "type": "book",
+      "domain": "devops",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Google's Site Reliability Engineering books, readable free online in full."
+    },
+    {
+      "name": "Pro Git",
+      "url": "https://git-scm.com/book/en/v2",
+      "type": "book",
+      "domain": "devops",
+      "level": "all",
+      "cost": "free",
+      "description": "The official Git book, free online, from basics through internals and workflows."
+    },
+    {
+      "name": "The Linux Command Line",
+      "url": "https://linuxcommand.org/tlcl.php",
+      "type": "book",
+      "domain": "devops",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Free 500+ page book on shell usage, scripting, and common command-line tools."
+    },
+    {
+      "name": "Docker Get Started",
+      "url": "https://docs.docker.com/get-started/",
+      "type": "docs",
+      "domain": "devops",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Docker onboarding guides covering images, containers, and workflows."
+    },
+    {
+      "name": "HashiCorp Developer Tutorials",
+      "url": "https://developer.hashicorp.com/tutorials",
+      "type": "docs",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official step-by-step hands-on tutorials for Terraform, Vault, Consul, Nomad and Packer."
+    },
+    {
+      "name": "Kubernetes Tutorials",
+      "url": "https://kubernetes.io/docs/tutorials/",
+      "type": "docs",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official step-by-step Kubernetes tutorials from basics to stateful applications."
+    },
+    {
+      "name": "Red Hat Developer",
+      "url": "https://developers.redhat.com",
+      "type": "docs",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Free Red Hat developer program: learning paths, sandbox environments and a no-cost RHEL subscription."
+    },
+    {
+      "name": "The Twelve-Factor App",
+      "url": "https://12factor.net/",
+      "type": "docs",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Concise methodology for building portable, cloud-ready service applications."
+    },
+    {
+      "name": "GitHub Learn (Skills)",
+      "url": "https://learn.github.com/skills",
+      "type": "interactive",
+      "domain": "devops",
+      "level": "beginner",
+      "cost": "free",
+      "description": "GitHub's official hands-on courses run inside real repositories — Actions, Copilot, Git and code review."
+    },
+    {
+      "name": "Atlassian",
+      "url": "https://www.youtube.com/@Atlassian",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Atlassian channel with Jira and Confluence product demos plus agile workflow how-tos."
+    },
+    {
+      "name": "CNCF [Cloud Native Computing Foundation]",
+      "url": "https://www.youtube.com/@cncf",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Full KubeCon + CloudNativeCon talk archive and CNCF project webinars — the definitive cloud-native talk library."
+    },
+    {
+      "name": "Datadog",
+      "url": "https://www.youtube.com/@Datadog",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Datadog channel: observability, APM and monitoring product demos plus DASH conference talks."
+    },
+    {
+      "name": "DevOps Directive",
+      "url": "https://www.youtube.com/@DevOpsDirective",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Practical DevOps tutorials on Docker, Terraform, Kubernetes and cloud infrastructure."
+    },
+    {
+      "name": "DevOps on Azure",
+      "url": "https://www.youtube.com/@AzureDevOps",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Azure DevOps channel: pipelines, boards and repos product demos plus CI/CD how-to sessions."
+    },
+    {
+      "name": "DevOps Toolkit",
+      "url": "https://www.youtube.com/@DevOpsToolkit",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Viktor Farcic's hands-on reviews and tutorials on Kubernetes, GitOps and platform engineering tools."
+    },
+    {
+      "name": "Docker",
+      "url": "https://www.youtube.com/@DockerInc",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Docker channel: container how-tos, Docker Desktop demos and DockerCon session recordings."
+    },
+    {
+      "name": "edureka!",
+      "url": "https://www.youtube.com/@edurekaIN",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Full-length free tutorial sessions on DevOps, cloud, data science and certification prep."
+    },
+    {
+      "name": "GitHub",
+      "url": "https://www.youtube.com/@GitHub",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "all",
+      "cost": "free",
+      "description": "Official GitHub channel: Actions and Copilot product demos, GitHub Universe talks, workflow tutorials."
+    },
+    {
+      "name": "GitLab",
+      "url": "https://www.youtube.com/@GitLab",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official GitLab channel with CI/CD pipeline tutorials, DevSecOps demos and release walkthroughs."
+    },
+    {
+      "name": "Grafana",
+      "url": "https://www.youtube.com/@Grafana",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Grafana Labs channel: dashboards, Loki/Tempo/Mimir tutorials and GrafanaCON talks."
+    },
+    {
+      "name": "HashiCorp",
+      "url": "https://www.youtube.com/@HashiCorp",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official HashiCorp channel — Terraform, Vault, Consul and Nomad tutorials plus HashiConf talks."
+    },
+    {
+      "name": "JFrog",
+      "url": "https://www.youtube.com/@JFrogInc",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official JFrog channel: artifact management, supply-chain security demos and swampUP talks."
+    },
+    {
+      "name": "KodeKloud",
+      "url": "https://www.youtube.com/@KodeKloud",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "all",
+      "cost": "free",
+      "description": "DevOps certification prep and hands-on labs for Kubernetes, Ansible, and cloud tooling."
+    },
+    {
+      "name": "Kubernetes",
+      "url": "https://www.youtube.com/@KubernetesCommunity",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official Kubernetes community channel: SIG meetings, release updates and contributor deep-dives."
+    },
+    {
+      "name": "Kubesimplify",
+      "url": "https://www.youtube.com/@Kubesimplify",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Free hands-on cloud-native workshops on Kubernetes, eBPF, GitOps and platform engineering."
+    },
+    {
+      "name": "NetworkChuck",
+      "url": "https://www.youtube.com/@NetworkChuck",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Energetic intros to Linux, networking, and homelab infrastructure projects."
+    },
+    {
+      "name": "NGINX",
+      "url": "https://www.youtube.com/@nginx",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official NGINX channel with reverse-proxy and load-balancing tutorials plus NGINX Conf sessions."
+    },
+    {
+      "name": "PulumiTV",
+      "url": "https://www.youtube.com/@PulumiTV",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Pulumi channel with infrastructure-as-code-in-real-languages tutorials and live demos."
+    },
+    {
+      "name": "Red Hat",
+      "url": "https://www.youtube.com/@RedHat",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Red Hat channel: RHEL, OpenShift and Ansible product demos plus Summit conference talks."
+    },
+    {
+      "name": "SUSE",
+      "url": "https://www.youtube.com/@SUSE",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official SUSE channel covering enterprise Linux, Rancher and Kubernetes product tutorials."
+    },
+    {
+      "name": "TechWorld with Nana",
+      "url": "https://www.youtube.com/@TechWorldwithNana",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Clear DevOps roadmaps covering Docker, Kubernetes, Terraform, and CI/CD pipelines."
+    },
+    {
+      "name": "The Linux Foundation",
+      "url": "https://www.youtube.com/@LinuxfoundationOrg",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "all",
+      "cost": "free",
+      "description": "Talks and webinars from the Linux Foundation across open source, Linux and cloud-native projects."
+    },
+    {
+      "name": "The New Stack",
+      "url": "https://www.youtube.com/@thenewstack",
+      "type": "youtube-channel",
+      "domain": "devops",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Interviews and conference coverage on cloud native, platform engineering and developer tooling."
+    },
+    {
+      "name": "Algorithms by Jeff Erickson",
+      "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+      "type": "book",
+      "domain": "dsa",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Free, widely used university algorithms textbook plus accompanying lecture notes and problem sets."
+    },
+    {
+      "name": "Competitive Programmer's Handbook",
+      "url": "https://cses.fi/book/index.php",
+      "type": "book",
+      "domain": "dsa",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Antti Laaksonen's free PDF textbook on algorithms and techniques for competitive programming."
+    },
+    {
+      "name": "Open Data Structures",
+      "url": "https://opendatastructures.org",
+      "type": "book",
+      "domain": "dsa",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Free open-content textbook on data structures with editions in Java, C++, Python and pseudocode."
+    },
+    {
+      "name": "CP-Algorithms",
+      "url": "https://cp-algorithms.com/",
+      "type": "docs",
+      "domain": "dsa",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Open reference of competitive programming algorithms with proofs and implementations."
+    },
+    {
+      "name": "GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org",
+      "type": "docs",
+      "domain": "dsa",
+      "level": "all",
+      "cost": "free",
+      "description": "Vast free reference of DSA articles, language tutorials and interview-prep problem write-ups."
+    },
+    {
+      "name": "Codeforces EDU",
+      "url": "https://codeforces.com/edu/courses",
+      "type": "interactive",
+      "domain": "dsa",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Free structured lessons on segment trees, binary search, and other algorithm topics."
+    },
+    {
+      "name": "VisuAlgo",
+      "url": "https://visualgo.net/en",
+      "type": "interactive",
+      "domain": "dsa",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Animated visualizations of data structures and algorithms from NUS Computing."
+    },
+    {
+      "name": "MIT 6.006: Introduction to Algorithms",
+      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+      "type": "mooc",
+      "domain": "dsa",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "MIT's canonical algorithms course with full lecture videos and problem sets."
+    },
+    {
+      "name": "AtCoder",
+      "url": "https://atcoder.jp/",
+      "type": "practice",
+      "domain": "dsa",
+      "level": "all",
+      "cost": "free",
+      "description": "Japanese contest platform known for well-graded beginner-to-expert problem sets."
+    },
+    {
+      "name": "CodeChef",
+      "url": "https://www.codechef.com/",
+      "type": "practice",
+      "domain": "dsa",
+      "level": "all",
+      "cost": "free",
+      "description": "Practice problems and contests with free beginner-friendly learning tracks."
+    },
+    {
+      "name": "Codeforces",
+      "url": "https://codeforces.com/",
+      "type": "practice",
+      "domain": "dsa",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Long-running competitive programming site with frequent rated contests and editorials."
+    },
+    {
+      "name": "CSES Problem Set",
+      "url": "https://cses.fi/problemset/",
+      "type": "practice",
+      "domain": "dsa",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Curated 300+ problem set covering every standard competitive-programming algorithm topic, with a judge."
+    },
+    {
+      "name": "HackerRank",
+      "url": "https://www.hackerrank.com/",
+      "type": "practice",
+      "domain": "dsa",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Domain-organized coding challenges useful for language drills and interview warmups."
+    },
+    {
+      "name": "LeetCode",
+      "url": "https://leetcode.com/",
+      "type": "practice",
+      "domain": "dsa",
+      "level": "all",
+      "cost": "free",
+      "description": "Large interview-style problem bank with a substantial free problem set and contests."
+    },
+    {
+      "name": "NeetCode",
+      "url": "https://neetcode.io/",
+      "type": "practice",
+      "domain": "dsa",
+      "level": "all",
+      "cost": "free",
+      "description": "Curated interview problem roadmap with free ordered practice lists and solutions."
+    },
+    {
+      "name": "USACO Guide",
+      "url": "https://usaco.guide/",
+      "type": "practice",
+      "domain": "dsa",
+      "level": "all",
+      "cost": "free",
+      "description": "Free nonprofit-run competitive programming curriculum organized by difficulty tier."
+    },
+    {
+      "name": "Abdul Bari",
+      "url": "https://www.youtube.com/@abdul_bari",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Classroom-style algorithm and data structure lectures with careful complexity analysis."
+    },
+    {
+      "name": "Apna College",
+      "url": "https://www.youtube.com/@ApnaCollegeOfficial",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Free complete DSA, C++/Java and web development course playlists for placement prep."
+    },
+    {
+      "name": "Back To Back SWE",
+      "url": "https://www.youtube.com/@BackToBackSWE",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Clear, first-principles explanations of classic coding-interview algorithm problems."
+    },
+    {
+      "name": "Colin Galen",
+      "url": "https://www.youtube.com/@ColinGalen",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Competitive-programming strategy, problem-solving mindset and advanced algorithm lessons."
+    },
+    {
+      "name": "Errichto Algorithms",
+      "url": "https://www.youtube.com/@Errichto",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Competitive programming tutorials and contest editorials from a top-ranked competitor."
+    },
+    {
+      "name": "GeeksforGeeks (YouTube)",
+      "url": "https://www.youtube.com/@GeeksforGeeksVideos",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Video companion to GeeksforGeeks covering DSA, interview prep and language tutorials."
+    },
+    {
+      "name": "Kunal Kushwaha",
+      "url": "https://www.youtube.com/@KunalKushwaha",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Free full-length DSA in Java bootcamp plus open-source and career-growth guidance."
+    },
+    {
+      "name": "NeetCode",
+      "url": "https://www.youtube.com/@NeetCode",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Structured LeetCode solution walkthroughs emphasizing recognizable problem patterns."
+    },
+    {
+      "name": "NeetCodeIO",
+      "url": "https://www.youtube.com/@NeetCodeIO",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "NeetCode's second channel with daily LeetCode solutions and interview-prep discussion."
+    },
+    {
+      "name": "take U forward",
+      "url": "https://www.youtube.com/@takeUforward",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "all",
+      "cost": "free",
+      "description": "Complete structured DSA sheet and interview preparation lecture series."
+    },
+    {
+      "name": "Techdose",
+      "url": "https://www.youtube.com/@techdose4u",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Systematic DSA and LeetCode problem playlists with complexity analysis."
+    },
+    {
+      "name": "William Lin",
+      "url": "https://www.youtube.com/@WilliamLin",
+      "type": "youtube-channel",
+      "domain": "dsa",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Live competitive programming contest screencasts and problem-solving commentary."
+    },
+    {
+      "name": "Blender",
+      "url": "https://www.youtube.com/@BlenderOfficial",
+      "type": "youtube-channel",
+      "domain": "game-dev",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Blender channel with 3D modelling and animation tutorials plus Blender Conference talks."
+    },
+    {
+      "name": "Brackeys",
+      "url": "https://www.youtube.com/@Brackeys",
+      "type": "youtube-channel",
+      "domain": "game-dev",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Widely used beginner game development tutorials for Unity and Godot."
+    },
+    {
+      "name": "Code Monkey",
+      "url": "https://www.youtube.com/@CodeMonkeyUnity",
+      "type": "youtube-channel",
+      "domain": "game-dev",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Practical Unity and C# game-development tutorials from a professional indie developer."
+    },
+    {
+      "name": "Game Maker's Toolkit",
+      "url": "https://www.youtube.com/@GMTK",
+      "type": "youtube-channel",
+      "domain": "game-dev",
+      "level": "all",
+      "cost": "free",
+      "description": "Game-design analysis essays plus devlogs on building and shipping a real game."
+    },
+    {
+      "name": "Godot Engine",
+      "url": "https://www.youtube.com/@GodotEngineOfficial",
+      "type": "youtube-channel",
+      "domain": "game-dev",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Godot channel: open-source engine release demos, tutorials and GodotCon talks."
+    },
+    {
+      "name": "Sebastian Lague",
+      "url": "https://www.youtube.com/@SebastianLague",
+      "type": "youtube-channel",
+      "domain": "game-dev",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Beautifully produced coding adventures in graphics, simulation, and procedural generation."
+    },
+    {
+      "name": "The Cherno",
+      "url": "https://www.youtube.com/@TheCherno",
+      "type": "youtube-channel",
+      "domain": "game-dev",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "In-depth C++ and game engine development series from an ex-EA engineer."
+    },
+    {
+      "name": "Unity",
+      "url": "https://www.youtube.com/@unity",
+      "type": "youtube-channel",
+      "domain": "game-dev",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Unity channel: engine tutorials, feature demos and Unite conference sessions."
+    },
+    {
+      "name": "Unreal Engine",
+      "url": "https://www.youtube.com/@UnrealEngine",
+      "type": "youtube-channel",
+      "domain": "game-dev",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Unreal Engine channel with training streams, Blueprint tutorials and Unreal Fest talks."
     },
     {
       "name": "Immersive Linear Algebra",
@@ -1312,13 +1960,112 @@
       "description": "Peer-reviewed openly licensed math textbooks from prealgebra through calculus."
     },
     {
-      "name": "Android Developers Courses",
-      "url": "https://developer.android.com/courses",
+      "name": "Seeing Theory",
+      "url": "https://seeing-theory.brown.edu/",
+      "type": "interactive",
+      "domain": "math",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Brown University's visual, interactive introduction to probability and statistics."
+    },
+    {
+      "name": "MIT 18.06: Linear Algebra",
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
       "type": "mooc",
-      "domain": "mobile",
+      "domain": "math",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Gilbert Strang's celebrated linear algebra lectures, essential groundwork for ML."
+    },
+    {
+      "name": "Project Euler",
+      "url": "https://projecteuler.net/",
+      "type": "practice",
+      "domain": "math",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Mathematical programming problems that reward algorithmic insight over brute force."
+    },
+    {
+      "name": "3Blue1Brown",
+      "url": "https://www.youtube.com/@3blue1brown",
+      "type": "youtube-channel",
+      "domain": "math",
       "level": "all",
       "cost": "free",
-      "description": "Google's official free Android training paths including Jetpack Compose basics."
+      "description": "Animated, intuition-first explanations of linear algebra, calculus, and neural networks."
+    },
+    {
+      "name": "Art of Problem Solving",
+      "url": "https://www.youtube.com/@ArtOfProblemSolving",
+      "type": "youtube-channel",
+      "domain": "math",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Competition-mathematics problem solving and olympiad-style technique videos."
+    },
+    {
+      "name": "Eddie Woo",
+      "url": "https://www.youtube.com/@misterwootube",
+      "type": "youtube-channel",
+      "domain": "math",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Full high-school and pre-calculus maths lessons recorded live in a real classroom."
+    },
+    {
+      "name": "Khan Academy",
+      "url": "https://www.youtube.com/@khanacademy",
+      "type": "youtube-channel",
+      "domain": "math",
+      "level": "all",
+      "cost": "free",
+      "description": "Foundational math and science lessons from arithmetic through calculus."
+    },
+    {
+      "name": "Numberphile",
+      "url": "https://www.youtube.com/@numberphile",
+      "type": "youtube-channel",
+      "domain": "math",
+      "level": "all",
+      "cost": "free",
+      "description": "Engaging mathematician-led explorations of number theory and curious math results."
+    },
+    {
+      "name": "patrickJMT",
+      "url": "https://www.youtube.com/@patrickJMT",
+      "type": "youtube-channel",
+      "domain": "math",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Thousands of short, worked-example maths videos across algebra, calculus and discrete math."
+    },
+    {
+      "name": "Professor Leonard",
+      "url": "https://www.youtube.com/@ProfessorLeonard",
+      "type": "youtube-channel",
+      "domain": "math",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Complete, unhurried university lecture series on precalculus, calculus and statistics."
+    },
+    {
+      "name": "ritvikmath",
+      "url": "https://www.youtube.com/@ritvikmath",
+      "type": "youtube-channel",
+      "domain": "math",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Concise whiteboard explanations of statistics, probability and data-science mathematics."
+    },
+    {
+      "name": "Welch Labs",
+      "url": "https://www.youtube.com/@WelchLabs",
+      "type": "youtube-channel",
+      "domain": "math",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Beautifully produced explainers on neural networks, imaginary numbers and mathematical intuition."
     },
     {
       "name": "The Swift Programming Language",
@@ -1330,13 +2077,1237 @@
       "description": "Apple's official free Swift language guide and reference."
     },
     {
-      "name": "Vue.js Guide",
-      "url": "https://vuejs.org/guide/introduction.html",
+      "name": "Android Developers Courses",
+      "url": "https://developer.android.com/courses",
+      "type": "mooc",
+      "domain": "mobile",
+      "level": "all",
+      "cost": "free",
+      "description": "Google's official free Android training paths including Jetpack Compose basics."
+    },
+    {
+      "name": "Android Developers",
+      "url": "https://www.youtube.com/@AndroidDevelopers",
+      "type": "youtube-channel",
+      "domain": "mobile",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Android channel on Kotlin, Jetpack Compose, and platform best practices."
+    },
+    {
+      "name": "Apple Developer",
+      "url": "https://www.youtube.com/@AppleDeveloper",
+      "type": "youtube-channel",
+      "domain": "mobile",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Apple Developer channel with WWDC session talks and Swift/SwiftUI platform demos."
+    },
+    {
+      "name": "CodeWithChris",
+      "url": "https://www.youtube.com/@CodeWithChris",
+      "type": "youtube-channel",
+      "domain": "mobile",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Beginner-friendly iOS development courses using Swift and SwiftUI."
+    },
+    {
+      "name": "Firebase",
+      "url": "https://www.youtube.com/@Firebase",
+      "type": "youtube-channel",
+      "domain": "mobile",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Firebase channel with product demos and app-building tutorials for web and mobile backends."
+    },
+    {
+      "name": "Flutter",
+      "url": "https://www.youtube.com/@flutterdev",
+      "type": "youtube-channel",
+      "domain": "mobile",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Flutter channel covering widgets, Dart, and cross-platform app patterns."
+    },
+    {
+      "name": "Kotlin by JetBrains",
+      "url": "https://www.youtube.com/@Kotlin",
+      "type": "youtube-channel",
+      "domain": "mobile",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Kotlin channel with language tutorials, coroutines deep-dives and KotlinConf talks."
+    },
+    {
+      "name": "Philipp Lackner",
+      "url": "https://www.youtube.com/@PhilippLackner",
+      "type": "youtube-channel",
+      "domain": "mobile",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Modern Android development with Kotlin, Jetpack Compose and clean architecture."
+    },
+    {
+      "name": "Stevdza-San",
+      "url": "https://www.youtube.com/@StevdzaSan",
+      "type": "youtube-channel",
+      "domain": "mobile",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Android and Kotlin Multiplatform tutorials with full project build-alongs."
+    },
+    {
+      "name": "Automate the Boring Stuff with Python",
+      "url": "https://automatetheboringstuff.com/",
+      "type": "book",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Free Creative Commons book teaching Python through practical task automation."
+    },
+    {
+      "name": "The Rust Programming Language",
+      "url": "https://doc.rust-lang.org/book/",
+      "type": "book",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "The official free Rust book covering ownership, lifetimes, and concurrency."
+    },
+    {
+      "name": "Think Python",
+      "url": "https://greenteapress.com/wp/think-python-3rd-edition/",
+      "type": "book",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Allen Downey's free introductory Python text with an online notebook edition."
+    },
+    {
+      "name": "Free Programming Books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
       "type": "docs",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Massive community-maintained index of legally free programming books and courses."
+    },
+    {
+      "name": "Go by Example",
+      "url": "https://gobyexample.com/",
+      "type": "docs",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Hands-on introduction to Go through short annotated example programs."
+    },
+    {
+      "name": "Learn X in Y Minutes",
+      "url": "https://learnxinyminutes.com/",
+      "type": "docs",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Rapid syntax tours of dozens of languages via heavily commented sample code."
+    },
+    {
+      "name": "Refactoring Guru: Design Patterns",
+      "url": "https://refactoring.guru/design-patterns",
+      "type": "docs",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Illustrated free catalog of classic design patterns with multi-language examples."
+    },
+    {
+      "name": "Rust by Example",
+      "url": "https://doc.rust-lang.org/rust-by-example/",
+      "type": "docs",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Runnable annotated Rust examples that complement the official book."
+    },
+    {
+      "name": "Spring Guides",
+      "url": "https://spring.io/guides/",
+      "type": "docs",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official short, task-focused Spring Boot getting-started guides you can complete in about 15 minutes each."
+    },
+    {
+      "name": "The Python Tutorial",
+      "url": "https://docs.python.org/3/tutorial/",
+      "type": "docs",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "The official Python language tour aimed at programmers new to Python."
+    },
+    {
+      "name": "A Tour of Go",
+      "url": "https://go.dev/tour/",
+      "type": "interactive",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official in-browser interactive tour of the Go language."
+    },
+    {
+      "name": "Boot.dev",
+      "url": "https://www.boot.dev",
+      "type": "interactive",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free-audit",
+      "description": "Browser-based backend-development curriculum in Go and Python; several courses playable free before upgrade."
+    },
+    {
+      "name": "Codecademy",
+      "url": "https://www.codecademy.com/",
+      "type": "interactive",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Browser-based coding lessons with a free tier covering core language basics."
+    },
+    {
+      "name": "Learn Git Branching",
+      "url": "https://learngitbranching.js.org",
+      "type": "interactive",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Visual, interactive Git sandbox that teaches branching, rebasing and merging through levels."
+    },
+    {
+      "name": "roadmap.sh",
+      "url": "https://roadmap.sh/",
+      "type": "interactive",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Community-maintained visual roadmaps showing what to learn next for each dev role."
+    },
+    {
+      "name": "Rustlings",
+      "url": "https://rustlings.rust-lang.org",
+      "type": "interactive",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Rust project's set of small compile-error exercises that teach the language incrementally."
+    },
+    {
+      "name": "Sololearn",
+      "url": "https://www.sololearn.com",
+      "type": "interactive",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free-audit",
+      "description": "Bite-sized mobile-friendly coding lessons across many languages with a generous free tier."
+    },
+    {
+      "name": "Coursera",
+      "url": "https://www.coursera.org/",
+      "type": "mooc",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free-audit",
+      "description": "University course platform where most courses can be audited free without a certificate."
+    },
+    {
+      "name": "edX",
+      "url": "https://www.edx.org/",
+      "type": "mooc",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free-audit",
+      "description": "University MOOC platform offering free audit access to most course content."
+    },
+    {
+      "name": "Harvard CS50P: Introduction to Programming with Python",
+      "url": "https://cs50.harvard.edu/python/",
+      "type": "mooc",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Python-focused CS50 course covering testing, OOP, regex, and file handling."
+    },
+    {
+      "name": "Advent of Code",
+      "url": "https://adventofcode.com/",
+      "type": "practice",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Annual December puzzle series solvable in any language, with a large archive."
+    },
+    {
+      "name": "build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "type": "practice",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Curated index of tutorials for rebuilding databases, compilers, and other core tech."
+    },
+    {
+      "name": "Codewars",
+      "url": "https://www.codewars.com/",
+      "type": "practice",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Community kata challenges with test-driven feedback and comparison of solutions."
+    },
+    {
+      "name": "Exercism",
+      "url": "https://exercism.org/",
+      "type": "practice",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Open-source practice platform with exercises and human mentoring across 70+ languages."
+    },
+    {
+      "name": ".NET",
+      "url": "https://www.youtube.com/@dotnet",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Official .NET channel with C# and ASP.NET beginner series, .NET Conf talks and product demos."
+    },
+    {
+      "name": "All Things Open",
+      "url": "https://www.youtube.com/@AllThingsOpen",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Conference talks on open-source technology, community and practical developer tooling."
+    },
+    {
+      "name": "Amigoscode",
+      "url": "https://www.youtube.com/@amigoscode",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Backend engineering tutorials on Java, Spring Boot, Docker and API design."
+    },
+    {
+      "name": "ArjanCodes",
+      "url": "https://www.youtube.com/@ArjanCodes",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Software design, architecture, and refactoring lessons taught through Python."
+    },
+    {
+      "name": "Arm Software Developers",
+      "url": "https://www.youtube.com/@ArmSoftwareDevelopers",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official Arm developer channel covering embedded, SIMD/NEON optimisation and toolchain tutorials."
+    },
+    {
+      "name": "Atlassian Developer",
+      "url": "https://www.youtube.com/@AtlassianDeveloper",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Atlassian's developer channel: Forge app-building tutorials and platform API demos."
+    },
+    {
+      "name": "Bro Code",
+      "url": "https://www.youtube.com/@BroCodez",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Bite-sized full-course playlists across Python, Java, C++, JavaScript and SQL."
+    },
+    {
+      "name": "C++ Weekly With Jason Turner",
+      "url": "https://www.youtube.com/@cppweekly",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Weekly bite-sized modern C++ language, standard-library and compiler-optimisation lessons."
+    },
+    {
+      "name": "CodeAesthetic",
+      "url": "https://www.youtube.com/@CodeAesthetic",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Polished essays on clean code, abstraction, naming and refactoring judgement."
+    },
+    {
+      "name": "CodeWithHarry",
+      "url": "https://www.youtube.com/@CodeWithHarry",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Extensive free course playlists across Python, web development, C and Java."
+    },
+    {
+      "name": "Coding Tech",
+      "url": "https://www.youtube.com/@CodingTech",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Curated re-uploads of high-quality conference talks across programming, web and data topics."
+    },
+    {
+      "name": "Coding with John",
+      "url": "https://www.youtube.com/@CodingWithJohn",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Short, focused Java concept explanations aimed at learners and interview prep."
+    },
+    {
+      "name": "Corey Schafer",
+      "url": "https://www.youtube.com/@coreyms",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Thorough Python tutorial series covering language features, Django, and Flask."
+    },
+    {
+      "name": "CppCon",
+      "url": "https://www.youtube.com/@CppCon",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Complete CppCon talk archive — the deepest free library of modern C++ conference sessions."
+    },
+    {
+      "name": "CS Dojo",
+      "url": "https://www.youtube.com/@CSDojo",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Approachable Python and coding-interview explanations aimed at newcomers."
+    },
+    {
+      "name": "Devoxx",
+      "url": "https://www.youtube.com/@DevoxxForever",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Full Devoxx conference talk archive — Java, JVM, cloud and general software engineering sessions."
+    },
+    {
+      "name": "EuroPython Conference",
+      "url": "https://www.youtube.com/@EuroPythonConference",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "EuroPython conference talk archive spanning Python internals, data, web and testing."
+    },
+    {
+      "name": "freeCodeCamp.org",
+      "url": "https://www.youtube.com/@freecodecamp",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Nonprofit channel publishing multi-hour, full-length course videos across nearly every programming topic."
+    },
+    {
+      "name": "GitKraken",
+      "url": "https://www.youtube.com/@GitKraken",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official GitKraken channel with practical Git workflow tutorials and client product demos."
+    },
+    {
+      "name": "Google for Developers",
+      "url": "https://www.youtube.com/@GoogleDevelopers",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Google channel with product deep dives, conference talks, and dev tutorials."
+    },
+    {
+      "name": "Google Workspace Developers",
+      "url": "https://www.youtube.com/@GoogleWorkspaceDevs",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official channel for Apps Script and Workspace APIs — automation tutorials and developer product demos."
+    },
+    {
+      "name": "IAmTimCorey",
+      "url": "https://www.youtube.com/@IAmTimCorey",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Long-form practical C#/.NET tutorials with an emphasis on real-world application design."
+    },
+    {
+      "name": "IBM Developer",
+      "url": "https://www.youtube.com/@IBMDeveloper",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "IBM's developer-advocacy channel: code-along tutorials, open-source demos and technical webinars."
+    },
+    {
+      "name": "Indently",
+      "url": "https://www.youtube.com/@Indently",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Short, idiomatic Python tips, language features and small-project tutorials."
+    },
+    {
+      "name": "Intel Devs",
+      "url": "https://www.youtube.com/@IntelDevs",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Intel's official developer channel: oneAPI, performance-optimisation tutorials and toolkit demos."
+    },
+    {
+      "name": "Java",
+      "url": "https://www.youtube.com/@java",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Java channel from Oracle: JDK release deep-dives, JEP explainers and JavaOne talks."
+    },
+    {
+      "name": "Java Brains",
+      "url": "https://www.youtube.com/@Java.Brains",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Clear conceptual Java, Spring and microservices courses that explain the why behind frameworks."
+    },
+    {
+      "name": "JetBrains",
+      "url": "https://www.youtube.com/@JetBrainsTV",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Official JetBrains channel: IDE tutorials, language livestreams and developer conference talks."
+    },
+    {
+      "name": "mCoding",
+      "url": "https://www.youtube.com/@mCoding",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Deep, precise dives into Python internals and idiomatic engineering practice."
+    },
+    {
+      "name": "Meta Developers",
+      "url": "https://www.youtube.com/@MetaDevelopers",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Meta's official developer channel: platform API demos and Connect developer session talks."
+    },
+    {
+      "name": "Meta Open Source",
+      "url": "https://www.youtube.com/@MetaOpenSource",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Meta Open Source channel covering React, PyTorch and other OSS project talks and demos."
+    },
+    {
+      "name": "Microsoft Developer",
+      "url": "https://www.youtube.com/@MicrosoftDeveloper",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Microsoft's flagship developer channel: Build/Ignite session talks, product demos and framework tutorials."
+    },
+    {
+      "name": "Microsoft Reactor",
+      "url": "https://www.youtube.com/@MicrosoftReactor",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Recorded live-stream workshops and community sessions on AI, cloud and open source."
+    },
+    {
+      "name": "Microsoft Visual Studio",
+      "url": "https://www.youtube.com/@visualstudio",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Official Visual Studio channel with IDE feature demos, debugging tips and .NET tooling tutorials."
+    },
+    {
+      "name": "Milan Jovanovic",
+      "url": "https://www.youtube.com/@MilanJovanovicTech",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "advanced",
+      "cost": "free",
+      "description": ".NET architecture content on clean architecture, DDD, CQRS and modular monoliths."
+    },
+    {
+      "name": "NDC Conferences",
+      "url": "https://www.youtube.com/c/NDCConferences",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Free archive of NDC conference talks on .NET, security, architecture and agile practice."
+    },
+    {
+      "name": "NeuralNine",
+      "url": "https://www.youtube.com/@NeuralNine",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Python project tutorials spanning ML, automation, networking and finance."
+    },
+    {
+      "name": "Nick Chapsas",
+      "url": "https://www.youtube.com/@nickchapsas",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Advanced C#/.NET techniques, performance benchmarking and modern library reviews."
+    },
+    {
+      "name": "Programming with Mosh",
+      "url": "https://www.youtube.com/@programmingwithmosh",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Polished beginner tutorials on Python, JavaScript, C#, and SQL fundamentals."
+    },
+    {
+      "name": "PyCon US",
+      "url": "https://www.youtube.com/@PyConUS",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official PyCon US channel with the full annual archive of Python conference talks and tutorials."
+    },
+    {
+      "name": "Python Simplified",
+      "url": "https://www.youtube.com/@PythonSimplified",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Approachable Python and data-science tutorials with strong visual explanations."
+    },
+    {
+      "name": "Python Software Foundation",
+      "url": "https://www.youtube.com/@ThePSF",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "all",
+      "cost": "free",
+      "description": "Official PSF channel hosting Python community talks, PyCon material and language updates."
+    },
+    {
+      "name": "Real Python",
+      "url": "https://www.youtube.com/@realpython",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Python tutorials and office-hours sessions from the Real Python team."
+    },
+    {
+      "name": "Rust Programming Language",
+      "url": "https://www.youtube.com/@RustVideos",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official Rust channel: RustConf talks, release notes and language deep-dives."
+    },
+    {
+      "name": "Salesforce Developers",
+      "url": "https://www.youtube.com/@SalesforceDevs",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Salesforce developer channel: Apex and LWC tutorials, platform demos and release webinars."
+    },
+    {
+      "name": "SAP Developers",
+      "url": "https://www.youtube.com/@SAPDevs",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "SAP's developer channel: ABAP, BTP and CAP tutorials, live coding sessions and product demos."
+    },
+    {
+      "name": "ServiceNow",
+      "url": "https://www.youtube.com/@ServiceNow",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official ServiceNow channel with platform product demos and workflow-automation walkthroughs."
+    },
+    {
+      "name": "Sonar",
+      "url": "https://www.youtube.com/@SonarSource",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Sonar channel on code quality, static analysis and clean-code practice demos."
+    },
+    {
+      "name": "Spring Developer",
+      "url": "https://www.youtube.com/@SpringSourceDev",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Spring channel: Spring Boot tutorials, Spring Tips series and SpringOne conference talks."
+    },
+    {
+      "name": "Tech With Tim",
+      "url": "https://www.youtube.com/@TechWithTim",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Project-driven Python, automation, and beginner machine-learning walkthroughs."
+    },
+    {
+      "name": "Telusko",
+      "url": "https://www.youtube.com/@Telusko",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Java, Spring Boot, Python and microservices tutorial series for beginner to intermediate devs."
+    },
+    {
+      "name": "The Coding Train",
+      "url": "https://www.youtube.com/@TheCodingTrain",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Creative coding challenges teaching programming through generative art and simulation."
+    },
+    {
+      "name": "The Go Programming Language",
+      "url": "https://www.youtube.com/@golang",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Go channel hosting GopherCon and Go team talks on language design and tooling."
+    },
+    {
+      "name": "The Julia Programming Language",
+      "url": "https://www.youtube.com/@TheJuliaLanguage",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Julia channel with JuliaCon talks and scientific-computing tutorials."
+    },
+    {
+      "name": "ThePrimeagen",
+      "url": "https://www.youtube.com/@ThePrimeagen",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Editor tooling, performance, and pragmatic engineering commentary from a senior dev."
+    },
+    {
+      "name": "Twilio Developers",
+      "url": "https://www.youtube.com/@TwilioDevs",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Twilio's developer channel with messaging and voice API tutorials plus hands-on build demos."
+    },
+    {
+      "name": "Udacity",
+      "url": "https://www.youtube.com/@Udacity",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Free lecture excerpts and tech career content from the online course provider."
+    },
+    {
+      "name": "Visual Studio Code",
+      "url": "https://www.youtube.com/@code",
+      "type": "youtube-channel",
+      "domain": "programming",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official VS Code channel: editor tips, extension deep-dives and release-note walkthroughs."
+    },
+    {
+      "name": "PortSwigger Web Security Academy",
+      "url": "https://portswigger.net/web-security",
+      "type": "interactive",
+      "domain": "security",
+      "level": "all",
+      "cost": "free",
+      "description": "Free continuously updated web security training with interactive exploit labs."
+    },
+    {
+      "name": "TryHackMe",
+      "url": "https://tryhackme.com/",
+      "type": "interactive",
+      "domain": "security",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Guided hacking rooms with a free tier covering hundreds of hands-on security labs."
+    },
+    {
+      "name": "Cisco Networking Academy",
+      "url": "https://www.netacad.com",
+      "type": "mooc",
+      "domain": "security",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Cisco's official academy with free introductory courses in networking, cybersecurity and Python."
+    },
+    {
+      "name": "CryptoHack",
+      "url": "https://cryptohack.org",
+      "type": "practice",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Gamified platform for learning applied cryptography by breaking deliberately weak implementations."
+    },
+    {
+      "name": "CyLab Security Academy (formerly picoCTF)",
+      "url": "https://picoctf.org/",
+      "type": "practice",
+      "domain": "security",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Carnegie Mellon's free cybersecurity platform, successor to the picoCTF competition."
+    },
+    {
+      "name": "Hack The Box",
+      "url": "https://www.hackthebox.com",
+      "type": "practice",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free-audit",
+      "description": "Hands-on hacking labs and attack/defence machines; substantial free tier alongside paid plans."
+    },
+    {
+      "name": "OverTheWire Wargames",
+      "url": "https://overthewire.org/wargames/",
+      "type": "practice",
+      "domain": "security",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Classic SSH-based security wargames starting with Linux basics in Bandit."
+    },
+    {
+      "name": "Auth0",
+      "url": "https://www.youtube.com/@Auth0",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Auth0 channel: identity, OAuth/OIDC explainers and authentication integration demos."
+    },
+    {
+      "name": "Black Hat",
+      "url": "https://www.youtube.com/@BlackHatOfficialYT",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official Black Hat briefings archive — cutting-edge offensive and defensive security research talks."
+    },
+    {
+      "name": "David Bombal",
+      "url": "https://www.youtube.com/@davidbombal",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Networking and cybersecurity tutorials, CCNA prep and interviews with security practitioners."
+    },
+    {
+      "name": "DEF CON Conference",
+      "url": "https://www.youtube.com/@DEFCONConference",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official DEF CON channel with the full archive of hacker-conference talks and village sessions."
+    },
+    {
+      "name": "HackerSploit",
+      "url": "https://www.youtube.com/@HackerSploit",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Free penetration testing, Linux hardening and blue-team course series."
+    },
+    {
+      "name": "IppSec",
+      "url": "https://www.youtube.com/@ippsec",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Detailed Hack The Box machine walkthroughs teaching real penetration-testing methodology."
+    },
+    {
+      "name": "John Hammond",
+      "url": "https://www.youtube.com/@_JohnHammond",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Malware analysis, CTF walkthroughs, and practical offensive security demonstrations."
+    },
+    {
+      "name": "LiveOverflow",
+      "url": "https://www.youtube.com/@LiveOverflow",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Binary exploitation, reverse engineering, and CTF technique deep dives."
+    },
+    {
+      "name": "Microsoft Security",
+      "url": "https://www.youtube.com/@MicrosoftSecurity",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Threat-intelligence briefings plus Defender and Sentinel product demos and how-tos."
+    },
+    {
+      "name": "OktaDev",
+      "url": "https://www.youtube.com/@OktaDev",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Okta's developer-advocacy channel covering OAuth, JWT and secure-app tutorials plus Iterate talks."
+    },
+    {
+      "name": "PwnFunction",
+      "url": "https://www.youtube.com/@PwnFunction",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Animated explainers of web vulnerabilities like XSS, SSRF and prototype pollution."
+    },
+    {
+      "name": "SANS Institute",
+      "url": "https://www.youtube.com/@SANSInstitute",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Free SANS webcasts and summit talks on incident response, threat hunting and blue-team practice."
+    },
+    {
+      "name": "Seytonic",
+      "url": "https://www.youtube.com/@Seytonic",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Hacking news analysis plus hardware-hacking and DIY security-tooling projects."
+    },
+    {
+      "name": "Snyk",
+      "url": "https://www.youtube.com/@Snyksec",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Snyk channel: application-security tutorials, live hacking sessions and DevSecOps demos."
+    },
+    {
+      "name": "Splunk",
+      "url": "https://www.youtube.com/@Splunkofficial",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Splunk channel with SIEM and observability product demos plus .conf session talks."
+    },
+    {
+      "name": "The Cyber Mentor (TCM Security)",
+      "url": "https://www.youtube.com/@TCMSecurityAcademy",
+      "type": "youtube-channel",
+      "domain": "security",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Practical ethical-hacking course content and cybersecurity career guidance."
+    },
+    {
+      "name": "Martin Fowler's Website",
+      "url": "https://martinfowler.com",
+      "type": "docs",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Martin Fowler's free article archive on refactoring, microservices, CI/CD and software design."
+    },
+    {
+      "name": "Microservices.io",
+      "url": "https://microservices.io",
+      "type": "docs",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Chris Richardson's free microservice pattern language — Saga, CQRS, API composition and decomposition patterns."
+    },
+    {
+      "name": "System Design Primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "type": "docs",
+      "domain": "system-design",
+      "level": "all",
+      "cost": "free",
+      "description": "Open study guide for designing large-scale systems and preparing for design interviews."
+    },
+    {
+      "name": "MIT 6.5840: Distributed Systems",
+      "url": "https://pdos.csail.mit.edu/6.5840/",
+      "type": "mooc",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Graduate course on fault tolerance, replication, and consistency with public labs."
+    },
+    {
+      "name": "Arpit Bhayani",
+      "url": "https://www.youtube.com/@AsliEngineering",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Backend engineering and system internals deep-dives — databases, networking and distributed systems."
+    },
+    {
+      "name": "ByteByteGo",
+      "url": "https://www.youtube.com/@ByteByteGo",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "all",
+      "cost": "free",
+      "description": "Animated explainers of large-scale architecture patterns and system design tradeoffs."
+    },
+    {
+      "name": "ByteMonk",
+      "url": "https://www.youtube.com/@ByteMonk",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Short animated explainers on system design, cloud architecture and distributed-systems concepts."
+    },
+    {
+      "name": "codeKarle",
+      "url": "https://www.youtube.com/@codeKarle",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Structured system design interview walkthroughs of real large-scale products."
+    },
+    {
+      "name": "CodeOpinion",
+      "url": "https://www.youtube.com/@CodeOpinion",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Software architecture videos on messaging, event-driven design, CQRS and microservice boundaries."
+    },
+    {
+      "name": "Gaurav Sen",
+      "url": "https://www.youtube.com/@gkcs",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Whiteboard-style system design interview walkthroughs and distributed systems concepts."
+    },
+    {
+      "name": "GOTO Conferences",
+      "url": "https://www.youtube.com/@GOTO-",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Huge free archive of GOTO conference talks by leading software engineers and architects."
+    },
+    {
+      "name": "Hussein Nasser",
+      "url": "https://www.youtube.com/@hnasr",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Backend engineering deep dives on networking, protocols, and database internals."
+    },
+    {
+      "name": "InfoQ",
+      "url": "https://www.youtube.com/@infoq",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "QCon session recordings and InfoQ interviews on architecture, scalability and engineering culture."
+    },
+    {
+      "name": "Kong",
+      "url": "https://www.youtube.com/@KongInc",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Kong channel: API gateway and service-mesh product demos plus API Summit talks."
+    },
+    {
+      "name": "Modern Software Engineering",
+      "url": "https://www.youtube.com/@ModernSoftwareEngineeringYT",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Dave Farley on continuous delivery, TDD and engineering discipline for building software well."
+    },
+    {
+      "name": "System Design Interview",
+      "url": "https://www.youtube.com/@SystemDesignInterview",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Rigorous, well-diagrammed system design case studies for senior engineering interviews."
+    },
+    {
+      "name": "Temporal",
+      "url": "https://www.youtube.com/@temporalio",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Official Temporal channel: durable-execution and workflow-orchestration tutorials and Replay talks."
+    },
+    {
+      "name": "Thoughtworks",
+      "url": "https://www.youtube.com/@thoughtworks",
+      "type": "youtube-channel",
+      "domain": "system-design",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Technology Radar briefings and software-architecture and agile practice talks."
+    },
+    {
+      "name": "Eloquent JavaScript",
+      "url": "https://eloquentjavascript.net/",
+      "type": "book",
       "domain": "web",
       "level": "beginner",
       "cost": "free",
-      "description": "Official Vue documentation with a progressive introduction to the framework."
+      "description": "Free online JavaScript book pairing language fundamentals with substantial projects."
+    },
+    {
+      "name": "Patterns.dev",
+      "url": "https://www.patterns.dev",
+      "type": "book",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Free online book on modern design, rendering and performance patterns for JavaScript and React apps."
+    },
+    {
+      "name": "The JavaScript Language (javascript.info)",
+      "url": "https://javascript.info/",
+      "type": "book",
+      "domain": "web",
+      "level": "all",
+      "cost": "free",
+      "description": "Comprehensive open JavaScript tutorial from basics to advanced browser APIs."
+    },
+    {
+      "name": "The Valley of Code",
+      "url": "https://thevalleyofcode.com",
+      "type": "book",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Flavio Copes's free 1,600+ lesson handbook covering the whole web development stack end to end."
+    },
+    {
+      "name": "CSS-Tricks",
+      "url": "https://css-tricks.com",
+      "type": "docs",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Long-running free reference of CSS guides, almanac entries and modern layout techniques."
     },
     {
       "name": "Django Tutorial",
@@ -1346,6 +3317,447 @@
       "level": "beginner",
       "cost": "free",
       "description": "Official Django walkthrough building a database-backed web application."
+    },
+    {
+      "name": "MDN Learn Web Development",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+      "type": "docs",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "MDN's structured beginner curriculum for becoming a working web developer."
+    },
+    {
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/",
+      "type": "docs",
+      "domain": "web",
+      "level": "all",
+      "cost": "free",
+      "description": "The authoritative open reference for HTML, CSS, JavaScript, and web APIs."
+    },
+    {
+      "name": "React Documentation",
+      "url": "https://react.dev/learn",
+      "type": "docs",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official React learning path with interactive examples and modern hooks guidance."
+    },
+    {
+      "name": "TypeScript Handbook",
+      "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+      "type": "docs",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "The official reference for TypeScript's type system and language features."
+    },
+    {
+      "name": "Vue.js Guide",
+      "url": "https://vuejs.org/guide/introduction.html",
+      "type": "docs",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Vue documentation with a progressive introduction to the framework."
+    },
+    {
+      "name": "web.dev",
+      "url": "https://web.dev/",
+      "type": "docs",
+      "domain": "web",
+      "level": "all",
+      "cost": "free",
+      "description": "Chrome team guidance on performance, accessibility, and modern web best practices."
+    },
+    {
+      "name": "Flexbox Froggy",
+      "url": "https://flexboxfroggy.com",
+      "type": "interactive",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Browser game that teaches CSS flexbox properties level by level."
+    },
+    {
+      "name": "freeCodeCamp Curriculum",
+      "url": "https://www.freecodecamp.org/learn",
+      "type": "interactive",
+      "domain": "web",
+      "level": "all",
+      "cost": "free",
+      "description": "Free certification tracks with in-browser exercises and portfolio projects."
+    },
+    {
+      "name": "Grid Garden",
+      "url": "https://cssgridgarden.com",
+      "type": "interactive",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Browser game for learning CSS Grid layout by growing a carrot garden."
+    },
+    {
+      "name": "JavaScript30",
+      "url": "https://javascript30.com",
+      "type": "interactive",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Wes Bos's free 30-day vanilla JavaScript challenge — 30 small projects, no frameworks or libraries."
+    },
+    {
+      "name": "Scrimba",
+      "url": "https://scrimba.com",
+      "type": "interactive",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free-audit",
+      "description": "Interactive scrim frontend lessons where you edit code inside the video; free courses available."
+    },
+    {
+      "name": "Full Stack Open",
+      "url": "https://fullstackopen.com/en/",
+      "type": "mooc",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "University of Helsinki's rigorous course on React, Node, GraphQL, and TypeScript."
+    },
+    {
+      "name": "Harvard CS50 Web Programming",
+      "url": "https://cs50.harvard.edu/web/",
+      "type": "mooc",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Follow-on CS50 course building web apps with Django, React, and SQL."
+    },
+    {
+      "name": "The Odin Project",
+      "url": "https://www.theodinproject.com/",
+      "type": "mooc",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Open-source full-stack curriculum that teaches by forcing independent project work."
+    },
+    {
+      "name": "Frontend Mentor",
+      "url": "https://www.frontendmentor.io/",
+      "type": "practice",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Real design-to-code challenges with a free tier for building front-end portfolio work."
+    },
+    {
+      "name": "Academind",
+      "url": "https://www.youtube.com/@academind",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Structured web-development crash courses on React, Angular, Vue, Node and JavaScript fundamentals."
+    },
+    {
+      "name": "Angular",
+      "url": "https://www.youtube.com/@Angular",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Angular team channel: release walkthroughs, framework tutorials and conference talks."
+    },
+    {
+      "name": "Appwrite",
+      "url": "https://www.youtube.com/@Appwrite",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Appwrite channel with open-source backend tutorials and app build-along demos."
+    },
+    {
+      "name": "Astro",
+      "url": "https://www.youtube.com/@AstroDotBuild",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Astro channel: content-driven site tutorials, release demos and community showcases."
+    },
+    {
+      "name": "Chrome for Developers",
+      "url": "https://www.youtube.com/@ChromeDevs",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Chrome DevRel channel: DevTools tutorials, web platform API demos and performance guidance."
+    },
+    {
+      "name": "Cloudflare Developers",
+      "url": "https://www.youtube.com/@CloudflareDevelopers",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Cloudflare DevRel channel — Workers, Pages, R2 and D1 build-along tutorials and product demos."
+    },
+    {
+      "name": "Codevolution",
+      "url": "https://www.youtube.com/@Codevolution",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Long-form, well-sequenced playlists on React, Next.js, TypeScript and testing."
+    },
+    {
+      "name": "Dave Gray",
+      "url": "https://www.youtube.com/@DaveGrayTeachesCode",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Full-length free courses on HTML/CSS, JavaScript, React, Node and TypeScript."
+    },
+    {
+      "name": "Deno",
+      "url": "https://www.youtube.com/@deno_land",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Deno channel: runtime tutorials, TypeScript-first demos and feature walkthroughs."
+    },
+    {
+      "name": "DesignCourse",
+      "url": "https://www.youtube.com/@DesignCourse",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "UI/UX design plus frontend coding tutorials aimed at developers who want better-looking interfaces."
+    },
+    {
+      "name": "Figma",
+      "url": "https://www.youtube.com/@Figma",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Figma channel with UI/UX design tutorials, product demos and Config conference talks."
+    },
+    {
+      "name": "Fireship",
+      "url": "https://www.youtube.com/@Fireship",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "High-density short explainers on web frameworks, tooling, and industry news."
+    },
+    {
+      "name": "Jack Herrington",
+      "url": "https://www.youtube.com/@jherr",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Deep React, TypeScript and micro-frontend architecture tutorials from a veteran engineer."
+    },
+    {
+      "name": "JSConf",
+      "url": "https://www.youtube.com/@jsconf_",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "advanced",
+      "cost": "free",
+      "description": "JSConf talk archive covering JavaScript language, runtime and web-platform deep-dives."
+    },
+    {
+      "name": "Kevin Powell",
+      "url": "https://www.youtube.com/@KevinPowell",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "all",
+      "cost": "free",
+      "description": "CSS-specialist channel on modern layout, responsive design, and styling techniques."
+    },
+    {
+      "name": "Lama Dev",
+      "url": "https://www.youtube.com/@LamaDev",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Full-stack clone-app build tutorials with React, Next.js and Node."
+    },
+    {
+      "name": "Laravel",
+      "url": "https://www.youtube.com/@LaravelPHP",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Laravel channel with PHP framework release demos and Laracon conference talks."
+    },
+    {
+      "name": "Net Ninja",
+      "url": "https://www.youtube.com/@NetNinja",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Clean, well-sequenced playlist courses on front-end and back-end web stacks."
+    },
+    {
+      "name": "Netlify",
+      "url": "https://www.youtube.com/@NetlifyApp",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Netlify channel with Jamstack deployment tutorials, product demos and dev livestreams."
+    },
+    {
+      "name": "PedroTech",
+      "url": "https://www.youtube.com/@PedroTechnologies",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Practical full-stack project tutorials using React, Node and modern JavaScript tooling."
+    },
+    {
+      "name": "Postman",
+      "url": "https://www.youtube.com/@Postman",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Postman channel: API testing and design tutorials, product demos and API-101 series."
+    },
+    {
+      "name": "Scrimba (YouTube)",
+      "url": "https://www.youtube.com/@Scrimba",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Free frontend tutorials and developer career advice from the interactive-coding platform."
+    },
+    {
+      "name": "Shopify Developers",
+      "url": "https://www.youtube.com/@ShopifyDevs",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Shopify's developer channel: storefront and app-building tutorials plus commerce API demos."
+    },
+    {
+      "name": "Strapi",
+      "url": "https://www.youtube.com/@Strapi",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Strapi channel: headless-CMS tutorials, plugin demos and full-stack build-alongs."
+    },
+    {
+      "name": "Stripe Developers",
+      "url": "https://www.youtube.com/@StripeDev",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Stripe's developer channel: payments API integration tutorials, code-alongs and product demos."
+    },
+    {
+      "name": "Supabase",
+      "url": "https://www.youtube.com/@Supabase",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Official Supabase channel with full-stack build-alongs, Postgres/auth tutorials and Launch Week demos."
+    },
+    {
+      "name": "Svelte Society",
+      "url": "https://www.youtube.com/@SvelteSociety",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Community-official Svelte channel hosting Svelte Summit talks and framework tutorials."
+    },
+    {
+      "name": "Theo - t3.gg",
+      "url": "https://www.youtube.com/@t3dotgg",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "advanced",
+      "cost": "free",
+      "description": "Opinionated commentary and deep-dives on the modern TypeScript, React and full-stack ecosystem."
+    },
+    {
+      "name": "Traversy Media",
+      "url": "https://www.youtube.com/@TraversyMedia",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Practical crash courses and build-along projects for modern web development."
+    },
+    {
+      "name": "Vercel",
+      "url": "https://www.youtube.com/@VercelHQ",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Official Vercel channel: Next.js tutorials, deployment demos and Next.js Conf session talks."
+    },
+    {
+      "name": "Vue Mastery",
+      "url": "https://www.youtube.com/@VueMastery",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Vue.js tutorials, Vue conference talks and framework news from the Vue Mastery team."
+    },
+    {
+      "name": "Web Dev Simplified",
+      "url": "https://www.youtube.com/@WebDevSimplified",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "beginner",
+      "cost": "free",
+      "description": "Focused, jargon-light explanations of JavaScript, React, and CSS concepts."
+    },
+    {
+      "name": "Web Directions",
+      "url": "https://www.youtube.com/@WebDirections",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Web Directions conference talks on frontend engineering, performance, accessibility and CSS."
+    },
+    {
+      "name": "Wes Bos",
+      "url": "https://www.youtube.com/@WesBos",
+      "type": "youtube-channel",
+      "domain": "web",
+      "level": "intermediate",
+      "cost": "free",
+      "description": "Practical JavaScript, CSS and full-stack tips plus Syntax podcast video companion content."
     }
   ]
 }

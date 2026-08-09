@@ -7,14 +7,14 @@ and as **plugin manifests** for the agent-harness hosts. Pick the file for your 
 > only handles Visual Studio (big IDE) extensions and fails with *"One or more extensions are for Visual
 > Studio Code."* This extension is for **VS Code** — install it one of these ways instead:
 > - **Easiest:** double-click **`Install-in-VSCode.cmd`** (installs into VS Code + Insiders automatically).
-> - **CLI:** `code --install-extension extension/learningos-drona-1.3.0.vsix`
+> - **CLI:** `code --install-extension extension/learningos-drona-1.4.0.vsix`
 > - **UI:** VS Code → Extensions view → **⋯** → **Install from VSIX…** → pick the file.
 
 
 | Host / tool | Install this | How |
 |---|---|---|
-| **VS Code** | `extension/learningos-drona-1.3.0.vsix` | `code --install-extension extension/learningos-drona-1.3.0.vsix` — or Extensions view → ⋯ → **Install from VSIX…** |
-| **VS Code Insiders** | same `.vsix` | `code-insiders --install-extension extension/learningos-drona-1.3.0.vsix` |
+| **VS Code** | `extension/learningos-drona-1.4.0.vsix` | `code --install-extension extension/learningos-drona-1.4.0.vsix` — or Extensions view → ⋯ → **Install from VSIX…** |
+| **VS Code Insiders** | same `.vsix` | `code-insiders --install-extension extension/learningos-drona-1.4.0.vsix` |
 | **Cursor** | same `.vsix` | Extensions → **Install from VSIX…** (Cursor is VS Code–based) — or use `.cursor-plugin/plugin.json` |
 | **Windsurf / VSCodium / other VS Code forks** | same `.vsix` | **Install from VSIX…**, or `<binary> --install-extension …` |
 | **GitHub Copilot CLI** | the plugin (this repo: `plugin.json` + `.mcp.json` + `.github/`) | `copilot plugin install <owner>/<repo>` — or point the CLI at this folder ([Install.md](./Install.md)) |

@@ -72,21 +72,44 @@ minimize coupling, and include a testing note.
 
 ## 4. Visual aids (teach visually by default)
 
-**Diagrams make teaching stick — reach for them by default, not as an afterthought.** Whenever a concept
-involves **structure, flow, relationships, hierarchy, sequence, state, or comparison**, include a visual;
-prose-only is the exception, reserved for genuinely simple points.
+**Diagrams make teaching stick — reach for them by default, not as an afterthought, and vary the format
+to fit the idea.** Whenever a concept involves structure, flow, relationships, hierarchy, sequence,
+state, comparison, quantity, or change over time, include a visual; prose-only is the exception.
 
-- **Mermaid** is the default (renders in Copilot Chat, VS Code, and GitHub):
-  - `flowchart` for processes/pipelines/decisions · `sequenceDiagram` for interactions/protocols ·
-    `classDiagram`/`erDiagram` for data models & relationships · `stateDiagram-v2` for state machines ·
-    `mindmap` for concept maps · `gantt` for plans/timelines · `gitGraph` for branching.
-- **Tables** for comparisons, trade-offs, option matrices, and mappings.
-- **KaTeX** (`$...$` / `$$...$$`) for math/complexity.
-- **ASCII/step tables** for tracing an algorithm or execution step by step.
+**Ask first, then adapt.** At the **start of a learning journey** (onboarding, or a new topic), ask the
+learner how they learn best — visual density (diagram-heavy ↔ concise) and preferred formats (diagrams,
+worked examples, hands-on, analogies) — then **remember it** (via the memory tool / learner profile) and
+match every answer to it. Default to **rich, varied visuals** until told otherwise.
 
-Keep diagrams **correct and minimal** (label nodes/edges; don't invent structure you can't justify —
-§2 applies to diagrams too). Every substantive lesson on a non-trivial topic should include at least one
-diagram, table, or worked visual — this applies to **every agent, skill, and role**.
+**Use the full palette — pick the type that fits the idea, don't default to a flowchart every time:**
+
+| When the idea is about… | Reach for |
+|---|---|
+| a process / decision / pipeline | Mermaid `flowchart` |
+| an interaction / protocol over time | Mermaid `sequenceDiagram` |
+| a data model / relationships | Mermaid `erDiagram` / `classDiagram` |
+| a state machine / lifecycle | Mermaid `stateDiagram-v2` |
+| a concept map / breakdown | Mermaid `mindmap` |
+| a plan / schedule · branching | Mermaid `gantt` · `gitGraph` |
+| history / evolution | Mermaid `timeline` |
+| a user's experience across steps | Mermaid `journey` |
+| proportions of a whole | Mermaid `pie` |
+| a 2×2 prioritization / trade-off | Mermaid `quadrantChart` |
+| trend / quantity comparison | Mermaid `xychart-beta` or a **data chart** |
+| flows / volumes between stages | Mermaid `sankey-beta` |
+| system context / containers | Mermaid `C4Context` |
+| requirements and their links | Mermaid `requirementDiagram` |
+| a comparison / option matrix | a **Markdown table** |
+| math / complexity | **KaTeX** (`$...$` / `$$...$$`) |
+| tracing an algorithm step by step | an **ASCII step table**, number line, or box drawing |
+| real data (metrics, benchmarks, survey) | a **data chart** — the extension's bundled **Flint-Chart** MCP renders bar/line/pie/scatter locally (skill `progress-charts`); else Mermaid `xychart-beta` or a table |
+
+Keep visuals **correct and minimal** — label nodes/edges, add a one-line caption and a short prose
+summary / alt-text for accessibility, and never invent structure you can't justify (§2 applies to
+diagrams too). Every substantive lesson on a non-trivial topic should include at least one diagram,
+chart, table, or worked visual — in the **format that fits the idea**. This applies to **every agent,
+skill, and role**; the [`visual-explainer`](.github/skills/visual-explainer/SKILL.md) skill helps pick
+and render the right one.
 
 ## 5. The Learning Footer (signature format)
 
@@ -119,7 +142,7 @@ Skip the footer only for quick clarifications, tiny confirmations, or pure tool 
 
 ## 7. Skill catalog (reusable workflows — invoke with `/`)
 
-**519 skills** ship across 27 groups. This is a representative summary — the **full catalog** is in
+**520 skills** ship across 27 groups. This is a representative summary — the **full catalog** is in
 [Skills.md](docs/Skills.md) and the always-current, browsable pack list is
 [`marketplace/CATALOG.md`](marketplace/CATALOG.md):
 

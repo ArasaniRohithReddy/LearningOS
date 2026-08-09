@@ -1,6 +1,6 @@
 # LearningOS — Quick Start
 
-Your AI **Learning Operating System**: **Drona** (the mentor) + **129 agents**, **519 skills**, **122
+Your AI **Learning Operating System**: **Drona** (the mentor) + **129 agents**, **520 skills**, **122
 roles**, cross-session memory, local labs (no subscriptions), and progress charts.
 
 ## Fastest path — install the extension (no account needed)
@@ -9,8 +9,8 @@ roles**, cross-session memory, local labs (no subscriptions), and progress chart
 > product) and fails. Instead double-click **`Install-in-VSCode.cmd`**, or run:
 
 ```bash
-code --install-extension extension/learningos-drona-1.3.0.vsix       # VS Code
-code-insiders --install-extension extension/learningos-drona-1.3.0.vsix   # Insiders
+code --install-extension extension/learningos-drona-1.4.0.vsix       # VS Code
+code-insiders --install-extension extension/learningos-drona-1.4.0.vsix   # Insiders
 ```
 Then open **Chat** and type **`@drona teach me how HTTPS works`**. Slash commands: `/learn`, `/plan`,
 `/interview`, `/resume`, `/charts`.

@@ -44,6 +44,8 @@ export interface LearnerProfile {
   stack?: string[];
   /** The single agreed next step for the learner. */
   nextStep?: string;
+  /** How the learner likes to learn — e.g. "diagram-heavy", "hands-on", "worked examples", "concise text". */
+  learningStyle?: string;
 }
 
 export interface HistoryEntry {
@@ -480,6 +482,9 @@ export async function updateProfile(
     if (patch.nextStep) {
       prof.nextStep = patch.nextStep;
     }
+    if (patch.learningStyle) {
+      prof.learningStyle = patch.learningStyle;
+    }
     await saveData(context, data);
     return data;
   });
@@ -502,6 +507,9 @@ export function renderMemorySummary(data: LearningData): string {
   }
   if (profile.stack && profile.stack.length) {
     lines.push(`- Stack: ${profile.stack.join(", ")}`);
+  }
+  if (profile.learningStyle) {
+    lines.push(`- Learning style / visual preference (match every answer to this): ${profile.learningStyle}`);
   }
   lines.push(
     `- Current streak: ${progress.streakDays} day(s) (longest ${progress.longestStreak}); ` +
@@ -548,6 +556,7 @@ export function renderProfileMarkdown(data: LearningData): string {
   lines.push(`- **Goal:** ${profile.goal ?? "_(not set — tell Drona your objective)_"}`);
   lines.push(`- **Level:** ${profile.level ?? "_(not set)_"}`);
   lines.push(`- **Stack:** ${profile.stack && profile.stack.length ? profile.stack.join(", ") : "_(not set)_"}`);
+  lines.push(`- **Learning style:** ${profile.learningStyle ?? "_(not set — tell Drona how you like to learn)_"}`);
   lines.push(`- **Next step:** ${profile.nextStep ?? "_(not set)_"}`);
   lines.push("");
   lines.push("## Progress");
@@ -650,6 +659,7 @@ export interface RememberInput {
   level?: string;
   stack?: string;
   nextStep?: string;
+  learningStyle?: string;
 }
 
 /** Must match `contributes.languageModelTools[].name` in package.json. */
@@ -699,11 +709,15 @@ export class LearningRememberTool implements vscode.LanguageModelTool<RememberIn
       patch.nextStep = input.nextStep.trim();
       saved.push("next step");
     }
+    if (typeof input.learningStyle === "string" && input.learningStyle.trim()) {
+      patch.learningStyle = input.learningStyle.trim();
+      saved.push("learning style");
+    }
 
     if (!saved.length) {
       return new vscode.LanguageModelToolResult([
         new vscode.LanguageModelTextPart(
-          "Nothing was saved — provide at least one of goal, level, stack, or nextStep."
+          "Nothing was saved — provide at least one of goal, level, stack, nextStep, or learningStyle."
         ),
       ]);
     }

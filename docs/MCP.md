@@ -13,7 +13,7 @@ LearningOS now ships its **own** MCP server ([`mcp/`](../mcp/), see [`mcp/README
 **any** MCP client — Claude Desktop, VS Code, Cursor — can use LearningOS directly, not just the VS Code
 extension. It exposes:
 
-- **Tools:** `search_skills`, `get_skill`, `search_agents`, `get_agent` (browse the 129 agents + 519
+- **Tools:** `search_skills`, `get_skill`, `search_agents`, `get_agent` (browse the 129 agents + 520
   skills), `find_learning_resources` (best **free** resources — link-out), `list_roadmaps` (roadmap.sh),
   `tech_news` (curated, SSRF-guarded RSS/Atom digest), `run_code` (90+ languages via Piston), `fetch_page`
   (SSRF-guarded readable text).

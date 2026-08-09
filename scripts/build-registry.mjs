@@ -82,7 +82,7 @@ function domainFor(slug = "", name = "") {
 // Best-effort domain tag for skills (marketplace browsing). First match wins.
 const SKILL_RULES = [
   ["Hands-on labs", /-lab$/],
-  ["Learn & understand", /(concept-explainer|mind-map|note-generator|teach-back|knowledge-graph|glossary|worked-example|cheat-sheet|socratic|misconception|analogy)/],
+  ["Learn & understand", /(concept-explainer|mind-map|note-generator|teach-back|knowledge-graph|glossary|worked-example|cheat-sheet|socratic|misconception|analogy|visual-explainer)/],
   ["Teaching & curriculum", /(curriculum-designer|lesson-plan|reading-list|peer-review|hackathon|exam-strategy)/],
   ["Plan & track", /(roadmap|schedul|spaced-repetition|project-mentor|progress|onboarding|career-ladder|learner-memory|learning-profile|learning-resource|session-resume)/],
   ["Testing & QA", /(tdd-coach|bdd-scenario|test-plan|flaky-test|mutation-testing|accessibility-audit|api-testing|contract-testing|load-testing|test-data|property-based|e2e-testing|code-coverage)/],

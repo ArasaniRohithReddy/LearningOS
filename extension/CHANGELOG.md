@@ -1,5 +1,24 @@
 # Change Log
 
+## 1.4.0
+
+Learn the way you like — richer visuals, and a much bigger library of free resources.
+
+- **Ask your learning style, then adapt.** On first contact / onboarding, Drona now asks how you like to
+  learn — visual density (diagram-heavy ↔ concise) and preferred formats (diagrams / worked examples /
+  hands-on / analogies) — saves it to your profile (a new `learningStyle` field on the remember tool), and
+  matches every answer to it.
+- **A much richer visual palette.** Beyond flowcharts, Drona now reaches for the right visual per idea:
+  Mermaid `timeline`, `journey`, `pie`, `quadrantChart`, `xychart-beta`, `sankey`, `gitGraph`, `C4`,
+  `stateDiagram`, `erDiagram` — plus KaTeX math, comparison tables, ASCII traces, and offline **data charts**
+  (Flint-Chart). New **`visual-explainer`** skill picks and renders the best visual for any concept.
+- **400+ free learning resources** (up from 146): the curated catalog now includes **275 YouTube channels**
+  — heavily weighted to official/vendor and conference channels (AWS, Microsoft, Google Cloud, GitHub,
+  Docker, HashiCorp, NVIDIA, CNCF/KubeCon, GOTO, InfoQ, NDC…) — plus more MOOCs, interactive sites, docs
+  and free books. Every URL verified; squatted/wrong-channel handles were caught and excluded.
+- **519 → 520 skills.** Also ships alongside the new **LearningOS MCP server** (`mcp/`) so any MCP client can
+  use all of this.
+
 ## 1.3.0
 
 Learn to code by doing — competitive programming, DSA deep-dives, and a curated library of **free** resources.
