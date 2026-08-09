@@ -42,7 +42,7 @@ flowchart TD
   D -->|"binary good/bad, unpaired"| KTO["KTO (Ethayarajh et al. 2024)<br/>no pairs needed"]
   M -->|"reward model + PPO"| RLHF["RLHF: train RM (Bradley-Terry)<br/>-> PPO with KL penalty to pi_ref"]
   M -->|"skip the RM"| DPO["DPO (Rafailov et al. 2023)<br/>closed-form optimal policy"]
-  M -->|"verifiable reward (math/code)"| GRPO["GRPO / RLVR<br/>reward = a checker, not a model"]
+  M -->|"online RL: PPO (critic) or GRPO (critic-free)"| GRPO["GRPO<br/>group-relative advantage; any reward (RM or verifier/RLVR)"]
   RLHF --> H["Reward hacking watch:<br/>length, sycophancy, formatting tricks"]
   DPO --> H
   KTO --> H
@@ -59,7 +59,7 @@ flowchart TD
 | IPO (Azar et al. 2023) | pairwise | ≈ DPO | regularises DPO's overfitting to deterministic preferences | still offline; extra hyperparameter |
 | KTO (Ethayarajh et al. 2024) | unpaired binary 👍/👎 | ≈ DPO | uses production thumbs data directly; no pairing cost | needs a sane desirable/undesirable ratio |
 | ORPO (Hong et al. 2024) | pairwise | single stage | merges SFT + preference in one run, no reference model | newer, fewer independent replications |
-| GRPO / RLVR (Shao et al. 2024) | prompts + a *verifier* | online sampling, group rollouts | excellent where correctness is checkable (math, code, tests) | needs a real verifier; reward hacking of the verifier itself |
+| GRPO (Shao et al. 2024) | prompts + any reward source (RM or verifier) | online sampling, group rollouts; no critic network (group-relative advantage replaces the value model) | cheaper than PPO; excellent when paired with verifiable rewards (RLVR: math, code, tests) | reward/verifier hacking; still needs on-policy sampling |
 
 **Preference-data quality dominates method choice.** Measure inter-annotator agreement (Cohen's κ or
 Krippendorff's α) before spending a GPU hour: below ~0.6 you are fitting annotator noise. Length is the

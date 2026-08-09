@@ -55,8 +55,9 @@ flowchart TD
 **Trade-off to say out loud:** SPF breaks on forwarding, so a domain that relies on SPF alone will fail
 DMARC for legitimately forwarded mail. DKIM survives forwarding, so **DKIM alignment is the durable
 path to `p=reject`**. Note also that DMARCbis (RFC 9989) replaces Public Suffix List logic with a DNS
-**tree walk** and deprecates the `pct` tag — confirm current tag support with your reporting provider
-before relying on staged percentages.
+**tree walk**, deprecates the `pct` tag (its function partly replaced by the binary `t=` test-mode tag,
+default `t=n`), and obsoletes both RFC 7489 and RFC 9091 — confirm current tag support with your reporting
+provider before relying on staged percentages.
 
 ## Procedure
 
@@ -65,7 +66,7 @@ before relying on staged percentages.
 2. **Publish DMARC at `p=none` with reporting first** so you collect evidence before enforcing:
 
    ```
-   _dmarc.example.com.  TXT  "v=DMARC1; p=none; rua=mailto:dmarc@example.com; fo=1; adkim=r; aspf=r"
+   _dmarc.example.com.  TXT  "v=DMARC1; p=none; rua=mailto:dmarc@example.com; adkim=r; aspf=r"
    ```
 
 3. **Read the DNS you already have** (free, cross-platform):
@@ -131,10 +132,10 @@ university alumni forwarder — SPF fails (relay IP not in the record, as expect
 
 Fix: configure the vendor to sign with `d=example.com` using selector `mkt1._domainkey.example.com`
 instead of its shared domain. DKIM then aligns and survives the forwarding hop, which SPF never could.
-Re-check after 7 days of reports, then move `p=none` → `p=quarantine`, hold two weeks, then `p=reject`.
+Re-check after reviewing report data, then move `p=none` → `p=quarantine`, holding **at least a month** at each stage (RFC 9989 §7.4 SHOULD) and comparing disposition results, before `p=reject`.
 
 ```
-_dmarc.example.com. TXT "v=DMARC1; p=quarantine; sp=reject; rua=mailto:dmarc@example.com; fo=1; adkim=r; aspf=r"
+_dmarc.example.com. TXT "v=DMARC1; p=quarantine; sp=reject; rua=mailto:dmarc@example.com; adkim=r; aspf=r"
 ```
 
 Note what DMARC still does **not** solve: a lookalike domain (`examp1e.com`) authenticates perfectly for
@@ -148,6 +149,9 @@ payment or bank-detail change, and lookalike-domain registration monitoring.
 - DKIM alignment, not SPF, is what gets you safely to `p=reject` — forwarding breaks SPF by design.
 - Watch the **10 DNS lookup** SPF limit; exceeding it yields `permerror` and silently degrades everything.
 - `p=none` is a measurement state. If you have been there for a year, you have monitoring, not protection.
+- RFC 9989 §7.4: domains hosting general users who post to Internet mailing lists SHOULD NOT publish
+  `p=reject` — keep the human-mailbox domain at `p=quarantine` and use a separate reject-policy subdomain
+  for transactional mail, or accept and communicate the list breakage.
 - A perfect DMARC posture does not stop lookalike domains or a compromised legitimate mailbox — pair with
   [phishing-resistant-auth-coach](../phishing-resistant-auth-coach/SKILL.md) for the account side.
 - Keep DKIM keys out of the repo — [secrets-management-coach](../secrets-management-coach/SKILL.md).

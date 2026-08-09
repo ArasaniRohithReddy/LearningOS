@@ -84,7 +84,7 @@ the training data contained. Say that in every report.
 4. **Prefer TreeSHAP** for tree models; reserve KernelSHAP for genuine black boxes and then report the
    sampling budget with the values.
 5. **Verify additivity numerically** — `shap_values.sum(1) + base_value ≈ model_margin` — before you show
-   anyone a beeswarm plot. If it fails, your background data or link function is wrong.
+   anyone a beeswarm plot. If it fails, your `feature_perturbation` mode / background data or the link function is wrong (`TreeExplainer(model)` with no `data=` is `tree_path_dependent`; passing `data=` switches to `interventional`).
 6. **Draw ICE with the PDP overlaid**, centred at the left edge. Crossing ICE curves mean an interaction,
    and the PDP alone would have lied by averaging.
 7. **Run permutation importance with `n_repeats ≥ 10`** and report the standard deviation; a single shuffle

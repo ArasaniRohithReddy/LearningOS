@@ -36,23 +36,25 @@ erDiagram
   LNK_ORDER_CUSTOMER ||--o{ SAT_ORDER_CUSTOMER_EFF : "effectivity"
 
   HUB_CUSTOMER {
-    binary  customer_hk PK "hash of business key"
+    char    customer_hk PK "hash of business key (hex)"
     varchar customer_bk  "the business key itself"
     ts      load_dts
     varchar rec_src
   }
   SAT_CUSTOMER_CRM {
-    binary  customer_hk PK
+    char    customer_hk PK
     ts      load_dts    PK
-    binary  hash_diff   "change detector"
+    char    hash_diff   "change detector"
+    varchar rec_src
     varchar email
     varchar status
   }
   LNK_ORDER_CUSTOMER {
-    binary order_customer_hk PK
-    binary order_hk
-    binary customer_hk
+    char   order_customer_hk PK
+    char   order_hk
+    char   customer_hk
     ts     load_dts
+    varchar rec_src
   }
 ```
 
@@ -126,7 +128,7 @@ Learning Footer
 
 ```sql
 CREATE TABLE hub_customer (
-  customer_hk  BINARY(32)   NOT NULL,   -- SHA-256(UPPER(TRIM(customer_bk)))
+  customer_hk  CHAR(64)     NOT NULL,   -- SHA2 hex string of UPPER(TRIM(customer_bk))
   customer_bk  VARCHAR(64)  NOT NULL,   -- the business key, kept readable
   load_dts     TIMESTAMP    NOT NULL,
   rec_src      VARCHAR(64)  NOT NULL,
@@ -134,9 +136,9 @@ CREATE TABLE hub_customer (
 );
 
 CREATE TABLE sat_customer_crm (
-  customer_hk  BINARY(32)   NOT NULL,
+  customer_hk  CHAR(64)     NOT NULL,
   load_dts     TIMESTAMP    NOT NULL,
-  hash_diff    BINARY(32)   NOT NULL,   -- SHA-256 over this satellite's attributes only
+  hash_diff    CHAR(64)     NOT NULL,   -- SHA-256 hex over this satellite's attributes only
   rec_src      VARCHAR(64)  NOT NULL,
   full_name    VARCHAR(200),
   email        VARCHAR(320),
@@ -147,7 +149,10 @@ CREATE TABLE sat_customer_crm (
 
 The delta load. Note the two invariants: attributes are hashed in a **fixed order** with an explicit
 delimiter and null token (otherwise `('AB', NULL)` and `(NULL, 'AB')` could collide), and a row is written
-**only** when the `hash_diff` differs from the newest existing row.
+**only** when the `hash_diff` differs from the newest existing row. Pick one hash representation and never mix
+it across sources: `SHA2(x, 256)` returns a 64-character **hex string**, so the keys are typed `CHAR(64)` — if
+you prefer raw `BINARY(32)`, use `SHA2_BINARY`/`unhex(sha2(...))` on *every* source, because
+`CAST(string AS BINARY)` differs by engine and would silently break the join key.
 
 ```sql
 -- ANSI-style; Snowflake/Databricks accept WITH after INSERT INTO. Verify for your dialect.

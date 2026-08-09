@@ -121,6 +121,8 @@ curl -i -X OPTIONS https://api.example.com/v1/orders \
 
 # Negative test: an origin that must NOT be echoed back
 curl -sI https://api.example.com/v1/orders -H "Origin: https://evil.example" | grep -i access-control
+# Windows PowerShell variant (no grep):
+# curl.exe -sI https://api.example.com/v1/orders -H "Origin: https://evil.example" | Select-String access-control
 ```
 
 The second command is the important one: a correct server returns **no** `Access-Control-Allow-Origin`

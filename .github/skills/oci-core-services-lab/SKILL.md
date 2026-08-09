@@ -35,7 +35,7 @@ flowchart TD
   VCN --> PRIV["Private subnet → NAT GW (egress)<br/>+ Service Gateway (OCI services, free)"]
   POL["Policy attached at tenancy or compartment:<br/>Allow group Devs to manage instance-family in compartment dev"] --> C4
   PRIV --> OS["Object Storage bucket<br/>Standard | InfrequentAccess | Archive"]
-  PRIV -. "NSG on the VNIC + security list on the subnet<br/>both are evaluated" .-> PUB
+  PRIV -. "NSG on the VNIC + security list on the subnet<br/>rules are UNIONed (either may allow)" .-> PUB
 ```
 
 | OCI concept | Closest AWS analogue | Closest Azure analogue | Key difference to teach |
@@ -114,8 +114,10 @@ OCI is mostly a matter of picking the *smallest verb* and the *narrowest compart
    ```
 
 8. **Layer the firewalls correctly.** Security lists apply to every VNIC in the subnet; NSGs apply to the
-   VNICs you attach. Both are **stateful by default** and both are evaluated — traffic must be allowed by the
-   applicable rules, so a "mystery block" is usually the security list you forgot.
+   VNICs you attach. Both are **stateful by default**, and the rules that apply to a VNIC are the **union** of
+   its NSG rules and the subnet's security-list rules — traffic is permitted if *either* allows it. So an
+   unexplained *opening* is usually the legacy security list you forgot; an unexplained *block* means neither
+   set has a matching allow rule (check both, plus route tables).
 9. **Create Object Storage and choose the tier by access pattern:**
 
    ```bash
@@ -184,8 +186,8 @@ current minimums and pricing on the Oracle Cloud pricing page before committing 
   before the first resource, because policies and quotas follow it.
 - Verbs are cumulative (`inspect` ⊂ `read` ⊂ `use` ⊂ `manage`); pick the smallest that works and the
   narrowest compartment, then add `where` conditions.
-- Security lists **and** NSGs are both evaluated. New designs should prefer NSGs, but a legacy security list
-  is the usual culprit behind unexplained drops.
+- Security lists **and** NSGs are evaluated as a **union** (either may allow). New designs should prefer
+  NSGs, but a legacy security list is the usual culprit behind unexplained *openings*, not drops.
 - The **service gateway** keeps traffic to Object Storage on the Oracle network and avoids NAT charges — it
   is the OCI equivalent of an AWS gateway endpoint, and it is the cheap right answer.
 - Archive is not "cold Standard": it needs an explicit restore and has a 90-day minimum. Model the retrieval

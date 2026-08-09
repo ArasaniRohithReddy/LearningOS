@@ -30,7 +30,8 @@ therefore seek to the *end* first, then read only the chunks they still need.
 flowchart TD
   F["Parquet file<br/>PAR1 ... PAR1"] --> RG1["Row group 1<br/>(N rows, all columns)"]
   F --> RG2["Row group 2"]
-  F --> FOOT["Footer: FileMetaData<br/>schema + row-group stats<br/>+ ColumnIndex / OffsetIndex"]
+  F --> FOOT["Footer: FileMetaData<br/>schema + row-group/column-chunk stats<br/>+ offsets to the PageIndex"]
+  FOOT -->|"column_index_offset / offset_index_offset"| PIDX["PageIndex: ColumnIndex + OffsetIndex<br/>stored near the footer, outside FileMetaData"]
   RG1 --> CC1["Column chunk: user_id"]
   RG1 --> CC2["Column chunk: event_date"]
   RG1 --> CC3["Column chunk: payload"]

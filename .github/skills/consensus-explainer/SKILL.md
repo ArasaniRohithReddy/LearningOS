@@ -99,7 +99,8 @@ practical way — *randomised* election timeouts under partial synchrony (Dwork,
 5. **Ask the minority question**: with 2 of 3 down, why does Raft refuse writes instead of serving them?
    (Because a healthy partition elsewhere could form its own quorum → split brain.)
 6. **Study membership change** (§6): joint consensus or one-server-at-a-time, never a naive swap — adding
-   two nodes at once can create two overlapping majorities.
+   two nodes at once can create two disjoint majorities — one under the old configuration, one under the new
+   — allowing two leaders in the same term (§6, Figure 10).
 7. **Explain snapshots**: logs are compacted, so a far-behind follower gets `InstallSnapshot`.
 8. **Summarise the trade-off** (leader throughput ceiling, cross-region write latency = one round trip to
    the nearest majority) and close with the **Learning Footer**.

@@ -121,12 +121,16 @@ jobs:
     permissions: {contents: read, security-events: write}
     steps:
       - uses: actions/checkout@v4
+      - uses: aquasecurity/setup-trivy@v0.2.3   # trivy is not preinstalled on ubuntu-latest — pin to the latest release
       # PW.7 — SAST + dependency + secret scanning. Warn mode for 2 weeks:
       # exit-code 0 while we measure noise, then flip to 1 for CRITICAL only.
       - name: Trivy (vuln, secret, misconfig)
         run: |
           trivy fs --scanners vuln,secret,misconfig \
             --severity HIGH,CRITICAL --exit-code 0 --format sarif -o trivy.sarif .
+      - name: Upload SARIF to code scanning
+        uses: github/codeql-action/upload-sarif@v3
+        with: {sarif_file: trivy.sarif}
       # Hard fail from day one on the one class with ~zero false positives:
       - name: Fail on committed secrets
         run: trivy fs --scanners secret --exit-code 1 .

@@ -67,8 +67,8 @@ cannot multiplex; a pinned connection stops sharing, so watch `DatabaseConnectio
 
 1. **Measure `λ` and `W`.** `λ` = peak requests/second hitting the DB; `W` = mean *database* time per
    request (sum of all its queries), from APM or `pg_stat_statements`.
-2. **Compute the demand:** `L = λ × W`. Round up, then add ~50 % headroom for jitter. That is the pool size
-   *per application instance divided by instance count* — never per instance in isolation.
+2. **Compute the demand:** `L = λ × W`. Round up, then add ~50 % headroom for jitter. `L` is *fleet-wide*
+   demand, so `maxPoolSize per instance = ceil(L / instance count)` — never `L` per instance in isolation.
 3. **Compute the ceiling:** `C_max ≈ cores × 2 + spindles` (1 for SSD/NVMe). Enforce
    `instances × maximumPoolSize + admin/cron/replica slots ≤ min(C_max, max_connections)`.
 4. **Check the live picture** before changing anything:

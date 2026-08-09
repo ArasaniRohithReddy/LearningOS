@@ -62,7 +62,8 @@ flowchart TD
 
 ## Procedure
 
-1. **Set the mix** from the live guide — default 10 questions as 2/2/3/2/1 across sections 1–5, or a full
+1. **Set the mix** from the live guide — default 10 questions as 2/2/2/2/2 across sections 1–5 (add the
+   3rd deploy question when running blocks of 11), or a full
    mock of 50 questions in 120 minutes to rehearse pacing.
 2. **Ask one question at a time** in exam form: a short scenario, four options, at least two plausible.
 3. **Require hierarchy-then-command reasoning:** "org policy at the folder node → `gcloud resource-manager

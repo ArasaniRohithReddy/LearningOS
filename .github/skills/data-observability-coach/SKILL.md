@@ -31,7 +31,7 @@ flowchart TD
   F -->|no| INC["Data incident"]
   F -->|yes| V{"Volume<br/>is the row count in range?"}
   V -->|no| INC
-  V -->|yes| S{"Schema<br/>did columns/types change?"}
+  V -->|yes| S{"Schema<br/>shape unchanged / compatible?"}
   S -->|no| INC
   S -->|yes| D{"Distribution<br/>nulls, ranges, category mix normal?"}
   D -->|no| INC
@@ -144,8 +144,8 @@ baseline AS (
 SELECT d, n,
        ROUND(mean_same_dow) AS expected,
        SAFE_DIVIDE(n - mean_same_dow, NULLIF(sd_same_dow, 0)) AS z_score,
-       CASE WHEN ABS(SAFE_DIVIDE(n - mean_same_dow, NULLIF(sd_same_dow, 0))) > 3 THEN 'ALERT'
-            WHEN n = 0 THEN 'ALERT_EMPTY'
+       CASE WHEN n = 0 THEN 'ALERT_EMPTY'
+            WHEN ABS(SAFE_DIVIDE(n - mean_same_dow, NULLIF(sd_same_dow, 0))) > 3 THEN 'ALERT'
             ELSE 'ok' END AS status
 FROM baseline
 WHERE d >= CURRENT_DATE() - 7

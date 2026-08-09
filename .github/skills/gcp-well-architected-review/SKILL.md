@@ -92,7 +92,8 @@ flowchart TD
    because RTO is 15 min". This log is the most valuable artefact of the whole review.
 10. **Prioritize by severity × effort** into now / next / later, assign an owner and a date to each Critical
     and High, and schedule the next review. Cross-check with the Recommender API
-    (`gcloud recommender recommendations list`) so machine findings and human findings agree.
+    (`gcloud recommender recommendations list --project="$PROJECT" --location=global --recommender=google.iam.policy.Recommender`,
+    repeating per recommender/location) so machine findings and human findings agree.
 
 ## Output shape
 

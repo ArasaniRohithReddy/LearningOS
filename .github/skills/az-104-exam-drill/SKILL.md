@@ -65,7 +65,8 @@ flowchart TD
 ## Procedure
 
 1. **Set the mix** from the live outline — default 10 questions as 3 identity/governance, 2 storage,
-   3 compute, 2 networking, plus 1 monitoring rotated in. A full mock is ~40–60 questions in 100 minutes.
+   3 compute, 1 networking, 1 monitoring — rotate the extra networking/monitoring slot in on the next
+   block of 10. A full mock is ~40–60 questions in 100 minutes.
 2. **Ask one question at a time,** in exam-shaped formats: single-answer multiple choice, "select all that
    apply", drag-and-drop ordering, and the yes/no *series* pattern where each item is scored independently.
 3. **Demand the reasoning first** — scope, then effect, then surface: "RBAC at RG scope, Reader role,

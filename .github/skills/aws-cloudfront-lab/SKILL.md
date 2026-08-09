@@ -168,7 +168,7 @@ Publish it, associate it with the default behaviour on **viewer request**, then 
 - Every field added to the cache key is a multiplier on stored variants. Justify each one out loud.
 - `x-cache: Hit from cloudfront` in the response headers is your instant feedback loop while tuning.
 - An ACM certificate for a distribution must live in **us-east-1**, whatever Region the origin is in.
-- Signed URLs expire but cannot be revoked — keep expiries short and rotate the key group.
+- Signed URLs cannot be individually revoked, but access can be cut off by removing the public key from the key group (or detaching the key group from the behaviour) — keep expiries short and rotate keys.
 - Pair with [aws-s3-lab](../aws-s3-lab/SKILL.md),
   [aws-apigateway-lab](../aws-apigateway-lab/SKILL.md),
   [aws-cloudwatch-lab](../aws-cloudwatch-lab/SKILL.md),

@@ -143,7 +143,7 @@ Check the arithmetic by hand: `-10000·ln(0.01)/(ln2)² = 46051.7/0.48045 = 9585
 round(6.64) = 7`, and the theoretical rate `(1 - e^{-70000/95851})^7 = 0.01003`, so a measured value outside
 about 0.009-0.011 means a broken hash, not bad luck (±2σ over 100 000 trials is ±0.0006). Edge cases the
 script pins down: the assertion can never fail — false negatives are structurally impossible; and adding a
-second 10 000 items without resizing would roughly quadruple the FPR, because `p` depends on `kn/m`.
+second 10 000 items without resizing pushes the rate to `(1 − e^(−7·20000/95851))^7 ≈ 0.158` — a roughly sixteen-fold jump, because `p` grows super-linearly in `kn/m`.
 
 ## Tips
 

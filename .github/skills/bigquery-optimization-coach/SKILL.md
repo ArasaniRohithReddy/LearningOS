@@ -145,8 +145,9 @@ bq query --use_legacy_sql=false --dry_run --maximum_bytes_billed=50000000000 \
 Reasoning about the two reductions, kept separate because they multiply:
 
 - **Partition pruning**: 7 of ~730 daily partitions survive ⇒ ≈ 1 % of rows.
-- **Projection**: 3 of 40 columns ⇒ far less than 1 % of that (columns differ in width, so read the actual
-  dry-run number rather than trusting a ratio).
+- **Projection**: 3 of 40 columns ⇒ ~7.5 % of the bytes in the surviving partitions (columns differ in
+  width, so read the actual dry-run number rather than trusting the ratio). **Combined** ≈ 0.01 × 0.075 ≈
+  **0.07 % of the original scan**.
 - **Clustering on `country`** prunes blocks *within* those partitions, but the dry run will not credit it —
   it reports an upper bound, so compare `total_bytes_billed` from `JOBS_BY_PROJECT` after the real run.
 

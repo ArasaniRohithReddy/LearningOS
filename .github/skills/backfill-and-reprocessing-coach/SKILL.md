@@ -99,7 +99,7 @@ Next: <data-observability-coach | airflow-dag-coach | dbt-model-coach>
 Learning Footer
 ```
 
-## Worked example — a 30-day restatement, chunked, capped, idempotent
+## Worked example — a 31-day (full-March) restatement, chunked, capped, idempotent
 
 **1 — dbt microbatch (dbt 1.9+) makes the model backfillable by construction.** `event_time` +
 `batch_size` mean dbt runs one bounded batch per period instead of rebuilding the table:
@@ -122,7 +122,7 @@ from {{ ref('stg_events') }}
 # Backfill exactly the restated window — not --full-refresh, which rebuilds all history.
 dbt run --select fct_events \
         --event-time-start "2026-03-01" \
-        --event-time-end   "2026-03-31"
+        --event-time-end   "2026-04-01"   # --event-time-end is EXCLUSIVE: covers 2026-03-01 .. 2026-03-31 = 31 batches
 ```
 
 **2 — Or hand-written, one partition at a time, idempotent and partition-scoped.** The partition predicate
@@ -141,18 +141,19 @@ ON  T.event_id = S.event_id
 AND DATE(T.event_ts) = run_date        -- prunes the target to ONE partition
 WHEN MATCHED THEN UPDATE SET amount = S.amount, customer_id = S.customer_id
 WHEN NOT MATCHED THEN INSERT (event_id, event_ts, customer_id, amount)
-     VALUES (S.event_id, S.event_ts, S.customer_id, S.amount);
+     VALUES (S.event_id, S.event_ts, S.customer_id, S.amount)
+WHEN NOT MATCHED BY SOURCE AND DATE(T.event_ts) = run_date THEN DELETE;  -- drop rows the restated source removed
 ```
 
 Run it twice with the same `run_date`: the second run matches every row and updates them to identical
-values — the row count does not move. That double-run test *is* the idempotency proof.
+values — the row count does not move. That double-run test *is* the idempotency proof. (The `NOT MATCHED BY SOURCE` arm also removes rows the restated source dropped; for a *full* partition restatement, `INSERT OVERWRITE`/partition replace is safer still, since it cannot duplicate a key whose `event_ts` moved to another day.)
 
-**3 — Cap the cost before running 30 of them.**
+**3 — Cap the cost before running 31 of them.**
 
 ```bash
 bq query --use_legacy_sql=false --dry_run \
   'SELECT event_id FROM `proj.staging.events_restated` WHERE DATE(event_ts) = "2026-03-01"'
-# multiply the reported bytes by 30, then enforce a ceiling per chunk:
+# multiply the reported bytes by 31, then enforce a ceiling per chunk:
 bq query --use_legacy_sql=false --maximum_bytes_billed=20000000000 "$SQL"
 ```
 

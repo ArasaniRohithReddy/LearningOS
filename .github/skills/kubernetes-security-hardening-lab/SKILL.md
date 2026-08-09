@@ -55,7 +55,7 @@ flowchart TD
 filesystem, or assume UID 0. That breakage is the *finding* — fix the image (unprivileged port,
 `readOnlyRootFilesystem` plus an `emptyDir`) rather than downgrading the namespace. Also note the
 **kind gotcha**: kind's default CNI does **not** enforce NetworkPolicy, so the policy step needs a CNI
-that does (or use k3d, whose default Flannel-based setup likewise needs checking) — verify enforcement
+that does (kind's default CNI does not enforce NetworkPolicy) — or use k3d, whose embedded kube-router controller enforces NetworkPolicy by default despite Flannel — verify enforcement
 with a probe instead of assuming.
 
 ## Procedure
@@ -93,8 +93,8 @@ with a probe instead of assuming.
 7. **Prove segmentation empirically** with a probe pod — a timeout is the pass condition:
 
    ```bash
-   kubectl -n demo run probe --rm -it --image=busybox --restart=Never -- \
-     sh -c 'wget -qO- --timeout=3 http://api.demo.svc.cluster.local || echo BLOCKED-as-expected'
+   kubectl -n demo run probe --rm -it --image=busybox --restart=Never \
+     --overrides='{"spec":{"securityContext":{"runAsNonRoot":true,"runAsUser":10001,"seccompProfile":{"type":"RuntimeDefault"}},"containers":[{"name":"probe","image":"busybox","stdin":true,"tty":true,"securityContext":{"allowPrivilegeEscalation":false,"capabilities":{"drop":["ALL"]}},"command":["sh","-c","wget -qO- --timeout=3 http://api.demo.svc.cluster.local || echo BLOCKED-as-expected"]}]}}'
    ```
 
 8. **Cut RBAC to least privilege**: a dedicated ServiceAccount, a namespaced `Role` with explicit verbs,
@@ -148,7 +148,7 @@ spec:
     - to: [{namespaceSelector: {matchLabels: {kubernetes.io/metadata.name: kube-system}}}]
       ports: [{protocol: UDP, port: 53}, {protocol: TCP, port: 53}]
 ---
-# app.yaml — passes enforce=restricted
+# app.yaml — passes enforce=restricted (first: kubectl -n demo create serviceaccount app)
 apiVersion: v1
 kind: Pod
 metadata: {name: app, namespace: demo}

@@ -70,8 +70,9 @@ in Azure subscription limits before you design around them. Note the two hard ru
    az webapp create -g rg-lab -p plan-lab -n app-lab-001 --runtime "PYTHON:3.12"
    ```
 
-2. **Deploy the code** with the modern one-shot command (it replaces the retired `az webapp up` flows for
-   packaged artifacts): `az webapp deploy -g rg-lab -n app-lab-001 --src-path app.zip --type zip`.
+2. **Deploy the code** with the modern one-shot command (it supersedes the deprecated
+   `az webapp deployment source config-zip` for packaged artifacts; `az webapp up` remains available for
+   create-and-deploy from source): `az webapp deploy -g rg-lab -n app-lab-001 --src-path app.zip --type zip`.
 3. **Scale to Standard to unlock slots,** then create staging:
 
    ```bash

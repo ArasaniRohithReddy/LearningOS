@@ -35,7 +35,7 @@ wraps both. Treat NIST as the method, the AI Act as the obligation, ISO 42001 as
 flowchart TD
   S["AI system + deployment context"] --> P{"Art. 5 prohibited practice?<br/>social scoring, manipulative,<br/>untargeted face scraping, ..."}
   P -->|yes| STOP["STOP — do not build"]
-  P -->|no| H{"High-risk?<br/>Art. 6(1) safety component of a<br/>regulated product OR an Annex III use case"}
+  P -->|no| H{"High-risk?<br/>Art. 6(1) safety component of a<br/>regulated product OR Art. 6(2) Annex III use case"}
   H -->|yes| HR["Full regime: risk mgmt (Art. 9),<br/>data governance (10), tech docs (11),<br/>logging (12), transparency (13),<br/>human oversight (14),<br/>accuracy + robustness + security (15)"]
   H -->|no| T{"Interacts with people, or<br/>generates / manipulates content?"}
   T -->|yes| TR["Art. 50 transparency:<br/>disclose the AI, mark synthetic media,<br/>deepfake + emotion-recognition notice"]

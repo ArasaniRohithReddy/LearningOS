@@ -134,8 +134,9 @@ decision, so it belongs in the design doc and in a monitored counter, not in a c
 | 100 | [100, 130) | 100 − 45 = 55 s of inactivity > 30 s gap → **new** session B |
 
 Result: two sessions, A = [0, 75) with three events and B = [100, 130) with one. Note that a *late* event
-at ts = 80 would have merged A and B into a single session — session windows can retroactively delete
-results, so their sinks must be upsert-based by construction.
+at ts = 72 would open [72, 102), overlapping both A = [0, 75) and B = [100, 130) and merging them into one
+session [0, 130) — session windows can retroactively delete results, so their sinks must be upsert-based by
+construction.
 
 ## Tips
 

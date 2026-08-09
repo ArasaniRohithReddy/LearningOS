@@ -78,8 +78,10 @@ system default to the internet.
      --subnet-name snet-app --subnet-prefix 10.1.0.0/24
    ```
 
-   ⚠ `AzureFirewallSubnet`, `AzureBastionSubnet`, and `GatewaySubnet` are reserved names — the spelling and
-   the minimum sizes (`/26`, `/26`, `/27`) are enforced by the platform.
+   ⚠ `AzureFirewallSubnet`, `AzureBastionSubnet`, and `GatewaySubnet` are reserved names — the spelling is
+   enforced, as are the minimum sizes `/26` (AzureFirewallSubnet) and `/26` (AzureBastionSubnet).
+   `GatewaySubnet` technically accepts `/29`, but use `/27` or larger — smaller ranges block
+   ExpressRoute/VPN coexistence and future gateway SKUs.
 2. **Peer each spoke to the hub in both directions** — a peering is two objects, and one-sided peering shows
    as `Initiated` rather than `Connected`:
 

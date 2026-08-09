@@ -47,7 +47,7 @@ flowchart TD
 | `std::span` / `string_view` | n/a — non-owning | n/a | dangles the instant the owner dies |
 
 **Ranges are lazy and non-owning.** `std::views::filter | transform` builds a view; nothing runs until you
-iterate. Two consequences: (a) a view over a temporary dangles — bind the owner to a named variable; (b)
+iterate. Two consequences: (a) a view that only *references* a temporary (`ref_view`, `string_view`, `span`) dangles, whereas piping an *rvalue* container produces an `owning_view` that keeps it alive — otherwise bind the owner to a named variable; (b)
 `filter_view::begin()` caches its first satisfying element (C++20 [range.filter]), so mutating the
 underlying range after the first traversal is undefined. `std::ranges::sort` etc. take the range directly
 and accept a **projection** (`std::ranges::sort(v, {}, &Item::price)`).
@@ -150,8 +150,10 @@ the `for` loop, so mutating `v` before it would change the result; and uncomment
 - Invalidation is per-operation *and* per-container — quote the cppreference row, never generalise from
   `vector` to `deque`.
 - `std::remove_if` does not remove: it returns the new logical end. Prefer `std::erase_if` in C++20+.
-- Views are lazy and borrow: `for (auto x : make_vector() | views::take(3))` dangles in C++20 (fixed only
-  for specific range adaptors); assign the owner to a named variable first.
+- Views are lazy: piping an rvalue container yields `take_view<owning_view<std::vector<int>>>`, which moves
+  the container into the view — that form is safe (P2415R2, a DR against C++20). What dangles before C++23's
+  P2718R0 is a temporary that is only a *sub-expression* of the range-initializer, e.g.
+  `for (auto& x : get_obj().items() | views::take(3))`; bind the owner to a named variable there.
 - Index or key handles survive reallocation when iterators do not — a cheap fix for growing containers.
 - `std::list` has beautiful complexity and terrible locality; measure with
   [cpu-cache-performance-coach](../cpu-cache-performance-coach/SKILL.md) before believing the Big-O.

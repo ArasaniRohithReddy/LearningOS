@@ -82,6 +82,7 @@ Decrypt fails if the context does not match exactly — a cheap, powerful integr
 5. **Decrypt** — and prove the context is enforced by changing one character:
 
    ```bash
+   jq -r .wrapped dek.json | base64 -d > dek.bin   # extract the wrapped DEK written in step 3
    aws kms decrypt --ciphertext-blob fileb://dek.bin \
      --encryption-context tenant=acme,purpose=lab --query Plaintext --output text | base64 -d > dek.key
    ```
@@ -99,7 +100,7 @@ Decrypt fails if the context does not match exactly — a cheap, powerful integr
 7. **Scope access with a condition,** not a wildcard — grant `kms:Decrypt` only for the right context and
    only via the right service (`kms:ViaService`, `kms:EncryptionContext:tenant`).
 8. **Go multi-Region only if the ciphertext must move.** Create the primary with
-   `aws kms create-key --multi-Region`, then `aws kms replicate-key --key-id mrk-… --replica-region eu-west-1`.
+   `aws kms create-key --multi-region`, then `aws kms replicate-key --key-id mrk-… --replica-region eu-west-1`.
    Replicas share key material and key ID, so a blob encrypted in one Region decrypts in the other.
 9. **Verify in CloudTrail:** every `GenerateDataKey`/`Decrypt` is logged with the caller and the encryption
    context — that log *is* your audit evidence.

@@ -84,7 +84,10 @@ branch to allow-list semantics — the single most common way to break an entire
    `AccessDenied` with `explicit deny in a service control policy`. Verify from the *outside* too:
 
    ```bash
-   aws organizations describe-effective-policy --policy-type SERVICE_CONTROL_POLICY --target-id 222233334444
+   # There is no "effective SCP" API (describe-effective-policy covers only management
+   # policy types, not SCP/RCP). List what is attached, then walk the path yourself:
+   aws organizations list-policies-for-target --target-id 222233334444 --filter SERVICE_CONTROL_POLICY
+   aws organizations list-parents --child-id 222233334444   # repeat per OU up to the root
    ```
 
 7. **Simulate before widening scope:** `aws iam simulate-principal-policy` evaluates IAM, so pair it with the

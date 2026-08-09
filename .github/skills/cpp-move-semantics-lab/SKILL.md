@@ -43,7 +43,7 @@ flowchart TD
 | --- | --- | --- | --- | --- |
 | `Widget w;` then `w` | lvalue | no | copy | needs an explicit `std::move` |
 | `std::move(w)` | xvalue | yes | move | `w` left *valid but unspecified* |
-| `Widget{}` / `make()` | prvalue | yes | **neither** — elided | C++17 guarantees no ctor call |
+| `Widget{}` / `make()` | prvalue | yes | **neither** — elided | C++17 guarantees no copy/move ctor |
 | `std::move(cw)`, `cw` is `const` | xvalue of `const T` | binds `const T&` | **copy** | silent pessimisation |
 | `t` inside `template<class T> f(T&& t)` | lvalue | — | depends | needs `std::forward<T>(t)` |
 

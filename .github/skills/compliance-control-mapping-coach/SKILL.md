@@ -104,7 +104,7 @@ Learning Footer
 | Field | Value |
 | --- | --- |
 | Obligation | MFA enforced for all human administrative access to production cloud accounts |
-| Anchor (CSF 2.0) | `PR.AA-03` — authentication of identities is performed and the risk is managed |
+| Anchor (CSF 2.0) | `PR.AA-03` — "Users, services, and hardware are authenticated" |
 | ISO/IEC 27001:2022 | A.5.17 Authentication information · A.8.5 Secure authentication — **partial** each, **equivalent** combined |
 | SOC 2 TSC | CC6.1 (logical access) with CC6.6 for external access — **partial**; CC6.1 is broader |
 | CIS Controls v8.1 | Safeguard 6.5 "Require MFA for administrative access" (**IG1**) — **equivalent** |

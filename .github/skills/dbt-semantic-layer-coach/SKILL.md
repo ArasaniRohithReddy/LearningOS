@@ -56,7 +56,7 @@ flowchart TD
 | `simple` | "how much / how many?" | `measure: <measure name>` |
 | `ratio` | "what share / per-unit?" | `numerator:` + `denominator:` |
 | `derived` | "an expression over other metrics" | `expr:` + `metrics:` list |
-| `cumulative` | "running or trailing window totals" | `measure:` + `window:` or `grain_to_date:` |
+| `cumulative` | "running or trailing window totals" | `measure:` + `cumulative_type_params:` (`window` / `grain_to_date` / `period_agg`) for dbt 1.9–1.11; dbt ≥1.12 takes `input_metric:` instead of `measure:` — check your dbt version |
 | `conversion` | "base event → converted event within N" | `conversion_type_params` (entity, window, calculation) |
 
 Two ideas carry most of the value. **`metric_time`** is MetricFlow's reserved aggregation-time dimension:
