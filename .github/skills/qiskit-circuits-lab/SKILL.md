@@ -13,7 +13,7 @@ the **free local Qiskit Aer simulator**, with no IBM Quantum account and no queu
 ## When to use
 
 - The learner wants to write and run their first quantum circuit today, offline.
-- They copied Qiskit 1.x code and hit removals (`execute()` is gone in Qiskit 2.x).
+- They copied pre-1.0 (0.x) Qiskit code and hit removals (`execute()` was removed in Qiskit 1.0 and does not exist in 2.x).
 - They get a "circuit contains instructions not supported by the backend" style error — the ISA lesson.
 - They cannot tell whether they want **counts** (Sampler) or an **expectation value** (Estimator).
 - They want to see how noise changes an answer before asking for real hardware time.
@@ -118,7 +118,7 @@ Next: <linked skill>
 
 ## Tips
 
-- `execute()` no longer exists — the Qiskit 2.x path is always *build → transpile to ISA → primitive*.
+- `execute()` was removed in Qiskit 1.0 (so it is absent in 2.x too) — the path is always *build → transpile to ISA → primitive*.
 - Primitives take **PUBs** (lists of tuples), so `sampler.run([isa])` — passing a bare circuit is the
   single most common `TypeError` in migration.
 - Measurement basis matters: to measure in X, apply `h` before measuring; an Estimator observable such as

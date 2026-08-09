@@ -87,7 +87,10 @@ concurrency control** (Delta Lake docs, *Delta transaction log protocol*, delta.
    table on the same query. Record files scanned and bytes read for each; do not accept a claim you did not
    measure. (Delta Lake docs, *Optimizations* / *Liquid clustering*.)
 9. **OPTIMIZE then VACUUM.** `dt.optimize.compact()` (or `OPTIMIZE`) to fix small files, then
-   `dt.vacuum(retention_hours=…)`. Show that **VACUUM is what actually frees storage** and that it
+   `dt.vacuum(retention_hours=0, dry_run=False, enforce_retention_duration=False)`. Note the defaults are
+   safety rails: `dry_run=True` only *lists* files (deletes nothing), and `enforce_retention_duration=True`
+   rejects any window under the 7-day threshold — so both must be flipped for this destructive, **lab-only**
+   step. Show that **VACUUM is what actually frees storage** and that it
    **destroys time travel older than the retention window** — default retention is 7 days, and lowering it
    below the safety threshold risks breaking readers and concurrent writers mid-query.
 10. **Change Data Feed.** Enable `delta.enableChangeDataFeed = true`, do an update and a delete, then read

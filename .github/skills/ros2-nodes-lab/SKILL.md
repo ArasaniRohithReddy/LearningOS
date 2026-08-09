@@ -8,7 +8,8 @@ argument-hint: "A robotics goal, e.g. 'publish sensor data at 10 Hz', 'action fo
 
 A hands-on lab for ROS 2 application code — **a robot is a graph of small processes exchanging typed
 messages over a quality-of-service contract** — following [`AGENTS.md`](../../../AGENTS.md). Everything
-runs on a **free local ROS 2 install** (Jazzy Jalisco LTS recommended; Kilted Kaiju for newest features);
+runs on a **free local ROS 2 install** (use the current LTS — Lyrical Luth; Jazzy Jalisco is still supported —
+confirm the active distro on docs.ros.org before you start);
 no robot hardware is required.
 
 ## When to use

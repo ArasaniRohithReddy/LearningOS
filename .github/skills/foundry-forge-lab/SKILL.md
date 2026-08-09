@@ -23,7 +23,7 @@ deployment, no gas cost, no account.
 
 | Step | Command | Verify |
 | --- | --- | --- |
-| 1. Install | `curl -L https://foundry.paradigm.xyz \| bash` then `foundryup` | `forge --version`, `anvil --version` |
+| 1. Install | `curl -L https://foundry.paradigm.xyz \| bash` (inspect the script before piping) then `foundryup` | `forge --version`, `anvil --version` |
 | 2. Scaffold | `forge init forge-lab && cd forge-lab` | `src/`, `test/`, `foundry.toml` exist |
 | 3. Build | `forge build` | "Compiler run successful" |
 | 4. Test | `forge test -vvv` | Sample test passes |
