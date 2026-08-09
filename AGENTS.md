@@ -142,7 +142,7 @@ Skip the footer only for quick clarifications, tiny confirmations, or pure tool 
 
 ## 7. Skill catalog (reusable workflows — invoke with `/`)
 
-**619 skills** ship across 27 groups. This is a representative summary — the **full catalog** is in
+**718 skills** ship across 27 groups. This is a representative summary — the **full catalog** is in
 [Skills.md](docs/Skills.md) and the always-current, browsable pack list is
 [`marketplace/CATALOG.md`](marketplace/CATALOG.md):
 
@@ -152,7 +152,7 @@ Skip the footer only for quick clarifications, tiny confirmations, or pure tool 
 | **Teaching & curriculum** | 6 | `curriculum-designer` · `lesson-plan-writer` · `reading-list-curator` · `peer-review-coach` |
 | **Plan & track** | 10 | `learning-roadmap` · `career-ladder` · `onboarding-plan` · `progress-tracker` |
 | **Practice & assess** | 8 | `quiz-generator` · `mock-exam` · `skill-assessment` · `exam-blueprint` |
-| **Hands-on labs** | 294 | `python-decorators-lab` · `go-channels-lab` · `django-lab` · `sklearn-classification-lab` · `postgres-local-lab` · `ollama-local-llm-lab` · `localstack-lab` · `floci-aws-local-lab` (practice locally, no subscription) |
+| **Hands-on labs** | 336 | `python-decorators-lab` · `go-channels-lab` · `django-lab` · `sklearn-classification-lab` · `postgres-local-lab` · `ollama-local-llm-lab` · `localstack-lab` · `floci-aws-local-lab` (practice locally, no subscription) |
 | **Testing & QA** | 13 | `tdd-coach` · `contract-testing-coach` · `e2e-testing-coach` · `load-testing-coach` · `accessibility-audit` |
 | **Code & engineering** | 21 | `code-review-coach` · `debugging-coach` · `design-patterns-coach` · `functional-programming-coach` · `sql-coach` · `remote-code-runner` |
 | **Databases & storage** | 6 | `database-selection-advisor` · `sql-query-explainer` · `nosql-data-modeling` · `sharding-strategy-coach` |
