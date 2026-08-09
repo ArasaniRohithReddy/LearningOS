@@ -515,7 +515,7 @@ async function setupWorkspace(): Promise<void> {
 
   // Also offer to deploy the full catalog so VS Code discovers every agent + skill.
   const pick = await vscode.window.showInformationMessage(
-    "Make all 128 LearningOS specialist agents + 520 skills available in Chat (agent picker + /skills)?",
+    "Make all 128 LearningOS specialist agents + 536 skills available in Chat (agent picker + /skills)?",
     "Deploy agents & skills",
     "Not now"
   );
@@ -616,7 +616,7 @@ async function offerFirstRunSetup(context: vscode.ExtensionContext): Promise<voi
   await context.globalState.update(FIRST_RUN_KEY, true);
 
   const choice = await vscode.window.showInformationMessage(
-    "Set up LearningOS — deploy 128 specialist agents + 520 skills to ~/.copilot " +
+    "Set up LearningOS — deploy 128 specialist agents + 536 skills to ~/.copilot " +
       "(works in VS Code Chat AND the Copilot CLI) and enable progress charts?",
     "Set up everything",
     "Later"
@@ -635,7 +635,7 @@ async function offerFirstRunSetup(context: vscode.ExtensionContext): Promise<voi
 async function setupEverything(context: vscode.ExtensionContext, opts: { consented?: boolean } = {}): Promise<void> {
   if (!opts.consented) {
     const go = await vscode.window.showInformationMessage(
-      "Set up LearningOS: deploy the full catalog (128 specialist agents + 520 skills) to your user " +
+      "Set up LearningOS: deploy the full catalog (128 specialist agents + 536 skills) to your user " +
         "profile (~/.copilot) so it works in VS Code Chat AND the Copilot CLI, and enable Flint-Chart progress charts?",
       {
         modal: true,

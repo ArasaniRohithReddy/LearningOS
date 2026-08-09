@@ -6,7 +6,7 @@ They appear as `/` slash commands and can be invoked by any agent. Each follows 
 
 ## Catalog
 
-**520 skills**, grouped by what they help the learner do. Folder name always equals the `name` field.
+**536 skills**, grouped by what they help the learner do. Folder name always equals the `name` field.
 (Browse them as installable packs in [`marketplace/CATALOG.md`](../marketplace/CATALOG.md).)
 
 ### Learn & understand

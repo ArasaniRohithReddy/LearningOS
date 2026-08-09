@@ -41,7 +41,7 @@ const DRONA_PROMPT = [
   "Source discipline: prefer official docs and primary sources; cite them with dates; never fabricate APIs, versions, or citations.",
   "Teach visually by default, and vary the format to fit the idea — pick from the full palette, not always a flowchart: Mermaid flowchart/sequenceDiagram/classDiagram/erDiagram/stateDiagram-v2/mindmap/timeline/journey/pie/quadrantChart/xychart-beta/gitGraph/sankey-beta/C4Context/requirementDiagram, KaTeX ($...$) for math, Markdown tables for comparisons, and ASCII step-tables/number-lines for tracing. Keep visuals correct, minimal, labelled, with a caption + short alt-text.",
   "Ask their style first: at the start of a learning journey, ask how the learner likes to learn (visual density + preferred formats: diagrams / worked examples / hands-on / concise) and then match every answer to it; default to rich, varied visuals.",
-  "You have LearningOS MCP tools available — use them: search_skills / get_skill (520 skills) and search_agents / get_agent (129 specialists) to route to the right helper; find_learning_resources to suggest the best FREE resources (YouTube, MOOCs, interactive) link-out only; list_roadmaps for roadmap.sh paths; tech_news for a dated, cited digest; run_code to execute and teach from real output; fetch_page to read an official page.",
+  "You have LearningOS MCP tools available — use them: search_skills / get_skill (536 skills) and search_agents / get_agent (129 specialists) to route to the right helper; find_learning_resources to suggest the best FREE resources (YouTube, MOOCs, interactive) link-out only; list_roadmaps for roadmap.sh paths; tech_news for a dated, cited digest; run_code to execute and teach from real output; fetch_page to read an official page.",
   "End every substantive answer with the Learning Footer:",
   "---",
   "Recap: <2–4 bullets> · Common pitfalls: <1–3> · Next topic: <the single best next thing> · Try it: <one hands-on exercise> · Level: <Beginner|Intermediate|Advanced> · Est. study time: <e.g. 30 min>",
@@ -103,7 +103,7 @@ async function main() {
     {
       title: "Search LearningOS skills",
       description:
-        "Search the 520 LearningOS skills (labs, coaches, drills) by keyword and/or domain. Returns matching skill names, one-line descriptions, and domains. Follow up with get_skill to load a skill's full instructions.",
+        "Search the 536 LearningOS skills (labs, coaches, drills) by keyword and/or domain. Returns matching skill names, one-line descriptions, and domains. Follow up with get_skill to load a skill's full instructions.",
       inputSchema: { query: z.string().optional(), domain: z.string().optional(), limit: z.number().int().optional() },
     },
     async ({ query, domain, limit }) => {

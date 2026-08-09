@@ -1,5 +1,24 @@
 # Change Log
 
+## 1.5.0
+
+Phase 4 breadth — 16 new expert skills, and one visitor counter that finally agrees with itself.
+
+- **16 new skills (520 → 536)** — a reviewed batch (no stubs) across the areas you asked for:
+  - *Coding & CS:* `greedy-algorithms-coach`, `bit-manipulation-coach`, `tree-algorithms-coach`,
+    `string-algorithms-coach`, `recursion-backtracking-coach`, `math-for-programming-coach` — deepening the
+    competitive-programming / interview track.
+  - *AI & LLM apps:* `mcp-server-builder`, `function-calling-coach`, `rag-evaluation-coach`, and
+    (defensive) `prompt-injection-defense`.
+  - *Architecture & reliability:* `cqrs-coach`, `circuit-breaker-coach`, `feature-flags-coach`,
+    `disaster-recovery-planner`.
+  - *Testing & security:* `test-doubles-coach`, and (defensive) `supply-chain-security-coach`.
+- **Visitor counter in sync.** The README badge and the Pages site now share ONE counter (the same
+  visitorbadge.io key), so both surfaces always show the same number.
+- **README + site refreshed** to register everything shipped (News/Roadmaps, floci Oracle, 414 free
+  resources / 275 YouTube channels, the MCP server, visual-first learning); counts corrected (256 labs,
+  20 docs, 536 skills).
+
 ## 1.4.0
 
 Learn the way you like — richer visuals, and a much bigger library of free resources.

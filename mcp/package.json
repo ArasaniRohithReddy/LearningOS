@@ -1,7 +1,7 @@
 {
   "name": "learningos-mcp",
   "version": "1.0.0",
-  "description": "Model Context Protocol server for LearningOS — Drona. Exposes the catalog of 129 specialist agents + 520 skills, 400+ free learning resources, roadmap.sh paths, curated tech-news, remote code execution, and Drona's teaching prompt to any MCP client (Claude Desktop, VS Code, Cursor, …).",
+  "description": "Model Context Protocol server for LearningOS — Drona. Exposes the catalog of 129 specialist agents + 536 skills, 400+ free learning resources, roadmap.sh paths, curated tech-news, remote code execution, and Drona's teaching prompt to any MCP client (Claude Desktop, VS Code, Cursor, …).",
   "license": "MIT",
   "type": "module",
   "bin": {

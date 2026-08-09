@@ -1,6 +1,6 @@
 # LearningOS — Quick Start
 
-Your AI **Learning Operating System**: **Drona** (the mentor) + **129 agents**, **520 skills**, **122
+Your AI **Learning Operating System**: **Drona** (the mentor) + **129 agents**, **536 skills**, **122
 roles**, cross-session memory, local labs (no subscriptions), and progress charts.
 
 ## Fastest path — install the extension (no account needed)

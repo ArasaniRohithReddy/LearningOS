@@ -43,14 +43,14 @@ Architecture, and Product/Management; MCP sample; community files.
 - **Breadth toward the 100+ agent / 500+ skill vision** — added in reviewed, high-quality batches of
   role-agents and skills across every domain (no stubs; each follows the constitution). **Progress:
   the roster grew 24 → 50 → 98 → 122 role-agents (129 agents total — well past the 100+ milestone),
-  and the skill library grew 8 → 18 → 21 → 39 → 75 → 123 → 171 → 261 → 336 → 444 → 510** (added source-discovery,
+  and the skill library grew 8 → 18 → 21 → 39 → 75 → 123 → 171 → 261 → 336 → 444 → 510 → 520 → 536** (added source-discovery,
   assessment, code, career, architecture, writing/docs, AI/data, testing, defensive security,
   DevOps/cloud, data, frontend, backend, product, databases, networking/OS, paradigms, ML-in-production,
   soft-skills, teaching, enterprise-tools, distributed-systems, observability/SRE, GenAI-production, and
   **256 hands-on labs** (languages, frameworks, cloud, data, ML, DevOps) — including **Floci** and
   **LocalStack/Azurite/MinIO/Ollama/Postgres/Redpanda/minikube/…** so learners practice AWS/Azure/GCP,
   databases, messaging, Kubernetes, and even LLMs/RAG **locally on their laptop, free, no subscription**
-  (see [LocalPractice.md](./LocalPractice.md))). Onward toward 500+.
+  (see [LocalPractice.md](./LocalPractice.md))). **Past the 500-skill milestone — 536 and counting.**
 - **Enterprise Plugin Marketplace shipped** (first cut): a generated, machine-readable index
   ([`marketplace/registry.json`](../marketplace/registry.json) + [`CATALOG.md`](../marketplace/CATALOG.md))
   built by [`scripts/build-registry.mjs`](../scripts/build-registry.mjs), plus a pack/install model in

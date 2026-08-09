@@ -5,7 +5,7 @@
 [![Pages](https://img.shields.io/badge/live%20site-arasanirohithreddy.github.io%2FLearningOS-7c9cff)](https://arasanirohithreddy.github.io/LearningOS/)
 [![Validate](https://github.com/ArasaniRohithReddy/LearningOS/actions/workflows/validate.yml/badge.svg)](https://github.com/ArasaniRohithReddy/LearningOS/actions/workflows/validate.yml)
 [![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FArasaniRohithReddy%2FLearningOS&label=Visitors&countColor=%237c9cff&style=flat)](https://github.com/ArasaniRohithReddy/LearningOS)
-&nbsp;·&nbsp; **129 agents · 520 skills · 122 roles**
+&nbsp;·&nbsp; **129 agents · 536 skills · 122 roles**
 
 > A modular, config-driven **GitHub Copilot Agent framework for learning, teaching, research, and
 > technical career growth.** One master orchestrator (**Drona**, the guru), a set of specialist
@@ -23,7 +23,7 @@ role-agents are built from tiny YAML config files instead of hand-written prompt
 ## Highlights
 
 - **Teaches, not just answers** — first-principles, trade-offs, pitfalls, and a signature *Learning Footer* on every substantive reply ([`AGENTS.md`](AGENTS.md)).
-- **129 agents · 520 skills · 122 role configs** — Drona routes to specialist mentors and reusable `/`-skills across every technical domain.
+- **129 agents · 536 skills · 122 role configs** — Drona routes to specialist mentors and reusable `/`-skills across every technical domain.
 - **Visual-first learning** — Mermaid, tables, KaTeX and step-traces by default, and Drona asks your preferred learning style up front ([`/visual-explainer`](.github/skills/visual-explainer/SKILL.md)).
 - **256 no-subscription labs** + run code in **90+ languages** with nothing installed; practice **AWS / Azure / GCP / Oracle** locally via [floci](docs/Floci.md).
 - **414 curated free resources** — incl. **275 YouTube channels** — plus dated **tech news** from 190+ RSS/Atom feeds and **130+ roadmap.sh** paths turned into personalized plans ([resources](data/learning-resources.json) · [news](docs/News.md)).
@@ -60,7 +60,7 @@ flowchart TD
     D -->|delegates| MP[Meeting & Presentation Coach]
     D -->|delegates| RO["122 Role-Agents<br/>Software · Languages · Web · Data · AI/ML · Cloud · DevOps · Security · Design · Product · Emerging · Enterprise"]
 
-    subgraph Skills["520 Reusable Skills — invoke with /"]
+    subgraph Skills["536 Reusable Skills — invoke with /"]
       S1["Learn · Plan · Practice<br/>concept-explainer · socratic-tutor · worked-example · analogy-generator<br/>learning-roadmap · career-ladder · quiz-generator · mock-exam · exam-blueprint"]
       S2["Code & engineering<br/>code-review-coach · debugging-coach · refactoring-coach · test-writer<br/>sql-coach · git-coach · dockerfile-coach · regex-explainer · code-optimizer"]
       S3["Architecture & AI/data<br/>architecture-diagram · api-design-review · data-modeling-drill · threat-model<br/>prompt-optimizer · rag-designer · eval-designer · dataset-explorer"]
@@ -102,7 +102,7 @@ Learning Agents/
 │   │   ├── coding-mentor · research-analyst · interview-coach
 │   │   ├── exam-coach · career-mentor · meeting-prep       # 6 core mentors
 │   │   └── + 122 role-agents (python/rust/scala-developer, data-engineer, quantum-computing-engineer, …)
-│   ├── skills/                    # 520 reusable workflows (slash commands), across 27 groups
+│   ├── skills/                    # 536 reusable workflows (slash commands), across 27 groups
 │   │   ├── Learn: concept-explainer socratic-tutor misconception-buster analogy-generator worked-example glossary-builder mind-map note-generator teach-back knowledge-graph cheat-sheet
 │   │   ├── Plan/Assess: learning-roadmap onboarding-plan career-ladder progress-tracker spaced-repetition-scheduler project-mentor practice-generator quiz-generator flashcards mock-exam skill-assessment gap-analysis rubric-grader exam-blueprint
 │   │   ├── Code: code-review-coach debugging-coach refactoring-coach test-writer pair-programmer regex-explainer sql-coach git-coach dockerfile-coach code-optimizer algorithm-visualizer complexity-analyzer code-walkthrough system-design-drill
@@ -233,14 +233,14 @@ Platforms) — see the full catalog in
 ## Roadmap / where to take it next
 
 The core is intentionally small and high-quality, and designed to grow. **Phases 1–3 are done** —
-orchestrator, shared constitution, **520 skills**, **129 agents** (Drona + 6 mentors + 122 role-agents),
+orchestrator, shared constitution, **536 skills**, **129 agents** (Drona + 6 mentors + 122 role-agents),
 config-driven roles + composer, and learner templates. **Phase 4 is in progress** — the roster is
 **well past the 100+ agent** milestone and a first-cut **Enterprise Plugin Marketplace** now ships
 (generated [registry](marketplace/registry.json) + [catalog](marketplace/CATALOG.md))
 (see [docs/Roadmap.md](docs/Roadmap.md)):
 
 - **Breadth toward 100+ agents / 500+ skills** — added in reviewed, high-quality batches across every
-  domain (each is one role config or one skill folder; no stubs). *129 agents / 520 skills and counting.*
+  domain (each is one role config or one skill folder; no stubs). *129 agents / 536 skills and counting.*
 - **Live MCP integrations** (when available in your client): GitHub, Fetch/Web, Playwright, Microsoft
   Learn, RSS/arXiv, Memory, SQLite — to pull live docs, feeds, and papers into lessons.
 - **Learning analytics & evaluation**: progress / gaps / streaks over the learner profile, and a

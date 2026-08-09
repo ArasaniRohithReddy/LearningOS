@@ -1,8 +1,8 @@
 {
   "name": "learningos-drona",
   "displayName": "LearningOS — Drona",
-  "description": "Drona, your AI learning mentor. @drona in chat teaches from first principles, cites sources, runs and tests your code with no local install (via your choice of Piston or onlinecompiler.io), pulls a dated, cited digest from 130+ curated tech feeds, and links you to 130+ roadmap.sh learning paths — plus a rich learning-metrics dashboard (streak, topics, commands, languages, reviews) that also renders offline via a bundled Flint-Chart engine. First run offers one-click setup; \"Drona: Deploy all LearningOS agents & skills\" installs 128 specialist agents + 520 skills so VS Code Copilot discovers them natively.",
-  "version": "1.4.0",
+  "description": "Drona, your AI learning mentor. @drona in chat teaches from first principles, cites sources, runs and tests your code with no local install (via your choice of Piston or onlinecompiler.io), pulls a dated, cited digest from 130+ curated tech feeds, and links you to 130+ roadmap.sh learning paths — plus a rich learning-metrics dashboard (streak, topics, commands, languages, reviews) that also renders offline via a bundled Flint-Chart engine. First run offers one-click setup; \"Drona: Deploy all LearningOS agents & skills\" installs 128 specialist agents + 536 skills so VS Code Copilot discovers them natively.",
+  "version": "1.5.0",
   "publisher": "learningos",
   "license": "MIT",
   "icon": "media/icon.png",
@@ -344,13 +344,13 @@
           {
             "id": "setup-everything",
             "title": "Set up everything (one click)",
-            "description": "Deploy the full catalog (128 agents + 520 skills) to your user profile so it works in VS Code Chat **and** the Copilot CLI, and enable progress charts.\n[Set up everything](command:learningos.setupEverything)",
+            "description": "Deploy the full catalog (128 agents + 536 skills) to your user profile so it works in VS Code Chat **and** the Copilot CLI, and enable progress charts.\n[Set up everything](command:learningos.setupEverything)",
             "media": { "markdown": "media/deploy.md" }
           },
           {
             "id": "deploy-catalog",
             "title": "Deploy all agents & skills",
-            "description": "Install 128 specialist agents + 520 skills so VS Code discovers them in the agent picker and via **/** in Chat.\n[Deploy agents & skills](command:learningos.deployCatalog)",
+            "description": "Install 128 specialist agents + 536 skills so VS Code discovers them in the agent picker and via **/** in Chat.\n[Deploy agents & skills](command:learningos.deployCatalog)",
             "media": { "markdown": "media/deploy.md" }
           },
           {

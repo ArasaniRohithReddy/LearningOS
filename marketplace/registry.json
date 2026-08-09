@@ -4,7 +4,7 @@
   "generator": "scripts/build-registry.mjs",
   "counts": {
     "agents": 129,
-    "skills": 520,
+    "skills": 536,
     "roles": 122
   },
   "packs": [
@@ -242,16 +242,20 @@
         "feature-engineering-coach",
         "fine-tuning-data-curator",
         "fine-tuning-planner",
+        "function-calling-coach",
         "hallucination-mitigation-coach",
         "llm-cost-optimizer",
         "llm-guardrails-designer",
+        "mcp-server-builder",
         "ml-experiment-tracker",
         "ml-pipeline-designer",
         "model-monitoring-coach",
         "model-selection-advisor",
         "multi-agent-orchestration-coach",
+        "prompt-injection-defense",
         "prompt-optimizer",
         "rag-designer",
+        "rag-evaluation-coach",
         "structured-output-coach",
         "vector-db-selector"
       ]
@@ -276,7 +280,9 @@
       "skills": [
         "api-pagination-coach",
         "caching-strategy-coach",
+        "circuit-breaker-coach",
         "concurrency-coach",
+        "cqrs-coach",
         "database-index-coach",
         "event-sourcing-coach",
         "graphql-schema-coach",
@@ -319,6 +325,7 @@
       "domain": "Code & engineering",
       "skills": [
         "algorithm-visualizer",
+        "bit-manipulation-coach",
         "code-optimizer",
         "code-review-coach",
         "code-walkthrough",
@@ -334,15 +341,20 @@
         "functional-programming-coach",
         "git-coach",
         "graph-algorithms-coach",
+        "greedy-algorithms-coach",
+        "math-for-programming-coach",
         "memory-management-coach",
         "oop-design-coach",
         "pair-programmer",
+        "recursion-backtracking-coach",
         "refactoring-coach",
         "regex-explainer",
         "remote-code-runner",
         "sql-coach",
+        "string-algorithms-coach",
         "system-design-drill",
         "test-writer",
+        "tree-algorithms-coach",
         "type-system-explainer"
       ]
     },
@@ -401,7 +413,9 @@
         "ci-pipeline-builder",
         "cloud-cost-optimizer",
         "cloud-migration-planner",
+        "disaster-recovery-planner",
         "distributed-tracing-coach",
+        "feature-flags-coach",
         "gcp-project-structure-coach",
         "git-workflow-designer",
         "gitops-coach",
@@ -840,7 +854,8 @@
         "secrets-management-coach",
         "secure-code-review",
         "security-hardening-checklist",
-        "sql-injection-defense"
+        "sql-injection-defense",
+        "supply-chain-security-coach"
       ]
     },
     {
@@ -883,6 +898,7 @@
         "property-based-testing-coach",
         "tdd-coach",
         "test-data-builder",
+        "test-doubles-coach",
         "test-plan-designer"
       ]
     },
@@ -2990,6 +3006,12 @@
       "path": ".github/skills/bdd-scenario-writer/SKILL.md"
     },
     {
+      "name": "bit-manipulation-coach",
+      "description": "Teach binary and bitwise thinking from first principles — two's complement, AND/OR/XOR/NOT and the shift operators, the reusable idioms (set/clear/toggle/test a bit, isolate the lowest set bit with x & -x, clear it with x & (x-1), popcount, power-of-two check, XOR to find the unique element, swap without a temp), subset enumeration with bitmasks, and the pitfalls (signed vs logical shifts, overflow, operator precedence, language differences). Use for 'bit manipulation', 'bitmask', 'XOR trick', 'count set bits', 'bitwise operators', 'subset enumeration', 'what does x & (x-1) do'.",
+      "argumentHint": "The bit trick, problem, or language you want explained",
+      "path": ".github/skills/bit-manipulation-coach/SKILL.md"
+    },
+    {
       "name": "business-case-writer",
       "description": "Write a business case that justifies an initiative — problem and drivers, options against a do-nothing baseline, costs vs benefits with ROI/NPV/payback, risks, and a clear recommendation. Use for 'write a business case', 'ROI justification', 'cost-benefit analysis', 'justify this project', 'build vs buy case', or 'get budget approved'. Uses real, sourced numbers; pairs with prd-writer and okr-coach.",
       "argumentHint": "The initiative",
@@ -3066,6 +3088,12 @@
       "description": "Design a CI/CD pipeline as a lesson — stages (build, test, scan, deploy), dependency caching, artifacts, environments, approval gates, and rollback — with a sample config sketch for GitHub Actions, Azure DevOps, or GitLab CI. Use for 'set up CI', 'build a pipeline', 'GitHub Actions workflow', 'speed up my CI', 'add a deploy stage', or learning CI/CD.",
       "argumentHint": "The app/stack + target (GitHub Actions/Azure DevOps/GitLab)",
       "path": ".github/skills/ci-pipeline-builder/SKILL.md"
+    },
+    {
+      "name": "circuit-breaker-coach",
+      "description": "Teach the circuit breaker resilience pattern from first principles — the closed/open/half-open state machine, failure-rate thresholds, reset timeouts and trial requests, fallbacks and graceful degradation, and how a breaker composes with timeouts, retries with exponential backoff and jitter, and bulkheads to stop cascading failure in a distributed system; plus where to place it, how to tune and observe it, and the anti-patterns (retry storms, breaker on the wrong boundary, breaker without a timeout). Use for 'circuit breaker', 'cascading failures', 'resilience pattern', 'half-open state', 'retries vs breaker', 'my service falls over when a dependency is slow', 'bulkhead and timeout tuning'.",
+      "argumentHint": "The caller, the dependency it calls, and the failure you're seeing",
+      "path": ".github/skills/circuit-breaker-coach/SKILL.md"
     },
     {
       "name": "cloud-cost-optimizer",
@@ -3192,6 +3220,12 @@
       "description": "Coach a tailored, honest cover letter — extract the role's real needs, map the learner's actual experience to them, draft a tight three-paragraph letter in the learner's voice, and cut clichés and filler. Use for 'write a cover letter', 'tailor my cover letter to this JD', 'why-us paragraph help', or 'make my letter less generic'. Never invents experience, metrics, or enthusiasm.",
       "argumentHint": "Target role/JD + the learner's background",
       "path": ".github/skills/cover-letter/SKILL.md"
+    },
+    {
+      "name": "cqrs-coach",
+      "description": "Teach Command Query Responsibility Segregation honestly — splitting the write model (commands, invariants, one consistent aggregate) from one or more read models/projections shaped for queries, when the asymmetry pays for itself (complex domain rules, wildly different read vs write shape or scale) versus when it is expensive ceremony over simple CRUD, its relationship with event sourcing (independent choices), the eventual consistency of read models and concrete ways to handle stale reads, plus the real costs and failure modes. Use for 'CQRS', 'separate read and write models', 'command query responsibility segregation', 'CQRS vs CRUD', 'read model projection', 'is CQRS overkill', 'stale read after write'.",
+      "argumentHint": "The bounded context or feature you're considering splitting",
+      "path": ".github/skills/cqrs-coach/SKILL.md"
     },
     {
       "name": "cron-scheduler-lab",
@@ -3416,6 +3450,12 @@
       "path": ".github/skills/design-tokens-coach/SKILL.md"
     },
     {
+      "name": "disaster-recovery-planner",
+      "description": "Plan disaster recovery and business continuity properly — derive RTO and RPO from business impact rather than guessing, design a backup strategy (3-2-1, immutability and air gap, retention, and the restore tests that make backups real), choose replication (synchronous vs asynchronous) and a failover/failback procedure, then pick a point on the DR ladder — backup and restore, pilot light, warm standby, multi-site active/active — using an explicit cost vs RTO vs RPO trade-off, and rehearse it with runbooks and game days. Use for 'disaster recovery', 'RTO and RPO', 'backup strategy', 'failover plan', 'pilot light vs warm standby', 'business continuity', 'we have backups but never tested a restore'.",
+      "argumentHint": "The system/service + how long the business can survive without it",
+      "path": ".github/skills/disaster-recovery-planner/SKILL.md"
+    },
+    {
       "name": "distributed-tracing-coach",
       "description": "Instrument distributed tracing with OpenTelemetry as a lesson — model spans, propagate context across services, choose head vs tail sampling, and read a trace waterfall to find the latency culprit. Use for 'add tracing', 'OpenTelemetry traces', 'context propagation', 'trace sampling', 'why is this request slow', or learning distributed tracing. Grounded in OpenTelemetry and W3C Trace Context.",
       "argumentHint": "The services",
@@ -3614,6 +3654,12 @@
       "path": ".github/skills/feature-engineering-coach/SKILL.md"
     },
     {
+      "name": "feature-flags-coach",
+      "description": "Use feature flags well — classify each flag by type (release, ops/kill-switch, experiment/A-B, permission/entitlement) because type determines lifetime, owner and testing strategy; decouple deploy from release; run progressive delivery with canaries, percentage rollouts and ring deployments; manage the full flag lifecycle and pay down flag debt; test a codebase that has flags without exploding combinatorially; and avoid the classic traps of stale flags, flags used as long-lived configuration, and nested conditionals nobody can reason about. Use for 'feature flags', 'feature toggles', 'progressive rollout', 'canary release', 'kill switch', 'flag debt', 'decouple deploy from release', 'trunk-based development with toggles'.",
+      "argumentHint": "The feature you want to ship + how risky it is",
+      "path": ".github/skills/feature-flags-coach/SKILL.md"
+    },
+    {
       "name": "feature-prioritization-coach",
       "description": "Prioritize a backlog with a real framework — RICE, ICE, or value-vs-effort — score items honestly against a goal, then sequence by dependency and risk. Use for 'prioritize my backlog', 'RICE scoring', 'ICE score', 'value vs effort', 'what should we build first', or 'MoSCoW / WSJF'. Distinguishes scoring from sequencing; pairs with prd-writer and okr-coach.",
       "argumentHint": "The features + goals",
@@ -3696,6 +3742,12 @@
       "description": "Design robust web forms as a lesson — labels, the right input types, accessible inline validation, clear error messages, and forgiving submission UX. Use for 'form design', 'form validation', 'accessible forms', 'inline validation', 'error messages', 'which input type', 'form UX', or learning to build forms.",
       "argumentHint": "The form + fields",
       "path": ".github/skills/form-design-coach/SKILL.md"
+    },
+    {
+      "name": "function-calling-coach",
+      "description": "Make LLM tool/function calling reliable — design tool JSON schemas the model can actually read (verb-first names, typed params, required vs optional, enums, descriptions that state when NOT to call), understand how and when the model decides to call, choose between single, parallel and sequential calls, validate and coerce arguments at the boundary, return tool results and errors the model can recover from, combine tool calls with structured outputs, and prevent the classic failure modes: hallucinated or invalid arguments, wrong tool chosen, and infinite tool loops. Use for 'function calling', 'tool calling', 'LLM tools', 'JSON schema for tools', 'model calls the wrong tool', 'parallel tool calls', 'agent stuck in a tool loop'.",
+      "argumentHint": "The tools you want the model to call + the model/provider",
+      "path": ".github/skills/function-calling-coach/SKILL.md"
     },
     {
       "name": "functional-programming-coach",
@@ -3960,6 +4012,12 @@
       "description": "Hands-on lab on Great Expectations (GX Core) locally: define data-quality expectations and validate a dataset with a checkpoint and Data Docs report — free, local, OSS, and no subscription. Use for 'Great Expectations lab', 'data quality checks', 'validate a DataFrame', 'expectation suite', 'checkpoint', or learning data validation by doing.",
       "argumentHint": "The dataset + expectations",
       "path": ".github/skills/great-expectations-lab/SKILL.md"
+    },
+    {
+      "name": "greedy-algorithms-coach",
+      "description": "Teach when a greedy choice is provably optimal and when it quietly isn't — the two-part test (greedy-choice property + optimal substructure), the exchange argument as a proof technique, the classic greedy family (interval scheduling/activity selection, fractional knapsack, Huffman coding, minimizing maximum lateness, Dijkstra and Prim as greedy), how to construct a small counterexample when greedy is wrong, and the greedy-vs-DP decision. Use for 'is greedy correct', 'greedy algorithm', 'exchange argument', 'when does greedy fail', 'prove greedy optimal', 'greedy vs DP'.",
+      "argumentHint": "The problem + the greedy rule you want to test (+ optional language)",
+      "path": ".github/skills/greedy-algorithms-coach/SKILL.md"
     },
     {
       "name": "groupby-aggregation-lab",
@@ -4376,10 +4434,22 @@
       "path": ".github/skills/mailpit-email-local-lab/SKILL.md"
     },
     {
+      "name": "math-for-programming-coach",
+      "description": "Teach the mathematics that actually shows up in interviews and contests — modular arithmetic (including the negative-mod trap), fast modular exponentiation by squaring, gcd/lcm with the Euclidean algorithm, extended Euclid and modular inverses (Fermat vs extended-Euclid), primes via the sieve of Eratosthenes and trial-division primality, combinatorics (nCr, Pascal's rule, nCr mod p with factorials and inverse factorials), inclusion–exclusion, and overflow/precision discipline. Use for 'competitive math', 'modular arithmetic', 'nCr mod p', 'modular inverse', 'sieve of Eratosthenes', 'fast exponentiation', 'gcd lcm', 'why is my answer negative mod'.",
+      "argumentHint": "The math topic or the formula you need modulo 1e9+7",
+      "path": ".github/skills/math-for-programming-coach/SKILL.md"
+    },
+    {
       "name": "matplotlib-lab",
       "description": "Hands-on lab on Matplotlib: create a Figure and Axes with the object-oriented API, draw line/bar/scatter/histogram plots, then customize labels, legends, ticks, and limits — learning by running real code. Use for 'matplotlib lab', 'hands-on matplotlib lab', 'figure vs axes', 'plt.subplots', 'object-oriented matplotlib', 'customize a plot', 'save a figure', or a guided plotting exercise. Teaches by doing, honestly.",
       "argumentHint": "The data + chart to build",
       "path": ".github/skills/matplotlib-lab/SKILL.md"
+    },
+    {
+      "name": "mcp-server-builder",
+      "description": "Build a Model Context Protocol (MCP) server from first principles — decide what belongs in a tool vs. a resource vs. a prompt, pick a transport (stdio vs. streamable HTTP), understand the JSON-RPC framing underneath, register typed tools with input schemas and content-returning handlers, validate inputs and guard against SSRF and secret leakage, smoke-test with a client, then wire it into Claude Desktop, VS Code, and Cursor. Use for 'build an MCP server', 'expose tools via MCP', 'MCP tools resources prompts', 'custom MCP server', 'stdio vs HTTP transport', 'connect tools to Claude/VS Code/Cursor'.",
+      "argumentHint": "What capability you want to expose + the language/runtime (e.g. TypeScript, Python)",
+      "path": ".github/skills/mcp-server-builder/SKILL.md"
     },
     {
       "name": "meilisearch-local-lab",
@@ -4826,6 +4896,12 @@
       "path": ".github/skills/prometheus-grafana-local-lab/SKILL.md"
     },
     {
+      "name": "prompt-injection-defense",
+      "description": "Defend LLM applications against prompt injection — DEFENSIVE ONLY. Teaches why injection is structurally unsolved (instructions and data share one channel), the difference between direct and indirect/data-borne injection via RAG corpora, tool output, web pages and files, and a defense-in-depth playbook: treat all external content as untrusted, separate instructions from data with delimiters and spotlighting, least-privilege tools with allowlists, human-in-the-loop for high-impact actions, output validation and filtering, secrets out of the prompt, sandboxed side effects, and monitoring. Maps to OWASP LLM Top 10 (LLM01). Use for 'prompt injection', 'secure my LLM app', 'indirect injection via RAG', 'jailbreak defense', 'untrusted content in prompts', 'my agent followed instructions from a web page'.",
+      "argumentHint": "The LLM app/agent, its untrusted inputs, and the tools it can call",
+      "path": ".github/skills/prompt-injection-defense/SKILL.md"
+    },
+    {
       "name": "prompt-optimizer",
       "description": "Improve a prompt iteratively as a teaching exercise: clarify the goal and failure modes, apply proven techniques (clear instructions, few-shot examples, output structure, task decomposition), define a quick eval, and show a before/after diff. Use for 'fix/improve my prompt', 'why is my prompt failing', 'make the model do X reliably', 'prompt engineering help', or 'add few-shot/structure'. Teaches the technique, not just a rewrite.",
       "argumentHint": "The prompt + goal + what's going wrong",
@@ -4988,6 +5064,12 @@
       "path": ".github/skills/rag-designer/SKILL.md"
     },
     {
+      "name": "rag-evaluation-coach",
+      "description": "Measure whether a retrieval-augmented generation system is actually good — separate retrieval quality (recall@k, precision@k, MRR, nDCG, context precision and context recall) from generation quality (faithfulness/groundedness, answer relevance, completeness, citation correctness), build and maintain a golden question/answer set, choose between component-level and end-to-end evaluation, use LLM-as-judge with its biases controlled, and regression-test retrieval after every index, chunking, or embedding change. Use for 'evaluate my RAG', 'RAG metrics', 'is my retrieval good', 'faithfulness vs relevance', 'golden set for RAG', 'recall@k vs nDCG', 'my RAG got worse after re-indexing'.",
+      "argumentHint": "The RAG system + what 'good' means for its users",
+      "path": ".github/skills/rag-evaluation-coach/SKILL.md"
+    },
+    {
       "name": "rate-limiter-designer",
       "description": "Design rate limiting and throttling as a lesson — choose an algorithm (fixed/sliding window, token bucket, leaky bucket), pick the limit key (user/IP/API-key/global), enforce it in a distributed system, and define client behavior (429, Retry-After, backoff). Use for 'add rate limiting', 'throttle my API', 'token bucket vs sliding window', 'stop abuse', or learning how limiters work.",
       "argumentHint": "The API + limits/goals",
@@ -5040,6 +5122,12 @@
       "description": "Produce a high-quality project README from the learner's real project details — title, one-line pitch, badges placeholder, features, install, usage/quickstart, configuration, contributing, and license. Use for 'write a README', 'generate a README for my repo', 'document my project', or 'my README is weak'. Asks for missing details; never invents features or commands.",
       "argumentHint": "Project details / repo",
       "path": ".github/skills/readme-generator/SKILL.md"
+    },
+    {
+      "name": "recursion-backtracking-coach",
+      "description": "Teach how to think recursively and how to search systematically — base case vs recursive case, the leap of faith (trust the recursion), what the call stack actually holds, converting recursion to iteration and back, the backtracking template (choose, explore, un-choose) with pruning, the classics (subsets, combinations, permutations, N-queens, sudoku, word search, generating parentheses), recursion-tree complexity, and the pitfalls (missing base case, mutated shared state, stack overflow, redundant work that should be memoized). Use for 'recursion', 'backtracking', 'how to think recursively', 'permutations', 'subsets', 'N-queens', 'prune the search', 'recursion vs iteration', 'stack overflow in recursion'.",
+      "argumentHint": "The recursive/backtracking problem or concept (+ optional language)",
+      "path": ".github/skills/recursion-backtracking-coach/SKILL.md"
     },
     {
       "name": "redis-local-lab",
@@ -5486,10 +5574,22 @@
       "path": ".github/skills/streamlit-local-lab/SKILL.md"
     },
     {
+      "name": "string-algorithms-coach",
+      "description": "Teach efficient string processing from first principles — why naive matching degrades to O(nm), the KMP prefix function and the failure-link idea, Rabin–Karp rolling hashes with real collision care (double hashing, random bases, verify on match), the Z-algorithm, tries for prefix and multi-pattern search, palindromes via expand-around-center and the intuition behind Manacher, and when the problem actually needs a suffix array or automaton. Use for 'string matching', 'KMP', 'rolling hash', 'substring search', 'find pattern in text', 'prefix function', 'Z-algorithm', 'trie', 'longest palindromic substring'.",
+      "argumentHint": "The string problem + text/pattern sizes (+ optional language)",
+      "path": ".github/skills/string-algorithms-coach/SKILL.md"
+    },
+    {
       "name": "structured-output-coach",
       "description": "Get reliable structured output (JSON/objects) from an LLM: define a schema, use function/tool calling or JSON/structured-output modes, validate and repair, and use constrained/guided decoding for hard guarantees. Use for 'force JSON output', 'function/tool calling', 'JSON schema', 'model returns invalid JSON', 'parse LLM output', 'Pydantic validation', or 'structured extraction'. Teaches guarantees vs. best-effort.",
       "argumentHint": "The output schema/use case",
       "path": ".github/skills/structured-output-coach/SKILL.md"
+    },
+    {
+      "name": "supply-chain-security-coach",
+      "description": "Secure the software supply chain — DEFENSIVE ONLY. Teaches the threat model (typosquatted and malicious dependencies, dependency confusion, compromised maintainers, tampered build systems and artifacts), then the layered defenses: pin and lock dependencies, verify integrity with hashes and lockfiles, generate and actually consume an SBOM, establish build provenance and climb the SLSA levels, sign and verify artifacts (Sigstore/cosign by concept), harden CI/CD with least-privilege tokens and isolated ephemeral runners, scan for leaked secrets, and review every new dependency before it lands. Use for 'supply chain security', 'SBOM', 'dependency security', 'SLSA provenance', 'sign and verify artifacts', 'typosquatting', 'harden my CI/CD pipeline', 'is this npm package safe'.",
+      "argumentHint": "The project/ecosystem (npm, PyPI, Maven, Go, containers) + its build pipeline",
+      "path": ".github/skills/supply-chain-security-coach/SKILL.md"
     },
     {
       "name": "svelte-basics-lab",
@@ -5612,6 +5712,12 @@
       "path": ".github/skills/test-data-builder/SKILL.md"
     },
     {
+      "name": "test-doubles-coach",
+      "description": "Teach the five test doubles precisely — dummy, stub, spy, mock, and fake — with crisp definitions, a decision table for choosing between them, the rule to mock only at boundaries you own (and never mock what you don't own), how to recognise over-mocking and brittle tests that assert implementation instead of behaviour, the London (mockist) vs Chicago (classicist) TDD schools, and when to verify behaviour versus state. Use for 'mock vs stub vs fake', 'test doubles', 'should I mock this', 'over-mocking', 'brittle tests', 'mockist vs classicist', 'how do I test code that calls an API'.",
+      "argumentHint": "The collaborator or dependency you're deciding how to replace in a test",
+      "path": ".github/skills/test-doubles-coach/SKILL.md"
+    },
+    {
       "name": "test-plan-designer",
       "description": "Design a test plan/strategy for a feature or release — define scope, risk-based prioritization, the test pyramid mix, environments, test data, and exit criteria, explaining each trade-off. Use for 'write a test plan', 'test strategy', 'what should we test before release', 'risk-based testing', or learning to plan testing (ISTQB-aligned).",
       "argumentHint": "Feature/release + constraints",
@@ -5664,6 +5770,12 @@
       "description": "Explain ACID and SQL isolation levels as a lesson — walk read-uncommitted → read-committed → repeatable-read → serializable and the anomalies each prevents (dirty, non-repeatable, phantom, lost update, write skew), with concrete interleaved examples. Use for 'what isolation level do I need', 'explain dirty/phantom reads', 'serializable vs repeatable read', 'MVCC vs locking', or learning ACID.",
       "argumentHint": "The scenario or level to understand",
       "path": ".github/skills/transaction-isolation-explainer/SKILL.md"
+    },
+    {
+      "name": "tree-algorithms-coach",
+      "description": "Teach binary trees and BSTs from first principles — the four traversals (pre-order, in-order, post-order, level-order) with both recursive and iterative templates, the recursion-on-trees mental model (what do I ask my children, what do I return to my parent), height and diameter, lowest common ancestor, BST validate/insert/delete, tree DP such as subtree aggregates and rob-the-tree, plus the intuition for balanced trees, Fenwick/BIT and segment trees. Use for 'tree problems', 'binary tree traversal', 'BST', 'lowest common ancestor', 'tree DP', 'segment tree vs Fenwick', 'height of a tree', 'iterative in-order'.",
+      "argumentHint": "The tree problem or concept (+ optional language)",
+      "path": ".github/skills/tree-algorithms-coach/SKILL.md"
     },
     {
       "name": "trino-local-lab",
